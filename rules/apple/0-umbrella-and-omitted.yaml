@@ -1,0 +1,97 @@
+- id: APL-INTRO
+  title: "Introduction (unnumbered)"
+  label: official_requirement
+  obligation: informational
+  topics: [review, kids, notarization, enforcement]
+  requires: "Describes App Store curation; notarization/alternative distribution in some markets; developers must provide age-appropriate experiences for kids; Apple will reject content/behaviour it considers over the line; attempts to cheat the review process lead to removal and possible Program expulsion (text continues on page)."
+  uncertainty: "Introduction text was extracted in full but only the opening paragraphs were reviewed in detail."
+- id: APL-1
+  title: "1. Safety (section preamble)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [safety]
+  requires: "Apps must be safe - no upsetting/offensive content, no device damage, no likely physical harm. Some rules also apply to Notarization for iOS/iPadOS apps."
+- id: APL-2
+  title: "2. Performance (section heading)"
+  label: official_requirement
+  obligation: informational
+  topics: [performance]
+  requires: "Heading only; see 2.1-2.5."
+- id: APL-2.4
+  title: "2.4 Hardware Compatibility (heading)"
+  label: official_requirement
+  obligation: informational
+  topics: [hardware]
+  requires: "Heading only; see 2.4.1-2.4.5."
+- id: APL-2.5
+  title: "2.5 Software Requirements (heading)"
+  label: official_requirement
+  obligation: informational
+  topics: [technical]
+  requires: "Heading only; see 2.5.1-2.5.18."
+- id: APL-3.1
+  title: "3.1 Payments (heading)"
+  label: official_requirement
+  obligation: informational
+  topics: [payments]
+  requires: "Heading only; see 3.1.1-3.1.5."
+- id: APL-3.2
+  title: "3.2 Other Business Model Issues (preamble)"
+  label: official_requirement
+  obligation: informational
+  topics: [business-model]
+  requires: "Lists in 3.2.1/3.2.2 are not exhaustive; a submission may trigger a policy change."
+- id: APL-4.5
+  title: "4.5 Apple Sites and Services (heading)"
+  label: official_requirement
+  obligation: informational
+  topics: [apple-services]
+  requires: "Heading only; see 4.5.1-4.5.6."
+- id: APL-5.1
+  title: "5.1 Privacy (preamble)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [privacy]
+  requires: "Use care with personal data; comply with privacy best practices, applicable laws, the DPLA and customer expectations; see 5.1.1-5.1.5."
+- id: APL-5.2
+  title: "5.2 Intellectual Property (preamble)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [ip]
+  requires: "Only include content you created or are licensed to use; infringement claims via Apple web form; see 5.2.1-5.2.5."
+- id: APL-2.5.7
+  title: "Intentionally omitted"
+  label: official_requirement
+  obligation: informational
+  topics: [omitted]
+  requires: "Apple marks this number 'Intentionally omitted'. Number retained by publisher; no current requirement."
+- id: APL-2.5.10
+  title: "Intentionally omitted"
+  label: official_requirement
+  obligation: informational
+  topics: [omitted]
+  requires: "Apple marks this number 'Intentionally omitted'."
+- id: APL-4.2.4
+  title: "Intentionally omitted"
+  label: official_requirement
+  obligation: informational
+  topics: [omitted]
+  requires: "Apple marks this number 'Intentionally omitted'."
+- id: APL-4.2.5
+  title: "Intentionally omitted"
+  label: official_requirement
+  obligation: informational
+  topics: [omitted]
+  requires: "Apple marks this number 'Intentionally omitted'."
+- id: APL-4.4.3
+  title: "Intentionally omitted"
+  label: official_requirement
+  obligation: informational
+  topics: [omitted]
+  requires: "Apple marks this number 'Intentionally omitted'."
+- id: APL-4.6
+  title: "Intentionally omitted"
+  label: official_requirement
+  obligation: informational
+  topics: [omitted]
+  requires: "Apple marks this number 'Intentionally omitted'."

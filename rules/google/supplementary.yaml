@@ -1,0 +1,113 @@
+# Rules from Play Console Help / Android Developers pages linked from the Developer Program Policy.
+- id: GPL-SUPP-TARGET-API-2026
+  title: "Target API level deadlines (August 31, 2026)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [technical, target-sdk, deadlines]
+  requires: "From August 31, 2026 new apps and app updates must target Android 16 (API 36) or higher (Wear OS and Android Automotive OS - API 35+; Android TV and Android XR - API 34+). Existing apps must target Android 15 (API 35)+ to remain available to new users on devices running newer Android versions (other form factors have their own thresholds)."
+  exceptions_regions: "Extension requests to November 1, 2026 via Play Console forms. Permanently private internal-distribution apps are exempt."
+  effective_date: "2026-08-31"
+  deadlines: [{date: "2026-08-31", what: "targetSdk 36 for new apps/updates (phone/tablet)"}, {date: "2026-11-01", what: "end of extension period"}]
+  implementation: "Expo - targetSdkVersion follows the Expo SDK default or expo-build-properties android.targetSdkVersion; upgrade Expo SDK accordingly (Interpretation)."
+  agent_verification:
+    - "Read android/app/build.gradle targetSdkVersion or app.json plugins expo-build-properties"
+    - "assert >= 36 for submissions after 2026-08-31."
+  sources:
+    - {url: "https://support.google.com/googleplay/android-developer/answer/11926878?hl=en", section: "Target API level requirements for Google Play apps"}
+    - {url: "https://developer.android.com/google/play/requirements/target-sdk", section: "Meet Google Play's target API level requirement"}
+- id: GPL-SUPP-CLOSED-TESTING-NEW-PERSONAL
+  title: "Testing requirements for new personal developer accounts (12 testers / 14 days)"
+  label: official_requirement
+  obligation: conditional
+  topics: [testing, account, closed-testing]
+  requires: "Personal developer accounts created after November 13, 2023 must run a closed test with at least 12 testers opted in continuously for the preceding 14 days, then apply for production access in the Dashboard (answering questions about testing, app and readiness). Production and pre-registration are disabled until then; open testing becomes available after production access."
+  exceptions_regions: "Applies to personal accounts created after November 13, 2023 (organization accounts are not covered by this article's requirement)."
+  implementation: "Recruit >= 12 real testers (recommend a margin, e.g. 15-20, since opt-outs reset continuity - Interpretation); keep build updated during the test; document feedback handling for the production-access questionnaire."
+  agent_verification:
+    - "Not inspectable from code"
+    - "maintain a release log noting closed-test start date and tester count."
+  sources:
+    - {url: "https://support.google.com/googleplay/android-developer/answer/14151465?hl=en", section: "Overview of testing requirements; Testing tracks and requirements"}
+- id: GPL-SUPP-HEALTH-APP-CATEGORIES
+  title: "Health app categories - disease management apps are \"Medical apps\"; health-sensitive permissions"
+  label: official_requirement
+  obligation: conditional
+  topics: [health, medical, permissions, microphone, organization-account]
+  requires: "Google's Help Center categorizes health apps into health & fitness, medical (incl. disease management apps, symptom checkers, remote monitoring, telehealth, EHR/patient portals, SaMD) and human-subject research. Listed permissions in scope of health-related sensitive data include location, ACTIVITY_RECOGNITION, Bluetooth, BODY_SENSORS, CAMERA, calendar, SMS and RECORD_AUDIO; apps using them must prominently disclose use, describe data and obtain affirmative consent."
+  examples: "A chronic-condition self-management app is plausibly a \"disease management app\" (Medical category) - combined with Play Console Requirements 1.2, an Organization account is required (Interpretation combining two official texts)."
+  agent_verification:
+    - "If RECORD_AUDIO is requested by a health app, confirm a prominent-disclosure screen precedes the permission prompt."
+  sources:
+    - {url: "https://support.google.com/googleplay/android-developer/answer/13996367?hl=en", section: "Health app categories and additional information"}
+- id: GPL-SUPP-HEALTH-DECLARATION
+  title: "Health apps declaration form"
+  label: official_requirement
+  obligation: mandatory
+  topics: [health, declarations]
+  requires: "All developers complete the Health apps declaration in Play Console App content (per Health and Medical Apps policy). Details of the form are in the linked Help Center article."
+  uncertainty: "Form field details not analyzed in this pass (article processed by crawler; see sources/state)."
+  sources:
+    - {url: "https://support.google.com/googleplay/android-developer/answer/14738291?hl=en", section: "Provide information for the Health apps declaration form"}
+- id: GPL-SUPP-ACCOUNT-DELETION-HELP
+  title: "Account deletion - Data safety data-deletion questions and web link"
+  label: official_requirement
+  obligation: conditional
+  topics: [account-deletion, data-safety]
+  requires: "All developers must complete the Data deletion questions in the Data safety form. If account creation is supported (in app, or app directs users to an external creation flow), provide an in-app deletion path and a web link resource for deletion requests. An \"app account\" is a user identity provided as a user-facing feature (username/email/password, OTP, SSO etc.)."
+  enforcement_risk: "Issues with Data deletion answers cause new submissions and updates to be rejected in Play Console; non-compliant apps may face removal."
+  sources:
+    - {url: "https://support.google.com/googleplay/android-developer/answer/13327111?hl=en", section: "Overview; Timeline; FAQ"}
+- id: GPL-SUPP-PAYMENTS-FAQ-CONSUMPTION-ONLY
+  title: "Payments policy FAQ - consumption-only apps and out-of-app communications"
+  label: official_requirement
+  obligation: conditional
+  topics: [payments, external-links]
+  requires: "Outside the app developers may communicate alternative purchase options (email marketing etc.). Inside the app, no leading to other payment methods (incl. links to pages that lead to them or encouraging language) unless Payments policy Section 3, 8 or 9 applies. Administrative links (account management, privacy policy, help) allowed if they do not lead to prohibited payment methods. Consumption-only apps (no in-app purchasing) may describe website purchasing without direct links (Google gives example phrases)."
+  sources:
+    - {url: "https://support.google.com/googleplay/android-developer/answer/10281818?hl=en", section: "Frequently asked questions"}
+- id: GPL-SUPP-USER-CHOICE-BILLING
+  title: "User choice billing / alternative billing programs (regional)"
+  label: official_requirement
+  obligation: conditional
+  topics: [payments, alternative-billing, regions, eu, korea, japan]
+  requires: "Eligible developers may enroll in regional programs to offer an alternative billing system alongside Play billing (listed locations include Australia, Brazil, Indonesia, Japan, South Africa, UK, EEA; separate South Korea program; EEA also has an alternative-billing-without-user-choice program). Service fee reduced by 4% where users pay with the alternative system (per article). One program per region at a time."
+  uncertainty: "The article describes some programs as pilots and country lists change; verify current eligibility before implementation. US external-offers/link programs were not analyzed in this pass (see research gaps)."
+  sources:
+    - {url: "https://support.google.com/googleplay/android-developer/answer/13821247?hl=en", section: "Explore our user choice billing program(s)"}
+- id: GPL-SUPP-ANDROID-DEVELOPER-VERIFICATION
+  title: "Android developer verification and package-name registration"
+  label: official_requirement
+  obligation: mandatory
+  topics: [account, verification, sideloading, regions]
+  requires: "Play Console Requirements 3.4 - register app package names via Play Console to comply with Android developer verification. Android Developers site timeline - August 2026 developer APIs, limited distribution accounts and power-user advanced flow launch; from September 30, 2026 protections begin for users installing from participating stores in Brazil, Indonesia, Singapore and Thailand on certified devices running Android 7+; global expansion in 2027."
+  effective_date: "2026-09-30"
+  sources:
+    - {url: "https://developer.android.com/developer-verification", section: "Timeline"}
+    - {url: "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en", section: "Play Console Requirements (3.4)"}
+
+- id: GPL-SUPP-CORE-APP-QUALITY
+  title: "Core app quality guidelines (minimum quality all apps should meet)"
+  label: official_recommendation
+  obligation: recommended
+  topics: [quality, design, performance, ux]
+  requires: "Google's core app quality guidelines 'define the minimum quality that all apps should meet' across user experience (usability, UI, visual quality, navigation, notifications, accessibility), functionality (audio, video, sharing, background services), performance and stability (including SDK and battery), and privacy and security (permissions etc.), each with test IDs."
+  uncertainty: "Recommendation wording ('should'); not itself a Play policy. Linkage to Play ranking is stated on the page for adaptive quality, not analysed further."
+  agent_verification:
+    - "Run the test IDs listed for each guideline (e.g. T-App_Switcher, T-Orientation_Transitions) on target devices; record results."
+  sources:
+    - {url: "https://developer.android.com/docs/quality-guidelines/core-app-quality", section: "Core app quality guidelines"}
+
+- id: GPL-SUPP-AAB-NEW-APPS
+  title: "New apps must publish with the Android App Bundle (AAB)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [toolchain, aab, publishing]
+  requires: "Play Console Help states: 'Starting August 2021, new apps are required to publish with the Android App Bundle on Google Play. New apps larger than 200MB can use either Play Asset Delivery or Play Feature Delivery.' It also states that as of June 30, 2023 Google Play no longer supports TV app updates using APKs; all TV app updates must use AABs."
+  exceptions_regions: "Stated exception on the page: TV app updates (AAB mandatory for updates as well). Treatment of pre-August-2021 non-TV apps that still ship APK updates is not stated in the passage captured and is not asserted here."
+  uncertainty: "Source is a Play Console Help article about inspecting app versions, not the Developer Program Policy; the wording is nonetheless explicit ('are required'). The 200MB statement is about delivery options, not a hard size limit."
+  agent_verification:
+    - "Check the release artifact uploaded to Play is .aab (Gradle `bundleRelease`; for Expo, the EAS build profile used for submission must produce an .aab - Expo docs: 'EAS Submit uploads your .aab')."
+    - "Grep eas.json for `\"buildType\": \"apk\"` in the profile used for Play submission; flag it."
+  implementation: "Build an .aab (native: `./gradlew bundleRelease`; Expo: an EAS build profile that outputs .aab). Enrol in Play App Signing - the same Help page states 'To use app bundles, you must enroll in Play App Signing'."
+  sources:
+    - {url: "https://support.google.com/googleplay/android-developer/answer/9844279?hl=en", section: "Inspect app versions on the Latest releases and bundles page (Android App Bundle statement)"}

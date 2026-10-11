@@ -1,0 +1,33 @@
+{
+ "expo": {
+  "name": "Sunrise Alarm Clock",
+  "slug": "sunrise-alarm",
+  "version": "1.0.0",
+  "ios": {
+   "bundleIdentifier": "com.example.sunrisealarm",
+   "config": {
+    "usesNonExemptEncryption": false
+   }
+  },
+  "android": {
+   "package": "com.example.sunrisealarm",
+   "permissions": [
+    "USE_EXACT_ALARM",
+    "POST_NOTIFICATIONS"
+   ]
+  },
+  "plugins": [
+   [
+    "expo-build-properties",
+    {
+     "android": {
+      "targetSdkVersion": 36
+     },
+     "ios": {
+      "deploymentTarget": "15.1"
+     }
+    }
+   ]
+  ]
+ }
+}

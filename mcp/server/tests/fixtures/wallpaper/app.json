@@ -1,0 +1,32 @@
+{
+ "expo": {
+  "name": "Wallpaper Studio",
+  "slug": "wallpaper-studio",
+  "version": "1.0.0",
+  "ios": {
+   "bundleIdentifier": "com.example.wallpaperstudio",
+   "config": {
+    "usesNonExemptEncryption": false
+   },
+   "infoPlist": {
+    "NSPhotoLibraryAddUsageDescription": "Save wallpapers you choose to your photo library."
+   }
+  },
+  "android": {
+   "package": "com.example.wallpaperstudio"
+  },
+  "plugins": [
+   [
+    "expo-build-properties",
+    {
+     "android": {
+      "targetSdkVersion": 36
+     },
+     "ios": {
+      "deploymentTarget": "15.1"
+     }
+    }
+   ]
+  ]
+ }
+}

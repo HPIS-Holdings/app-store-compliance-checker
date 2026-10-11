@@ -1,0 +1,375 @@
+# Google Play Developer Program Policy (consolidated page, "effective September 30, 2026, unless otherwise stated").
+# IDs are slugs of official headings (Google does not number policies). See rules/SCHEMA.md.
+- id: GPL-USER-GENERATED-CONTENT
+  title: "User Generated Content"
+  label: official_requirement
+  obligation: conditional
+  topics: [ugc, moderation, social, ai]
+  requires: "UGC apps (incl. specialized browsers/clients for UGC platforms) must implement robust, effective, ongoing moderation that requires acceptance of terms before creating/uploading UGC; defines and prohibits objectionable content in terms; provides in-app reporting and blocking of objectionable UGC and users and acts on them (scope varies - 1:1 interaction needs user blocking; public UGC needs report users+content and block users; AR UGC adds location considerations); safeguards so monetization does not encourage objectionable behaviour."
+  exceptions_regions: "Incidental sexual content allowed only if hidden by default behind filters needing at least two user actions to disable, children prohibited via age screening, and accurate content-rating answers."
+  prohibited: "Apps whose primary purpose is objectionable UGC or that become known for it; insufficient safeguards against harassment/bullying of minors; failing to address complaints."
+  agent_verification:
+    - "Terms acceptance before first post"
+    - "report + block controls on every UGC surface"
+    - "moderation backend exists."
+- id: GPL-HEALTH-AND-MEDICAL-APPS
+  title: "Health and Medical Apps (Health apps policy)"
+  label: official_requirement
+  obligation: conditional
+  topics: [health, medical, privacy, declarations, ai]
+  requires: "All developers must complete the Health apps declaration (App content page). Privacy policy link in Play Console and in-app (active, public, non-geofenced URL, no PDFs, non-editable) comprehensively covering personal/sensitive data; prominent disclosure and consent for runtime-permission data. Remove permissions not needed for core health functionality. Non-health apps with health features/data are in scope. Disclose external hardware requirements in the description; disclose device compatibility for sensor-based health functions. Regulated medical devices must be declared (shown as \"Medical Device\") with proof on request; other health/medical apps must include in the description a disclaimer that the app is \"not a medical device and does not diagnose, treat, cure, or prevent any medical condition\". Remind users to consult a healthcare professional. Government-affiliated and contact-tracing apps submit proof via advance notice form. Human-subjects research needs informed consent and IRB/ethics approval unless exempt."
+  prohibited: "Misleading or potentially harmful health/medical functionality."
+  enforcement_risk: "Rejection/removal; Health declaration inaccuracy is Play Console misrepresentation (Interpretation linking to Play Console Requirements)."
+  implementation: "Add the exact non-medical-device disclaimer to the Play listing full description and an in-app \"consult your healthcare professional\" notice near AI answers (Interpretation)."
+  agent_verification:
+    - "Check store listing text (fastlane/metadata/android/*/full_description.txt if present) contains the disclaimer"
+    - "check in-app reminder component"
+    - "list Android permissions and justify each."
+  uncertainty: "Exact wording requirement is quoted in policy; whether paraphrases are accepted is not stated - use the quoted text."
+- id: GPL-HEALTH-CONNECT-BY-ANDROID-PERMISSIONS
+  title: "Health Connect by Android Permissions"
+  label: official_requirement
+  obligation: conditional
+  topics: [health, health-connect, permissions, privacy]
+  requires: "Health Connect data is personal and sensitive data; health apps must also meet the Health apps policy. Access only for approved use cases (fitness and wellness, rewards, fitness coaching, corporate wellness, medical care, health research, games) and only by apps with features benefiting users' health/fitness (journal/monitor/analyze; store/share on device; manage chronic conditions, treatments or care). Limited Use - data use limited to providing/improving visible features; third-party transfer only with explicit consent for listed purposes; human access restricted. Also Minimum Scope and Transparent/Accurate Notice and Control sub-sections. Comply with HIPAA/GDPR where applicable; provide evidence of agreements on request."
+  prohibited: "Safety-critical uses where failure could cause death/injury; headless apps accessing data; syncing between incompatible devices/platforms; connecting to services solely targeting children."
+  examples: "A chronic-condition management app reading blood pressure and weight from Health Connect fits \"manage chronic conditions\" (Interpretation)."
+  agent_verification:
+    - "List android.permission.health.* in manifest"
+    - "map each to a user-visible feature"
+    - "confirm privacy-policy rationale activity/intent filter required by Health Connect is declared (technical requirement from Android docs - verify in google/technical)."
+  uncertainty: "Limited Use and Minimum Scope sub-sections were only partially reviewed in this pass (text extracted; analysis incomplete)."
+- id: GPL-HEALTH-MISINFORMATION
+  title: "Health Misinformation"
+  label: official_requirement
+  obligation: mandatory
+  topics: [health, content, ai]
+  prohibited: "Misleading health claims contradicting medical consensus or that can cause harm (e.g. vaccine-DNA claims, harmful unapproved treatments, conversion therapy)."
+  agent_verification:
+    - "Review AI system prompt for guardrails against unapproved treatment advice"
+    - "review static health content sources."
+- id: GPL-PAYMENTS-CLINICAL-SERVICES
+  title: "Payments - Clinical Services"
+  label: official_requirement
+  obligation: conditional
+  topics: [health, payments, telehealth]
+  requires: "Transactions for regulated clinical services should not use Google Play's billing system."
+- id: GPL-AI-GENERATED-CONTENT
+  title: "AI-Generated Content"
+  label: official_requirement
+  obligation: conditional
+  topics: [ai, ugc, moderation, safety]
+  requires: "Apps generating content with AI (e.g. chatbots central to the app; AI image/video from prompts) must comply with all policies, prohibiting and preventing generation of Restricted Content (e.g. CSAE) and Deceptive Behavior content. Must contain in-app reporting/flagging of offensive content without leaving the app. Developers \"should\" use reports to inform filtering/moderation."
+  implementation: "Add a \"Report\" action on every AI response/image; send report with conversation ID to backend; input/output safety filters (Interpretation)."
+  agent_verification:
+    - "Each AI output component has a report/flag action"
+    - "report endpoint exists"
+    - "safety filter configured on model calls."
+  uncertainty: "Policy references a Help Center best-practices article; that article is recorded separately if processed by the crawler."
+- id: GPL-USER-DATA
+  title: "User Data (general; third-party code and third-party AI)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [privacy, sdk, ai]
+  requires: "Be transparent about access, collection, use, handling and sharing of user data; limit use to disclosed, policy-compliant purposes; comply with applicable privacy laws. Developer is responsible for third-party code (SDKs) practices (e.g. SDKs must not sell personal and sensitive data). Requirements also apply to third-party AI integrations; developer remains responsible for limited use, disclosure and consent."
+  agent_verification:
+    - "Inventory SDKs and AI APIs"
+    - "ensure each appears in Data safety form and privacy policy."
+- id: GPL-PERSONAL-AND-SENSITIVE-USER-DATA
+  title: "Personal and Sensitive User Data"
+  label: official_requirement
+  obligation: mandatory
+  topics: [privacy, security, health, microphone]
+  requires: "Covers PII, financial, authentication, contacts, location, SMS/call data, health and Health Connect data, installed-app inventory, microphone, camera, other sensitive data. Limit use to app functionality and policy-conforming purposes reasonably expected by users; handle securely (modern cryptography e.g. HTTPS); use runtime permission requests where available before accessing permission-gated data."
+  prohibited: "Selling personal and sensitive user data (user-initiated transfers are not sale)."
+  agent_verification:
+    - "No cleartext HTTP (networkSecurityConfig / usesCleartextTraffic false)"
+    - "runtime permission requests precede access."
+- id: GPL-PROMINENT-DISCLOSURE-CONSENT-REQUIREMENT
+  title: "Prominent Disclosure & Consent Requirement"
+  label: official_requirement
+  obligation: conditional
+  topics: [privacy, permissions, consent, location, microphone]
+  requires: "When data access/collection/use/sharing may not be within users' reasonable expectation (e.g. background collection) - an in-app disclosure (not only in description/website/privacy policy; shown during normal use; describes data and use/sharing; not bundled with unrelated disclosures), immediately preceding the consent/runtime permission request. Consent must be clear, require affirmative action, not treat navigating away as consent, not use auto-dismissing messages, and be obtained before collection. Legitimate-interest reliance still requires disclosures. For SDKs collecting such data by default, provide evidence within 2 weeks of a Google Play request (or longer if specified)."
+  examples: "Google's suggested format - \"[This app] collects/transmits/syncs/stores [type of data] to enable [feature], [in what scenario].\""
+  agent_verification:
+    - "For each dangerous permission, locate a custom disclosure screen rendered before the system dialog"
+    - "verify Decline path exists and is not treated as consent."
+- id: GPL-DATA-SAFETY-SECTION
+  title: "Data safety section"
+  label: official_requirement
+  obligation: mandatory
+  topics: [privacy, data-safety, sdk]
+  requires: "Every app must complete an accurate Data safety section covering collection, use and sharing including by SDKs; keep it up to date; consistent with the privacy policy."
+  agent_verification:
+    - "Compare SDK list and network endpoints with a maintained data-safety JSON/CSV export in the repo."
+- id: GPL-PRIVACY-POLICY
+  title: "Privacy Policy"
+  label: official_requirement
+  obligation: mandatory
+  topics: [privacy, privacy-policy]
+  requires: "All apps (even those accessing no personal data) must post a privacy policy link in Play Console and a link or text in-app. Must include developer info and privacy contact; types of personal/sensitive data accessed/collected/used/shared and parties shared with; secure handling procedures; retention and deletion policy; clear labelling as a privacy policy. Must name the store-listing entity or the app. Active, public, non-geofenced URL, no PDFs, non-editable."
+  agent_verification:
+    - "Fetch privacy policy URL - HTTP 200, HTML (not PDF), contains app or developer name, contains retention/deletion section."
+- id: GPL-ACCOUNT-DELETION-REQUIREMENT
+  title: "Account Deletion Requirement"
+  label: official_requirement
+  obligation: conditional
+  topics: [account-deletion, privacy]
+  requires: "If users can create an account from within the app, the app must let them request account deletion from within the app AND outside the app (e.g. website); enter the web resource URL in Play Console. Deleting the account must delete associated user data; disclose any legitimately retained data (security, fraud, regulatory) e.g. in privacy policy."
+  prohibited: "Temporary deactivation/disabling/\"freezing\" as substitute; hidden or obstructive deletion flows; broken/outdated web deletion links."
+  agent_verification:
+    - "In-app delete path exists"
+    - "web deletion URL configured, reachable without installing the app and clearly references the app."
+- id: GPL-PERMISSIONS-AND-APIS-THAT-ACCESS-SENSITIVE-INFOR
+  title: "Permissions and APIs that Access Sensitive Information"
+  label: official_requirement
+  obligation: mandatory
+  topics: [permissions, privacy, microphone]
+  requires: "Request only permissions/APIs necessary for current features promoted in the Play listing; request in context (incremental); use data only for consented purposes; re-consent for new purposes."
+  prohibited: "Using permission-gated data for undisclosed, unimplemented or disallowed purposes; selling such data or sharing to facilitate sale."
+  agent_verification:
+    - "Merged manifest permission list (including from libraries) - remove unused (e.g. RECORD_AUDIO pulled in by expo-av when no recording feature) via tools:node=\"remove\" / Expo blockedPermissions."
+- id: GPL-PHOTO-AND-VIDEO-PERMISSIONS
+  title: "Photo and Video Permissions"
+  label: official_requirement
+  obligation: conditional
+  topics: [permissions, media]
+  requires: "Apps targeting API 33+ may request READ_MEDIA_IMAGES/READ_MEDIA_VIDEO only if system pickers (Android Photo Picker) are insufficient for core functionality, and must submit a Play Console declaration."
+  agent_verification:
+    - "Grep merged manifest for READ_MEDIA_IMAGES/READ_MEDIA_VIDEO"
+    - "prefer expo-image-picker (uses Photo Picker) and block the permissions."
+- id: GPL-EXACT-ALARM-PERMISSION
+  title: "Exact Alarm Permission (USE_EXACT_ALARM)"
+  label: official_requirement
+  obligation: conditional
+  topics: [permissions, notifications, reminders]
+  requires: "USE_EXACT_ALARM is restricted; declare only if core user-facing functionality needs precisely timed actions (alarm/timer apps; calendar apps showing event notifications). Otherwise evaluate SCHEDULE_EXACT_ALARM."
+  examples: "Medication or prayer-time reminders are not in the two listed examples; use inexact alarms or SCHEDULE_EXACT_ALARM (user-granted) rather than USE_EXACT_ALARM (Interpretation)."
+  agent_verification:
+    - "Grep merged manifest for USE_EXACT_ALARM and SCHEDULE_EXACT_ALARM"
+    - "check notification library config."
+- id: GPL-FULL-SCREEN-INTENT-PERMISSION
+  title: "Full-Screen Intent Permission"
+  label: official_requirement
+  obligation: conditional
+  topics: [permissions, notifications]
+  requires: "For targetSdk 34+, USE_FULL_SCREEN_INTENT auto-granted only for core alarm-setting or phone/video-call apps; others must request from the user. Must not be used for disruptive ads/notifications."
+- id: GPL-PERMISSIONS-FOR-FOREGROUND-SERVICES-FGS
+  title: "Permissions for Foreground Services (FGS)"
+  label: official_requirement
+  obligation: conditional
+  topics: [permissions, background, voice, microphone]
+  requires: "For targetSdk 34+, declare a valid FGS type and matching permission for each foreground service. Use only if beneficial and core, user-initiated or perceptible, stoppable by user, not deferrable without harming UX, and only as long as necessary. Exempt - systemExempted, shortService, dataSync with Play Asset Delivery. Play Console FGS declaration applies (help article)."
+  examples: "Background voice recording needs FOREGROUND_SERVICE_MICROPHONE with a visible notification; prefer foreground-only recording (Interpretation)."
+  agent_verification:
+    - "List <service android:foregroundServiceType>"
+    - "map to features."
+- id: GPL-AGE-SIGNALS-API-AND-USER-DATA
+  title: "Age Signals API and User Data"
+  label: official_requirement
+  obligation: conditional
+  topics: [age-verification, privacy]
+  requires: "Use Age Signals API data solely to comply with legal/regulatory obligations such as age-appropriate experiences."
+  prohibited: "Advertising, marketing, personalization, analytics, profiling, BI, or selling/sharing/transferring (except as required by law)."
+- id: GPL-GOOGLE-PLAY-S-TARGET-API-LEVEL-POLICY
+  title: "Target API Level Policy"
+  label: official_requirement
+  obligation: mandatory
+  topics: [technical, target-sdk]
+  requires: "New apps and updates must target an API level within one year of the latest major Android release (blocked at submission otherwise). Existing apps not targeting within two years become unavailable to new users on newer OS versions. Exact timelines in Help Center - see GPL-SUPP-TARGET-API-2026."
+- id: GPL-USE-OF-SDKS-IN-APPS
+  title: "Use of SDKs in Apps / SDK Requirements"
+  label: official_requirement
+  obligation: mandatory
+  topics: [sdk, privacy]
+  requires: "Developer is responsible for ensuring SDK code and practices do not cause violations; know SDK permissions, data collected and why. The \"SDK Requirements\" section restates User Data, Permissions, Malware, MUwS, Device and Network Abuse and Deceptive Behavior rules with SDK-caused violation examples."
+  uncertainty: "SDK Requirements section (about 15k characters) extracted but not analyzed line-by-line in this pass."
+- id: GPL-DEVICE-AND-NETWORK-ABUSE
+  title: "Device and Network Abuse (incl. self-update and dynamic code)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [technical, security, ota-updates, webview]
+  requires: "Comply with default Android system optimization requirements in Core App Quality."
+  prohibited: "Interfering with devices, networks, other apps or services; self-modifying/updating outside Google Play's update mechanism; downloading executable code (dex, JAR, .so) from sources other than Google Play; interpreted code loaded at runtime that allows policy violations; WebViews with JavaScript interfaces loading untrusted content; bypassing power management without allowlisting eligibility; using full-screen intents for disruptive ads."
+  exceptions_regions: "Code running in a VM/interpreter with indirect access to Android APIs (e.g. JavaScript in a WebView or browser) is excluded from the executable-code restriction."
+  implementation: "Expo EAS Update ships JavaScript bundles (interpreted by Hermes); must still not enable policy violations (Interpretation; Google does not name Expo)."
+  agent_verification:
+    - "Search for DexClassLoader / System.load of downloaded files"
+    - "addJavascriptInterface with remote URLs"
+    - "OTA update content review."
+- id: GPL-1-MISLEADING-CLAIMS
+  title: "Deceptive Behavior - Misleading Claims"
+  label: official_requirement
+  obligation: mandatory
+  topics: [deception, metadata, health-claims]
+  prohibited: "False/misleading info in description, title, icon, screenshots; claiming impossible functionality (insect repellent, phone breathalyzer) even as prank; improper categorization incl. rating/category; false government affiliation; false \"official\" claims."
+- id: GPL-PAYMENTS
+  title: "Payments (Google Play billing)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [payments, billing, digital-goods, games, loot-boxes, alternative-billing]
+  requires: "Paid downloads and in-app purchases of digital features, content, goods, subscriptions, cloud services must use Google Play's billing system unless policy Sections 3, 8 or 9 apply. Clearly inform users of terms/pricing; in-app prices must match Play billing UI; listing must notify when features need payment. Loot boxes - disclose odds in advance and close to purchase. In-app virtual currencies usable only within the title purchased."
+  prohibited: "Play billing for physical goods/services, bill remittances, P2P payments, auctions, tax-exempt donations, online gambling, unacceptable Payments Center categories. Leading users to non-Play payment methods (listing, promotions, webviews, buttons, links, messaging, ads, sign-up flows) except as permitted."
+  exceptions_regions: "Section 8/9 - eligible countries/regions may offer alternative billing or lead users outside the app if enrolled in the applicable program and agreeing to its terms (see Help Center for programs and countries)."
+  enforcement_risk: "Rejection/removal; Payments violations are among frequently reported Play rejections (Community experience)."
+  implementation: "Use Play Billing Library (directly or via RevenueCat/react-native-purchases) for digital goods; keep web checkout links out of Android UI unless enrolled in an eligible program (Interpretation)."
+  agent_verification:
+    - "Check com.android.billingclient dependency / react-native-purchases present when digital goods sold"
+    - "grep Android-reachable UI for external checkout URLs."
+  uncertainty: "Program eligibility (user choice billing, external offers, alternative billing) varies by country and changed in 2025-2026; consult the linked Help Center pages recorded in sources/."
+- id: GPL-SUBSCRIPTIONS
+  title: "Subscriptions"
+  label: official_requirement
+  obligation: conditional
+  topics: [subscriptions, paywall, trials]
+  requires: "Transparent offer - terms, cost, billing frequency, auto-renewal, whether subscription is required to use the app; no extra action needed to see terms. Sustained/recurring value (no one-time benefits as subscriptions). Free trials/intro offers - duration, price, accessible content, when/how converts, cost after, how to cancel. In-app access to an easy online cancellation method (link to Play Subscription Center and/or direct cancellation) in account settings or equivalent."
+  prohibited: "Annual plans most prominently priced per month; incomplete localization; hidden/missing dismiss buttons; misleading SKU names like \"Free Trial\" for auto-recurring charges; accidental-subscribe flows; reducing value after purchase."
+  examples: "Google's examples list missing dismiss button, monthly-breakdown emphasis, intro-price-only display, non-localized currency."
+  agent_verification:
+    - "Paywall shows billed price most prominently, renewal terms, trial conversion text, visible close button"
+    - "settings screen links to https://play.google.com/store/account/subscriptions (Interpretation of \"Subscription Center\" link)."
+- id: GPL-ADS
+  title: "Ads (content, deceptive, disruptive, Better Ads, Made for Ads, AAID)"
+  label: official_requirement
+  obligation: conditional
+  topics: [ads, games, rewarded-ads, privacy]
+  requires: "Ads must follow Restricted Content and match app content rating; clear which app serves each ad; dismissible without penalty. AAID only for ads and analytics; respect opt-out on each access; no linking to persistent device IDs; PII linking only with explicit consent; disclose in privacy notice; use AAID instead of other device IDs for advertising."
+  prohibited: "Ads mimicking app UI or system notifications; forcing clicks or personal info before use; ads outside the app or on home/exit; full-screen interstitials shown unexpectedly, at level/content start, before splash, or not closeable after 15 seconds; repeated consecutive interstitials after user actions (Made for Ads); lockscreen monetization (unless lockscreen app); location permission solely for ads."
+  exceptions_regions: "Better Ads rules do not apply to explicitly opted-in rewarded ads or non-interrupting formats (integrated video ads, non-full-screen banners). Opt-in or non-interrupting interstitials (e.g. after score screen) may exceed 15 seconds."
+  examples: "Rewarded ad offered for an extra life at game-over screen - allowed; interstitial at start of every level - violation (from policy examples)."
+  agent_verification:
+    - "Map ad placement calls (showInterstitial) to screens"
+    - "ensure none at app start/splash or at level start"
+    - "frequency caps"
+    - "rewarded ads only after explicit opt-in tap."
+- id: GPL-METADATA
+  title: "Metadata (store listing)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [metadata, aso, icons, screenshots]
+  requires: "Clear, well-written description; app title 30 characters or less."
+  prohibited: "Misleading/irrelevant/excessive metadata; unattributed/anonymous testimonials; emojis, emoticons, repeated special characters in title/icon/developer name; ALL CAPS unless brand; misleading icon symbols (fake notification dots, download symbols); store performance/ranking (\"#1\", \"App of the year\"), price/promo (\"10% off\", \"free for limited time\") or Play program references (\"Editor's choice\", \"New\") in title, icon or developer name; sexually suggestive, profane, graphic-violence or drug imagery in listing."
+  agent_verification:
+    - "Lint title length, emoji, all-caps, banned phrases in fastlane metadata or a store-listing JSON."
+- id: GPL-USER-RATINGS-REVIEWS-AND-INSTALLS
+  title: "User Ratings, Reviews, and Installs"
+  label: official_requirement
+  obligation: mandatory
+  topics: [ratings, reviews]
+  prohibited: "Manipulating placement; fraudulent or incentivized ratings/reviews/installs; offering incentives for ratings; encouraging reviews containing codes, coupons, links."
+  agent_verification:
+    - "Search for rating prompts tied to rewards"
+    - "use Play In-App Review API (expo-store-review) without incentives."
+- id: GPL-CONTENT-RATINGS
+  title: "Content Ratings (IARC)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [age-rating, declarations]
+  requires: "Complete the IARC questionnaire for every new and active app; resubmit when content/features change answers. Apps without rating are removed. Ads must not be significantly more mature than app content. Appeals of rating go to the IARC authority via the certificate email."
+  enforcement_risk: "Misrepresentation may result in removal or suspension."
+- id: GPL-SPAM-2
+  title: "Spam (message spam, webviews/affiliate, repetitive content)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [spam, webview, wallpapers, religious]
+  prohibited: "Sending SMS/email/messages on user's behalf without confirmation of content and recipients; apps whose primary purpose is affiliate traffic or unauthorized webview of a website; repetitive content copying other apps without value; multiple highly similar apps (consolidate small apps into one)."
+  examples: "Several near-identical devotional wallpaper or single-mantra apps from one account match \"multiple apps with highly similar functionality\" (Interpretation)."
+- id: GPL-1-LIMITED-FUNCTIONALITY-AND-CONTENT
+  title: "Limited Functionality and Content"
+  label: official_requirement
+  obligation: mandatory
+  topics: [functionality, wallpapers, religious]
+  prohibited: "Static apps without app-specific functionality (text-only/PDF apps); very little content (e.g. single wallpaper apps); apps that do nothing."
+- id: GPL-2-BROKEN-FUNCTIONALITY
+  title: "Broken Functionality"
+  label: official_requirement
+  obligation: mandatory
+  topics: [quality, crashes]
+  prohibited: "Apps that crash, force close, freeze, don't install, don't load, or are unresponsive."
+- id: GPL-PLAY-CONSOLE-REQUIREMENTS
+  title: "Families - Target Audience and Content (Play Console requirements)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [kids, declarations, target-audience]
+  requires: "Declare target age groups before publishing; select multiple groups only if designed for them. Google may independently assess targeting based on imagery/terminology. Changes may be reviewed before an update. Strongly recommended to inform users if target age changes or ads/IAP are added."
+  enforcement_risk: "Misrepresentation may lead to removal or suspension."
+- id: GPL-FAMILIES-POLICY-REQUIREMENTS
+  title: "Families Policy Requirements"
+  label: official_requirement
+  obligation: conditional
+  topics: [kids, privacy, ads, sdk]
+  requires: "If children are a target audience - child-appropriate content; accurate Console answers; disclose data from children (incl. via SDKs); child-only apps must not transmit AAID, SIM/Build Serial, BSSID, MAC, SSID, IMEI, IMSI and should not request AD_ID permission when targeting API 33+; mixed-audience apps must not transmit those IDs from children/unknown-age users; no TelephonyManager phone number; child-only apps no location permission/precise location; Companion Device Manager for Bluetooth; only child-approved APIs/SDKs (mixed-audience behind neutral age screen); AR safety warning; social features need online-safety reminder and adult action; COPPA/GDPR compliance."
+  prohibited: "Anonymous/stranger chat apps targeting children; real or simulated gambling; dating; mature ads to children."
+- id: GPL-ADS-AND-MONETIZATION
+  title: "Families Ads and Monetization"
+  label: official_requirement
+  obligation: conditional
+  topics: [kids, ads, games, rewarded-ads, iap]
+  requires: "For children/unknown-age users - only Families Self-Certified Ads SDKs; no interest-based ads or remarketing; child-appropriate content; legal compliance."
+  prohibited: "Ad walls/undismissable ads; interrupting ads (including rewarded/opt-in) not closeable after 5 seconds; interstitials at launch; multiple ad placements per page; offerwalls/immersive ads indistinguishable from content; shocking/manipulative tactics to drive ad views or IAP; deceptive dismiss buttons; no distinction between virtual coins and real money."
+- id: GPL-ENFORCEMENT-PROCESS
+  title: "Enforcement Process (rejection, removal, suspension, limited visibility/regions, restricted account, termination, dormant accounts)"
+  label: official_requirement
+  obligation: informational
+  topics: [enforcement, suspension, termination, appeals]
+  requires: "Google considers metadata, in-app experience, account history, third-party code, reports and own-initiative reviews using human and automated evaluation. Notices may not list every violation; developers must check all apps."
+  enforcement_risk: "Rejection (no account standing impact; prior version stays live). Removal (app hidden; IAP disabled; multiple removals may lead to suspension). Suspension (strike; APK/bundle unusable; multiple strikes can terminate individual and related accounts). Limited Visibility; Limited Regions; Restricted Developer Account (all apps removed; Console access remains). Account Termination (all apps removed; related accounts suspended; new accounts terminated; fee not refunded). Dormant accounts closed after notice; fee forfeited; new account allowed later."
+- id: GPL-MANAGING-AND-REPORTING-POLICY-VIOLATIONS
+  title: "Appealing an Enforcement Action"
+  label: official_requirement
+  obligation: informational
+  topics: [appeals]
+  requires: "Follow appeal instructions in the enforcement email or Help Center appeal link; Google reinstates if an error was made."
+- id: GPL-PLAY-CONSOLE-REQUIREMENTS-2
+  title: "Play Console Requirements (account type, verification, pre-submission)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [account, verification, organization-account, health, demo-account]
+  requires: "Organization account required for financial products, health apps (e.g. medical and human-subjects research apps), VpnService apps, government apps. Provide accurate legal name/address, D-U-N-S (organizations, consistent with Dun & Bradstreet), contact and public developer contact info, payments profile. Before submission - accurate metadata; privacy policy and Data safety; active demo account/login info and review resources; register package names for Android developer verification."
+  examples: "A health-management app with medical functionality should be published from an organization account (e.g. an LLC with D-U-N-S) (Interpretation - Google lists \"Medical apps\"; whether a wellness/self-tracking app is \"Medical\" depends on Health app categories)."
+  agent_verification:
+    - "Manual - confirm account type in Play Console"
+    - "repository can store a declaration checklist."
+- id: GPL-ACCOUNT-TRANSFERS
+  title: "Account Transfers"
+  label: official_requirement
+  obligation: conditional
+  topics: [account]
+  requires: "Use the official account owner transfer process; app-only transfers via app transfer process."
+  prohibited: "Buying, leasing or selling accounts through unofficial means."
+- id: GPL-MISREPRESENTATION
+  title: "Misrepresentation"
+  label: official_requirement
+  obligation: mandatory
+  topics: [identity, deception]
+  prohibited: "Impersonation; concealing ownership/primary purpose; concealing country of origin while targeting another country; coordinated identity misrepresentation on political/social topics."
+- id: GPL-IMPERSONATION
+  title: "Impersonation"
+  label: official_requirement
+  obligation: mandatory
+  topics: [identity, ip, religious]
+  prohibited: "Implying relationship with another company/entity/app; national emblems implying government affiliation; copying logos; \"Official\" claims without rights; violating Android Brand Guidelines."
+  examples: "Using a temple's or religious organization's logo and \"Official\" in the title without authorization (Interpretation)."
+- id: GPL-INTELLECTUAL-PROPERTY
+  title: "Intellectual Property"
+  label: official_requirement
+  obligation: mandatory
+  topics: [ip, religious, wallpapers, audio]
+  prohibited: "Copyright, trademark infringement; encouraging infringement; counterfeit goods. Examples include album/game/book cover art, marketing images, sports logos, public-figure photos, soundboards from copyrighted audio, full reproductions/translations of books not in public domain."
+  requires: "Developers may need to provide evidence of rights; contact Google Play in advance with permission documentation to avoid IP rejection."
+  examples: "Wallpaper apps using deity art scraped from the web, or bundling copyrighted translations/recitations without licence (Interpretation)."
+- id: GPL-POLICY-COVERAGE
+  title: "Policy Coverage"
+  label: official_requirement
+  obligation: mandatory
+  topics: [scope, ugc, ads]
+  requires: "Policies apply to displayed/linked content, ads, UGC, developer name and developer website landing page. Apps may not let users install other apps; apps giving access to third-party experiences must ensure policy compliance. DDA definitions apply. Google considers harmful-behaviour patterns and abuse risk (complaints, news, history, feedback, popular brands)."
+- id: GPL-REAL-MONEY-GAMBLING-GAMES-AND-CONTESTS
+  title: "Real-Money Gambling, Games, and Contests"
+  label: official_requirement
+  obligation: conditional
+  topics: [games, gambling, loyalty]
+  requires: "Section covers licensed gambling apps (eligible countries, application required), other real-money games/contests/tournaments, pilots, gamified loyalty programs, ads for gambling, Daily Fantasy Sports."
+  uncertainty: "Extracted (about 10k characters) but not analyzed in detail in this pass; consult source before building any prize/contest mechanic."
+

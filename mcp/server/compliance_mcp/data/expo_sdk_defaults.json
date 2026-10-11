@@ -1,0 +1,37 @@
+{
+ "source": "https://docs.expo.dev/versions/latest/ (Markdown: /versions/latest.md), section 'Support for Android and iOS versions'",
+ "publisher": "Expo (vendor documentation, not store policy)",
+ "fetched": "2026-10-10T22:42:22+06:00",
+ "sha256": "f188706d848c7a60f0bd7b820ac9247fb8f43b392ccddabce37489d6c43a1f8f",
+ "by_sdk_major": {
+  "57": {
+   "android_min": "7+",
+   "compileSdkVersion": 36,
+   "targetSdkVersion": 36,
+   "ios_min": "16.4",
+   "xcode_min": "26.4"
+  },
+  "56": {
+   "android_min": "7+",
+   "compileSdkVersion": 36,
+   "targetSdkVersion": 36,
+   "ios_min": "16.4",
+   "xcode_min": "26.4"
+  },
+  "55": {
+   "android_min": "7+",
+   "compileSdkVersion": 36,
+   "targetSdkVersion": 36,
+   "ios_min": "15.1",
+   "xcode_min": "26.2"
+  },
+  "54": {
+   "android_min": "7+",
+   "compileSdkVersion": 36,
+   "targetSdkVersion": 36,
+   "ios_min": "15.1",
+   "xcode_min": "16.1"
+  }
+ },
+ "use": "derive default native values for Expo managed apps WITHOUT overriding config plugins; never a release-artifact fact"
+}

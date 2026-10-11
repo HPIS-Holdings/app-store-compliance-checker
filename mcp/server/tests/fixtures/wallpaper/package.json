@@ -1,0 +1,9 @@
+{
+ "name": "wallpaper-studio",
+ "dependencies": {
+  "expo": "~54.0.0",
+  "react-native": "0.81.4",
+  "expo-build-properties": "~1.0.0",
+  "expo-media-library": "~17.0.0"
+ }
+}

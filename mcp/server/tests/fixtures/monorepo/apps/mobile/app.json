@@ -1,0 +1,29 @@
+{
+ "expo": {
+  "name": "Shop List",
+  "slug": "shop-list",
+  "version": "1.0.0",
+  "ios": {
+   "bundleIdentifier": "com.example.shoplist",
+   "config": {
+    "usesNonExemptEncryption": false
+   }
+  },
+  "android": {
+   "package": "com.example.shoplist"
+  },
+  "plugins": [
+   [
+    "expo-build-properties",
+    {
+     "android": {
+      "targetSdkVersion": 36
+     },
+     "ios": {
+      "deploymentTarget": "15.1"
+     }
+    }
+   ]
+  ]
+ }
+}

@@ -1,0 +1,2331 @@
+{
+  "document": "App Store Review Guidelines",
+  "publisher": "Apple Inc.",
+  "url": "https://developer.apple.com/app-store/review/guidelines/",
+  "last_updated_on_page": "June 8, 2026",
+  "parsed_at": "2026-10-10T14:37:39+00:00",
+  "section_count": 145,
+  "licence_note": "Copyright Apple Inc. Excerpts are short quotations for reference; read the source for full text.",
+  "sections": [
+    {
+      "rule_id": "APL-INTRO",
+      "publisher_id": "(unnumbered) Introduction",
+      "title": "Introduction",
+      "level": 0,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#introduction",
+      "sha256": "fb31e162ee93fa53dfe2fdc0ae4a7b57aec077fd9cf0b7c43c06764c100de0c7",
+      "chars": 3990,
+      "excerpt": "Introduction The guiding principle of the App Store is simple—we want to provide a safe experience for users to get apps and a great opportunity for all developers to be successful. We do this by …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-BEFORE-SUBMIT",
+      "publisher_id": "(unnumbered) Before You Submit",
+      "title": "Before You Submit",
+      "level": 0,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#before-you-submit",
+      "sha256": "0aeb25ab0799e6c26cd7fc2e96f51bab65228a606d2abeadacbf937ebe9fbf46",
+      "chars": 1718,
+      "excerpt": "Before You Submit To help your app approval go as smoothly as possible, review the common missteps listed below that can slow down the review process or trigger a rejection. This doesn’t replace the guidelines …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1",
+      "publisher_id": "1",
+      "title": "Safety",
+      "level": 1,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1",
+      "sha256": "3062409a54a2003a1f27d9f067f3583e22378798c15f9dea0566184da2afcd1c",
+      "chars": 470,
+      "excerpt": "Safety When people install an app from the App Store, they want to feel confident that it’s safe to do so—that the app doesn’t contain upsetting or offensive content, won’t damage their device, and isn’t …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.1",
+      "publisher_id": "1.1",
+      "title": "Objectionable Content",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.1",
+      "sha256": "25ceb0442c1ae9a077440a65090bdd1ca2db2b3292b328a54a1d5364a1a68da6",
+      "chars": 206,
+      "excerpt": "Objectionable Content Apps should not include content that is offensive, insensitive, upsetting, intended to disgust, in exceptionally poor taste, or just plain creepy. Examples of such content include:",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.1.1",
+      "publisher_id": "1.1.1",
+      "title": "Defamatory, discriminatory, or mean-spirited content, including references or commentary about …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.1.1",
+      "sha256": "8cf0264a5c27c81a399209dcb54ff1bf35d0b1dba72522eeed90b77b0f0ede62",
+      "chars": 385,
+      "excerpt": "Defamatory, discriminatory, or mean-spirited content, including references or commentary about religion, race, sexual orientation, gender, national/ethnic origin, or other targeted groups, particularly if the app is likely to humiliate, intimidate, or harm a targeted individual …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.1.2",
+      "publisher_id": "1.1.2",
+      "title": "Realistic portrayals of people or animals being killed, maimed, tortured, …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.1.2",
+      "sha256": "52b8cbc6d8c5a7a12d28bd4e8b88b3ecefaeb18b0138817528fefaad60b4fc3f",
+      "chars": 269,
+      "excerpt": "Realistic portrayals of people or animals being killed, maimed, tortured, or abused, or content that encourages violence. “Enemies” within the context of a game cannot solely target a specific race, culture, real government, corporation, or …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.1.3",
+      "publisher_id": "1.1.3",
+      "title": "Depictions that encourage illegal or reckless use of weapons and …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.1.3",
+      "sha256": "866e4e9f5c44388313fa93ad4b8162afefabc78eab65e8ea28f4fda8714f7126",
+      "chars": 143,
+      "excerpt": "Depictions that encourage illegal or reckless use of weapons and dangerous objects, or facilitate the purchase of firearms or ammunition.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.1.4",
+      "publisher_id": "1.1.4",
+      "title": "Overtly sexual or pornographic material, defined as “explicit descriptions or …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.1.4",
+      "sha256": "a200feeafba3c2ccb83f5109ad2f2486a049f3fa4647d1b09a867025c452aa78",
+      "chars": 348,
+      "excerpt": "Overtly sexual or pornographic material, defined as “explicit descriptions or displays of sexual organs or activities intended to stimulate erotic rather than aesthetic or emotional feelings.” This includes “hookup” apps and other apps that may …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.1.5",
+      "publisher_id": "1.1.5",
+      "title": "Inflammatory religious commentary or inaccurate or misleading quotations of religious texts.",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.1.5",
+      "sha256": "9fd80f91e4120cff40a9a3c5e57876a0298495dbe60fff1de5860ddd005dd7fa",
+      "chars": 98,
+      "excerpt": "Inflammatory religious commentary or inaccurate or misleading quotations of religious texts.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.1.6",
+      "publisher_id": "1.1.6",
+      "title": "False information and features, including inaccurate device data or trick/joke …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.1.6",
+      "sha256": "9713edcbbf36fd876f2570fd291237768614c63da45d79eb56795ad7afc380c8",
+      "chars": 302,
+      "excerpt": "False information and features, including inaccurate device data or trick/joke functionality, such as fake location trackers. Stating that the app is “for entertainment purposes” won’t overcome this guideline. Apps that enable anonymous or prank phone …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.1.7",
+      "publisher_id": "1.1.7",
+      "title": "Harmful concepts which capitalize or seek to profit on recent …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.1.7",
+      "sha256": "0cb97b3508a00a37a43790bd091c3da890fc82e9e080e5e37001ece8bcd4ba24",
+      "chars": 147,
+      "excerpt": "Harmful concepts which capitalize or seek to profit on recent or current events, such as violent conflicts, terrorist attacks, and epidemics.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.2",
+      "publisher_id": "1.2",
+      "title": "User-Generated Content",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.2",
+      "sha256": "b6b7e30b51f77b06c6aaabcdb7c3889314598c91c86dea21fa24f9c96f1ca46e",
+      "chars": 1594,
+      "excerpt": "User-Generated Content Apps with user-generated content present particular challenges, ranging from intellectual property infringement to anonymous bullying. To prevent abuse, apps with user-generated content or social networking services must include: A method for filtering objectionable …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.2.1",
+      "publisher_id": "1.2.1",
+      "title": "Creator Content",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.2.1",
+      "sha256": "246b713478a7e608fe32ed18405c81e95bf4ad5bff4d3490ef9c171e3a6e5ee5",
+      "chars": 1288,
+      "excerpt": "Creator Content Apps which feature content from a specific community of users called “creators” are a great opportunity if properly moderated. These apps present a singular, unified experience for customers to interact with various kinds …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 1,
+        "should": 1,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-1.3",
+      "publisher_id": "1.3",
+      "title": "Kids Category",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.3",
+      "sha256": "497f634f6abfc06c0873741dfd95e47ba7cecad6859f6fa71bebbb6316175100",
+      "chars": 1752,
+      "excerpt": "Kids Category The Kids Category is a great way for people to easily find apps that are designed for children. If you want to participate in the Kids Category, you should focus on creating a …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 2,
+        "should": 2,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.4",
+      "publisher_id": "1.4",
+      "title": "Physical Harm",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.4",
+      "sha256": "2d74f38c03d7aae2e14f2ad0404faf910e343bcd548937aaa82dae441a7e1b23",
+      "chars": 103,
+      "excerpt": "Physical Harm If your app behaves in a way that risks physical harm, we may reject it. For example:",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.4.1",
+      "publisher_id": "1.4.1",
+      "title": "Medical apps that could provide inaccurate data or information, or …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.4.1",
+      "sha256": "e57ff25ed73098e9f6d8d3d8d91aa0dc2f359c2802e7af721964027f060a1451",
+      "chars": 780,
+      "excerpt": "Medical apps that could provide inaccurate data or information, or that could be used for diagnosing or treating patients may be reviewed with greater scrutiny. Apps must clearly disclose data and methodology to support accuracy …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 2,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.4.2",
+      "publisher_id": "1.4.2",
+      "title": "Drug dosage calculators must come from the drug manufacturer, a …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.4.2",
+      "sha256": "a7c060a091b1f9d68c68f4c41dd354e92b62a1a831c529dfb618fa9436b93706",
+      "chars": 345,
+      "excerpt": "Drug dosage calculators must come from the drug manufacturer, a hospital, university, health insurance company, pharmacy or other approved entity, or receive approval by the FDA or one of its international counterparts. Given the potential …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.4.3",
+      "publisher_id": "1.4.3",
+      "title": "Apps that encourage consumption of tobacco and vape products, illegal …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.4.3",
+      "sha256": "ecd1533d291762aa8136baa92a74f0f9862e2deacc1aa3eb2ad11775b2b578ef",
+      "chars": 375,
+      "excerpt": "Apps that encourage consumption of tobacco and vape products, illegal drugs, or excessive amounts of alcohol are not permitted. Apps that encourage minors to consume any of these substances will be rejected. Facilitating the sale …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 2,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.4.4",
+      "publisher_id": "1.4.4",
+      "title": "Apps may only display DUI checkpoints that are published by …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.4.4",
+      "sha256": "f7f38687faa319f2ac430bf0b55363a1a8676748cc6aa7804daa8eb5822cc53f",
+      "chars": 184,
+      "excerpt": "Apps may only display DUI checkpoints that are published by law enforcement agencies, and should never encourage drunk driving or other reckless behavior such as excessive speed.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.4.5",
+      "publisher_id": "1.4.5",
+      "title": "Apps should not urge customers to participate in activities (like …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.4.5",
+      "sha256": "175161e9d29ba190a0515dc0260e3f3baa123b66a1c36e2f5cd1fbeda9947636",
+      "chars": 175,
+      "excerpt": "Apps should not urge customers to participate in activities (like bets, challenges, etc.) or use their devices in a way that risks physical harm to themselves or others.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.5",
+      "publisher_id": "1.5",
+      "title": "Developer Information",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.5",
+      "sha256": "7da2b40e4bfceb3059251c620b043d6538c0e732aae3d125bd0076eb55085424",
+      "chars": 574,
+      "excerpt": "Developer Information People need to know how to reach you with questions and support issues. Make sure your app and its Support URL include an easy way to contact you; this is particularly important for …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.6",
+      "publisher_id": "1.6",
+      "title": "Data Security",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.6",
+      "sha256": "606cc91d2d274fb359def963421a8ec6b33768e800e8af7d580e4202c87323b5",
+      "chars": 319,
+      "excerpt": "Data Security Apps should implement appropriate security measures to ensure proper handling of user information collected pursuant to the Apple Developer Program License Agreement and these Guidelines (see Guideline 5.1 for more information) and prevent …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-1.7",
+      "publisher_id": "1.7",
+      "title": "Reporting Criminal Activity",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#1.7",
+      "sha256": "06f022b9694ed25c3e8e9ec9dda350e871d543c3b491fe7e20098ed38ad7ba18",
+      "chars": 194,
+      "excerpt": "Reporting Criminal Activity Apps for reporting alleged criminal activity must involve local law enforcement, and can only be offered in countries or regions where such involvement is active.",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2",
+      "publisher_id": "2",
+      "title": "Performance",
+      "level": 1,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2",
+      "sha256": "ef1fae554c0895d72ac8467e23b7f8a3a03e09937cf8e09e1b85eefb273d6c0f",
+      "chars": 14,
+      "excerpt": "Performance",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.1",
+      "publisher_id": "2.1",
+      "title": "App Completeness",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.1",
+      "sha256": "db6f4e6d42a8e2d68ae60c189bf0e4e5a63521f35ad538369871567a2006d55f",
+      "chars": 1076,
+      "excerpt": "App Completeness (a) Submissions to App Review, including apps you make available for pre-order, should be final versions with all necessary metadata and fully functional URLs included; placeholder text, empty websites, and other temporary content …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 2,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.2",
+      "publisher_id": "2.2",
+      "title": "Beta Testing",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.2",
+      "sha256": "1f7cc9bdae5cde27e09094d04e21e17d1096e9ca62ca923558611bea5c846574",
+      "chars": 612,
+      "excerpt": "Beta Testing Demos, betas, and trial versions of your app don’t belong on the App Store – use TestFlight instead. Any app submitted for beta distribution via TestFlight should be intended for public distribution and …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 3,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.3",
+      "publisher_id": "2.3",
+      "title": "Accurate Metadata",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.3",
+      "sha256": "7b62c0815fa5e14d14cd111f8cce041edd540a104ee2644c16da58fd6de817e6",
+      "chars": 316,
+      "excerpt": "Accurate Metadata Customers should know what they’re getting when they download or buy your app, so make sure all your app metadata, including privacy information, your app description, screenshots, and previews accurately reflect the app’s …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.3.1",
+      "publisher_id": "2.3.1",
+      "title": "",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.3.1",
+      "sha256": "70f46b1861e6ba38cd5c100e886aeb3829a7ff20591cb508a747c38651619ab6",
+      "chars": 1010,
+      "excerpt": "(a) Don’t include any hidden, dormant, or undocumented features in your app; your app’s functionality should be clear to end users and App Review. All new features, functionality, and product changes must be described with …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.3.2",
+      "publisher_id": "2.3.2",
+      "title": "If your app includes in-app purchases, make sure your app …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.3.2",
+      "sha256": "1be96a36f1421632d8236fc208eb522962a096ecda921aecd654a9cf9fe19fc3",
+      "chars": 602,
+      "excerpt": "If your app includes in-app purchases, make sure your app description, screenshots, and previews clearly indicate whether any featured items, levels, subscriptions, etc. require additional purchases. If you decide to promote in-app purchases on the …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-2.3.3",
+      "publisher_id": "2.3.3",
+      "title": "Screenshots should show the app in use, and not merely …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.3.3",
+      "sha256": "17e9d10506c68fc0533d011f9766e48105cbee1e3402d957da2161a2ebd42fd4",
+      "chars": 301,
+      "excerpt": "Screenshots should show the app in use, and not merely the title art, login page, or splash screen. They may also include text and image overlays (e.g. to demonstrate input mechanisms, such as an animated …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.3.4",
+      "publisher_id": "2.3.4",
+      "title": "Previews are a great way for customers to see what …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.3.4",
+      "sha256": "81f109f72f195afda6c9b14e322ece3ec653619101c2eaa1269b22ea130f955f",
+      "chars": 423,
+      "excerpt": "Previews are a great way for customers to see what your app looks like and what it does. To ensure people understand what they’ll be getting with your app, previews may only use video screen …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.3.5",
+      "publisher_id": "2.3.5",
+      "title": "Select the most appropriate category for your app, and check …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.3.5",
+      "sha256": "1222a78315bf164fb96b9cd1a50485f32766aec4d2e04afc0ac638b661e30146",
+      "chars": 183,
+      "excerpt": "Select the most appropriate category for your app, and check out the App Store Category Definitions if you need help. If you’re way off base, we may change the category for you.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.3.6",
+      "publisher_id": "2.3.6",
+      "title": "Answer the age rating questions in App Store Connect honestly …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.3.6",
+      "sha256": "1f5a4553c5863124823f639a49bc7ca42dd79ff2369ac523ee78d99e3ca76b70",
+      "chars": 479,
+      "excerpt": "Answer the age rating questions in App Store Connect honestly so that your app aligns properly with parental controls. If your app is mis-rated, customers might be surprised by what they get, or it could …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-2.3.7",
+      "publisher_id": "2.3.7",
+      "title": "Choose a unique app name, assign keywords that accurately describe …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.3.7",
+      "sha256": "3463380f27a393f8c5d76ff995290430d7eb193e861866013208688fa1d756fc",
+      "chars": 771,
+      "excerpt": "Choose a unique app name, assign keywords that accurately describe your app, and don’t try to pack any of your metadata with trademarked terms, popular app names, pricing information, or other irrelevant phrases just to …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 0,
+        "should": 2,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.3.8",
+      "publisher_id": "2.3.8",
+      "title": "Metadata should be appropriate for all audiences, so make sure …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.3.8",
+      "sha256": "d8bffc2c6d3bd0c10c904309d10ccec1f3c383f9c4973c890e0a90a43006299e",
+      "chars": 616,
+      "excerpt": "Metadata should be appropriate for all audiences, so make sure your app and in-app purchase icons, screenshots, and previews adhere to a 4+ age rating even if your app is rated higher. For example, if …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.3.9",
+      "publisher_id": "2.3.9",
+      "title": "You are responsible for securing the rights to use all …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.3.9",
+      "sha256": "a127fb19d4ec1aeb87893d0152f72b02401cc2bed36f47b4c0dda1126340bdd9",
+      "chars": 205,
+      "excerpt": "You are responsible for securing the rights to use all materials in your app icons, screenshots, and previews, and you should display fictional account information instead of data from a real person.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.3.10",
+      "publisher_id": "2.3.10",
+      "title": "Make sure your app is focused on the experience of …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.3.10",
+      "sha256": "4775cbe069958985ee5ea6e0c9d267924244ca89796c1d938c0cab1b4916152d",
+      "chars": 393,
+      "excerpt": "Make sure your app is focused on the experience of the Apple platforms it supports, and don’t include names, icons, or imagery of other mobile platforms or alternative app marketplaces in your app or metadata, …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.3.11",
+      "publisher_id": "2.3.11",
+      "title": "Apps you submit for pre-order on the App Store must …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.3.11",
+      "sha256": "4a37ebe52a20f6a18dfed21ff866fe32dc622633c3d597c73274fa07b2c1550f",
+      "chars": 346,
+      "excerpt": "Apps you submit for pre-order on the App Store must be complete and deliverable as submitted. Ensure that the app you ultimately release is not materially different from what you advertise while the app is …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.3.12",
+      "publisher_id": "2.3.12",
+      "title": "Apps must clearly describe new features and product changes in …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.3.12",
+      "sha256": "22ca194919f23b6e182f6443d69723af7065db79587fc1e94e89c0a3ce0a2a0c",
+      "chars": 252,
+      "excerpt": "Apps must clearly describe new features and product changes in their “What’s New” text. Simple bug fixes, security updates, and performance improvements may rely on a generic description, but more significant changes must be listed …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.3.13",
+      "publisher_id": "2.3.13",
+      "title": "In-app events are timely events that happen within your app. …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.3.13",
+      "sha256": "84cf7a219f0fe69437992136f701618469f5487123bb6b5c74b58ee4bb433025",
+      "chars": 665,
+      "excerpt": "In-app events are timely events that happen within your app. To feature your event on the App Store, it must fall within an event type provided in App Store Connect. All event metadata must be …",
+      "normative_language": {
+        "must": 4,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.4",
+      "publisher_id": "2.4",
+      "title": "Hardware Compatibility",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.4",
+      "sha256": "6f9b0f271e8e380aa1ae349e531194f0c239e993cc345c2fa1bd061c0f1670f1",
+      "chars": 26,
+      "excerpt": "Hardware Compatibility",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.4.1",
+      "publisher_id": "2.4.1",
+      "title": "To ensure people get the most out of your app, …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.4.1",
+      "sha256": "9ca2b64809c50f2609088c02981f1ff71a27187087d670d359ec458e4f8ae277",
+      "chars": 196,
+      "excerpt": "To ensure people get the most out of your app, iPhone apps should run on iPad whenever possible. We encourage you to consider building apps so customers can use them on all of their devices.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.4.2",
+      "publisher_id": "2.4.2",
+      "title": "Design your app to use power efficiently and be used …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.4.2",
+      "sha256": "1255a3afcd3041fcaadf355e19a31bdbf1d60a92c62d4fa9b376332ee9a258de",
+      "chars": 524,
+      "excerpt": "Design your app to use power efficiently and be used in a way that does not risk damage to the device. Apps should not rapidly drain battery, generate excessive heat, or put unnecessary strain on …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 2,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.4.3",
+      "publisher_id": "2.4.3",
+      "title": "People should be able to use your Apple TV app …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.4.3",
+      "sha256": "ac5d47c0c0bef911a29d62b24bb5e3175d55d5be70ca13c6d618a9bdae0b787f",
+      "chars": 375,
+      "excerpt": "People should be able to use your Apple TV app without the need for hardware inputs beyond the Siri remote or third-party game controllers, but feel free to provide enhanced functionality when other peripherals are …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-2.4.4",
+      "publisher_id": "2.4.4",
+      "title": "Apps should never suggest or require a restart of the …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.4.4",
+      "sha256": "46302452b3c3f2522c0def8fd188e2d84144e3e0c8fae27b25797a60bfc90eee",
+      "chars": 236,
+      "excerpt": "Apps should never suggest or require a restart of the device or modifications to system settings unrelated to the core functionality of the app. For example, don’t encourage users to turn off Wi-Fi, disable security …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-2.4.5",
+      "publisher_id": "2.4.5",
+      "title": "Apps distributed via the Mac App Store have some additional …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.4.5",
+      "sha256": "6d9d6b6d878ff7bd7ab6dc3d25de880d6a1a708ad173030b24de4e2318b761ca",
+      "chars": 1561,
+      "excerpt": "Apps distributed via the Mac App Store have some additional requirements to keep in mind: (i) They must be appropriately sandboxed, and follow macOS File System Documentation. They should also only use the appropriate macOS …",
+      "normative_language": {
+        "must": 5,
+        "must_not": 7,
+        "should": 3,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-2.5",
+      "publisher_id": "2.5",
+      "title": "Software Requirements",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5",
+      "sha256": "c338fd94b71f9ef16a2ec49f98103ab6c424ed21788db9821e7c51dbbb285311",
+      "chars": 25,
+      "excerpt": "Software Requirements",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.5.1",
+      "publisher_id": "2.5.1",
+      "title": "Apps may only use public APIs and must run on …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5.1",
+      "sha256": "8487ddcc49b93fcb80d31f0fbf681cc746cd50cee25372d46b00619808bb03d9",
+      "chars": 568,
+      "excerpt": "Apps may only use public APIs and must run on the currently shipping OS. Learn more about public APIs. Keep your apps up-to-date and make sure you phase out any deprecated features, frameworks or technologies …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 3,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.5.2",
+      "publisher_id": "2.5.2",
+      "title": "Apps should be self-contained in their bundles, and may not …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5.2",
+      "sha256": "89e6cd232bee07e9867e27c9f83f274ff015790d6f22b02d5d6bb22857bd48e5",
+      "chars": 549,
+      "excerpt": "Apps should be self-contained in their bundles, and may not read or write data outside the designated container area, nor may they download, install, or execute code which introduces or changes features or functionality of …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 1,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.5.3",
+      "publisher_id": "2.5.3",
+      "title": "Apps that transmit viruses, files, computer code, or programs that …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5.3",
+      "sha256": "85fb11930521d6031638ac282e435fd417c7687d1d74e7a15f8fcdcb56fc00b3",
+      "chars": 325,
+      "excerpt": "Apps that transmit viruses, files, computer code, or programs that may harm or disrupt the normal operation of the operating system and/or hardware features, including Push Notifications and Game Center, will be rejected. Egregious violations …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.5.4",
+      "publisher_id": "2.5.4",
+      "title": "Multitasking apps may only use background services for their intended …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5.4",
+      "sha256": "64e6734d3e95f90ac5dbb132d1d4b7ef6224058176dc268f450bad9ec48ec22c",
+      "chars": 160,
+      "excerpt": "Multitasking apps may only use background services for their intended purposes: VoIP, audio playback, location, task completion, local notifications, etc.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.5.5",
+      "publisher_id": "2.5.5",
+      "title": "Apps must be fully functional on IPv6-only networks.",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5.5",
+      "sha256": "0da30363e7301a2b97d3af5500a3914ac11a042a7d02c146fb5b34cacdad2426",
+      "chars": 58,
+      "excerpt": "Apps must be fully functional on IPv6-only networks.",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.5.6",
+      "publisher_id": "2.5.6",
+      "title": "Apps that browse the web must use the appropriate WebKit …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5.6",
+      "sha256": "f6fe903bcea949a5d3e234fcee0f84a8e6bd66bdfc561daf7e39a00b735bf45f",
+      "chars": 240,
+      "excerpt": "Apps that browse the web must use the appropriate WebKit framework and WebKit JavaScript. You may apply for an entitlement to use an alternative web browser engine in your app. Learn more about these entitlements …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.5.7",
+      "publisher_id": "2.5.7",
+      "title": "Intentionally omitted.",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5.7",
+      "sha256": "3b7e3ceb09c1957b8af453f15920f7a5c40207b5a1483816b5448d92c5769e51",
+      "chars": 28,
+      "excerpt": "Intentionally omitted.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.5.8",
+      "publisher_id": "2.5.8",
+      "title": "Apps that create alternate desktop/home screen environments will be rejected.",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5.8",
+      "sha256": "ddc70d424fd37de7886e0c57f3d1d36d346ca14a14467265ab4742e44130cdef",
+      "chars": 83,
+      "excerpt": "Apps that create alternate desktop/home screen environments will be rejected.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.5.9",
+      "publisher_id": "2.5.9",
+      "title": "Apps that alter or disable the functions of standard switches, …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5.9",
+      "sha256": "de0044129c9cc40b966aea4f879c75e4511b131eea5ba61cbaa7a3f0990f807d",
+      "chars": 316,
+      "excerpt": "Apps that alter or disable the functions of standard switches, such as the Volume Up/Down and Ring/Silent switches, or other native user interface elements or behaviors will be rejected. For example, apps should not block …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.5.10",
+      "publisher_id": "2.5.10",
+      "title": "Intentionally omitted.",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5.10",
+      "sha256": "4cb34381318c66abc5595daf5e4c734034d1713dec2417a110159bc6b00db522",
+      "chars": 29,
+      "excerpt": "Intentionally omitted.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.5.11",
+      "publisher_id": "2.5.11",
+      "title": "SiriKit and Shortcuts",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5.11",
+      "sha256": "893023598559c3953919e71fd29e7adc2742b6edf64f2193839bf63bed621b97",
+      "chars": 950,
+      "excerpt": "SiriKit and Shortcuts (i) Apps integrating SiriKit and Shortcuts should only sign up for intents they can handle without the support of an additional app and that users would expect from the stated functionality. For …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 3,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-2.5.12",
+      "publisher_id": "2.5.12",
+      "title": "Apps using CallKit or including an SMS Fraud Extension should …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5.12",
+      "sha256": "aed472020f3312d5f0af720e9b7c5da02aba69127676b071070a79e63f39a83e",
+      "chars": 554,
+      "excerpt": "Apps using CallKit or including an SMS Fraud Extension should only block phone numbers that are confirmed spam. Apps that include call-, SMS-, and MMS- blocking functionality or spam identification must clearly identify these features …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 2,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.5.13",
+      "publisher_id": "2.5.13",
+      "title": "Apps using facial recognition for account authentication must use LocalAuthentication …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5.13",
+      "sha256": "e0f9779bbb0f89c4e71ce122793b41d461d4c0017c1f4c7967a95428a993066b",
+      "chars": 241,
+      "excerpt": "Apps using facial recognition for account authentication must use LocalAuthentication (and not ARKit or other facial recognition technology) where possible, and must use an alternate authentication method for users under 13 years old.",
+      "normative_language": {
+        "must": 2,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.5.14",
+      "publisher_id": "2.5.14",
+      "title": "Apps must request explicit user consent and provide a clear …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5.14",
+      "sha256": "c33b31566468ce7ca98effd5ff738b3936a9752e7bbd62c1ff7807b0ba514089",
+      "chars": 268,
+      "excerpt": "Apps must request explicit user consent and provide a clear visual and/or audible indication when recording, logging, or otherwise making a record of user activity. This includes any use of the device camera, microphone, screen …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.5.15",
+      "publisher_id": "2.5.15",
+      "title": "Apps that enable users to view and select files should …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5.15",
+      "sha256": "ce118f7481c61953e803511882d9cf272937a398809d4a6e1e1ac5a27fcb41ae",
+      "chars": 127,
+      "excerpt": "Apps that enable users to view and select files should include items from the Files app and the user’s iCloud documents.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.5.16",
+      "publisher_id": "2.5.16",
+      "title": "Widgets, extensions, and notifications should be related to the content …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5.16",
+      "sha256": "e143f52b7064893b19687bd2512ace2fc8d8364e3f2889182318cc5d87a25035",
+      "chars": 246,
+      "excerpt": "Widgets, extensions, and notifications should be related to the content and functionality of your app. (a) Additionally, all App Clip features and functionality must be included in the main app binary. App Clips cannot contain …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 1,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.5.17",
+      "publisher_id": "2.5.17",
+      "title": "Apps that support Matter must use Apple’s support framework for …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5.17",
+      "sha256": "b9f6e09ad7d12078693bec074979d4e0e9ff34900e1f5ac7f2e681d5fcf0a44c",
+      "chars": 328,
+      "excerpt": "Apps that support Matter must use Apple’s support framework for Matter to initiate pairing. In addition, if you choose to use any Matter software component in your app other than the Matter SDK provided by …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-2.5.18",
+      "publisher_id": "2.5.18",
+      "title": "Display advertising should be limited to your main app binary, …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#2.5.18",
+      "sha256": "484e6ac85b6462d60613351a57a4b82f9f57fcf1e6dbbbcf2060aab0078c1cb0",
+      "chars": 1028,
+      "excerpt": "Display advertising should be limited to your main app binary, and should not be included in extensions, App Clips, widgets, notifications, keyboards, watchOS apps, etc. Ads displayed in an app must be appropriate for the …",
+      "normative_language": {
+        "must": 5,
+        "must_not": 2,
+        "should": 2,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-3",
+      "publisher_id": "3",
+      "title": "Business",
+      "level": 1,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3",
+      "sha256": "1d00b69a2e0a115104473e9b0eefcf07b1c9c60e095d2cc07b2c9cb3ef276e48",
+      "chars": 837,
+      "excerpt": "Business There are many ways to monetize your app on the App Store. If your business model isn’t obvious, make sure to explain in its metadata and App Review notes. If we can’t understand how …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-3.1",
+      "publisher_id": "3.1",
+      "title": "Payments",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.1",
+      "sha256": "304efa7bf057a5214f8b64baa0d5056f8574e71dded359b4c4cad625cdef2681",
+      "chars": 12,
+      "excerpt": "Payments",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-3.1.1",
+      "publisher_id": "3.1.1",
+      "title": "In-App Purchase",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.1.1",
+      "sha256": "55111ee24f4a8b286cecf92cb75279b953198239b0b4326c80cc8bb7ff6b79cd",
+      "chars": 2591,
+      "excerpt": "In-App Purchase: If you want to unlock features or functionality within your app, (by way of example: subscriptions, in-game currencies, game levels, access to premium content, or unlocking a full version), you must use in-app …",
+      "normative_language": {
+        "must": 3,
+        "must_not": 4,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-3.1.1a",
+      "publisher_id": "3.1.1a",
+      "title": "3.1.1(a) Link to Other Purchase Methods: Developers may apply for …",
+      "level": 4,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.1.1a",
+      "sha256": "dc4ba7b3416f208c5f0b95ed90e34f8dec1c2b359abcc1acde6c96d636121c39",
+      "chars": 2552,
+      "excerpt": "3.1.1(a) Link to Other Purchase Methods: Developers may apply for entitlements to provide a link in their app to a website the developer owns or maintains responsibility for in order to purchase digital content or …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 3,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-3.1.2",
+      "publisher_id": "3.1.2",
+      "title": "Subscriptions: Apps may offer auto-renewable in-app purchase subscriptions, regardless of …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.1.2",
+      "sha256": "c5bc4b3a4b358851b759645483941ba530354af637643e491c5de101013305e6",
+      "chars": 225,
+      "excerpt": "Subscriptions: Apps may offer auto-renewable in-app purchase subscriptions, regardless of category on the App Store. When incorporating auto-renewable subscriptions into your app, be sure to follow the guidelines below.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-3.1.2a",
+      "publisher_id": "3.1.2a",
+      "title": "3.1.2(a) Permissible uses: If you offer an auto-renewable subscription, you …",
+      "level": 4,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.1.2a",
+      "sha256": "6a32ae6f6dd7f137b30fcd21f1662e4c3a83d6be99af4fc76e7cfea3052126bd",
+      "chars": 3038,
+      "excerpt": "3.1.2(a) Permissible uses: If you offer an auto-renewable subscription, you must provide ongoing value to the customer, and the subscription period must last at least seven days and be available across all of the user’s …",
+      "normative_language": {
+        "must": 6,
+        "must_not": 1,
+        "should": 3,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-3.1.2b",
+      "publisher_id": "3.1.2b",
+      "title": "3.1.2(b) Upgrades and Downgrades: Users should have a seamless upgrade/downgrade …",
+      "level": 4,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.1.2b",
+      "sha256": "17819c4f1aa873156bfc510777a3e30a6d7226a1a0f11acbbf0dcc699a88175b",
+      "chars": 266,
+      "excerpt": "3.1.2(b) Upgrades and Downgrades: Users should have a seamless upgrade/downgrade experience and should not be able to inadvertently subscribe to multiple variations of the same thing. Review best practices on managing your subscription upgrade and …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 2,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-3.1.2c",
+      "publisher_id": "3.1.2c",
+      "title": "3.1.2(c) Subscription Information: Before asking a customer to subscribe, you …",
+      "level": 4,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.1.2c",
+      "sha256": "1d87b14acce687153b899aaa5ef65580ccf852545d33a93e60209e9a053bd79b",
+      "chars": 349,
+      "excerpt": "3.1.2(c) Subscription Information: Before asking a customer to subscribe, you should clearly describe what the user will get for the price. How many issues per month? How much cloud storage? What kind of access to …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-3.1.3",
+      "publisher_id": "3.1.3",
+      "title": "Other Purchase Methods: The following apps may use purchase methods …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.1.3",
+      "sha256": "ec953115edd1fdfd4c80d1fa82b4e5699b08f3eb0f4c25b898e3b35eced5191a",
+      "chars": 434,
+      "excerpt": "Other Purchase Methods: The following apps may use purchase methods other than in-app purchase. Apps in this section cannot, within the app, encourage users to use a purchasing method other than in-app purchase, except for …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-3.1.3a",
+      "publisher_id": "3.1.3a",
+      "title": "3.1.3(a) “Reader” Apps: Apps may allow a user to access …",
+      "level": 4,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.1.3a",
+      "sha256": "89248494ae0704f9083b70d4523d597254df15e2a8a649d8e21c15ee566d349b",
+      "chars": 727,
+      "excerpt": "3.1.3(a) “Reader” Apps: Apps may allow a user to access previously purchased content or content subscriptions (specifically: magazines, newspapers, books, audio, music, and video). Reader apps may offer account creation for free tiers, and account …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-3.1.3b",
+      "publisher_id": "3.1.3b",
+      "title": "3.1.3(b) Multiplatform Services: Apps that operate across multiple platforms may …",
+      "level": 4,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.1.3b",
+      "sha256": "3f75816f956ef6c9060104fdba5c912249bebf18ffc4650e1ba24b9943e7652b",
+      "chars": 334,
+      "excerpt": "3.1.3(b) Multiplatform Services: Apps that operate across multiple platforms may allow users to access content, subscriptions, or features they have acquired in your app on other platforms or your web site, including consumable items in …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-3.1.3c",
+      "publisher_id": "3.1.3c",
+      "title": "3.1.3(c) Enterprise Services: If your app is only sold directly …",
+      "level": 4,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.1.3c",
+      "sha256": "5dd839d6524f253d1a9379d28dfe2c19ce9bf6553f743124ddd5a958c201e93d",
+      "chars": 351,
+      "excerpt": "3.1.3(c) Enterprise Services: If your app is only sold directly by you to organizations or groups for their employees or students (for example professional databases and classroom management tools), you may allow enterprise users to …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-3.1.3d",
+      "publisher_id": "3.1.3d",
+      "title": "3.1.3(d) Person-to-Person Services: If your app enables the purchase of …",
+      "level": 4,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.1.3d",
+      "sha256": "10df0743f5c2c95f6da24378c86209d7a296af539a65c47fe3afc0355c8d8c52",
+      "chars": 382,
+      "excerpt": "3.1.3(d) Person-to-Person Services: If your app enables the purchase of real-time person-to-person services between two individuals (for example tutoring students, medical consultations, real estate tours, or fitness training), you may use purchase methods other than …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-3.1.3e",
+      "publisher_id": "3.1.3e",
+      "title": "3.1.3(e) Goods and Services Outside of the App: If your …",
+      "level": 4,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.1.3e",
+      "sha256": "5f9da8e67569f8750b402aa2b047e412f38d223029df1d766337599c20951f0b",
+      "chars": 291,
+      "excerpt": "3.1.3(e) Goods and Services Outside of the App: If your app enables people to purchase physical goods or services that will be consumed outside of the app, you must use purchase methods other than in-app …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-3.1.3f",
+      "publisher_id": "3.1.3f",
+      "title": "3.1.3(f) Free Stand-alone Apps: Free apps acting as a stand-alone …",
+      "level": 4,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.1.3f",
+      "sha256": "22f7641f073da281d46e98da6cd494d9b579da1768ca04e4bb2e5b42833ba070",
+      "chars": 292,
+      "excerpt": "3.1.3(f) Free Stand-alone Apps: Free apps acting as a stand-alone companion to a paid web based tool (i.e. VoIP, Cloud Storage, Email Services, Web Hosting) do not need to use in-app purchase, provided there is …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-3.1.3g",
+      "publisher_id": "3.1.3g",
+      "title": "3.1.3(g) Advertising Management Apps: Apps for the sole purpose of …",
+      "level": 4,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.1.3g",
+      "sha256": "37ba62e1cf842cd8b86a48277f6ecef93a22fb53913e5b8b10a5f77f57e379aa",
+      "chars": 623,
+      "excerpt": "3.1.3(g) Advertising Management Apps: Apps for the sole purpose of allowing advertisers (persons or companies that advertise a product, service, or event) to purchase and manage advertising campaigns across media types (television, outdoor, websites, apps, …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-3.1.4",
+      "publisher_id": "3.1.4",
+      "title": "Hardware-Specific Content: In limited circumstances, such as when features are …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.1.4",
+      "sha256": "dd8095fbc19cc65979c34edcfe37e300e1b087b0d136f1adef145204771877aa",
+      "chars": 643,
+      "excerpt": "Hardware-Specific Content: In limited circumstances, such as when features are dependent upon specific hardware to function, the app may unlock that functionality without using in-app purchase (e.g. an astronomy app that adds features when synced …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-3.1.5",
+      "publisher_id": "3.1.5",
+      "title": "Cryptocurrencies",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.1.5",
+      "sha256": "baed844e16aca1090497b61756a4cb92f7f8c8a0a7a6db64b99f568202314ed0",
+      "chars": 1046,
+      "excerpt": "Cryptocurrencies: (i) Wallets: Apps may facilitate virtual currency storage, provided they are offered by developers enrolled as an organization. (ii) Mining: Apps may not mine for cryptocurrencies unless the processing is performed off device (e.g. …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 2,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-3.2",
+      "publisher_id": "3.2",
+      "title": "Other Business Model Issues",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.2",
+      "sha256": "9695bf4afa99f2ddb82c6cfce0cc8114ca1b125b359d574c60a0b7cacf50bf7a",
+      "chars": 196,
+      "excerpt": "Other Business Model Issues The lists below are not exhaustive, and your submission may trigger a change or update to our policies, but here are some additional dos and don’ts to keep in mind:",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-3.2.1",
+      "publisher_id": "3.2.1",
+      "title": "Acceptable",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.2.1",
+      "sha256": "986cb29a5ff821225345f1c4bbeb648a8f0262dc74312571f9becb2a47e9b3a6",
+      "chars": 2220,
+      "excerpt": "Acceptable (i) Displaying your own apps for purchase or promotion within your app, provided the app is not merely a catalog of your apps. (ii) Displaying or recommending a collection of third-party apps that are …",
+      "normative_language": {
+        "must": 5,
+        "must_not": 2,
+        "should": 2,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-3.2.2",
+      "publisher_id": "3.2.2",
+      "title": "Unacceptable",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#3.2.2",
+      "sha256": "5f7eaf92ede96c35169271b527f142867ed2073e6afefb921c10c5bacf341c69",
+      "chars": 1825,
+      "excerpt": "Unacceptable (i) Creating an interface for displaying third-party apps, extensions, or plug-ins similar to the App Store or as a general-interest collection. (ii) Intentionally omitted. (iii) Artificially increasing the number of impressions or click-throughs of …",
+      "normative_language": {
+        "must": 4,
+        "must_not": 4,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-4",
+      "publisher_id": "4",
+      "title": "Design",
+      "level": 1,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4",
+      "sha256": "9039cfa81062da527634b5ef8a3a8d2cc9835580616a243fb8280f3e05d8992b",
+      "chars": 536,
+      "excerpt": "Design Apple customers place a high value on products that are simple, refined, innovative, and easy to use, and that’s what we want to see on the App Store. Coming up with a great design …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.1",
+      "publisher_id": "4.1",
+      "title": "Copycats",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.1",
+      "sha256": "80a0f11c120951e9a500b8b00ed18bbbc19eedeae86c2700401fe4aad11139b7",
+      "chars": 709,
+      "excerpt": "Copycats (a) Come up with your own ideas. We know you have them, so make yours come to life. Don’t simply copy the latest popular app on the App Store, or make some minor changes …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.2",
+      "publisher_id": "4.2",
+      "title": "Minimum Functionality",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.2",
+      "sha256": "35682822e1e9c3eb15c28106fe5e31b75e5b14847ff4a590abf83c2830cf5ca3",
+      "chars": 499,
+      "excerpt": "Minimum Functionality Your app should include features, content, and UI that elevate it beyond a repackaged website. If your app is not particularly useful, unique, or “app-like,” it doesn’t belong on the App Store. If …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 3,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.2.1",
+      "publisher_id": "4.2.1",
+      "title": "Apps using ARKit should provide rich and integrated augmented reality …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.2.1",
+      "sha256": "259a1d201b92953546a5637cc0cf2217e266e6b50af90969d3db9aecb9aedf56",
+      "chars": 166,
+      "excerpt": "Apps using ARKit should provide rich and integrated augmented reality experiences; merely dropping a model into an AR view or replaying animation is not enough.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.2.2",
+      "publisher_id": "4.2.2",
+      "title": "Other than catalogs, apps shouldn’t primarily be marketing materials, advertisements, …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.2.2",
+      "sha256": "87e4330835e3f25f4b384c14c4fb7622746e46eef18fd48be1ea24f467b7d254",
+      "chars": 153,
+      "excerpt": "Other than catalogs, apps shouldn’t primarily be marketing materials, advertisements, web clippings, content aggregators, or a collection of links.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.2.3",
+      "publisher_id": "4.2.3",
+      "title": "",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.2.3",
+      "sha256": "6d162564650e1195c793dcbef70eb3a7b9681c395fa9bbe564b19681253974ff",
+      "chars": 264,
+      "excerpt": "(i) Your app should work on its own without requiring installation of another app to function. (ii) If your app needs to download additional resources in order to function on initial launch, disclose the size …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.2.4",
+      "publisher_id": "4.2.4",
+      "title": "Intentionally omitted.",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.2.4",
+      "sha256": "9bed920d6840c919c21824ae8e15b5b2d94e61b4e55736781509d9339d9f0ff9",
+      "chars": 28,
+      "excerpt": "Intentionally omitted.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.2.5",
+      "publisher_id": "4.2.5",
+      "title": "Intentionally omitted.",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.2.5",
+      "sha256": "ff041e2cd2761fd0cd9c9949d7116bf82eba756082168f73813d55ec7ea0e6e8",
+      "chars": 28,
+      "excerpt": "Intentionally omitted.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.2.6",
+      "publisher_id": "4.2.6",
+      "title": "Apps created from a commercialized template or app generation service …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.2.6",
+      "sha256": "cf276e3ec3892a7ea1625a52dcb9b4391c259fe023e47789c890c7779377c39e",
+      "chars": 667,
+      "excerpt": "Apps created from a commercialized template or app generation service will be rejected unless they are submitted directly by the provider of the app’s content. These services should not submit apps on behalf of their …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 2,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.2.7",
+      "publisher_id": "4.2.7",
+      "title": "Remote Desktop Clients: If your remote desktop app acts as …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.2.7",
+      "sha256": "dbf2de579eefa5188202d69facca7244b78f7b8ae6686ca482b085c6669ff615",
+      "chars": 1195,
+      "excerpt": "Remote Desktop Clients: If your remote desktop app acts as a mirror of specific software or services rather than a generic mirror of the host device, it must comply with the following: (a) The app …",
+      "normative_language": {
+        "must": 4,
+        "must_not": 1,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-4.3",
+      "publisher_id": "4.3",
+      "title": "Spam",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.3",
+      "sha256": "4e8fe41066e59b6e9ccfc15b5dc678cde8fdf3ebc031345f743b95708f0ef068",
+      "chars": 1372,
+      "excerpt": "Spam (a) Don’t create multiple Bundle IDs of the same app (for example, submitting a separate map app for every city in the world instead of a single worldwide map that allows users to search …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.4",
+      "publisher_id": "4.4",
+      "title": "Extensions",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.4",
+      "sha256": "68c7321e65eb27217494b4b2e7cf6dd2cfee2c11c08dcac764cfb6724187fc86",
+      "chars": 477,
+      "excerpt": "Extensions Apps hosting or containing extensions must comply with the App Extension Programming Guide, the Safari app extensions documentation, or the Safari web extensions documentation and should include some functionality, such as help screens and …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 1,
+        "should": 2,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.4.1",
+      "publisher_id": "4.4.1",
+      "title": "Keyboard extensions have some additional rules.",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.4.1",
+      "sha256": "acb400fd41d25e8911d2e147202e41badb6c10cee1cdcbddb6c52e46f125c54b",
+      "chars": 598,
+      "excerpt": "Keyboard extensions have some additional rules. They must: Provide keyboard input functionality (e.g. typed characters); Follow Sticker guidelines if the keyboard includes images or emoji; Provide a method for progressing to the next keyboard; Remain …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.4.2",
+      "publisher_id": "4.4.2",
+      "title": "Safari extensions must run on the current version of Safari …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.4.2",
+      "sha256": "930b01c108cf050c3c36cf94f2841efd36bc80d8121289b709755942f7ab85e2",
+      "chars": 397,
+      "excerpt": "Safari extensions must run on the current version of Safari on the relevant Apple operating system. They may not interfere with System or Safari UI elements and must never include malicious or misleading content or …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 1,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.4.3",
+      "publisher_id": "4.4.3",
+      "title": "Intentionally omitted.",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.4.3",
+      "sha256": "e4333b87aaa077f7dc12c47c84ebceccd04df4ad868bf3a7110878410292a968",
+      "chars": 28,
+      "excerpt": "Intentionally omitted.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.5",
+      "publisher_id": "4.5",
+      "title": "Apple Sites and Services",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.5",
+      "sha256": "572fd8f1ce186f6b7384e5b8295c9044e8719b3fc8d65838251b50b7a3fe8a2e",
+      "chars": 28,
+      "excerpt": "Apple Sites and Services",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.5.1",
+      "publisher_id": "4.5.1",
+      "title": "Apps may use approved Apple RSS feeds such as the …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.5.1",
+      "sha256": "88a7054d54f6de312eadb3c5e05a9031a1e90aa89cfb8716bd322fba99042132",
+      "chars": 262,
+      "excerpt": "Apps may use approved Apple RSS feeds such as the iTunes Store RSS feed, but may not scrape any information from Apple sites (e.g. apple.com, the iTunes Store, App Store, App Store Connect, developer portal, …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.5.2",
+      "publisher_id": "4.5.2",
+      "title": "Apple Music",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.5.2",
+      "sha256": "9963c4d79b781105035c3576615f57d5960730653baf151c8adf300bd8908065",
+      "chars": 1918,
+      "excerpt": "Apple Music (i) MusicKit on iOS lets users play Apple Music and their local music library natively from your apps and games. When a user provides permission to their Apple Music account, your app can …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 3,
+        "should": 1,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-4.5.3",
+      "publisher_id": "4.5.3",
+      "title": "Do not use Apple Services to spam, phish, or send …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.5.3",
+      "sha256": "192013ae0e07a97fbc36ec013c20daa6ef613ed5bf5a551aff9fe8dc0c3586eb",
+      "chars": 380,
+      "excerpt": "Do not use Apple Services to spam, phish, or send unsolicited messages to customers, including Game Center, Push Notifications, Live Activities, etc. Do not attempt to reverse lookup, trace, relate, associate, mine, harvest, or otherwise …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.5.4",
+      "publisher_id": "4.5.4",
+      "title": "Push Notifications must not be required for the app to …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.5.4",
+      "sha256": "1dc04cf1777751f07ae2b8573f70874a02f3839b52ec9fff078f2a21a88863fc",
+      "chars": 496,
+      "excerpt": "Push Notifications must not be required for the app to function, and should not be used to send sensitive personal or confidential information. Push Notifications should not be used for promotions or direct marketing purposes …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 1,
+        "should": 2,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-4.5.5",
+      "publisher_id": "4.5.5",
+      "title": "Only use Game Center Player IDs in a manner approved …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.5.5",
+      "sha256": "fec9cb39f56698af1371ba1e407b0833c81febece1d30304256c3991484f65b7",
+      "chars": 141,
+      "excerpt": "Only use Game Center Player IDs in a manner approved by the Game Center terms and do not display them in the app or to any third party.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.5.6",
+      "publisher_id": "4.5.6",
+      "title": "Apps may use Unicode characters that render as Apple emoji …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.5.6",
+      "sha256": "590ed6d2bf1e4ca93ca6b795bf28e7ccafe9efe199c72ba96dc77f4110769238",
+      "chars": 183,
+      "excerpt": "Apps may use Unicode characters that render as Apple emoji in their app and app metadata. Apple emoji may not be used on other platforms or embedded directly in your app binary.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.6",
+      "publisher_id": "4.6",
+      "title": "Intentionally omitted.",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.6",
+      "sha256": "75d2a7ea81ec15aa1887086da401ffde62b43e8ef8cba3f8eca1f23f37a5a062",
+      "chars": 26,
+      "excerpt": "Intentionally omitted.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.7",
+      "publisher_id": "4.7",
+      "title": "Mini apps, mini games, streaming games, chatbots, plug-ins, and game emulators",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.7",
+      "sha256": "f3768b72332fdfb61365a1c13e96428fea5c97380e5a664ca177b2e9f3ed87d5",
+      "chars": 825,
+      "excerpt": "Mini apps, mini games, streaming games, chatbots, plug-ins, and game emulators Apps may offer certain software that is not embedded in the binary, specifically HTML5 and JavaScript mini apps and mini games, streaming games, chatbots, …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.7.1",
+      "publisher_id": "4.7.1",
+      "title": "Software offered in apps under this rule must",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.7.1",
+      "sha256": "c56a61123e20c94e7e6ab8c40381692f53d9ca1453e3f997927ce055d8aacb65",
+      "chars": 506,
+      "excerpt": "Software offered in apps under this rule must: follow all privacy guidelines, including but not limited to the rules set forth in Guideline 5.1 concerning collection, use, and sharing of data, and sensitive data (such …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.7.2",
+      "publisher_id": "4.7.2",
+      "title": "Your app may not extend or expose native platform APIs …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.7.2",
+      "sha256": "7727e63802c00878c4c185b9c3f33ecce6feb2e5b5681bf89c848deb94c80dca",
+      "chars": 129,
+      "excerpt": "Your app may not extend or expose native platform APIs or technologies to the software without prior permission from Apple.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.7.3",
+      "publisher_id": "4.7.3",
+      "title": "Your app may not share data or privacy permissions to …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.7.3",
+      "sha256": "e07446cc3364f2f70cc426ab44a2d4020f2941075245096e777a34009c06fe20",
+      "chars": 151,
+      "excerpt": "Your app may not share data or privacy permissions to any individual software offered in your app without explicit user consent in each instance.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.7.4",
+      "publisher_id": "4.7.4",
+      "title": "You must provide an index of software and metadata available …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.7.4",
+      "sha256": "5ab695f1c231bba6aca50361727c7580299f1f07e372561fc7eb07e3811056c3",
+      "chars": 165,
+      "excerpt": "You must provide an index of software and metadata available in your app. It must include universal links that lead to all of the software offered in your app.",
+      "normative_language": {
+        "must": 2,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.7.5",
+      "publisher_id": "4.7.5",
+      "title": "Your app must provide a way for users to identify …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.7.5",
+      "sha256": "be8778fb6f5406286ee683647f634aacbe9b0eeb68529c8001630b3578589425",
+      "chars": 205,
+      "excerpt": "Your app must provide a way for users to identify software that exceeds the app’s age rating, and use an age restriction mechanism based on verified or declared age to limit access by underage users.",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.8",
+      "publisher_id": "4.8",
+      "title": "Login Services",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.8",
+      "sha256": "055cf3b5947e9ba91b9f0414f0a74b43940e29b8cf8dca3d09981e64bc8e9242",
+      "chars": 1557,
+      "excerpt": "Login Services Apps that use a third-party or social login service (such as Facebook Login, Google Sign-In, Log in with X, Sign In with LinkedIn, Login with Amazon, or WeChat Login) to set up or …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 3
+      }
+    },
+    {
+      "rule_id": "APL-4.9",
+      "publisher_id": "4.9",
+      "title": "Apple Pay",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.9",
+      "sha256": "0665641242416881789f4f19598bb01196fdfc2b4e1d25a27f323fedd9568a83",
+      "chars": 580,
+      "excerpt": "Apple Pay Apps using Apple Pay must provide all material purchase information to the user prior to sale of any good or service and must use Apple Pay branding and user interface elements correctly, as …",
+      "normative_language": {
+        "must": 3,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-4.10",
+      "publisher_id": "4.10",
+      "title": "Monetizing Built-In Capabilities",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#4.10",
+      "sha256": "77b909eff1cece7f8458d546dcf9d1863ac0141ac63e6f197591a6d0722fc716",
+      "chars": 285,
+      "excerpt": "Monetizing Built-In Capabilities You may not monetize built-in capabilities provided by the hardware or operating system, such as Push Notifications, the camera, or the gyroscope; or Apple services and technologies, such as Apple Music access, …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5",
+      "publisher_id": "5",
+      "title": "Legal",
+      "level": 1,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5",
+      "sha256": "4e796062d33ae2610901521a66f2804c47a1cd9518131e92001d89c188bd4e49",
+      "chars": 574,
+      "excerpt": "Legal Apps must comply with all legal requirements in any location where you make them available (if you’re not sure, check with a lawyer). We know this stuff is complicated, but it is your responsibility …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.1",
+      "publisher_id": "5.1",
+      "title": "Privacy",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.1",
+      "sha256": "d267db636588639c9668c8585e66016d4ee9239911e7f890af6d816027d5eb16",
+      "chars": 317,
+      "excerpt": "Privacy Protecting user privacy is paramount in the Apple ecosystem, and you should use care when handling personal data to ensure you’ve complied with privacy best practices, applicable laws, and the terms of the Apple …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.1.1",
+      "publisher_id": "5.1.1",
+      "title": "Data Collection and Storage",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.1.1",
+      "sha256": "c1bb94b6c689b32ab4c2692baddb8fc691e11c5b2c6a3503aa7edfd260fbd2f2",
+      "chars": 2453,
+      "excerpt": "Data Collection and Storage (i) Privacy Policies: All apps must include a link to their privacy policy in the App Store Connect metadata field and within the app in an easily accessible manner. The privacy …",
+      "normative_language": {
+        "must": 8,
+        "must_not": 2,
+        "should": 2,
+        "required": 4
+      }
+    },
+    {
+      "rule_id": "APL-5.1.1v",
+      "publisher_id": "5.1.1v",
+      "title": "(v) Account Sign-In: If your app doesn’t include significant account-based …",
+      "level": 4,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.1.1v",
+      "sha256": "5c5c804d70dfdcf7073ed433b6390c2579dd1c3639fb15b73b6de455517cdf2f",
+      "chars": 2443,
+      "excerpt": "(v) Account Sign-In: If your app doesn’t include significant account-based features, let people use it without a login. If your app supports account creation, you must also offer account deletion within the app. Apps may …",
+      "normative_language": {
+        "must": 5,
+        "must_not": 5,
+        "should": 1,
+        "required": 3
+      }
+    },
+    {
+      "rule_id": "APL-5.1.2",
+      "publisher_id": "5.1.2",
+      "title": "Data Use and Sharing",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.1.2",
+      "sha256": "220af4e4f62ecb0552c884ee790eb6420ae94314d3cf296c7cd55c8c83b9143d",
+      "chars": 2943,
+      "excerpt": "Data Use and Sharing (i) Unless otherwise permitted by law, you may not use, transmit, or share someone’s personal data without first obtaining their permission. You must provide access to information about how and where …",
+      "normative_language": {
+        "must": 4,
+        "must_not": 5,
+        "should": 1,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-5.1.3",
+      "publisher_id": "5.1.3",
+      "title": "Health and Health Research",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.1.3",
+      "sha256": "904211ad2c1a2672e8ddaa51b9e37e5b8f80b9d058954ce5f901c1f57d8b2a7e",
+      "chars": 1794,
+      "excerpt": "Health and Health Research Health, fitness, and medical data are especially sensitive and apps in this space have some additional rules to make sure customer privacy is protected: (i) Apps may not use or disclose …",
+      "normative_language": {
+        "must": 6,
+        "must_not": 3,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.1.4",
+      "publisher_id": "5.1.4",
+      "title": "Kids",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.1.4",
+      "sha256": "b098a0595ec3d146720d0b082c3aee6dcb01239364100284a44e6817adb58c3e",
+      "chars": 1788,
+      "excerpt": "Kids (a) For many reasons, it is critical to use care when dealing with personal data from kids, and we encourage you to carefully review all the requirements for complying with laws like the Children’s …",
+      "normative_language": {
+        "must": 3,
+        "must_not": 1,
+        "should": 1,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-5.1.5",
+      "publisher_id": "5.1.5",
+      "title": "Location Services",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.1.5",
+      "sha256": "6c17cc11bb09af6d837a2361b7ccc79dc83818ede23a736154ec32f8916f3a27",
+      "chars": 631,
+      "excerpt": "Location Services Use Location Services in your app only when it is directly relevant to the features and services provided by the app. Location-based APIs shouldn’t be used to provide emergency services or autonomous control …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.2",
+      "publisher_id": "5.2",
+      "title": "Intellectual Property",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.2",
+      "sha256": "2d5a408b32fb27bb5582fa347f2dd64d0bc11ae680171ac4f2ac3982a77dcd52",
+      "chars": 562,
+      "excerpt": "Intellectual Property Make sure your app only includes content that you created or that you have a license to use. Your app may be removed if you’ve stepped over the line and used content without …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.2.1",
+      "publisher_id": "5.2.1",
+      "title": "Generally: Don’t use protected third-party material such as trademarks, copyrighted …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.2.1",
+      "sha256": "45427f6c483367f1815717cac762249b0ac3c5ff355445e13d1353c75c7bd214",
+      "chars": 402,
+      "excerpt": "Generally: Don’t use protected third-party material such as trademarks, copyrighted works, or patented ideas in your app without permission, and don’t include misleading, false, or copycat representations, names, or metadata in your app bundle or …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.2.2",
+      "publisher_id": "5.2.2",
+      "title": "Third-Party Sites/Services: If your app uses, accesses, monetizes access to, …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.2.2",
+      "sha256": "cb305c255348e907a68be944e87a9e085bc5a878245a00dc3aa19f17f54ced6e",
+      "chars": 261,
+      "excerpt": "Third-Party Sites/Services: If your app uses, accesses, monetizes access to, or displays content from a third-party service, ensure that you are specifically permitted to do so under the service’s terms of use. Authorization must be …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.2.3",
+      "publisher_id": "5.2.3",
+      "title": "Audio/Video Downloading: Apps should not facilitate illegal file sharing or …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.2.3",
+      "sha256": "218bc2d6aeae76402e9f89d9bb5069d65e6252f19b7948392a564c6b54370ccc",
+      "chars": 436,
+      "excerpt": "Audio/Video Downloading: Apps should not facilitate illegal file sharing or include the ability to save, convert, or download media from third-party sources (e.g. Apple Music, YouTube, SoundCloud, Vimeo, etc.) without explicit authorization from those sources. …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.2.4",
+      "publisher_id": "5.2.4",
+      "title": "Apple Endorsements",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.2.4",
+      "sha256": "29ba219e55e024c26883c818a0bb27853767b17879d6867f0beb0bbd528791ce",
+      "chars": 282,
+      "excerpt": "Apple Endorsements (a) Don’t suggest or imply that Apple is a source or supplier of the App, or that Apple endorses any particular representation regarding quality or functionality. (b) If your app is selected as …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.2.5",
+      "publisher_id": "5.2.5",
+      "title": "Apple Products: Don’t create an app that appears confusingly similar …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.2.5",
+      "sha256": "5dd29184395685d0d17d4e014492ed4ced8d4250b97d6c692af9323c9a12536e",
+      "chars": 997,
+      "excerpt": "Apple Products: Don’t create an app that appears confusingly similar to an existing Apple product, interface (e.g. Finder), app (such as the App Store, iTunes Store, or Messages) or advertising theme. Apps and extensions, including …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 2,
+        "should": 2,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.3",
+      "publisher_id": "5.3",
+      "title": "Gaming, Gambling, and Lotteries",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.3",
+      "sha256": "1d3354f7a93b2e45bb62af9252460ff62f5de1debbdca213b5b0a664bd9b28ba",
+      "chars": 365,
+      "excerpt": "Gaming, Gambling, and Lotteries Gaming, gambling, and lotteries can be tricky to manage and tend to be one of the most regulated offerings on the App Store. Only include this functionality if you’ve fully vetted …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.3.1",
+      "publisher_id": "5.3.1",
+      "title": "Sweepstakes and contests must be sponsored by the developer of the app.",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.3.1",
+      "sha256": "04e0e91c3868289b9aabe908d18a78ae2e01b7aa1e2f5b403143ac4e33919616",
+      "chars": 77,
+      "excerpt": "Sweepstakes and contests must be sponsored by the developer of the app.",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.3.2",
+      "publisher_id": "5.3.2",
+      "title": "Official rules for sweepstakes, contests, and raffles must be presented …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.3.2",
+      "sha256": "b9e5e82111c0ab5e370b281579bc2dfb5e654fa9d56f70445f092f502ad62499",
+      "chars": 174,
+      "excerpt": "Official rules for sweepstakes, contests, and raffles must be presented in the app and make clear that Apple is not a sponsor or involved in the activity in any manner.",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.3.3",
+      "publisher_id": "5.3.3",
+      "title": "Apps may not use in-app purchase to purchase credit or …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.3.3",
+      "sha256": "069c7308bfae7a442f47d368dc3d583a50f4f0c1b76db3dcce7c6c777050d3ca",
+      "chars": 128,
+      "excerpt": "Apps may not use in-app purchase to purchase credit or currency for use in conjunction with real money gaming of any kind.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.3.4",
+      "publisher_id": "5.3.4",
+      "title": "Apps that offer real money gaming (e.g. sports betting, poker, …",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.3.4",
+      "sha256": "f628948b0de95d21ef42782b9539670ffc56217060cfcb6fbae8878cfabfe4cf",
+      "chars": 416,
+      "excerpt": "Apps that offer real money gaming (e.g. sports betting, poker, casino games, horse racing) or lotteries must have necessary licensing and permissions in the locations where the app is used, must be geo-restricted to those …",
+      "normative_language": {
+        "must": 4,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.4",
+      "publisher_id": "5.4",
+      "title": "VPN Apps",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.4",
+      "sha256": "29c2465768cae8bdeace12dc1c71dbf089d9c46230712f959401727f53246f63",
+      "chars": 993,
+      "excerpt": "VPN Apps Apps offering VPN services must utilize the NEVPNManager API and may only be offered by developers enrolled as an organization. You must make a clear declaration of what user data will be collected …",
+      "normative_language": {
+        "must": 5,
+        "must_not": 2,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-5.5",
+      "publisher_id": "5.5",
+      "title": "Mobile Device Management",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.5",
+      "sha256": "850e3be78a2d8c39ffc4f9e71da971d1dc8c9801189b7d4234e4beb3faf49f19",
+      "chars": 1245,
+      "excerpt": "Mobile Device Management Mobile Device Management Apps that offer Mobile Device Management (MDM) services must request this capability from Apple. Such apps may only be offered by commercial enterprises, educational institutions, or government agencies, and …",
+      "normative_language": {
+        "must": 5,
+        "must_not": 2,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.6",
+      "publisher_id": "5.6",
+      "title": "Developer Code of Conduct",
+      "level": 2,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.6",
+      "sha256": "3c39fd32a84132a41125634fc2446ed821a56ee68bfebe5ab60c92438eaac232",
+      "chars": 1232,
+      "excerpt": "Developer Code of Conduct Please treat everyone with respect, whether in your responses to App Store reviews, customer support requests, or when communicating with Apple, including your responses in App Store Connect. Do not engage …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.6.1",
+      "publisher_id": "5.6.1",
+      "title": "App Store Reviews",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.6.1",
+      "sha256": "effac997a6b358aa64e6d3e9d24a2f16a40d1e9700eb7f7df1e4c239c351d562",
+      "chars": 531,
+      "excerpt": "App Store Reviews App Store customer reviews can be an integral part of the app experience, so you should treat customers with respect when responding to their comments. Keep your responses targeted to the user’s …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.6.2",
+      "publisher_id": "5.6.2",
+      "title": "Developer Identity",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.6.2",
+      "sha256": "3b2009f1351f269306dfacca11707dca87605668dc5a642869c44f5a6a6f0727",
+      "chars": 420,
+      "excerpt": "Developer Identity Providing verifiable information to Apple and customers is critical to customer trust. Your representation of yourself, your business, and your offerings on the App Store or alternative distribution must be accurate. The information …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-5.6.3",
+      "publisher_id": "5.6.3",
+      "title": "Discovery Fraud",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.6.3",
+      "sha256": "7746e076a877296dc00d7d563c8e78fb2f768e4d64d8695eb79875a3f42cddb0",
+      "chars": 296,
+      "excerpt": "Discovery Fraud Participating in the App Store requires integrity and a commitment to building and maintaining customer trust. Manipulating any element of the App Store customer experience such as charts, search, reviews, or referrals to …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "APL-5.6.4",
+      "publisher_id": "5.6.4",
+      "title": "App Quality",
+      "level": 3,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#5.6.4",
+      "sha256": "095d5d18239c36c42b99453908b1ec309b71a51222a7d2131173c727372a0cc8",
+      "chars": 473,
+      "excerpt": "App Quality Customers expect the highest quality from the App Store, and maintaining high quality content, services, and experiences promotes customer trust. Indications that this expectation is not being met include excessive customer reports about …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "APL-AFTER-SUBMIT",
+      "publisher_id": "(unnumbered) After You Submit",
+      "title": "After You Submit",
+      "level": 0,
+      "url": "https://developer.apple.com/app-store/review/guidelines/#after-you-submit",
+      "sha256": "c2f7b290ce7a686edec17afa6deb3e1cd65143e519630b43d5b33f4f10849d2b",
+      "chars": 2391,
+      "excerpt": "After You Submit Once you’ve submitted your app and metadata in App Store Connect and you’re in the review process, here are some things to keep in mind: Timing: App Review will examine your app …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 1
+      }
+    }
+  ]
+}

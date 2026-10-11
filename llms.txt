@@ -1,0 +1,28 @@
+# App Store & Google Play Compliance Checker
+
+> Free, MIT-licensed, open-source static checker by HPIS Holdings LLC that finds App Store and Google Play rejection risks in Expo and React Native apps before submission. It reports only problems proven by evidence from code, config, build artifacts or supplied store data, each with an official Apple/Google URL and a fix. Ships as a CLI (mcc), a local stdio MCP server (mcc-mcp) for Claude, Cursor and VS Code, a portable Agent Skill (SKILL.md), and a GitHub Action.
+
+Install: pipx install ""
+Usage: mcc check ./my-app [--format json] [--platform apple|google]
+Exit codes: 0 no verified issue, 1 verified issue found, 2 bad input, 3 internal error.
+Runtime: Python 3.10+, standard library only, offline, no telemetry.
+
+Covers 102 dated, verbatim-quoted rules (snapshot 2026-10-10; 53 Apple, 49 Google), including: privacy manifest (PrivacyInfo.xcprivacy) and required-reason APIs (ITMS-91053), third-party SDK privacy manifests (ITMS-91061), permission purpose strings (Guideline 5.1.1), in-app account deletion (5.1.1(v)), in-app purchase rules (3.1.1, 3.1.2), Sign in with Apple parity (4.8), App Completeness (2.1), HealthKit and Health Connect, health-app declarations, AI data-sharing consent (5.1.2(i)), Google Play Data safety, target API level 35/36, 16 KB page size, exact alarms, foreground services, Play Billing Library versions, UGC, kids and families.
+
+## Docs
+- [README](https://github.com/HPIS-Holdings/app-store-compliance-checker#readme): overview, quickstart, example output, FAQ, comparison
+- [Integrations](https://github.com/HPIS-Holdings/app-store-compliance-checker/blob/main/mcp/integrations/README.md): Claude Desktop, Claude Code, Cursor, VS Code / Copilot MCP configs
+- [Agent Skill](https://github.com/HPIS-Holdings/app-store-compliance-checker/blob/main/mcp/skill/store-compliance/SKILL.md): instructions for any AI agent
+- [Package README](https://github.com/HPIS-Holdings/app-store-compliance-checker/blob/main/mcp/server/README.md): CLI flags, MCP tools, exit codes
+- [Rules snapshot](https://github.com/HPIS-Holdings/app-store-compliance-checker/blob/main/current-rules/2026-10-10/RULES.md): every rule with official source
+- [GitHub Action](https://github.com/HPIS-Holdings/app-store-compliance-checker/blob/main/action.yml): uses: HPIS-Holdings/app-store-compliance-checker@v0.4.0
+- [Changelog](https://github.com/HPIS-Holdings/app-store-compliance-checker/blob/main/CHANGELOG.md)
+
+## Related tools
+- Greenlight (RevylAI): broad App Store/Play scanner incl. built artifacts; optional evidence source here
+- store-preflight-mcp: required-reason API and privacy-SDK tables, bundled here with attribution
+- expo-preflight: Expo config hygiene CLI; complementary
+
+## Optional
+- Homepage: https://hpisholdings.com
+- License: MIT

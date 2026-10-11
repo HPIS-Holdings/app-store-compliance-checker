@@ -1,0 +1,25 @@
+# Rules sourced from App Store Connect Help.
+- id: APL-SUPP-ASC-AGE-RATING-QUESTIONNAIRE
+  title: "Age rating is required app information; set via the questionnaire (regional ratings for Australia, Brazil, Korea)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [age-rating, metadata, regions]
+  requires: "An age rating is a required app information property, determined by responding to the age rating questionnaire in App Store Connect; responses map to an Apple global rating plus region-specific ratings where required."
+  exceptions_regions: "Region-specific requirements are referenced for Australia, Brazil and Korea."
+  related_rules: [APL-SUPP-AGE-RATING-2026]
+  agent_verification:
+    - "Compare app content (violence, UGC, gambling, medical info, AI chat) with questionnaire answers (NEEDS CONSOLE CHECK)."
+  sources:
+    - {url: "https://developer.apple.com/help/app-store-connect/manage-app-information/set-an-app-age-rating/", section: "Set an app age rating"}
+- id: APL-SUPP-ASC-CUSTOM-EULA
+  title: "Standard vs custom EULA in App Store Connect"
+  label: official_requirement
+  obligation: conditional
+  topics: [subscriptions, legal, metadata]
+  requires: "Apple's standard EULA applies in all countries/regions unless a custom EULA is provided (plain text in App Information > License Agreement). Without a custom EULA, the license agreement link is not shown on the product page."
+  implementation: "Because the standard-EULA link is not shown on the product page, subscription apps using it are told by App Review to link the Terms of Use in the App Description (see CASE-APL-003/004) (Interpretation)."
+  related_rules: [APL-3.1.2, APL-SUPP-DPLA-SCHED2-SUBS]
+  agent_verification:
+    - "Check the App Description (fastlane/metadata/*/description.txt) for a Terms of Use link, or confirm a custom EULA is set (NEEDS CONSOLE CHECK)."
+  sources:
+    - {url: "https://developer.apple.com/help/app-store-connect/manage-app-information/provide-a-custom-license-agreement/", section: "Provide a custom license agreement"}

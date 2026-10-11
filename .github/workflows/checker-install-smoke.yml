@@ -1,0 +1,51 @@
+# Test only the installable distribution. Never publish or deploy.
+name: Checker install smoke
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit tests (incl. real MCP client)
+        run: |
+          python -m pip install "mcp>=1.10,<2"
+          cd mcp/server && python -m unittest discover -s tests -v
+      - name: Install local test tools
+        run: python -m pip install "setuptools>=68" wheel build pipx uv
+      - name: Verify built wheel and fresh pip installation
+        run: python mcp/server/tests/smoke_install.py
+      - name: One pipx command installs both programs
+        env:
+          PIPX_HOME: ${{ runner.temp }}/mcc-pipx-home
+          PIPX_BIN_DIR: ${{ runner.temp }}/mcc-pipx-bin
+        run: |
+          python -m pipx install ./mcp/server
+          "$PIPX_BIN_DIR/mcc" snapshot
+          echo '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"snapshot_info","arguments":{}}}' | "$PIPX_BIN_DIR/mcc-mcp" | python -c 'import json,sys; o=json.load(sys.stdin); s=json.loads(o["result"]["content"][0]["text"]); assert s["rule_count"] > 0; print("pipx CLI + MCP bundled rules:",s["rule_count"])'
+      - name: uvx runs both programs without installation
+        run: |
+          uvx --from ./mcp/server mcc snapshot
+          echo '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"snapshot_info","arguments":{}}}' | uvx --from ./mcp/server mcc-mcp | python -c 'import json,sys; o=json.load(sys.stdin); s=json.loads(o["result"]["content"][0]["text"]); assert s["rule_count"] > 0; print("uvx CLI + MCP bundled rules:",s["rule_count"])'
+      - name: pip installs both programs from a local Git subdirectory URL
+        run: |
+          # Small local test repository: avoids cloning the entire policy
+          # research repository and needs no external GitHub credentials.
+          mkdir -p "$RUNNER_TEMP/mcc-git-fixture/mcp"
+          cp -a mcp/server "$RUNNER_TEMP/mcc-git-fixture/mcp/server"
+          git -C "$RUNNER_TEMP/mcc-git-fixture" init -q -b main
+          git -C "$RUNNER_TEMP/mcc-git-fixture" -c user.name=SmokeTest -c user.email=smoke@localhost add mcp/server
+          git -C "$RUNNER_TEMP/mcc-git-fixture" -c user.name=SmokeTest -c user.email=smoke@localhost commit -qm "Synthetic local package for VCS smoke"
+          python -m venv "$RUNNER_TEMP/mcc-git-env"
+          "$RUNNER_TEMP/mcc-git-env/bin/python" -m pip install "git+file://${RUNNER_TEMP}/mcc-git-fixture#subdirectory=mcp/server"
+          "$RUNNER_TEMP/mcc-git-env/bin/mcc" snapshot
+          echo '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"snapshot_info","arguments":{}}}' | "$RUNNER_TEMP/mcc-git-env/bin/mcc-mcp" | python -c 'import json,sys; s=json.loads(json.load(sys.stdin)["result"]["content"][0]["text"]); assert s["rule_count"] > 0'

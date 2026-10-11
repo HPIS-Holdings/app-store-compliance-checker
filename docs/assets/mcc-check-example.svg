@@ -1,0 +1,266 @@
+<svg class="rich-terminal" viewBox="0 0 994 1294.3999999999999" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generated with Rich https://www.textualize.io -->
+    <style>
+
+    @font-face {
+        font-family: "Fira Code";
+        src: local("FiraCode-Regular"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Regular.woff2") format("woff2"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Regular.woff") format("woff");
+        font-style: normal;
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: "Fira Code";
+        src: local("FiraCode-Bold"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff2/FiraCode-Bold.woff2") format("woff2"),
+                url("https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/woff/FiraCode-Bold.woff") format("woff");
+        font-style: bold;
+        font-weight: 700;
+    }
+
+    .terminal-2251696975-matrix {
+        font-family: Fira Code, monospace;
+        font-size: 20px;
+        line-height: 24.4px;
+        font-variant-east-asian: full-width;
+    }
+
+    .terminal-2251696975-title {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: arial;
+    }
+
+    .terminal-2251696975-r1 { fill: #98a84b;font-weight: bold }
+.terminal-2251696975-r2 { fill: #c5c8c6 }
+.terminal-2251696975-r3 { fill: #c5c8c6;font-weight: bold;text-decoration: underline; }
+.terminal-2251696975-r4 { fill: #c5c8c6;font-weight: bold }
+.terminal-2251696975-r5 { fill: #68a0b3;font-weight: bold }
+.terminal-2251696975-r6 { fill: #98729f;text-decoration: underline; }
+.terminal-2251696975-r7 { fill: #68a0b3;font-weight: bold;text-decoration: underline; }
+.terminal-2251696975-r8 { fill: #98729f;font-weight: bold }
+.terminal-2251696975-r9 { fill: #cc555a;font-weight: bold }
+    </style>
+
+    <defs>
+    <clipPath id="terminal-2251696975-clip-terminal">
+      <rect x="0" y="0" width="975.0" height="1243.3999999999999" />
+    </clipPath>
+    <clipPath id="terminal-2251696975-line-0">
+    <rect x="0" y="1.5" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-1">
+    <rect x="0" y="25.9" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-2">
+    <rect x="0" y="50.3" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-3">
+    <rect x="0" y="74.7" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-4">
+    <rect x="0" y="99.1" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-5">
+    <rect x="0" y="123.5" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-6">
+    <rect x="0" y="147.9" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-7">
+    <rect x="0" y="172.3" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-8">
+    <rect x="0" y="196.7" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-9">
+    <rect x="0" y="221.1" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-10">
+    <rect x="0" y="245.5" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-11">
+    <rect x="0" y="269.9" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-12">
+    <rect x="0" y="294.3" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-13">
+    <rect x="0" y="318.7" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-14">
+    <rect x="0" y="343.1" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-15">
+    <rect x="0" y="367.5" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-16">
+    <rect x="0" y="391.9" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-17">
+    <rect x="0" y="416.3" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-18">
+    <rect x="0" y="440.7" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-19">
+    <rect x="0" y="465.1" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-20">
+    <rect x="0" y="489.5" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-21">
+    <rect x="0" y="513.9" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-22">
+    <rect x="0" y="538.3" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-23">
+    <rect x="0" y="562.7" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-24">
+    <rect x="0" y="587.1" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-25">
+    <rect x="0" y="611.5" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-26">
+    <rect x="0" y="635.9" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-27">
+    <rect x="0" y="660.3" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-28">
+    <rect x="0" y="684.7" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-29">
+    <rect x="0" y="709.1" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-30">
+    <rect x="0" y="733.5" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-31">
+    <rect x="0" y="757.9" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-32">
+    <rect x="0" y="782.3" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-33">
+    <rect x="0" y="806.7" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-34">
+    <rect x="0" y="831.1" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-35">
+    <rect x="0" y="855.5" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-36">
+    <rect x="0" y="879.9" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-37">
+    <rect x="0" y="904.3" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-38">
+    <rect x="0" y="928.7" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-39">
+    <rect x="0" y="953.1" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-40">
+    <rect x="0" y="977.5" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-41">
+    <rect x="0" y="1001.9" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-42">
+    <rect x="0" y="1026.3" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-43">
+    <rect x="0" y="1050.7" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-44">
+    <rect x="0" y="1075.1" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-45">
+    <rect x="0" y="1099.5" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-46">
+    <rect x="0" y="1123.9" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-47">
+    <rect x="0" y="1148.3" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-48">
+    <rect x="0" y="1172.7" width="976" height="24.65"/>
+            </clipPath>
+<clipPath id="terminal-2251696975-line-49">
+    <rect x="0" y="1197.1" width="976" height="24.65"/>
+            </clipPath>
+    </defs>
+
+    <rect fill="#292929" stroke="rgba(255,255,255,0.35)" stroke-width="1" x="1" y="1" width="992" height="1292.4" rx="8"/><text class="terminal-2251696975-title" fill="#c5c8c6" text-anchor="middle" x="496" y="27">mcc&#160;check</text>
+            <g transform="translate(26,22)">
+            <circle cx="0" cy="0" r="7" fill="#ff5f57"/>
+            <circle cx="22" cy="0" r="7" fill="#febc2e"/>
+            <circle cx="44" cy="0" r="7" fill="#28c840"/>
+            </g>
+        
+    <g transform="translate(9, 41)" clip-path="url(#terminal-2251696975-clip-terminal)">
+    <rect fill="#4b4e55" x="634.4" y="147.9" width="97.6" height="24.65" shape-rendering="crispEdges"/><rect fill="#4b4e55" x="48.8" y="294.3" width="12.2" height="24.65" shape-rendering="crispEdges"/>
+    <g class="terminal-2251696975-matrix">
+    <text class="terminal-2251696975-r1" x="0" y="20" textLength="658.8" clip-path="url(#terminal-2251696975-line-0)">$&#160;mcc&#160;check&#160;./my-app&#160;--platform&#160;apple&#160;--greenlight&#160;off</text><text class="terminal-2251696975-r2" x="976" y="20" textLength="12.2" clip-path="url(#terminal-2251696975-line-0)">
+</text><text class="terminal-2251696975-r3" x="292.8" y="44.4" textLength="390.4" clip-path="url(#terminal-2251696975-line-1)">Store&#160;compliance&#160;check:&#160;./my-app</text><text class="terminal-2251696975-r2" x="976" y="44.4" textLength="12.2" clip-path="url(#terminal-2251696975-line-1)">
+</text><text class="terminal-2251696975-r2" x="976" y="68.8" textLength="12.2" clip-path="url(#terminal-2251696975-line-2)">
+</text><text class="terminal-2251696975-r4" x="0" y="93.2" textLength="36.6" clip-path="url(#terminal-2251696975-line-3)">&#160;•&#160;</text><text class="terminal-2251696975-r2" x="36.6" y="93.2" textLength="939.4" clip-path="url(#terminal-2251696975-line-3)">Checker&#160;v0.4.0&#160;|&#160;rules&#160;snapshot&#160;2026-10-10&#160;(102&#160;rules:&#160;{&#x27;apple&#x27;:&#160;53,&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="93.2" textLength="12.2" clip-path="url(#terminal-2251696975-line-3)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="117.6" textLength="939.4" clip-path="url(#terminal-2251696975-line-4)">&#x27;google&#x27;:&#160;49})&#160;|&#160;rules&#160;sha256&#160;3b87f46ffe1e78fc&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="117.6" textLength="12.2" clip-path="url(#terminal-2251696975-line-4)">
+</text><text class="terminal-2251696975-r4" x="0" y="142" textLength="36.6" clip-path="url(#terminal-2251696975-line-5)">&#160;•&#160;</text><text class="terminal-2251696975-r2" x="36.6" y="142" textLength="939.4" clip-path="url(#terminal-2251696975-line-5)">Monorepo:&#160;False&#160;|&#160;apps:&#160;1&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="142" textLength="12.2" clip-path="url(#terminal-2251696975-line-5)">
+</text><text class="terminal-2251696975-r4" x="0" y="166.4" textLength="36.6" clip-path="url(#terminal-2251696975-line-6)">&#160;•&#160;</text><text class="terminal-2251696975-r2" x="36.6" y="166.4" textLength="597.8" clip-path="url(#terminal-2251696975-line-6)">Output&#160;rule:&#160;HARD&#160;RULE:&#160;report&#160;ONLY&#160;the&#160;items&#160;in&#160;</text><text class="terminal-2251696975-r5" x="634.4" y="166.4" textLength="97.6" clip-path="url(#terminal-2251696975-line-6)">findings</text><text class="terminal-2251696975-r2" x="732" y="166.4" textLength="244" clip-path="url(#terminal-2251696975-line-6)">.&#160;Each&#160;one&#160;is&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="166.4" textLength="12.2" clip-path="url(#terminal-2251696975-line-6)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="190.8" textLength="939.4" clip-path="url(#terminal-2251696975-line-7)">verified&#160;from&#160;code,&#160;config,&#160;build&#160;or&#160;store-listing&#160;data.&#160;Anything&#160;the&#160;checker</text><text class="terminal-2251696975-r2" x="976" y="190.8" textLength="12.2" clip-path="url(#terminal-2251696975-line-7)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="215.2" textLength="939.4" clip-path="url(#terminal-2251696975-line-8)">could&#160;not&#160;verify&#160;is&#160;dropped:&#160;do&#160;not&#160;mention&#160;it,&#160;soften&#160;it,&#160;hedge&#160;it,&#160;or&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="215.2" textLength="12.2" clip-path="url(#terminal-2251696975-line-8)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="239.6" textLength="939.4" clip-path="url(#terminal-2251696975-line-9)">present&#160;it&#160;as&#160;a&#160;possible&#160;cause.&#160;Other&#160;verdict&#160;statuses&#160;are&#160;internal&#160;coverage&#160;</text><text class="terminal-2251696975-r2" x="976" y="239.6" textLength="12.2" clip-path="url(#terminal-2251696975-line-9)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="264" textLength="939.4" clip-path="url(#terminal-2251696975-line-10)">accounting,&#160;not&#160;user-facing&#160;causes.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="264" textLength="12.2" clip-path="url(#terminal-2251696975-line-10)">
+</text><text class="terminal-2251696975-r2" x="976" y="288.4" textLength="12.2" clip-path="url(#terminal-2251696975-line-11)">
+</text><text class="terminal-2251696975-r6" x="0" y="312.8" textLength="48.8" clip-path="url(#terminal-2251696975-line-12)">App&#160;</text><text class="terminal-2251696975-r7" x="48.8" y="312.8" textLength="12.2" clip-path="url(#terminal-2251696975-line-12)">.</text><text class="terminal-2251696975-r6" x="61" y="312.8" textLength="183" clip-path="url(#terminal-2251696975-line-12)">&#160;(expo-managed)</text><text class="terminal-2251696975-r2" x="976" y="312.8" textLength="12.2" clip-path="url(#terminal-2251696975-line-12)">
+</text><text class="terminal-2251696975-r2" x="976" y="337.2" textLength="12.2" clip-path="url(#terminal-2251696975-line-13)">
+</text><text class="terminal-2251696975-r4" x="0" y="361.6" textLength="36.6" clip-path="url(#terminal-2251696975-line-14)">&#160;•&#160;</text><text class="terminal-2251696975-r2" x="36.6" y="361.6" textLength="939.4" clip-path="url(#terminal-2251696975-line-14)">Platforms:&#160;{&#x27;ios&#x27;:&#160;&#x27;assumed&#x27;,&#160;&#x27;android&#x27;:&#160;&#x27;assumed&#x27;}&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="361.6" textLength="12.2" clip-path="url(#terminal-2251696975-line-14)">
+</text><text class="terminal-2251696975-r2" x="976" y="386" textLength="12.2" clip-path="url(#terminal-2251696975-line-15)">
+</text><text class="terminal-2251696975-r8" x="0" y="410.4" textLength="231.8" clip-path="url(#terminal-2251696975-line-16)">Verified&#160;issues&#160;(5)</text><text class="terminal-2251696975-r2" x="976" y="410.4" textLength="12.2" clip-path="url(#terminal-2251696975-line-16)">
+</text><text class="terminal-2251696975-r2" x="976" y="434.8" textLength="12.2" clip-path="url(#terminal-2251696975-line-17)">
+</text><text class="terminal-2251696975-r4" x="0" y="459.2" textLength="36.6" clip-path="url(#terminal-2251696975-line-18)">&#160;•&#160;</text><text class="terminal-2251696975-r4" x="36.6" y="459.2" textLength="280.6" clip-path="url(#terminal-2251696975-line-18)">CUR-APL-5.1.1ii-CONSENT</text><text class="terminal-2251696975-r2" x="317.2" y="459.2" textLength="658.8" clip-path="url(#terminal-2251696975-line-18)">&#160;Consent&#160;for&#160;data&#160;collection;&#160;purpose&#160;strings;&#160;no&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="459.2" textLength="12.2" clip-path="url(#terminal-2251696975-line-18)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="483.6" textLength="939.4" clip-path="url(#terminal-2251696975-line-19)">paywalled&#160;consent&#160;-&#160;Evidence:&#160;NSMicrophoneUsageDescription&#160;not&#160;found&#160;in&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="483.6" textLength="12.2" clip-path="url(#terminal-2251696975-line-19)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="508" textLength="939.4" clip-path="url(#terminal-2251696975-line-20)">app.json&#160;ios.infoPlist,&#160;config-plugin&#160;options&#160;or&#160;Info.plist&#160;(config&#160;fully&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="508" textLength="12.2" clip-path="url(#terminal-2251696975-line-20)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="532.4" textLength="939.4" clip-path="url(#terminal-2251696975-line-21)">static).&#160;Source:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="532.4" textLength="12.2" clip-path="url(#terminal-2251696975-line-21)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="556.8" textLength="939.4" clip-path="url(#terminal-2251696975-line-22)">https://developer.apple.com/app-store/review/guidelines/#5.1.1&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="556.8" textLength="12.2" clip-path="url(#terminal-2251696975-line-22)">
+</text><text class="terminal-2251696975-r4" x="36.6" y="581.2" textLength="36.6" clip-path="url(#terminal-2251696975-line-23)">&#160;•&#160;</text><text class="terminal-2251696975-r2" x="73.2" y="581.2" textLength="902.8" clip-path="url(#terminal-2251696975-line-23)">Fix:&#160;Add&#160;NSMicrophoneUsageDescription&#160;(app.json&#160;ios.infoPlist&#160;or&#160;the&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="581.2" textLength="12.2" clip-path="url(#terminal-2251696975-line-23)">
+</text><text class="terminal-2251696975-r2" x="73.2" y="605.6" textLength="902.8" clip-path="url(#terminal-2251696975-line-24)">expo-audio/expo-av&#160;&#x27;microphonePermission&#x27;&#160;plugin&#160;option)&#160;that&#160;explains&#160;the</text><text class="terminal-2251696975-r2" x="976" y="605.6" textLength="12.2" clip-path="url(#terminal-2251696975-line-24)">
+</text><text class="terminal-2251696975-r2" x="73.2" y="630" textLength="902.8" clip-path="url(#terminal-2251696975-line-25)">voice&#160;feature.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="630" textLength="12.2" clip-path="url(#terminal-2251696975-line-25)">
+</text><text class="terminal-2251696975-r4" x="0" y="654.4" textLength="36.6" clip-path="url(#terminal-2251696975-line-26)">&#160;•&#160;</text><text class="terminal-2251696975-r4" x="36.6" y="654.4" textLength="195.2" clip-path="url(#terminal-2251696975-line-26)">CUR-APL-UR-IOS13</text><text class="terminal-2251696975-r2" x="231.8" y="654.4" textLength="744.2" clip-path="url(#terminal-2251696975-line-26)">&#160;Minimum&#160;deployment&#160;target&#160;iOS&#160;13&#160;-&#160;Evidence:&#160;deployment&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="654.4" textLength="12.2" clip-path="url(#terminal-2251696975-line-26)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="678.8" textLength="939.4" clip-path="url(#terminal-2251696975-line-27)">target&#160;12.0&#160;(expo-build-properties).&#160;Source:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="678.8" textLength="12.2" clip-path="url(#terminal-2251696975-line-27)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="703.2" textLength="939.4" clip-path="url(#terminal-2251696975-line-28)">https://developer.apple.com/news/upcoming-requirements/&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="703.2" textLength="12.2" clip-path="url(#terminal-2251696975-line-28)">
+</text><text class="terminal-2251696975-r4" x="36.6" y="727.6" textLength="36.6" clip-path="url(#terminal-2251696975-line-29)">&#160;•&#160;</text><text class="terminal-2251696975-r2" x="73.2" y="727.6" textLength="902.8" clip-path="url(#terminal-2251696975-line-29)">Fix:&#160;Raise&#160;the&#160;iOS&#160;deployment&#160;target&#160;to&#160;13.0&#160;or&#160;later.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="727.6" textLength="12.2" clip-path="url(#terminal-2251696975-line-29)">
+</text><text class="terminal-2251696975-r4" x="0" y="752" textLength="36.6" clip-path="url(#terminal-2251696975-line-30)">&#160;•&#160;</text><text class="terminal-2251696975-r4" x="36.6" y="752" textLength="134.2" clip-path="url(#terminal-2251696975-line-30)">CUR-APL-MIC</text><text class="terminal-2251696975-r2" x="170.8" y="752" textLength="805.2" clip-path="url(#terminal-2251696975-line-30)">&#160;Microphone&#160;usage&#160;description&#160;required&#160;-&#160;Evidence:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="752" textLength="12.2" clip-path="url(#terminal-2251696975-line-30)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="776.4" textLength="939.4" clip-path="url(#terminal-2251696975-line-31)">NSMicrophoneUsageDescription&#160;not&#160;found&#160;in&#160;app.json&#160;ios.infoPlist,&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="776.4" textLength="12.2" clip-path="url(#terminal-2251696975-line-31)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="800.8" textLength="939.4" clip-path="url(#terminal-2251696975-line-32)">config-plugin&#160;options&#160;or&#160;Info.plist&#160;(config&#160;fully&#160;static).&#160;Source:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="800.8" textLength="12.2" clip-path="url(#terminal-2251696975-line-32)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="825.2" textLength="939.4" clip-path="url(#terminal-2251696975-line-33)">https://developer.apple.com/documentation/bundleresources/information-propert</text><text class="terminal-2251696975-r2" x="976" y="825.2" textLength="12.2" clip-path="url(#terminal-2251696975-line-33)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="849.6" textLength="939.4" clip-path="url(#terminal-2251696975-line-34)">y-list/nsmicrophoneusagedescription&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="849.6" textLength="12.2" clip-path="url(#terminal-2251696975-line-34)">
+</text><text class="terminal-2251696975-r4" x="36.6" y="874" textLength="36.6" clip-path="url(#terminal-2251696975-line-35)">&#160;•&#160;</text><text class="terminal-2251696975-r2" x="73.2" y="874" textLength="902.8" clip-path="url(#terminal-2251696975-line-35)">Fix:&#160;Add&#160;NSMicrophoneUsageDescription&#160;(app.json&#160;ios.infoPlist&#160;or&#160;the&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="874" textLength="12.2" clip-path="url(#terminal-2251696975-line-35)">
+</text><text class="terminal-2251696975-r2" x="73.2" y="898.4" textLength="902.8" clip-path="url(#terminal-2251696975-line-36)">expo-audio/expo-av&#160;&#x27;microphonePermission&#x27;&#160;plugin&#160;option)&#160;that&#160;explains&#160;the</text><text class="terminal-2251696975-r2" x="976" y="898.4" textLength="12.2" clip-path="url(#terminal-2251696975-line-36)">
+</text><text class="terminal-2251696975-r2" x="73.2" y="922.8" textLength="902.8" clip-path="url(#terminal-2251696975-line-37)">voice&#160;feature.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="922.8" textLength="12.2" clip-path="url(#terminal-2251696975-line-37)">
+</text><text class="terminal-2251696975-r4" x="0" y="947.2" textLength="36.6" clip-path="url(#terminal-2251696975-line-38)">&#160;•&#160;</text><text class="terminal-2251696975-r4" x="36.6" y="947.2" textLength="170.8" clip-path="url(#terminal-2251696975-line-38)">CUR-APL-SPEECH</text><text class="terminal-2251696975-r2" x="207.4" y="947.2" textLength="768.6" clip-path="url(#terminal-2251696975-line-38)">&#160;Speech&#160;recognition&#160;usage&#160;description&#160;required&#160;-&#160;Evidence:&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="947.2" textLength="12.2" clip-path="url(#terminal-2251696975-line-38)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="971.6" textLength="939.4" clip-path="url(#terminal-2251696975-line-39)">NSSpeechRecognitionUsageDescription&#160;not&#160;found&#160;in&#160;app.json&#160;ios.infoPlist,&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="971.6" textLength="12.2" clip-path="url(#terminal-2251696975-line-39)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="996" textLength="939.4" clip-path="url(#terminal-2251696975-line-40)">config-plugin&#160;options&#160;or&#160;Info.plist&#160;(config&#160;fully&#160;static).&#160;Source:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="996" textLength="12.2" clip-path="url(#terminal-2251696975-line-40)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="1020.4" textLength="939.4" clip-path="url(#terminal-2251696975-line-41)">https://developer.apple.com/documentation/bundleresources/information-propert</text><text class="terminal-2251696975-r2" x="976" y="1020.4" textLength="12.2" clip-path="url(#terminal-2251696975-line-41)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="1044.8" textLength="939.4" clip-path="url(#terminal-2251696975-line-42)">y-list/nsspeechrecognitionusagedescription&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="1044.8" textLength="12.2" clip-path="url(#terminal-2251696975-line-42)">
+</text><text class="terminal-2251696975-r4" x="36.6" y="1069.2" textLength="36.6" clip-path="url(#terminal-2251696975-line-43)">&#160;•&#160;</text><text class="terminal-2251696975-r2" x="73.2" y="1069.2" textLength="902.8" clip-path="url(#terminal-2251696975-line-43)">Fix:&#160;Add&#160;NSSpeechRecognitionUsageDescription.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="1069.2" textLength="12.2" clip-path="url(#terminal-2251696975-line-43)">
+</text><text class="terminal-2251696975-r4" x="0" y="1093.6" textLength="36.6" clip-path="url(#terminal-2251696975-line-44)">&#160;•&#160;</text><text class="terminal-2251696975-r4" x="36.6" y="1093.6" textLength="195.2" clip-path="url(#terminal-2251696975-line-44)">CUR-APL-HK-USAGE</text><text class="terminal-2251696975-r2" x="231.8" y="1093.6" textLength="744.2" clip-path="url(#terminal-2251696975-line-44)">&#160;HealthKit&#160;usage&#160;descriptions&#160;and&#160;privacy&#160;policy&#160;-&#160;Evidence:&#160;</text><text class="terminal-2251696975-r2" x="976" y="1093.6" textLength="12.2" clip-path="url(#terminal-2251696975-line-44)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="1118" textLength="939.4" clip-path="url(#terminal-2251696975-line-45)">HealthKit&#160;integration:&#160;dependency/entitlement:&#160;react-native-health;&#160;no&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="1118" textLength="12.2" clip-path="url(#terminal-2251696975-line-45)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="1142.4" textLength="939.4" clip-path="url(#terminal-2251696975-line-46)">NSHealthShareUsageDescription&#160;/&#160;NSHealthUpdateUsageDescription&#160;found.&#160;Source:</text><text class="terminal-2251696975-r2" x="976" y="1142.4" textLength="12.2" clip-path="url(#terminal-2251696975-line-46)">
+</text><text class="terminal-2251696975-r2" x="36.6" y="1166.8" textLength="939.4" clip-path="url(#terminal-2251696975-line-47)">https://developer.apple.com/documentation/healthkit/protecting-user-privacy&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="1166.8" textLength="12.2" clip-path="url(#terminal-2251696975-line-47)">
+</text><text class="terminal-2251696975-r4" x="36.6" y="1191.2" textLength="36.6" clip-path="url(#terminal-2251696975-line-48)">&#160;•&#160;</text><text class="terminal-2251696975-r2" x="73.2" y="1191.2" textLength="902.8" clip-path="url(#terminal-2251696975-line-48)">Fix:&#160;Add&#160;NSHealthShareUsageDescription&#160;(read)&#160;and&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="1191.2" textLength="12.2" clip-path="url(#terminal-2251696975-line-48)">
+</text><text class="terminal-2251696975-r2" x="73.2" y="1215.6" textLength="902.8" clip-path="url(#terminal-2251696975-line-49)">NSHealthUpdateUsageDescription&#160;(write)&#160;and&#160;a&#160;privacy&#160;policy.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text><text class="terminal-2251696975-r2" x="976" y="1215.6" textLength="12.2" clip-path="url(#terminal-2251696975-line-49)">
+</text><text class="terminal-2251696975-r9" x="0" y="1240" textLength="439.2" clip-path="url(#terminal-2251696975-line-50)">exit&#160;code&#160;1&#160;&#160;(verified&#160;issues&#160;found)</text><text class="terminal-2251696975-r2" x="976" y="1240" textLength="12.2" clip-path="url(#terminal-2251696975-line-50)">
+</text>
+    </g>
+    </g>
+</svg>

@@ -1,0 +1,32 @@
+{
+ "expo": {
+  "name": "Plant Water Reminders",
+  "slug": "plant-reminders",
+  "version": "1.0.0",
+  "ios": {
+   "bundleIdentifier": "com.example.plantreminders",
+   "config": {
+    "usesNonExemptEncryption": false
+   }
+  },
+  "android": {
+   "package": "com.example.plantreminders",
+   "permissions": [
+    "USE_EXACT_ALARM"
+   ]
+  },
+  "plugins": [
+   [
+    "expo-build-properties",
+    {
+     "android": {
+      "targetSdkVersion": 36
+     },
+     "ios": {
+      "deploymentTarget": "15.1"
+     }
+    }
+   ]
+  ]
+ }
+}

@@ -1,0 +1,224 @@
+{
+ "deprecated": [
+  {
+   "id": "DEP-APL-EU-ADDENDA",
+   "platform": "apple",
+   "item": "Alternative Terms Addendum for Apps in the EU; StoreKit External Purchase Link Entitlement (EU) Addendum",
+   "status": "CONFIRMED",
+   "official_url": "https://developer.apple.com/support/dma-and-apps-in-the-eu/",
+   "final_url_2026_10_10": "https://developer.apple.com/support/apps-in-the-eu",
+   "http_status_2026_10_10": 200,
+   "evidence_quotes": [
+    "the Alternative Terms Addendum for Apps in the EU and StoreKit External Purchase Link Entitlement (EU) Addendum have been phased out",
+    "As of October 1, 2026, these terms have been superseded by Attachment 14 of the Apple Developer Program License Agreement."
+   ],
+   "replaced_by": "DPLA Attachment 14 (CUR-APL-EU-DPLA)",
+   "effective": "2026-10-01",
+   "verified_date": "2026-10-10",
+   "note": null
+  },
+  {
+   "id": "DEP-APL-US-ENTITLEMENT-PAGE",
+   "platform": "apple",
+   "item": "Support page 'Distributing apps in the U.S. that provide an external purchase link' (developer.apple.com/support/storekit-external-entitlement-us/)",
+   "status": "UNKNOWN",
+   "official_url": "https://developer.apple.com/support/storekit-external-entitlement-us/",
+   "final_url_2026_10_10": "https://developer.apple.com/support/",
+   "http_status_2026_10_10": 200,
+   "evidence_quotes": [],
+   "replaced_by": "Guideline 3.1.1(a): entitlements not required for US storefront links (CUR-APL-3.1.1a-LINKS)",
+   "effective": null,
+   "verified_date": "2026-10-10",
+   "note": "On 2026-10-10 the URL redirected to https://developer.apple.com/support/ (generic page). No official deprecation notice found; treat page content as not current."
+  },
+  {
+   "id": "DEP-APL-XCODE15",
+   "platform": "apple",
+   "item": "Xcode 15 / iOS 17 SDK minimum (since April 29, 2024)",
+   "status": "CONFIRMED",
+   "official_url": "https://developer.apple.com/news/upcoming-requirements/",
+   "final_url_2026_10_10": "https://developer.apple.com/news/upcoming-requirements/",
+   "http_status_2026_10_10": 200,
+   "evidence_quotes": [
+    "Apps uploaded to App Store Connect must be built with Xcode 26 or later"
+   ],
+   "replaced_by": "CUR-APL-UR-XCODE26",
+   "effective": "2026-04-28",
+   "verified_date": "2026-10-10",
+   "note": "Superseded by the later, stricter Xcode 26 requirement on the same page (inference from the newer entry; the page does not use the word 'superseded')."
+  },
+  {
+   "id": "DEP-APL-XML-FEED",
+   "platform": "apple",
+   "item": "App Store Connect XML feed (IAP/metadata/pricing; Game Center)",
+   "status": "CONFIRMED",
+   "official_url": "https://developer.apple.com/news/upcoming-requirements/",
+   "final_url_2026_10_10": "https://developer.apple.com/news/upcoming-requirements/",
+   "http_status_2026_10_10": 200,
+   "evidence_quotes": [
+    "Game Center management will no longer be supported by the XML feed as of July 15, 2024."
+   ],
+   "replaced_by": "App Store Connect API",
+   "effective": "2024-07-15",
+   "verified_date": "2026-10-10",
+   "note": null
+  },
+  {
+   "id": "DEP-APL-SUBS-REPORT-1.2",
+   "platform": "apple",
+   "item": "Subscription reports version 1.2",
+   "status": "CONFIRMED",
+   "official_url": "https://developer.apple.com/news/upcoming-requirements/",
+   "final_url_2026_10_10": "https://developer.apple.com/news/upcoming-requirements/",
+   "http_status_2026_10_10": 200,
+   "evidence_quotes": [
+    "Subscription reports version 1.2 will no longer be available as of March 1, 2023."
+   ],
+   "replaced_by": "version 1.3",
+   "effective": "2023-03-01",
+   "verified_date": "2026-10-10",
+   "note": null
+  },
+  {
+   "id": "DEP-APL-SHA1-RECEIPT",
+   "platform": "apple",
+   "item": "SHA-1 App Store receipt signing intermediate certificate",
+   "status": "CONFIRMED",
+   "official_url": "https://developer.apple.com/news/upcoming-requirements/",
+   "final_url_2026_10_10": "https://developer.apple.com/news/upcoming-requirements/",
+   "http_status_2026_10_10": 200,
+   "evidence_quotes": [
+    "The SHA-1 intermediate certificate used for signing App Store receipts expires on January 24, 2025."
+   ],
+   "replaced_by": "SHA-256 / AppTransaction and Transaction APIs",
+   "effective": "2025-01-24",
+   "verified_date": "2026-10-10",
+   "note": null
+  },
+  {
+   "id": "DEP-GPL-PBL-5-6-7",
+   "platform": "google",
+   "item": "Play Billing Library 5, 6 (past deadlines) and 7 (new app/update deadline August 31, 2026; extension November 1, 2026)",
+   "status": "CONFIRMED",
+   "official_url": "https://developer.android.com/google/play/billing/deprecation-faq",
+   "final_url_2026_10_10": "https://developer.android.com/google/play/billing/deprecation-faq",
+   "http_status_2026_10_10": 200,
+   "evidence_quotes": [
+    "All versions of the Google Play Billing Library have a two-year deprecation cycle.",
+    "August 31, 2026",
+    "November 1, 2026"
+   ],
+   "replaced_by": "PBL 8+ (CUR-GPL-PBL)",
+   "effective": "2026-08-31",
+   "verified_date": "2026-10-10",
+   "note": "Version-date pairing read from table order (cells fetched as separate lines)."
+  },
+  {
+   "id": "DEP-GPL-TAPI-35-NEW",
+   "platform": "google",
+   "item": "Target API 35 as the requirement for new apps/updates (August 31, 2025)",
+   "status": "CONFIRMED",
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/11926878?hl=en",
+   "final_url_2026_10_10": "https://support.google.com/googleplay/android-developer/answer/11926878?hl=en",
+   "http_status_2026_10_10": 200,
+   "evidence_quotes": [
+    "New apps and app updates must target Android 16 (API level 36) or higher to be submitted to Google Play"
+   ],
+   "replaced_by": "CUR-GPL-TAPI-NEW",
+   "effective": "2026-08-31",
+   "verified_date": "2026-10-10",
+   "note": null
+  },
+  {
+   "id": "DEP-GPL-DELETION-BADGE",
+   "platform": "google",
+   "item": "Previous Play data deletion badge",
+   "status": "CONFIRMED",
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/13327111?hl=en",
+   "final_url_2026_10_10": "https://support.google.com/googleplay/android-developer/answer/13327111?hl=en",
+   "http_status_2026_10_10": 200,
+   "evidence_quotes": [
+    "The previous data deletion badge will be removed and no longer shown for all apps."
+   ],
+   "replaced_by": "Data deletion area in Data safety",
+   "effective": null,
+   "verified_date": "2026-10-10",
+   "note": null
+  },
+  {
+   "id": "DEP-GPL-CRANE-PILOT",
+   "platform": "google",
+   "item": "Online Crane Games pilot in Japan",
+   "status": "CONFIRMED",
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "final_url_2026_10_10": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "http_status_2026_10_10": 200,
+   "evidence_quotes": [
+    "The Online Crane Games pilot in Japan ended on July 11, 2023."
+   ],
+   "replaced_by": "Global listing subject to law (from July 12, 2023)",
+   "effective": "2023-07-11",
+   "verified_date": "2026-10-10",
+   "note": null
+  },
+  {
+   "id": "DEP-GPL-US-DL-REPORTING-OCT1",
+   "platform": "google",
+   "item": "October 1, 2026 date for external-content-links download reporting/fees",
+   "status": "CONFIRMED",
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/15582165?hl=en",
+   "final_url_2026_10_10": "https://support.google.com/googleplay/android-developer/answer/15582165?hl=en",
+   "http_status_2026_10_10": 200,
+   "evidence_quotes": [
+    "they now have until December 1, 2026 to report successful download and pay the relevant service fees."
+   ],
+   "replaced_by": "December 1, 2026 (CUR-GPL-US-PROGRAMS)",
+   "effective": "2026-09-17",
+   "verified_date": "2026-10-10",
+   "note": null
+  },
+  {
+   "id": "DEP-GPL-EXACT-ALARM-WORDING",
+   "platform": "google",
+   "item": "Exact Alarm Permission section wording 'will be introduced' (Android 13)",
+   "status": "UNKNOWN",
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "final_url_2026_10_10": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "http_status_2026_10_10": 200,
+   "evidence_quotes": [
+    "A new permission, USE_EXACT_ALARM, will be introduced"
+   ],
+   "replaced_by": null,
+   "effective": null,
+   "verified_date": "2026-10-10",
+   "note": "Wording is outdated (Android 13 shipped in 2022) but the section is still published and in force; NOT an exclusion."
+  },
+  {
+   "id": "DEP-GPL-INSTANT-APPS",
+   "platform": "google",
+   "item": "Android Instant Apps policy section",
+   "status": "UNKNOWN",
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "final_url_2026_10_10": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "http_status_2026_10_10": 200,
+   "evidence_quotes": [
+    "Developers choosing to distribute Android Instant Apps through Google Play must adhere to the following policies"
+   ],
+   "replaced_by": null,
+   "effective": null,
+   "verified_date": "2026-10-10",
+   "note": "Section still published in the policy page fetched 2026-10-10. Any retirement of the Instant Apps product is not stated in the fetched policy text; status UNKNOWN."
+  }
+ ],
+ "repo_rules_text_changed": [
+  {
+   "repo_rule_id": "GPL-SUBSCRIPTIONS",
+   "status": "TEXT_CHANGED_SINCE_BASELINE",
+   "baseline_section_sha256": "7347993007f0b8bdd83facbde1aa0d37ab7e3eb40284608ac2573150a127a7b3",
+   "current_section_sha256": "ff1ce43c9618695ad4d2f847d55a63f0f403c44edee86aee386a6305d62509f5",
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "verified_date": "2026-10-10",
+   "note": "Cited section text differs from the text the repo rule was written against; rule needs re-review (not proven deprecated)."
+  }
+ ]
+}

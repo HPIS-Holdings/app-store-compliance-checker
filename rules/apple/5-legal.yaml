@@ -1,0 +1,212 @@
+- id: APL-5
+  title: "Legal (section preamble)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [legal, regions]
+  requires: "Comply with all legal requirements in every location where the app is available; developer is responsible for understanding local laws."
+  prohibited: "Soliciting/promoting criminal or clearly reckless behaviour."
+- id: APL-5.1.1
+  title: "Data Collection and Storage (i)-(iv) privacy policy, consent, minimization, access"
+  label: official_requirement
+  obligation: mandatory
+  topics: [privacy, privacy-policy, permissions, consent, microphone, location]
+  requires: "(i) Privacy policy link in App Store Connect metadata and inside the app, explicitly identifying data collected, how, all uses; confirming third parties (analytics, ad networks, SDKs, affiliates) provide equal protection; retention/deletion policy and how to revoke consent/request deletion. (ii) Obtain consent for collecting user or usage data even if anonymous; paid functionality must not depend on granting data access; easy way to withdraw consent; purpose strings clearly and completely describe use; GDPR legitimate-interest reliance must comply with that law. (iii) Request only data relevant to core functionality; prefer out-of-process pickers/share sheets. (iv) Respect permission settings; do not manipulate or force consent; provide alternatives when users decline (e.g. manual address entry)."
+  prohibited: "Requiring unrelated permissions (Apple's example - requiring microphone before photo upload)."
+  implementation: "Expo - set NS*UsageDescription strings via app.json ios.infoPlist or config plugin options (e.g. expo-audio microphonePermission) with specific text such as \"Used to record voice notes for your health log when you tap the mic button\" (Interpretation)."
+  agent_verification:
+    - "Extract every NS*UsageDescription"
+    - "flag generic strings (\"This app needs access\")"
+    - "map each permission to a feature"
+    - "confirm privacy policy URL present in app UI and metadata"
+    - "confirm core features work when optional permissions are denied."
+- id: APL-5.1.1v
+  title: "(v) Account sign-in and in-app account deletion"
+  label: official_requirement
+  obligation: conditional
+  topics: [account-deletion, authentication, social-login]
+  requires: "Allow use without login if no significant account-based features. If account creation is supported, offer account deletion within the app. Do not require personal info unless core or legally required. Provide access without social login unless core functionality relates to that network. Provide in-app mechanism to revoke social credentials."
+  prohibited: "Storing social network credentials/tokens off device; using them other than to connect directly from the app while in use."
+  implementation: "Apple's support page \"Offering account deletion in your app\" adds guidance - easy to find (typically account settings); delete the whole account record and associated data (deactivation alone insufficient); direct link if web completion is needed; inform users of timing, billing/cancellation handling and retained data; reauthentication/confirmation allowed but must not be unnecessarily difficult; non-regulated apps should not require phone/email/chat support flows; Sign in with Apple apps should revoke tokens via the REST API; auto-created guest accounts also need deletion (Official recommendation - source APL-SUPP-ACCOUNT-DELETION)."
+  agent_verification:
+    - "Find account creation"
+    - "find a \"Delete account\" entry reachable from settings within <=3 taps"
+    - "confirm backend deletes user records (not soft-delete only) and RevenueCat/analytics aliases where applicable"
+    - "confirm Sign in with Apple token revocation call."
+- id: APL-5.1.1-vi-x
+  publisher_id: "5.1.1(vi)-(x)"
+  section_ref: APL-5.1.1v
+  title: "(vi)-(x) passwords, SafariViewController, compiled data, regulated fields, basic contact info"
+  label: official_requirement
+  obligation: conditional
+  topics: [privacy, regulated-industries, health, legal-entity]
+  requires: "(vii) SafariViewController visible and not used for covert tracking. (ix) Highly regulated fields (banking, healthcare, gambling, legal cannabis, air travel, crypto exchanges) or apps requiring sensitive user info should be submitted by a legal entity providing the services, not an individual developer; cannabis sales geo-restricted. (x) Basic contact info requests must be optional and features not conditional on it."
+  prohibited: "(vi) Surreptitiously discovering passwords/private data (Program removal). (viii) Compiling personal info not directly from the user or without explicit consent, even from public databases."
+  examples: "A health-management app that \"requires sensitive user information\" should be published from an organization account (e.g. an LLC) rather than an individual account (Interpretation of 5.1.1(ix) - \"should\")."
+  uncertainty: "5.1.1(ix) uses \"should\"; Apple does not define which health apps count as \"providing services in healthcare\". Community reports show rejections of individual-account health apps (see rejections-and-appeals/)."
+- id: APL-5.1.2
+  title: "Data Use and Sharing (incl. third-party AI, ATT)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [privacy, tracking, att, ai, healthkit, sharing]
+  requires: "(i) No use/transmission/sharing of personal data without permission (unless law permits); disclose how/where data is used; clearly disclose sharing with third parties including third-party AI and obtain explicit permission before doing so; share only to improve the app or serve ads per DPLA; obtain permission via App Tracking Transparency to track. (ii) No repurposing without further consent. (vi) Data from HomeKit, HealthKit, Clinical Health Records, MovementDisorder, ClassKit, depth/facial mapping may not be used for marketing, advertising or use-based data mining, including by third parties. (vii) Apple Pay data shared only to deliver goods/services."
+  prohibited: "Requiring users to enable system functionalities (push, location, tracking) to access functionality/content or receive compensation; surreptitious profiling/de-anonymization (iii); building contact databases or collecting installed-app lists for analytics/ads (iv); contacting people from Contacts/Photos except user-initiated individually, no \"Select All\" (v)."
+  enforcement_risk: "Removal from sale and possible Program removal for sharing without consent."
+  implementation: "Before sending user text/voice/health data to an external LLM API, show a disclosure naming the provider category and data sent, and obtain explicit opt-in; record consent; disclose in privacy policy and App Privacy labels (Interpretation of the \"third-party AI\" clause)."
+  agent_verification:
+    - "Find outbound calls to AI providers (openai, anthropic, google generativeai, etc.)"
+    - "confirm a consent gate precedes first call and is persisted"
+    - "confirm ATT prompt (expo-tracking-transparency) precedes any tracking SDK init"
+    - "confirm no HealthKit values flow to analytics/ads SDKs."
+- id: APL-5.1.3
+  title: "Health and Health Research"
+  label: official_requirement
+  obligation: conditional
+  topics: [health, healthkit, medical, research, icloud]
+  requires: "(i) Health/fitness/medical data (incl. Clinical Health Records, HealthKit, Motion & Fitness, MovementDisorder, human-subject research) may not be used or disclosed to third parties for advertising, marketing or use-based data mining other than improving health management or health research, and then only with permission; disclose the specific health data collected. (iii) Human-subject research needs informed consent with listed elements (nature/purpose/duration, procedures/risks/benefits, confidentiality, contact, withdrawal); parent/guardian for minors. (iv) Independent ethics review board approval, proof on request."
+  prohibited: "(ii) Writing false/inaccurate data into HealthKit or other health apps; storing personal health information in iCloud."
+  exceptions_regions: "Direct user benefit (e.g. reduced insurance premium) allowed if app submitted by the benefit provider and data not shared with a third party."
+  implementation: "Do not enable CloudKit/iCloud Drive/NSUbiquitous storage for health records; store server-side under your own controls or locally (Interpretation of 5.1.3(ii)). Note: iOS device backups to iCloud are outside the app's control; Apple does not state whether local app data included in iCloud Backup counts - see uncertainty."
+  agent_verification:
+    - "Check entitlements for iCloud/CloudKit containers"
+    - "grep for NSUbiquitousKeyValueStore/CloudKit usage with health data"
+    - "confirm HealthKit writes only user-entered or measured values."
+  uncertainty: "Whether default device iCloud Backup of the app container violates \"may not store personal health information in iCloud\" is not addressed in the guideline. Some developers exclude health files from backup (isExcludedFromBackup) as a precaution (Interpretation)."
+- id: APL-5.1.4
+  title: "Kids (privacy)"
+  label: official_requirement
+  obligation: conditional
+  topics: [kids, privacy, coppa, gdpr]
+  requires: "Comply with COPPA, GDPR and similar; birthdate/parental contact only for compliance; useful functionality regardless of age; apps primarily for kids should not include third-party analytics/ads (limited exceptions per 1.3); privacy policy for apps collecting data from minors. Parental gate is not the same as verifiable parental consent."
+  prohibited: "Non-Kids-Category apps implying children are the main audience in name, subtitle, icon, screenshots or description."
+- id: APL-5.1.5
+  title: "Location Services"
+  label: official_requirement
+  obligation: conditional
+  topics: [location, permissions]
+  requires: "Use only when directly relevant; notify and obtain consent; explain purpose in-app."
+  prohibited: "Location APIs for emergency services or autonomous control of vehicles/aircraft (small drones/toys excepted)."
+  examples: "Prayer-time / Qibla apps - request \"when in use\" location with a manual city fallback (Interpretation; ties to 5.1.1(iv))."
+- id: APL-5.2.1
+  title: "Intellectual property - generally"
+  label: official_requirement
+  obligation: mandatory
+  topics: [ip, religious, audio]
+  requires: "Submit from the person/entity owning or licensing the IP."
+  prohibited: "Protected third-party material (trademarks, copyrighted works, patents) without permission; misleading/copycat names or metadata."
+  examples: "Recitation audio, translations of scripture, devotional artwork and bhajan recordings are typically copyrighted even when the underlying scripture is not - document licences (Interpretation)."
+  agent_verification:
+    - "Require a CONTENT_LICENSES file mapping each bundled audio/text/image asset to a licence or permission."
+- id: APL-5.2.2
+  title: "Third-party sites/services"
+  label: official_requirement
+  obligation: conditional
+  topics: [ip, apis]
+  requires: "Be specifically permitted under the third-party service's terms to use/access/monetize/display its content; provide authorization on request."
+- id: APL-5.2.3
+  title: "Audio/video downloading"
+  label: official_requirement
+  obligation: mandatory
+  topics: [ip, media]
+  prohibited: "Facilitating illegal file sharing or saving/converting/downloading media from third-party sources (Apple Music, YouTube, SoundCloud, Vimeo) without authorization."
+- id: APL-5.2.4
+  title: "Apple endorsements"
+  label: official_requirement
+  obligation: mandatory
+  topics: [metadata]
+  prohibited: "Implying Apple is source/supplier or endorses the app."
+- id: APL-5.2.5
+  title: "Apple products look-alikes, Activity rings, music previews, Weather attribution"
+  label: official_requirement
+  obligation: mandatory
+  topics: [design, ip, health]
+  prohibited: "Confusingly similar to Apple products/interfaces/apps/ad themes; Apple emoji in apps/extensions; iTunes/Apple Music previews for entertainment value. Activity rings must not visualize Move/Exercise/Stand data resembling the Activity control."
+  requires: "Link to music in iTunes/Apple Music when providing previews; follow WeatherKit attribution."
+- id: APL-5.3
+  title: "Gaming, gambling, lotteries (preamble)"
+  label: official_requirement
+  obligation: conditional
+  topics: [games, gambling]
+  requires: "Fully vet legal obligations everywhere the app is available; expect extra review time."
+- id: APL-5.3.1
+  title: "Sweepstakes sponsored by developer"
+  label: official_requirement
+  obligation: conditional
+  topics: [games, sweepstakes]
+  requires: "Sweepstakes and contests must be sponsored by the app's developer."
+- id: APL-5.3.2
+  title: "Official rules in app; Apple not a sponsor"
+  label: official_requirement
+  obligation: conditional
+  topics: [games, sweepstakes]
+  requires: "Present official rules in the app, stating Apple is not a sponsor or involved."
+- id: APL-5.3.3
+  title: "No IAP for real-money gaming credit"
+  label: official_requirement
+  obligation: conditional
+  topics: [games, gambling, iap]
+  prohibited: "Using IAP to buy credit/currency for real-money gaming of any kind."
+- id: APL-5.3.4
+  title: "Real-money gaming and lotteries"
+  label: official_requirement
+  obligation: conditional
+  topics: [games, gambling]
+  requires: "Licensing and permissions where used; geo-restriction; free on the App Store; lotteries need consideration, chance and prize."
+  prohibited: "Illegal gambling aids such as card counters."
+- id: APL-5.4
+  title: "VPN apps"
+  label: official_requirement
+  obligation: conditional
+  topics: [vpn]
+  requires: "NEVPNManager API; organization enrollment; clear pre-use data declaration; no selling/using/disclosing data to third parties (commit in privacy policy); licence info in Review Notes where required."
+- id: APL-5.5
+  title: "Mobile Device Management"
+  label: official_requirement
+  obligation: conditional
+  topics: [mdm]
+  requires: "Request capability from Apple; only commercial enterprises, education, government (limited parental-control/security cases); data declaration; no third-party data use."
+- id: APL-5.6
+  title: "Developer Code of Conduct"
+  label: official_requirement
+  obligation: mandatory
+  topics: [conduct, enforcement, termination, appeals, subscriptions]
+  requires: "Respectful conduct with users and Apple, including in App Store Connect responses."
+  prohibited: "Harassment, discrimination, intimidation; preying on users, tricking into unwanted purchases, forcing unnecessary data sharing, tricky price increases, charging for undelivered features, other manipulative practices."
+  enforcement_risk: "Account termination for Code of Conduct violations; repeated manipulative/misleading/fraudulent behaviour leads to Program removal."
+  exceptions_regions: "Restoration path - written statement of planned improvements; if approved by Apple and changes confirmed, account may be restored."
+- id: APL-5.6.1
+  title: "App Store reviews - responses and prompts"
+  label: official_requirement
+  obligation: mandatory
+  topics: [ratings, reviews]
+  requires: "Respectful, targeted review responses without personal info, spam or marketing. Use the provided API to prompt for reviews."
+  prohibited: "Custom review prompts (disallowed)."
+  implementation: "Expo - expo-store-review (StoreReview.requestReview) which uses SKStoreReviewController / AppStore.requestReview (Interpretation)."
+  agent_verification:
+    - "Search for custom \"Rate us 5 stars\" dialogs that pre-filter sentiment before calling the native API."
+- id: APL-5.6.2
+  title: "Developer identity"
+  label: official_requirement
+  obligation: mandatory
+  topics: [account, identity]
+  requires: "Accurate, truthful, relevant, up-to-date representation of yourself, business and offerings."
+- id: APL-5.6.3
+  title: "Discovery fraud"
+  label: official_requirement
+  obligation: mandatory
+  topics: [aso, fraud]
+  prohibited: "Manipulating charts, search, reviews or referrals."
+- id: APL-5.6.4
+  title: "App quality (reports, refunds)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [quality, enforcement, refunds]
+  requires: "Maintain high quality; excessive customer reports, negative reviews and excessive refund requests may indicate Code of Conduct non-compliance."
+- id: APL-AFTER-SUBMIT
+  title: "After You Submit - timing, expedite, rejections, appeals, bug-fix submissions"
+  label: official_requirement
+  obligation: informational
+  topics: [review, appeals, rejections, expedited-review]
+  requires: "Communicate with App Review via App Store Connect after rejection; appeal if you disagree; expedited review only for critical timing issues (abuse may lead to refused requests); release may take up to 24 hours to appear on all storefronts."
+  exceptions_regions: "Bug Fix Submissions - for apps already on the store, bug fixes are not delayed over guideline violations except legal/safety-related; request via App Store Connect and commit to fix in next submission."
+  enforcement_risk: "Repeated rejection for the same guideline or attempts to manipulate review lengthen review."
+

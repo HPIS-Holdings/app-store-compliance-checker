@@ -1,0 +1,3687 @@
+{
+ "snapshot": "2026-10-10",
+ "rule_count": 102,
+ "rules": [
+  {
+   "rule_id": "CUR-APL-1.4.1-ACCURACY",
+   "platform": "apple",
+   "publisher_section_id": "1.4.1",
+   "title": "Medical apps: disclose data and methodology for accuracy claims",
+   "requirement": "Medical apps get greater scrutiny; health-measurement accuracy claims need disclosed data and methodology, otherwise rejection.",
+   "official_quotes": [
+    "Medical apps that could provide inaccurate data or information, or that could be used for diagnosing or treating patients may be reviewed with greater scrutiny.",
+    "Apps must clearly disclose data and methodology to support accuracy claims relating to health measurements"
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#1.4.1",
+   "anchor": "1.4.1",
+   "section_heading": "Medical apps that could provide inaccurate data or information, or …",
+   "section_sha256_2026_10_10": "e57ff25ed73098e9f6d8d3d8d91aa0dc2f359c2802e7af721964027f060a1451",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps with health measurements or diagnostic/treatment use",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "health"
+   ],
+   "family": "health-medical",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "List every accuracy/clinical claim in app copy + store listing; attach data/methodology for each or remove the claim.",
+   "static_checks": [
+    "medical_claims_scan"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-1.4.1-DOCTOR",
+   "platform": "apple",
+   "publisher_section_id": "1.4.1",
+   "title": "Medical apps: remind users to check with a doctor",
+   "requirement": "Medical apps should remind users to consult a doctor before medical decisions.",
+   "official_quotes": [
+    "Apps should remind users to check with a doctor in addition to using the app and before making medical decisions."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#1.4.1",
+   "anchor": "1.4.1",
+   "section_heading": "Medical apps that could provide inaccurate data or information, or …",
+   "section_sha256_2026_10_10": "e57ff25ed73098e9f6d8d3d8d91aa0dc2f359c2802e7af721964027f060a1451",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "SHOULD",
+   "scope": "Medical apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "health"
+   ],
+   "family": "health-medical",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Locate the in-app 'consult a doctor' reminder (file:line) on screens that show health guidance; add it where missing.",
+   "static_checks": [
+    "medical_disclaimer_strings"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-1.4.1-CLEARANCE",
+   "platform": "apple",
+   "publisher_section_id": "1.4.1",
+   "title": "Submit regulatory clearance documentation if cleared",
+   "requirement": "If the app has regulatory clearance, link the documentation in the submission.",
+   "official_quotes": [
+    "If your medical app has received regulatory clearance, please submit a link to that documentation with your app."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#1.4.1",
+   "anchor": "1.4.1",
+   "section_heading": "Medical apps that could provide inaccurate data or information, or …",
+   "section_sha256_2026_10_10": "e57ff25ed73098e9f6d8d3d8d91aa0dc2f359c2802e7af721964027f060a1451",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "SHOULD",
+   "scope": "Medical apps with regulatory clearance",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "health",
+    "regulatory_clearance"
+   ],
+   "family": "health-medical",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Owner states whether any regulatory clearance exists; if yes, link it in metadata.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-2.1-DEMO",
+   "platform": "apple",
+   "publisher_section_id": "2.1(a)",
+   "title": "Demo account / working backend for review",
+   "requirement": "Provide demo account info and a running backend if the app has a login.",
+   "official_quotes": [
+    "include demo account info (and turn on your back-end service!) if your app includes a login"
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#2.1",
+   "anchor": "2.1",
+   "section_heading": "App Completeness",
+   "section_sha256_2026_10_10": "db6f4e6d42a8e2d68ae60c189bf0e4e5a63521f35ad538369871567a2006d55f",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "SHOULD",
+   "scope": "Apps with login",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "accounts"
+   ],
+   "family": "review-access",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Prepare App Review demo account / demo mode notes in App Store Connect (not requested here).",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-2.1-IAP",
+   "platform": "apple",
+   "publisher_section_id": "2.1(b)",
+   "title": "In-app purchases complete and visible to reviewer",
+   "requirement": "IAPs must be complete, visible to the reviewer and functional.",
+   "official_quotes": [
+    "If you offer in-app purchases in your app, make sure they are complete, up-to-date, visible to the reviewer and functional."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#2.1",
+   "anchor": "2.1",
+   "section_heading": "App Completeness",
+   "section_sha256_2026_10_10": "db6f4e6d42a8e2d68ae60c189bf0e4e5a63521f35ad538369871567a2006d55f",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "SHOULD",
+   "scope": "Apps with IAP",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "iap"
+   ],
+   "family": "payments",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Confirm IAP products are submitted and visible to review in App Store Connect.",
+   "static_checks": [
+    "revenuecat_or_storekit"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [
+    "COM-2026-RC-EAS-ENV"
+   ],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-2.3.6-AGE",
+   "platform": "apple",
+   "publisher_section_id": "2.3.6",
+   "title": "Answer age rating questions honestly",
+   "requirement": "Age rating questionnaire answers must be honest.",
+   "official_quotes": [
+    "Answer the age rating questions in App Store Connect honestly"
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#2.3.6",
+   "anchor": "2.3.6",
+   "section_heading": "Answer the age rating questions in App Store Connect honestly …",
+   "section_sha256_2026_10_10": "1f5a4553c5863124823f639a49bc7ca42dd79ff2369ac523ee78d99e3ca76b70",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "SHOULD",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "age-rating",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Answer the updated age-rating questionnaire in App Store Connect.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-3.1.1-IAP",
+   "platform": "apple",
+   "publisher_section_id": "3.1.1",
+   "title": "Use in-app purchase to unlock features; provide restore",
+   "requirement": "Unlocking features/functionality (incl. subscriptions) requires in-app purchase; restorable purchases need a restore mechanism.",
+   "official_quotes": [
+    "you must use in-app purchase",
+    "you should make sure you have a restore mechanism for any restorable in-app purchases"
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#3.1.1",
+   "anchor": "3.1.1",
+   "section_heading": "In-App Purchase",
+   "section_sha256_2026_10_10": "55111ee24f4a8b286cecf92cb75279b953198239b0b4326c80cc8bb7ff6b79cd",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps selling digital features/content",
+   "exceptions": "US storefront and entitlement exceptions in 3.1.1(a)/3.1.3.",
+   "enforcement_dates": [],
+   "applies_when": [
+    "iap"
+   ],
+   "family": "payments",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Trace every unlock of digital content to a StoreKit/RevenueCat purchase path; flag any unlock via external payment in native builds.",
+   "static_checks": [
+    "revenuecat_or_storekit",
+    "restore_purchases"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-3.1.1a-LINKS",
+   "platform": "apple",
+   "publisher_section_id": "3.1.1(a)",
+   "title": "External purchase links: US storefront vs other storefronts",
+   "requirement": "Entitlements are not required for buttons/external links/calls to action in US storefront apps; in other storefronts such calls to action are not allowed outside the entitlement programs.",
+   "official_quotes": [
+    "These entitlements are not required for developers to include buttons, external links, or other calls to action in their United States storefront apps.",
+    "In all other storefronts, except for the United States storefront, where this prohibition does not apply, apps and their metadata may not include buttons, external links, or other calls to action that direct customers to purchasing mechanisms other than in-app"
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#3.1.1a",
+   "anchor": "3.1.1a",
+   "section_heading": "3.1.1(a) Link to Other Purchase Methods: Developers may apply for …",
+   "section_sha256_2026_10_10": "dc4ba7b3416f208c5f0b95ed90e34f8dec1c2b359abcc1acde6c96d636121c39",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps linking to external purchase",
+   "exceptions": "United States storefront; StoreKit External Purchase Link / Music Streaming entitlements in specific storefronts.",
+   "enforcement_dates": [],
+   "applies_when": [
+    "external_purchase"
+   ],
+   "family": "payments-external",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "For each external purchase link, record storefronts where it is shown and the entitlement/US-storefront basis.",
+   "static_checks": [
+    "external_purchase_links"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": "The former US entitlement page (developer.apple.com/support/storekit-external-entitlement-us/) redirected to /support/ on 2026-10-10; the guideline text is the current source."
+  },
+  {
+   "rule_id": "CUR-APL-3.1.2a-SUBS",
+   "platform": "apple",
+   "publisher_section_id": "3.1.2(a)",
+   "title": "Auto-renewable subscriptions: ongoing value, >=7 days, all devices",
+   "requirement": "Auto-renewable subscriptions must give ongoing value, last at least seven days and work across the user's devices.",
+   "official_quotes": [
+    "If you offer an auto-renewable subscription, you must provide ongoing value to the customer, and the subscription period must last at least seven days and be available across all of the user’s devices."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#3.1.2a",
+   "anchor": "3.1.2a",
+   "section_heading": "3.1.2(a) Permissible uses: If you offer an auto-renewable subscription, you …",
+   "section_sha256_2026_10_10": "6a32ae6f6dd7f137b30fcd21f1662e4c3a83d6be99af4fc76e7cfea3052126bd",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps with auto-renewable subscriptions",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "iap"
+   ],
+   "family": "payments",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Map subscription products to ongoing value; confirm period >= 7 days and cross-device availability.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-3.1.2a-SCAM",
+   "platform": "apple",
+   "publisher_section_id": "3.1.2(a)",
+   "title": "No subscription scams / bait-and-switch",
+   "requirement": "Apps that trick users into subscriptions are removed.",
+   "official_quotes": [
+    "Apps that attempt to scam users will be removed from the App Store."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#3.1.2a",
+   "anchor": "3.1.2a",
+   "section_heading": "3.1.2(a) Permissible uses: If you offer an auto-renewable subscription, you …",
+   "section_sha256_2026_10_10": "6a32ae6f6dd7f137b30fcd21f1662e4c3a83d6be99af4fc76e7cfea3052126bd",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Subscription apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "iap"
+   ],
+   "family": "payments",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "Review paywall copy for misleading pricing/urgency.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [
+    "COM-2025-RC-3.1.2-TRIAL"
+   ],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-3.1.2c-INFO",
+   "platform": "apple",
+   "publisher_section_id": "3.1.2(c)",
+   "title": "Subscription information before purchase; Schedule 2 requirements",
+   "requirement": "Describe what the user gets for the price and communicate Schedule 2 requirements.",
+   "official_quotes": [
+    "Before asking a customer to subscribe, you should clearly describe what the user will get for the price.",
+    "Ensure you clearly communicate the requirements described in Schedule 2 of the Apple Developer Program License Agreement."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#3.1.2c",
+   "anchor": "3.1.2c",
+   "section_heading": "3.1.2(c) Subscription Information: Before asking a customer to subscribe, you …",
+   "section_sha256_2026_10_10": "1d87b14acce687153b899aaa5ef65580ccf852545d33a93e60209e9a053bd79b",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "SHOULD",
+   "scope": "Subscription apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "iap"
+   ],
+   "family": "payments",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Locate the paywall component (file:line); verify price, period, renewal terms, Terms/EULA + Privacy links are rendered.",
+   "static_checks": [
+    "paywall_legal_links"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [
+    "COM-2026-3.1.2-LINKS",
+    "COM-2025-RC-3.1.2-TRIAL"
+   ],
+   "uncertainty": "Schedule 2 itself was not re-fetched in this snapshot; Terms/Privacy link expectations come from community reports."
+  },
+  {
+   "rule_id": "CUR-APL-3.1.3-OTHER",
+   "platform": "apple",
+   "publisher_section_id": "3.1.3",
+   "title": "Other purchase methods: no in-app steering except US / 3.1.1(a) / 3.1.3(a)",
+   "requirement": "Apps using other purchase methods cannot encourage non-IAP purchasing in-app except on the US storefront and per 3.1.1(a)/3.1.3(a).",
+   "official_quotes": [
+    "Apps in this section cannot, within the app, encourage users to use a purchasing method other than in-app purchase, except for apps on the United States storefront and as set forth in 3.1.1(a) and 3.1.3(a)."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#3.1.3",
+   "anchor": "3.1.3",
+   "section_heading": "Other Purchase Methods: The following apps may use purchase methods …",
+   "section_sha256_2026_10_10": "ec953115edd1fdfd4c80d1fa82b4e5699b08f3eb0f4c25b898e3b35eced5191a",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps under 3.1.3 categories",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "external_purchase"
+   ],
+   "family": "payments-external",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "Decide which 3.1.3 exception (if any) applies to each non-IAP purchase path.",
+   "static_checks": [
+    "external_purchase_links"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-4.2-MINFUNC",
+   "platform": "apple",
+   "publisher_section_id": "4.2",
+   "title": "Minimum functionality (not a repackaged website)",
+   "requirement": "Apps should go beyond a repackaged website and provide lasting utility.",
+   "official_quotes": [
+    "Your app should include features, content, and UI that elevate it beyond a repackaged website."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#4.2",
+   "anchor": "4.2",
+   "section_heading": "Minimum Functionality",
+   "section_sha256_2026_10_10": "35682822e1e9c3eb15c28106fe5e31b75e5b14847ff4a590abf83c2830cf5ca3",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "SHOULD",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "content-integrity",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "Reviewer judgment of native functionality beyond a website; collect screen inventory.",
+   "static_checks": [
+    "webview_only_scan"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-4.3a-SPAM",
+   "platform": "apple",
+   "publisher_section_id": "4.3(a)",
+   "title": "Spam: no multiple Bundle IDs of the same app",
+   "requirement": "Do not submit multiple bundle IDs of the same app.",
+   "official_quotes": [
+    "Don’t create multiple Bundle IDs of the same app"
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#4.3",
+   "anchor": "4.3",
+   "section_heading": "Spam",
+   "section_sha256_2026_10_10": "4e8fe41066e59b6e9ccfc15b5dc678cde8fdf3ebc031345f743b95708f0ef068",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "content-integrity",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "Compare bundle IDs / near-duplicate apps across your developer account (template apps!).",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [
+    "COM-2026-4.3-FORUM-788684",
+    "COM-2026-4.3-TEMPLATE"
+   ],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-4.3b-SPAM",
+   "platform": "apple",
+   "publisher_section_id": "4.3(b)",
+   "title": "Spam: not indistinguishable from widely available apps",
+   "requirement": "Do not submit apps indistinguishable from what is widely available.",
+   "official_quotes": [
+    "Don’t submit apps that are indistinguishable from what's already widely available."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#4.3",
+   "anchor": "4.3",
+   "section_heading": "Spam",
+   "section_sha256_2026_10_10": "4e8fe41066e59b6e9ccfc15b5dc678cde8fdf3ebc031345f743b95708f0ef068",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "content-integrity",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "Assess saturated-category differentiation; document unique value per template app.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [
+    "COM-2026-4.3-TEMPLATE"
+   ],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-4.8-LOGIN",
+   "platform": "apple",
+   "publisher_section_id": "4.8",
+   "title": "Third-party login requires an equivalent privacy-preserving login option",
+   "requirement": "If third-party/social login sets up the primary account, also offer an equivalent login meeting the listed privacy features.",
+   "official_quotes": [
+    "must also offer as an equivalent option another login service with the following features"
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#4.8",
+   "anchor": "4.8",
+   "section_heading": "Login Services",
+   "section_sha256_2026_10_10": "055cf3b5947e9ba91b9f0414f0a74b43940e29b8cf8dca3d09981e64bc8e9242",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps using third-party/social login for primary account",
+   "exceptions": "Own account system only; enterprise/education; government ID; client for a specific third-party service; alternative marketplace.",
+   "enforcement_dates": [],
+   "applies_when": [
+    "social_login"
+   ],
+   "family": "accounts-login",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Trace third-party login providers; confirm Sign in with Apple (or 4.8-equivalent) is offered in the same screen.",
+   "static_checks": [
+    "social_login_siwa"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-5.1.1i-PRIVACY",
+   "platform": "apple",
+   "publisher_section_id": "5.1.1(i)",
+   "title": "Privacy policy link in metadata and in app",
+   "requirement": "Privacy policy link required in App Store Connect and in the app; must cover collection, third-party sharing, retention/deletion.",
+   "official_quotes": [
+    "All apps must include a link to their privacy policy in the App Store Connect metadata field and within the app in an easily accessible manner."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#5.1.1",
+   "anchor": "5.1.1",
+   "section_heading": "Data Collection and Storage",
+   "section_sha256_2026_10_10": "c1bb94b6c689b32ab4c2692baddb8fc691e11c5b2c6a3503aa7edfd260fbd2f2",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "privacy",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Confirm the in-app privacy-policy link target (file:line) is a real, reachable URL; then match it to App Store Connect.",
+   "static_checks": [
+    "privacy_policy_link"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-5.1.1ii-CONSENT",
+   "platform": "apple",
+   "publisher_section_id": "5.1.1(ii)",
+   "title": "Consent for data collection; purpose strings; no paywalled consent",
+   "requirement": "Collecting user/usage data needs consent; purpose strings must describe the use; paid functionality cannot depend on granting data access.",
+   "official_quotes": [
+    "Apps that collect user or usage data must secure user consent for the collection",
+    "Paid functionality must not be dependent on or require a user to grant access to this data.",
+    "Ensure your purpose strings clearly and completely describe your use of the data."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#5.1.1",
+   "anchor": "5.1.1",
+   "section_heading": "Data Collection and Storage",
+   "section_sha256_2026_10_10": "c1bb94b6c689b32ab4c2692baddb8fc691e11c5b2c6a3503aa7edfd260fbd2f2",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "All apps collecting data",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "privacy",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Trace each data collection to a consent/purpose-string point; review purpose-string wording.",
+   "static_checks": [
+    "ios_usage_descriptions"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-5.1.1iii-MIN",
+   "platform": "apple",
+   "publisher_section_id": "5.1.1(iii)",
+   "title": "Data minimization",
+   "requirement": "Request only data relevant to core functionality.",
+   "official_quotes": [
+    "Apps should only request access to data relevant to the core functionality of the app"
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#5.1.1",
+   "anchor": "5.1.1",
+   "section_heading": "Data Collection and Storage",
+   "section_sha256_2026_10_10": "c1bb94b6c689b32ab4c2692baddb8fc691e11c5b2c6a3503aa7edfd260fbd2f2",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "SHOULD",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "privacy",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Compare declared permissions vs runtime request call sites; remove unused permissions.",
+   "static_checks": [
+    "permission_inventory"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-5.1.1v-ACCDEL",
+   "platform": "apple",
+   "publisher_section_id": "5.1.1(v)",
+   "title": "Account deletion in app when account creation is supported",
+   "requirement": "Apps supporting account creation must offer account deletion within the app.",
+   "official_quotes": [
+    "If your app supports account creation, you must also offer account deletion within the app."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#5.1.1v",
+   "anchor": "5.1.1v",
+   "section_heading": "(v) Account Sign-In: If your app doesn’t include significant account-based …",
+   "section_sha256_2026_10_10": "5c5c804d70dfdcf7073ed433b6390c2579dd1c3639fb15b73b6de455517cdf2f",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps with account creation",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "accounts"
+   ],
+   "family": "account-deletion",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Trace the in-app deletion UI to the backend and confirm the login identity (not just data) is deleted.",
+   "static_checks": [
+    "account_deletion_presence"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-5.1.1ix-ENTITY",
+   "platform": "apple",
+   "publisher_section_id": "5.1.1(ix)",
+   "title": "Highly regulated fields (incl. healthcare) submitted by a legal entity",
+   "requirement": "Apps in highly regulated fields such as healthcare, or requiring sensitive information, should be submitted by a legal entity, not an individual.",
+   "official_quotes": [
+    "highly regulated fields (such as banking and financial services, healthcare,",
+    "should be submitted by a legal entity that provides the services, and not by an individual developer"
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#5.1.1v",
+   "anchor": "5.1.1v",
+   "section_heading": "(v) Account Sign-In: If your app doesn’t include significant account-based …",
+   "section_sha256_2026_10_10": "5c5c804d70dfdcf7073ed433b6390c2579dd1c3639fb15b73b6de455517cdf2f",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "SHOULD",
+   "scope": "Healthcare and sensitive-data apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "health"
+   ],
+   "family": "developer-account",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Confirm the publishing account is an organization/legal entity for regulated health services.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-5.1.2i-AI",
+   "platform": "apple",
+   "publisher_section_id": "5.1.2(i)",
+   "title": "Disclose and get explicit permission before sharing personal data with third-party AI",
+   "requirement": "Clearly disclose where personal data is shared with third parties, including third-party AI, and obtain explicit permission first.",
+   "official_quotes": [
+    "You must clearly disclose where personal data will be shared with third parties, including with third-party AI, and obtain explicit permission before doing so."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#5.1.2",
+   "anchor": "5.1.2",
+   "section_heading": "Data Use and Sharing",
+   "section_sha256_2026_10_10": "220af4e4f62ecb0552c884ee790eb6420ae94314d3cf296c7cd55c8c83b9143d",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps sending personal data to third parties/AI",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "ai"
+   ],
+   "family": "ai",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Trace AI request boundary (client -> backend -> provider), list personal fields sent, and confirm explicit consent gate before first call.",
+   "static_checks": [
+    "ai_provider_consent"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [
+    "COM-2026-5.1.2i-FORUM-816140",
+    "COM-2026-5.1.2i-FORUM-815842",
+    "COM-2026-5.1.2i-REDDIT"
+   ],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-5.1.2i-ATT",
+   "platform": "apple",
+   "publisher_section_id": "5.1.2(i)",
+   "title": "App Tracking Transparency for tracking",
+   "requirement": "Tracking requires explicit permission via ATT.",
+   "official_quotes": [
+    "You must receive explicit permission from users via the App Tracking Transparency APIs to track their activity."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#5.1.2",
+   "anchor": "5.1.2",
+   "section_heading": "Data Use and Sharing",
+   "section_sha256_2026_10_10": "220af4e4f62ecb0552c884ee790eb6420ae94314d3cf296c7cd55c8c83b9143d",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps that track",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "tracking"
+   ],
+   "family": "privacy-tracking",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Confirm whether SDKs track; if yes add ATT prompt before tracking.",
+   "static_checks": [
+    "att_tracking"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-5.1.2vi-HEALTHKIT",
+   "platform": "apple",
+   "publisher_section_id": "5.1.2(vi)",
+   "title": "HealthKit/Clinical Records data not for marketing/advertising",
+   "requirement": "Data from HealthKit, Clinical Health Records etc. may not be used for marketing, advertising or use-based data mining.",
+   "official_quotes": [
+    "may not be used for marketing, advertising or use-based data mining, including by third parties"
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#5.1.2",
+   "anchor": "5.1.2",
+   "section_heading": "Data Use and Sharing",
+   "section_sha256_2026_10_10": "220af4e4f62ecb0552c884ee790eb6420ae94314d3cf296c7cd55c8c83b9143d",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "HealthKit users",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "healthkit"
+   ],
+   "family": "health-data",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Trace HealthKit reads/writes to any ads/analytics/AI sink; none may be used for ads.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-5.1.3i-HEALTH",
+   "platform": "apple",
+   "publisher_section_id": "5.1.3(i)",
+   "title": "Health data: no ads/marketing use; disclose specific health data collected",
+   "requirement": "Health/fitness/medical data may not be used/disclosed for advertising or data mining beyond health management/research with permission; disclose specific health data collected.",
+   "official_quotes": [
+    "You must disclose the specific health data that you are collecting from the device."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#5.1.3",
+   "anchor": "5.1.3",
+   "section_heading": "Health and Health Research",
+   "section_sha256_2026_10_10": "904211ad2c1a2672e8ddaa51b9e37e5b8f80b9d058954ce5f901c1f57d8b2a7e",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Health apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "health"
+   ],
+   "family": "health-data",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Trace health data to analytics/ads/third-party SDKs.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-5.1.3ii-ICLOUD",
+   "platform": "apple",
+   "publisher_section_id": "5.1.3(ii)",
+   "title": "No false HealthKit data; no personal health information in iCloud",
+   "requirement": "Do not write false data into HealthKit and do not store personal health information in iCloud.",
+   "official_quotes": [
+    "Apps must not write false or inaccurate data into HealthKit",
+    "may not store personal health information in iCloud"
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#5.1.3",
+   "anchor": "5.1.3",
+   "section_heading": "Health and Health Research",
+   "section_sha256_2026_10_10": "904211ad2c1a2672e8ddaa51b9e37e5b8f80b9d058954ce5f901c1f57d8b2a7e",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Health apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "health"
+   ],
+   "family": "health-data",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Confirm no health data written to iCloud (CloudKit/KVS/Documents).",
+   "static_checks": [
+    "icloud_health_storage"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-5.1.3iii-RESEARCH",
+   "platform": "apple",
+   "publisher_section_id": "5.1.3(iii)-(iv)",
+   "title": "Health research: consent and ethics board approval",
+   "requirement": "Health-related human subject research needs participant consent and independent ethics review approval.",
+   "official_quotes": [
+    "Apps conducting health-related human subject research must obtain consent from participants",
+    "Apps conducting health-related human subject research must secure approval from an independent ethics review board."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#5.1.3",
+   "anchor": "5.1.3",
+   "section_heading": "Health and Health Research",
+   "section_sha256_2026_10_10": "904211ad2c1a2672e8ddaa51b9e37e5b8f80b9d058954ce5f901c1f57d8b2a7e",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Health research apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "health",
+    "health_research"
+   ],
+   "family": "health-data",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Owner declares whether app performs health research (consent + ethics board).",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-UR-XCODE26",
+   "platform": "apple",
+   "publisher_section_id": "Upcoming Requirements: SDK minimum requirements",
+   "title": "Build with Xcode 26 / iOS 26 SDK",
+   "requirement": "Apps uploaded to App Store Connect must be built with Xcode 26 or later using an SDK for iOS 26 (and peers).",
+   "official_quotes": [
+    "Since April 28, 2026",
+    "Apps uploaded to App Store Connect must be built with Xcode 26 or later"
+   ],
+   "official_url": "https://developer.apple.com/news/upcoming-requirements/",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "4a13b877cd1b0547489ca590ba8950022fea7ec87decd87a9b63559329810189",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:48+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "All uploads",
+   "exceptions": null,
+   "enforcement_dates": [
+    "2026-04-28"
+   ],
+   "applies_when": [],
+   "family": "technical-requirements",
+   "evidence_category": "ARTIFACT",
+   "next_evidence_action": "Read the Xcode/SDK version from the uploaded build (EAS build log) - not requested here.",
+   "static_checks": [
+    "eas_xcode_image"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-UR-IOS13",
+   "platform": "apple",
+   "publisher_section_id": "Upcoming Requirements: iOS and iPadOS minimum system requirements",
+   "title": "Minimum deployment target iOS 13",
+   "requirement": "iOS/iPadOS apps uploaded must target iOS 13 or later.",
+   "official_quotes": [
+    "Since September 9, 2026",
+    "iOS and iPadOS apps uploaded to App Store Connect must target iOS 13 or later."
+   ],
+   "official_url": "https://developer.apple.com/news/upcoming-requirements/",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "4a13b877cd1b0547489ca590ba8950022fea7ec87decd87a9b63559329810189",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:48+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "iOS/iPadOS uploads",
+   "exceptions": null,
+   "enforcement_dates": [
+    "2026-09-09"
+   ],
+   "applies_when": [],
+   "family": "technical-requirements",
+   "evidence_category": "ARTIFACT",
+   "next_evidence_action": "Confirm MinimumOSVersion in the built .ipa (derived Expo default is 16.4).",
+   "static_checks": [
+    "ios_deployment_target"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-UR-AGE",
+   "platform": "apple",
+   "publisher_section_id": "Upcoming Requirements: Age Rating Updates",
+   "title": "Respond to updated age rating questions",
+   "requirement": "Respond to the updated age rating questions to avoid interruption when submitting updates; age rating is a required property.",
+   "official_quotes": [
+    "Provide responses to the updated age rating questions for each of your apps by January 31, 2026, to avoid an interruption when submitting your app updates in App Store Connect."
+   ],
+   "official_url": "https://developer.apple.com/news/upcoming-requirements/",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "4a13b877cd1b0547489ca590ba8950022fea7ec87decd87a9b63559329810189",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:48+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [
+    "2026-01-31"
+   ],
+   "applies_when": [],
+   "family": "age-rating",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Answer updated age-rating questions in App Store Connect.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-ASC-AGE",
+   "platform": "apple",
+   "publisher_section_id": "App Store Connect Help: Set an app age rating",
+   "title": "Age rating is required app information",
+   "requirement": "An age rating is required; EULA minimum ages above the computed rating require an override.",
+   "official_quotes": [
+    "An age rating is a required app information property"
+   ],
+   "official_url": "https://developer.apple.com/help/app-store-connect/manage-app-information/set-an-app-age-rating/",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "a07a53a25a9b82e8dc1ba4850e5e056263ccfda41b9cc9c61d732c63962fba48",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:52+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "age-rating",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Answer updated age-rating questions in App Store Connect.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-DSA-TRADER",
+   "platform": "apple",
+   "publisher_section_id": "Upcoming Requirements: DSA trader status",
+   "title": "EU DSA trader status",
+   "requirement": "Apps without trader status are removed from the EU App Store until status is provided and verified; developers must self-assess trader status.",
+   "official_quotes": [
+    "Apps without trader status will be removed from the App Store in the European Union (EU) until trader status is provided and verified"
+   ],
+   "official_url": "https://developer.apple.com/news/upcoming-requirements/",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "4a13b877cd1b0547489ca590ba8950022fea7ec87decd87a9b63559329810189",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:48+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "Apps distributed in the EU",
+   "exceptions": null,
+   "enforcement_dates": [
+    "2024-10-16",
+    "2025-02-17"
+   ],
+   "applies_when": [
+    "eu_distribution"
+   ],
+   "family": "eu-regulatory",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Owner declares EU distribution; complete DSA trader status.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-DSA-SELF",
+   "platform": "apple",
+   "publisher_section_id": "App Store Connect Help: DSA trader requirements",
+   "title": "Trader self-assessment",
+   "requirement": "Developers must assess whether they are a trader under EU law.",
+   "official_quotes": [
+    "You must assess whether you're a trader for EU law purposes."
+   ],
+   "official_url": "https://developer.apple.com/help/app-store-connect/manage-compliance-information/manage-european-union-digital-services-act-trader-requirements/",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "86e130dabf49f1494937462f8d5160b118323dd58245071b442f73e1710e4fdd",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:52+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "Apps distributed in the EU",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "eu_distribution"
+   ],
+   "family": "eu-regulatory",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Owner declares EU distribution; complete DSA trader status.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-RRA",
+   "platform": "apple",
+   "publisher_section_id": "Describing use of required reason API",
+   "title": "Required reason APIs declared in privacy manifest; no fingerprinting",
+   "requirement": "Uploads using required-reason APIs without reasons in the privacy manifest are not accepted; fingerprinting is not allowed.",
+   "official_quotes": [
+    "Starting May 1, 2024, apps that don’t describe their use of required reason API in their privacy manifest file aren’t accepted by App Store Connect.",
+    "Regardless of whether a user gives your app permission to track, fingerprinting is not allowed."
+   ],
+   "official_url": "https://developer.apple.com/documentation/bundleresources/describing-use-of-required-reason-api",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "e678258789d9d28ea7c3fcc3c0959964a953bc578f37ab97883edce62ae6f5a0",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:50+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "iOS uploads",
+   "exceptions": null,
+   "enforcement_dates": [
+    "2024-05-01"
+   ],
+   "applies_when": [],
+   "family": "privacy-manifest",
+   "evidence_category": "ARTIFACT",
+   "next_evidence_action": "Inspect the built .ipa privacy manifest (or `expo prebuild` output) for required-reason categories.",
+   "static_checks": [
+    "privacy_manifest"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-SDK-PM",
+   "platform": "apple",
+   "publisher_section_id": "Third-party SDK requirements",
+   "title": "Privacy manifests and signatures for listed third-party SDKs",
+   "requirement": "Listed commonly used SDKs must include a privacy manifest (and signature when binary) in new apps or updates adding them.",
+   "official_quotes": [
+    "You must include the privacy manifest for any SDK listed below when you submit new apps in App Store Connect that include those SDKs"
+   ],
+   "official_url": "https://developer.apple.com/support/third-party-SDK-requirements/",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "67a7fb9da286b5c657deda1424ac851a2b3a3aabd0def14ce47108dc4fdf3be6",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:51+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps including listed SDKs",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "privacy-manifest",
+   "evidence_category": "ARTIFACT",
+   "next_evidence_action": "Check listed SDK versions ship privacy manifests (lockfile + artifact).",
+   "static_checks": [
+    "privacy_manifest"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-PMF",
+   "platform": "apple",
+   "publisher_section_id": "Privacy manifest files",
+   "title": "PrivacyInfo.xcprivacy records data types collected and required-reason APIs",
+   "requirement": "The privacy manifest PrivacyInfo.xcprivacy records collected data types and required-reason API use.",
+   "official_quotes": [
+    "can contain a privacy manifest file, named PrivacyInfo.xcprivacy"
+   ],
+   "official_url": "https://developer.apple.com/documentation/bundleresources/privacy-manifest-files",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "7bacc858aaf2c3b6bf22419161c07f532665564bb7062fa2da18e08574aca456",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:49+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "INFO",
+   "scope": "iOS apps and SDKs",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "privacy-manifest",
+   "evidence_category": "ARTIFACT",
+   "next_evidence_action": "Confirm PrivacyInfo.xcprivacy is present in the built app bundle.",
+   "static_checks": [
+    "privacy_manifest"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-MIC",
+   "platform": "apple",
+   "publisher_section_id": "NSMicrophoneUsageDescription",
+   "title": "Microphone usage description required",
+   "requirement": "NSMicrophoneUsageDescription is required when using microphone APIs.",
+   "official_quotes": [
+    "This key is required if your app uses APIs that access the device’s microphone."
+   ],
+   "official_url": "https://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "5c994d22106eb1785dd76db30f950c12e7095f3d8a966fd91efe3d6f10381bea",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:56+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps using microphone",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "microphone"
+   ],
+   "family": "permissions-capabilities",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Confirm purpose string text and that recording only starts after a user action.",
+   "static_checks": [
+    "ios_mic_usage"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-SPEECH",
+   "platform": "apple",
+   "publisher_section_id": "NSSpeechRecognitionUsageDescription",
+   "title": "Speech recognition usage description required",
+   "requirement": "NSSpeechRecognitionUsageDescription is required when sending user data to Apple speech recognition servers.",
+   "official_quotes": [
+    "This key is required if your app uses APIs that send user data to Apple’s speech recognition servers."
+   ],
+   "official_url": "https://developer.apple.com/documentation/bundleresources/information-property-list/nsspeechrecognitionusagedescription",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "133f7297a3bbcccceda35bd1023f0ae96e3f92dbd1cd3d2853659163f0a1e8f4",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:57+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps using Apple speech recognition",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "speech"
+   ],
+   "family": "permissions-capabilities",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Confirm speech purpose string and on-device vs server recognition disclosure.",
+   "static_checks": [
+    "ios_speech_usage"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-HK-USAGE",
+   "platform": "apple",
+   "publisher_section_id": "HealthKit: Protecting user privacy",
+   "title": "HealthKit usage descriptions and privacy policy",
+   "requirement": "HealthKit apps need NSHealthShareUsageDescription / NSHealthUpdateUsageDescription and a privacy policy.",
+   "official_quotes": [
+    "Include the NSHealthShareUsageDescription key to read, and NSHealthUpdateUsageDescription key to write data to Healthkit.",
+    "You must also provide a privacy policy for any app that uses the HealthKit framework."
+   ],
+   "official_url": "https://developer.apple.com/documentation/healthkit/protecting-user-privacy",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "107dcc1e47065c98681008a30a1d0b09ff0fe3ebb4d669fcd2df970c5ed9f5d0",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:55+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "HealthKit apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "healthkit"
+   ],
+   "family": "health-data",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Map each HealthKit read/write call to its purpose string; ensure privacy policy exists.",
+   "static_checks": [
+    "healthkit_usage"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-HK-3P",
+   "platform": "apple",
+   "publisher_section_id": "HealthKit: Protecting user privacy",
+   "title": "HealthKit data to third parties only with express permission",
+   "requirement": "Do not disclose HealthKit information to third parties without express permission; only to health/fitness service providers.",
+   "official_quotes": [
+    "You must not disclose any information gained through HealthKit to a third party without express permission from the user."
+   ],
+   "official_url": "https://developer.apple.com/documentation/healthkit/protecting-user-privacy",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "107dcc1e47065c98681008a30a1d0b09ff0fe3ebb4d669fcd2df970c5ed9f5d0",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:55+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "HealthKit apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "healthkit"
+   ],
+   "family": "health-data",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Trace HealthKit-derived fields into AI/third-party requests; require express permission.",
+   "static_checks": [
+    "ai_provider_consent"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-ACCDEL-SUPPORT",
+   "platform": "apple",
+   "publisher_section_id": "Offering account deletion in your app",
+   "title": "Initiate deletion in app; inform about billing; SIWA token revocation",
+   "requirement": "Apps with account creation must let people initiate deletion in the app; apps with Sign in with Apple should revoke tokens via REST API.",
+   "official_quotes": [
+    "Apps submitted to the App Store that support account creation must also let people initiate deletion of their account within the app.",
+    "Apps that support Sign in with Apple should use the Sign in with Apple REST API to revoke user tokens"
+   ],
+   "official_url": "https://developer.apple.com/support/offering-account-deletion-in-your-app/",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "83ffa4c889822908841e38290a15404cf8df6dd3fd446865aab8dc14dc6cf7d6",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:48+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps with accounts",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "accounts"
+   ],
+   "family": "account-deletion",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Same as 5.1.1(v): confirm identity deletion end-to-end, plus confirmation UI.",
+   "static_checks": [
+    "account_deletion_presence"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-PRIVLABEL",
+   "platform": "apple",
+   "publisher_section_id": "App privacy details on the App Store",
+   "title": "App privacy (nutrition label) disclosures",
+   "requirement": "Data types collected must be disclosed in App Store Connect unless all optional-disclosure criteria are met.",
+   "official_quotes": [
+    "If a data type collected by your app meets some, but not all, of the above criteria, it must be disclosed in App Store Connect."
+   ],
+   "official_url": "https://developer.apple.com/app-store/app-privacy-details/",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "0657a42cdd8e77051c844cb04f77f4a6953ebe7cbd7e57dd3979f3c6c4e75f13",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:55+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "store-declarations",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Fill App Privacy labels from the code-path inventory (collection + third parties).",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-EU-DPLA",
+   "platform": "apple",
+   "publisher_section_id": "Update on apps distributed in the EU",
+   "title": "EU unified business terms (DPLA Attachment 14) effective Oct 1, 2026",
+   "requirement": "EU distribution terms changed: earlier EU addenda superseded by DPLA Attachment 14 as of October 1, 2026.",
+   "official_quotes": [
+    "As of October 1, 2026, these terms have been superseded by Attachment 14 of the Apple Developer Program License Agreement."
+   ],
+   "official_url": "https://developer.apple.com/support/dma-and-apps-in-the-eu/",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "55af8c3de144177ad9e7639c8eda3d81c3440352ce3ac6a758ca3a57d20823ae",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "October 1, 2026"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:58+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "Apps distributed in the EU",
+   "exceptions": null,
+   "enforcement_dates": [
+    "2026-10-01"
+   ],
+   "applies_when": [
+    "eu_distribution"
+   ],
+   "family": "eu-regulatory",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Owner decides EU alternative terms; nothing in code.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": "Attachment 14 itself not analysed in this snapshot."
+  },
+  {
+   "rule_id": "CUR-GPL-HEALTH-DECL",
+   "platform": "google",
+   "publisher_section_id": "Health and Medical Apps: Console Declaration",
+   "title": "Complete the Health apps declaration form",
+   "requirement": "All developers must complete the Health apps declaration in Play Console (even with no health features).",
+   "official_quotes": [
+    "All developers must complete the Health apps declaration form on the App content page"
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Health and Medical Apps",
+   "section_sha256_2026_10_10": "2f1a4c9bf33a9391baccfb7764cfd516f8dbbf5bfa793261cdb3c0914d167c19",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "store-declarations",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Complete Play Console Health apps declaration (ALL apps, even non-health).",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [
+    "COM-2026-HEALTH-DISCLAIMER"
+   ],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-HEALTH-DECL-ALL",
+   "platform": "google",
+   "publisher_section_id": "Health apps declaration form (Help)",
+   "title": "Declaration required even without health features",
+   "requirement": "Even apps without health features must complete the form and certify that.",
+   "official_quotes": [
+    "Even developers with apps that do not offer any health features must complete this form and certify that no health features are offered through the app."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/14738291?hl=en",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "7fbb60e2f75b256c5f04dfe526a323a955ef9d2c86eda72ce766ee16feed9df9",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:09+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "store-declarations",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Complete Play Console Health apps declaration (ALL apps, even non-health).",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-HEALTH-PRIVACY",
+   "platform": "google",
+   "publisher_section_id": "Health and Medical Apps: Privacy Policy and Prominent Disclosure",
+   "title": "Health apps privacy policy in Console and in app",
+   "requirement": "Health apps must post a privacy policy link in Play Console and in the app, covering access, collection, use and sharing.",
+   "official_quotes": [
+    "Your app must post a privacy policy link in the designated field within Play Console, and a privacy policy link or text within the app itself."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Health and Medical Apps",
+   "section_sha256_2026_10_10": "2f1a4c9bf33a9391baccfb7764cfd516f8dbbf5bfa793261cdb3c0914d167c19",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Health apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "health"
+   ],
+   "family": "health-medical",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Confirm in-app privacy policy link (code path) and the Play Console URL match.",
+   "static_checks": [
+    "privacy_policy_link"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-HEALTH-PERMS",
+   "platform": "google",
+   "publisher_section_id": "Health and Medical Apps",
+   "title": "Remove permissions not needed for core health functionality",
+   "requirement": "Do not request permissions not required for core functionality; remove unused permissions.",
+   "official_quotes": [
+    "Permissions that are not required for a health app to perform its core functionality should not be requested and unused permissions must be removed."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Health and Medical Apps",
+   "section_sha256_2026_10_10": "2f1a4c9bf33a9391baccfb7764cfd516f8dbbf5bfa793261cdb3c0914d167c19",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Health apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "health"
+   ],
+   "family": "health-medical",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Justify each declared permission against a core health feature (code path).",
+   "static_checks": [
+    "permission_inventory"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-HEALTH-DISCLAIMER",
+   "platform": "google",
+   "publisher_section_id": "Health and Medical Functionalities",
+   "title": "Non-device health apps: 'not a medical device' disclaimer in description",
+   "requirement": "Health/medical apps not regulated as medical devices must include the prescribed disclaimer in the app description.",
+   "official_quotes": [
+    "Other health and medical apps must include a clear disclaimer in their app description indicating that the app is “not a medical device and does not diagnose, treat, cure, or prevent any medical condition.”"
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Health and Medical Apps",
+   "section_sha256_2026_10_10": "2f1a4c9bf33a9391baccfb7764cfd516f8dbbf5bfa793261cdb3c0914d167c19",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Health/medical apps not regulated as devices",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "health"
+   ],
+   "family": "health-medical",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Add the 'not a medical device' disclaimer to the Play store description (store listing).",
+   "static_checks": [
+    "medical_disclaimer_strings"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [
+    "COM-2026-HEALTH-DISCLAIMER"
+   ],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-HEALTH-CONSULT",
+   "platform": "google",
+   "publisher_section_id": "Health and Medical Functionalities",
+   "title": "Remind users to consult a healthcare professional",
+   "requirement": "Apps must remind users to consult a healthcare professional.",
+   "official_quotes": [
+    "Apps must also remind users to consult a healthcare professional for medical advice, diagnosis, or treatment."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Health and Medical Apps",
+   "section_sha256_2026_10_10": "2f1a4c9bf33a9391baccfb7764cfd516f8dbbf5bfa793261cdb3c0914d167c19",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Health/medical apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "health"
+   ],
+   "family": "health-medical",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Locate in-app 'consult a healthcare professional' reminder (file:line).",
+   "static_checks": [
+    "medical_disclaimer_strings"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-HEALTH-MEDDEV",
+   "platform": "google",
+   "publisher_section_id": "Health and Medical Functionalities",
+   "title": "Regulated medical devices must be declared",
+   "requirement": "Apps regulated as medical devices must be declared and provide proof of clearance upon request.",
+   "official_quotes": [
+    "Apps that are regulated because they are a medical device must be declared as such"
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Health and Medical Apps",
+   "section_sha256_2026_10_10": "2f1a4c9bf33a9391baccfb7764cfd516f8dbbf5bfa793261cdb3c0914d167c19",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Regulated medical device apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "health",
+    "regulated_medical_device"
+   ],
+   "family": "health-medical",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Owner declares medical-device regulatory status.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-HEALTH-HW",
+   "platform": "google",
+   "publisher_section_id": "Health and Medical Functionalities",
+   "title": "Disclose external hardware/device compatibility",
+   "requirement": "Apps relying on external hardware or device sensors must disclose requirements/compatibility in the description.",
+   "official_quotes": [
+    "must clearly disclose these external hardware requirements in the app description"
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Health and Medical Apps",
+   "section_sha256_2026_10_10": "2f1a4c9bf33a9391baccfb7764cfd516f8dbbf5bfa793261cdb3c0914d167c19",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps using external health hardware",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "health",
+    "external_health_hardware"
+   ],
+   "family": "health-medical",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Owner declares external hardware use.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-HEALTH-EU-MDR",
+   "platform": "google",
+   "publisher_section_id": "Health apps declaration form (Help): EU MDR/IVDR",
+   "title": "EU MDR/IVDR regulated apps: additional disclosures",
+   "requirement": "Apps in EEA/Northern Ireland regulated by EU MDR/IVDR have additional disclosure obligations.",
+   "official_quotes": [
+    "your app is a medical device that is subject to additional disclosure obligations"
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/14738291?hl=en",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "7fbb60e2f75b256c5f04dfe526a323a955ef9d2c86eda72ce766ee16feed9df9",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:09+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "EU-regulated medical device apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "health",
+    "regulated_medical_device",
+    "eu_distribution"
+   ],
+   "family": "health-medical",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Owner declares EU MDR status.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-HEALTH-MISINFO",
+   "platform": "google",
+   "publisher_section_id": "Health Misinformation",
+   "title": "No misleading health claims",
+   "requirement": "No misleading health claims contradicting medical consensus or causing harm.",
+   "official_quotes": [
+    "We don’t allow apps containing misleading health claims that contradict existing medical consensus, or can cause harm to users."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Health Misinformation",
+   "section_sha256_2026_10_10": "8d7823721bf67e18d9d3cd9f73dd24a3b8affadab17368911ead0c23fa7bbcaf",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "All apps with health content",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "health"
+   ],
+   "family": "health-medical",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "Review health claims against medical consensus.",
+   "static_checks": [
+    "medical_claims_scan"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-ORG-ACCOUNT",
+   "platform": "google",
+   "publisher_section_id": "Play Console Requirements 1.2",
+   "title": "Health apps must register as an Organization account",
+   "requirement": "Developers providing health apps (e.g., medical) must register as an Organization.",
+   "official_quotes": [
+    "developers providing the following services must register as an Organization",
+    "Health apps, such as Medical apps and Human Subjects Research apps."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Play Console Requirements",
+   "section_sha256_2026_10_10": "ef665b0f3ed1825300a90930473878f485be082ce223abc53fefc612a6b02379",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "Health apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "health"
+   ],
+   "family": "developer-account",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Confirm Play developer account type is Organization for health apps in scope.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-PKG-REGISTER",
+   "platform": "google",
+   "publisher_section_id": "Play Console Requirements 3.4",
+   "title": "Register package names for developer verification",
+   "requirement": "Register app package names in Play Console for Android developer verification.",
+   "official_quotes": [
+    "Register your app package names via Play Console to comply with Android developer verification requirements."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Play Console Requirements",
+   "section_sha256_2026_10_10": "ef665b0f3ed1825300a90930473878f485be082ce223abc53fefc612a6b02379",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "developer-account",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Register package name under Developer Verification.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-HC-USECASE",
+   "platform": "google",
+   "publisher_section_id": "Health Connect: Appropriate Access",
+   "title": "Health Connect only for approved use cases",
+   "requirement": "Health Connect permissions may only be requested for approved use cases.",
+   "official_quotes": [
+    "you may only request access to permissions when your application or service meets one of the approved use cases."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Health Connect by Android Permissions",
+   "section_sha256_2026_10_10": "61c0b57e22aeb8beed2fafde9d4cbdc3c0676a2d3537212d2b2520cdcba5f0c5",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps using Health Connect",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "health_connect"
+   ],
+   "family": "health-data",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Complete Health Connect declaration with approved use case.",
+   "static_checks": [
+    "health_connect_usage"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-HC-LIMITED",
+   "platform": "google",
+   "publisher_section_id": "Health Connect: Limited Use",
+   "title": "Health Connect data: no ads use, no sale; limited transfers",
+   "requirement": "Health Connect data cannot be sold or used for ads; transfers only with explicit consent for listed purposes.",
+   "official_quotes": [
+    "Transferring, selling, or using user data for serving ads, including personalized or interest-based advertising."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Health Connect by Android Permissions",
+   "section_sha256_2026_10_10": "61c0b57e22aeb8beed2fafde9d4cbdc3c0676a2d3537212d2b2520cdcba5f0c5",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps using Health Connect",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "health_connect"
+   ],
+   "family": "health-data",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Trace Health Connect data to AI/third-party sinks; only approved uses.",
+   "static_checks": [
+    "health_connect_usage",
+    "ai_provider_consent"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": "Whether sending Health Connect data to an AI provider for a user-visible feature fits 'providing or improving the appropriate use case' needs review."
+  },
+  {
+   "rule_id": "CUR-GPL-AI-REPORT",
+   "platform": "google",
+   "publisher_section_id": "AI-Generated Content",
+   "title": "In-app reporting/flagging for AI-generated content",
+   "requirement": "Apps generating content with AI must offer in-app reporting/flagging without leaving the app and prevent restricted content.",
+   "official_quotes": [
+    "Apps that generate content using AI must contain in-app user reporting or flagging features that allow users to report or flag offensive content to developers without needing to exit the app.",
+    "prohibiting and preventing the generation of Restricted Content"
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "AI-Generated Content",
+   "section_sha256_2026_10_10": "e60e6a064b3c7a415ad705315d6648db0ea8429997842dc67e6353a4e0672e9c",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps with generative AI",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "ai"
+   ],
+   "family": "ai",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Locate an in-app control to report/flag AI output (file:line) that reaches the developer.",
+   "static_checks": [
+    "ai_report_feature"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-DATASAFETY",
+   "platform": "google",
+   "publisher_section_id": "Data safety section",
+   "title": "Accurate Data safety section (incl. SDKs)",
+   "requirement": "Complete an accurate, up-to-date Data safety section consistent with the privacy policy.",
+   "official_quotes": [
+    "All developers must complete a clear and accurate Data safety section for every app detailing collection, use, and sharing of user data."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Data safety section",
+   "section_sha256_2026_10_10": "c8259982606bbb3fefe784a36f1330a471d5d0add1f231ede277cea5a9b9314f",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "store-declarations",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Fill Data safety form from code-path inventory.",
+   "static_checks": [
+    "sdk_inventory"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-PRIVACYPOLICY",
+   "platform": "google",
+   "publisher_section_id": "Privacy Policy",
+   "title": "Privacy policy in Play Console and in app",
+   "requirement": "All apps must post a privacy policy in Play Console and in the app; public, non-geofenced, non-PDF URL.",
+   "official_quotes": [
+    "Please make sure your privacy policy is available on an active, publicly accessible and non-geofenced URL (no PDFs) and is non-editable."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Privacy Policy",
+   "section_sha256_2026_10_10": "dd070c179b96730843c72b74604d6cd8763092598c0951e833904f198704b728",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "privacy",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Confirm in-app privacy link target is a real reachable URL; match Play Console.",
+   "static_checks": [
+    "privacy_policy_link"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-PROMINENT",
+   "platform": "google",
+   "publisher_section_id": "Prominent Disclosure & Consent",
+   "title": "Prominent disclosure before consent/runtime permission",
+   "requirement": "Where data use may be unexpected, an in-app disclosure must immediately precede consent and runtime permission requests.",
+   "official_quotes": [
+    "Requests for in-app user consent and runtime permission requests must be immediately preceded by an in-app disclosure that meets the requirement of this policy."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Prominent Disclosure & Consent Requirement",
+   "section_sha256_2026_10_10": "24cf50da518396cabe7cf74ceeff0837bb8075758d904669be258b7a1e962403",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps with unexpected data access",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "privacy",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "For each unexpected data access, locate the prominent disclosure screen before the runtime request.",
+   "static_checks": [
+    "ai_provider_consent",
+    "permission_inventory"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-PERMS",
+   "platform": "google",
+   "publisher_section_id": "Permissions and APIs that Access Sensitive Information",
+   "title": "Only permissions needed for promoted current features",
+   "requirement": "Request only permissions necessary for current features promoted in the listing; request in context.",
+   "official_quotes": [
+    "You may only request permissions and APIs that access sensitive information that are necessary to implement current features or services in your app that are promoted in your Google Play listing."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Permissions and APIs that Access Sensitive Information",
+   "section_sha256_2026_10_10": "b5a9eeb57a0c71fa54362aaa6d0f7cc0a7c23fef4ba645195c38a9444c455e15",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "permissions-capabilities",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Compare declared permissions vs runtime requests; remove unused.",
+   "static_checks": [
+    "permission_inventory"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": "No microphone-specific Play policy section was identified; RECORD_AUDIO falls under this section plus Data safety/prominent disclosure."
+  },
+  {
+   "rule_id": "CUR-GPL-EXACT-ALARM",
+   "platform": "google",
+   "publisher_section_id": "Exact Alarm Permission",
+   "title": "USE_EXACT_ALARM only for alarm/timer/calendar core functionality",
+   "requirement": "USE_EXACT_ALARM is restricted to core functionality needing exact alarms (alarm/timer, calendar); otherwise consider SCHEDULE_EXACT_ALARM.",
+   "official_quotes": [
+    "USE_EXACT_ALARM is a restricted permission and apps must only declare this permission if their core functionality supports the need for an exact alarm."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Exact Alarm Permission",
+   "section_sha256_2026_10_10": "6535a829f68e7152b8d35fbb9ffa96e754e4a681cd0034bed2fe6ed3ecc91e6a",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps declaring exact alarm permissions",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "exact_alarm"
+   ],
+   "family": "permissions-capabilities",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "Decide whether alarm/calendar is the core function; else switch to inexact alarms.",
+   "static_checks": [
+    "exact_alarm"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [
+    "COM-2026-EXACT-ALARM-GH"
+   ],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-FGS",
+   "platform": "google",
+   "publisher_section_id": "Permissions for Foreground Services",
+   "title": "Foreground service types and permissions",
+   "requirement": "Apps targeting Android 14+ must specify a valid foreground service type and matching permission for each foreground service.",
+   "official_quotes": [
+    "you must specify a valid foreground service type for each foreground service used in your app"
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Permissions for Foreground Services (FGS)",
+   "section_sha256_2026_10_10": "bbfacabf00cb2b47a3592c7b2c73ebafa2e45d9141119e8a6b8d8956aec9ba40",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps with foreground services",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "foreground_service"
+   ],
+   "family": "permissions-capabilities",
+   "evidence_category": "ARTIFACT",
+   "next_evidence_action": "Check merged manifest FGS types in the AAB.",
+   "static_checks": [
+    "foreground_service"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-PAYMENTS",
+   "platform": "google",
+   "publisher_section_id": "Payments",
+   "title": "Google Play billing for in-app digital purchases (outside program exceptions)",
+   "requirement": "In-app purchases of digital features/services must use Google Play's billing system unless policy sections 3, 8 or 9 apply.",
+   "official_quotes": [
+    "must use Google Play’s billing system for those transactions unless Section 3, 8, or 9 applies."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Payments",
+   "section_sha256_2026_10_10": "05cf0aadb9555df850022f8f0f7ba341afb849a9a08e83ac619e5aac4faeef6b",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps selling digital goods",
+   "exceptions": "US programs (see CUR-GPL-US-PROGRAMS); EEA/other alternative billing programs.",
+   "enforcement_dates": [],
+   "applies_when": [
+    "iap"
+   ],
+   "family": "payments",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Trace digital-goods purchases to Play Billing in Android builds; external checkout only where a program applies.",
+   "static_checks": [
+    "revenuecat_or_storekit"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-US-PROGRAMS",
+   "platform": "google",
+   "publisher_section_id": "Update regarding Google Play's policies for US users",
+   "title": "US: alternative billing / external content links programs and fees",
+   "requirement": "For US users, Google does not require Play Billing; current programs remain in effect; enrolled developers report and pay fees from Oct 1, 2026 (download reporting until Dec 1, 2026).",
+   "official_quotes": [
+    "Google will not require the use of Google Play Billing in apps distributed on the Google Play Store",
+    "will need to report transactions and pay the relevant service fees starting on October 1, 2026.",
+    "they now have until December 1, 2026 to report successful download and pay the relevant service fees."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/15582165?hl=en",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "b618608ff61c5c9a47925045c04a6160e0e8b20506e5d7c92c57598a4330fa24",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:27+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "Apps serving US users using external links/alternative billing",
+   "exceptions": null,
+   "enforcement_dates": [
+    "2026-10-01",
+    "2026-12-01"
+   ],
+   "applies_when": [
+    "external_purchase"
+   ],
+   "family": "payments-external",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "Decide US alternative billing / external links program enrollment.",
+   "static_checks": [
+    "external_purchase_links"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": "Page states a new settlement (March 4, 2026) and a requested revised Modified Injunction; terms may change."
+  },
+  {
+   "rule_id": "CUR-GPL-ECL",
+   "platform": "google",
+   "publisher_section_id": "External content links program (US)",
+   "title": "External content links program eligibility",
+   "requirement": "The program lets Play apps link US users to external content/purchases; apps must serve US users.",
+   "official_quotes": [
+    "In order to be eligible for this program, your app(s) must be a mobile or tablet app or game serving users in the United States and its territories."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/16470497?hl=en",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "04c9ccc3d5bb652eb9b51b4fad19c388d0b41c49266ea1f511f5c0e717533559",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:25+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "US external links",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "external_purchase"
+   ],
+   "family": "payments-external",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "Decide external content links program enrollment.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-SUBS",
+   "platform": "google",
+   "publisher_section_id": "Subscriptions",
+   "title": "Transparent subscription offers; sustained value",
+   "requirement": "Disclose offer terms, cost, billing frequency, auto-renewal; subscriptions must provide sustained value.",
+   "official_quotes": [
+    "You must be transparent about your offer.",
+    "Subscriptions must provide sustained or recurring value to users throughout the life of the subscription"
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Subscriptions",
+   "section_sha256_2026_10_10": "ff1ce43c9618695ad4d2f847d55a63f0f403c44edee86aee386a6305d62509f5",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Subscription apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "iap"
+   ],
+   "family": "payments",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Locate subscription offer screen; verify price/period/monthly-equivalent disclosure.",
+   "static_checks": [
+    "paywall_legal_links"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-PBL",
+   "platform": "google",
+   "publisher_section_id": "Play Billing Library version deprecation",
+   "title": "Play Billing Library version deadlines",
+   "requirement": "PBL 7: new app and update deadline August 31, 2026, extension November 1, 2026; PBL 8: August 31, 2027.",
+   "official_quotes": [
+    "All versions of the Google Play Billing Library have a two-year deprecation cycle."
+   ],
+   "official_url": "https://developer.android.com/google/play/billing/deprecation-faq",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "38d110de985ce2e33cb53baa9f1c4e21359142c320dc20cb111e53df90f83b01",
+   "page_last_updated": "2026-09-09 UTC",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:58+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps using Play Billing",
+   "exceptions": null,
+   "enforcement_dates": [
+    "2026-08-31",
+    "2026-11-01",
+    "2027-08-31"
+   ],
+   "applies_when": [
+    "iap"
+   ],
+   "family": "payments",
+   "evidence_category": "ARTIFACT",
+   "next_evidence_action": "Read bundled Play Billing Library version from lockfile/AAB (>= 8).",
+   "static_checks": [
+    "play_billing_version"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": "Table cells fetched as separate lines; version-to-date mapping read from the table order on the page."
+  },
+  {
+   "rule_id": "CUR-GPL-IMPERSONATION",
+   "platform": "google",
+   "publisher_section_id": "Impersonation",
+   "title": "No impersonation",
+   "requirement": "Do not impersonate other developers, entities or apps or imply false affiliation.",
+   "official_quotes": [
+    "We don’t allow apps that mislead users by impersonating someone else"
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Impersonation",
+   "section_sha256_2026_10_10": "131b7f64d883fc5eb94bde7dacffa123bade75ce4293aa6b9c2da70c2db8dc37",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "content-integrity",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "Review name/icon for impersonation.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-SPAM",
+   "platform": "google",
+   "publisher_section_id": "Spam",
+   "title": "No repetitive / low-quality apps or message spam",
+   "requirement": "No apps that spam users or Play, including repetitive or low-quality apps.",
+   "official_quotes": [
+    "We don't allow apps that spam users or Google Play, such as apps that send users unsolicited messages or apps that are repetitive or low-quality."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Spam",
+   "section_sha256_2026_10_10": "dfd09666610ae5f0318c136852bf5ef648e1bbbf6c8064e7296d9680a5c3397b",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "content-integrity",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "Account-level duplicate-app review (template apps).",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-LIMITED",
+   "platform": "google",
+   "publisher_section_id": "Minimum Functionality",
+   "title": "No limited-functionality apps",
+   "requirement": "Apps with only limited functionality and content are not allowed.",
+   "official_quotes": [
+    "We do not allow apps that only have limited functionality and content."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "1. Limited Functionality and Content",
+   "section_sha256_2026_10_10": "2c72dbdc4a4d18ad58e978d5c6de37eb4400313d003e91c35e4335e9e33f17ee",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "content-integrity",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "Reviewer judgment of functionality.",
+   "static_checks": [
+    "webview_only_scan"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-ACCDEL",
+   "platform": "google",
+   "publisher_section_id": "Account Deletion Requirement",
+   "title": "Account deletion in app and via web resource; delete data",
+   "requirement": "Apps with account creation must offer deletion in-app and via a web resource linked in Play Console; freezing is not deletion.",
+   "official_quotes": [
+    "This option must be available both from within your app and externally through a designated web resource.",
+    "Temporary account deactivation, disabling, or “freezing” the app account does not qualify as account deletion."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Account Deletion Requirement",
+   "section_sha256_2026_10_10": "9cf0c141f909353aa833fcbef73c460b45d7aba6979813c13fe753c3abe5c689",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps with account creation",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "accounts"
+   ],
+   "family": "account-deletion",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Trace in-app deletion to identity deletion; also provide web deletion URL.",
+   "static_checks": [
+    "account_deletion_presence"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-ACCDEL-FORM",
+   "platform": "google",
+   "publisher_section_id": "Understanding app account deletion requirements",
+   "title": "Data deletion questions; subscription-cancellation steps disclosed",
+   "requirement": "Complete Data deletion questions in Data safety; extra steps such as cancelling a subscription must be clearly outlined.",
+   "official_quotes": [
+    "All developers must complete new Data deletion questions in the Data safety form on the App content page in Play Console.",
+    "If the user needs to take additional steps before deleting their account (for example, canceling a subscription), this must be clearly outlined"
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/13327111?hl=en",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "9296c0cfb1f4a09118e90f2fcf1c3acdc41d8dda74be730e594e82019ccc6c59",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:02+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "Apps with account creation",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "accounts"
+   ],
+   "family": "store-declarations",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Enter web deletion URL in Data safety form.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-TAPI-NEW",
+   "platform": "google",
+   "publisher_section_id": "Target API level requirements",
+   "title": "Target API 36 for new apps and updates from Aug 31, 2026",
+   "requirement": "New apps and updates must target Android 16 (API 36); extension to November 1, 2026 on request.",
+   "official_quotes": [
+    "Starting August 31, 2026:",
+    "New apps and app updates must target Android 16 (API level 36) or higher to be submitted to Google Play",
+    "You will be able to request an extension to November 1, 2026 if you need more time to update your app."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/11926878?hl=en",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "a86c2a9a45618347593da190c1511027ee1128654a5dbeb489599ee66d3a5e19",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:11+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "All Play submissions",
+   "exceptions": "Wear OS / Automotive: API 35; TV / XR: API 34.",
+   "enforcement_dates": [
+    "2026-08-31",
+    "2026-11-01"
+   ],
+   "applies_when": [],
+   "family": "technical-requirements",
+   "evidence_category": "ARTIFACT",
+   "next_evidence_action": "Confirm targetSdkVersion in the AAB (derived Expo default 36).",
+   "static_checks": [
+    "android_target_sdk"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-TAPI-EXISTING",
+   "platform": "google",
+   "publisher_section_id": "Target API level requirements",
+   "title": "Existing apps target API 35 to stay available to new users",
+   "requirement": "Existing apps must target API 35+ to remain available to new users on newer Android versions.",
+   "official_quotes": [
+    "Existing apps must target Android 15 (API level 35) or higher to remain available to new users"
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/11926878?hl=en",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "a86c2a9a45618347593da190c1511027ee1128654a5dbeb489599ee66d3a5e19",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:11+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Existing apps",
+   "exceptions": null,
+   "enforcement_dates": [
+    "2026-08-31"
+   ],
+   "applies_when": [],
+   "family": "technical-requirements",
+   "evidence_category": "ARTIFACT",
+   "next_evidence_action": "Confirm targetSdkVersion in the AAB (derived Expo default 36).",
+   "static_checks": [
+    "android_target_sdk_existing"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-TAPI-POLICY",
+   "platform": "google",
+   "publisher_section_id": "Target API Level Policy",
+   "title": "Target within one year of latest major Android release",
+   "requirement": "New apps and updates must target an API level within one year of the latest major Android release.",
+   "official_quotes": [
+    "New apps and app updates MUST target an Android API level within one year of the latest major Android version release."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Google Play's Target API Level Policy",
+   "section_sha256_2026_10_10": "5c988f65b3d9ebfa313db63fb0f20820383911ae05f36e19d13e6d5be2d86b44",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "All Play submissions",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "technical-requirements",
+   "evidence_category": "ARTIFACT",
+   "next_evidence_action": "Confirm targetSdkVersion in the AAB (derived Expo default 36).",
+   "static_checks": [
+    "android_target_sdk"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-16KB",
+   "platform": "google",
+   "publisher_section_id": "Play Console technical quality requirements",
+   "title": "16 KB page size and 64-bit for native code",
+   "requirement": "New app bundles with native code must support 16 KB page sizes and 64-bit-only architectures.",
+   "official_quotes": [
+    "Apps that contain native code must support devices with 16 KB memory page sizes.",
+    "Apps that contain native code must support 64-bit only architectures."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/17492799?hl=en",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "8a4c7ef6c51813f8feb8fd75864a50e5819e0b3123e2f10f5e08423dd5c2df3f",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:20+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps with native code (React Native/Expo ship native libraries)",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "native_code"
+   ],
+   "family": "technical-requirements",
+   "evidence_category": "ARTIFACT",
+   "next_evidence_action": "Check .so 16 KB alignment in the AAB.",
+   "static_checks": [
+    "page_size_16kb"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-16KB-DEV",
+   "platform": "google",
+   "publisher_section_id": "Support 16 KB page sizes",
+   "title": "16 KB requirement for apps targeting Android 15+; update block from Feb 1, 2027",
+   "requirement": "Apps targeting Android 15+ must support 16 KB page sizes on 64-bit devices; from February 1, 2027 non-compliant updates can't be released.",
+   "official_quotes": [
+    "apps targeting Android 15 (API level 35) and higher must support 16 KB memory page sizes on 64-bit devices on Google Play.",
+    "Starting February 1, 2027,"
+   ],
+   "official_url": "https://developer.android.com/guide/practices/page-sizes",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "7c880c43a1989a587d6dc80a596d422836245892059a1ee5b502970a7a2648ca",
+   "page_last_updated": "2026-09-16 UTC",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:22+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps targeting API 35+",
+   "exceptions": null,
+   "enforcement_dates": [
+    "2027-02-01"
+   ],
+   "applies_when": [
+    "native_code"
+   ],
+   "family": "technical-requirements",
+   "evidence_category": "ARTIFACT",
+   "next_evidence_action": "Check .so 16 KB alignment in the AAB.",
+   "static_checks": [
+    "page_size_16kb"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-DEVVER",
+   "platform": "google",
+   "publisher_section_id": "Android developer verification",
+   "title": "Developer verification timeline",
+   "requirement": "From September 30, 2026 protections begin for installs from participating stores in Brazil, Indonesia, Singapore and Thailand; global expansion 2027.",
+   "official_quotes": [
+    "Protections begin for all users who install apps from participating stores in Brazil, Indonesia, Singapore, and Thailand on certified devices running Android 7+."
+   ],
+   "official_url": "https://developer.android.com/developer-verification",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "879109570102aa62d5813b837cb4da38de35e1521471028424467a7b67148daf",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:23+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "All Android developers",
+   "exceptions": null,
+   "enforcement_dates": [
+    "2026-09-30"
+   ],
+   "applies_when": [],
+   "family": "developer-account",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Developer verification status in Play Console.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-TEST-NEWACCT",
+   "platform": "google",
+   "publisher_section_id": "App testing requirements for new personal developer accounts",
+   "title": "Closed test: 12 testers for 14 days (new personal accounts)",
+   "requirement": "Personal accounts created after November 13, 2023 must run a closed test with at least 12 testers opted in for 14 continuous days before production access.",
+   "official_quotes": [
+    "must run a closed test for their app with a minimum of 12 testers who have been opted in continuously for at least 14 days."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/14151465?hl=en",
+   "anchor": null,
+   "section_heading": null,
+   "section_sha256_2026_10_10": null,
+   "source_text_sha256_2026_10_10": "86d6793524858669444c416b49b7a93e15fe3f1d7a2b5e81d06b41790313372f",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:23+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "New personal developer accounts",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "personal_account"
+   ],
+   "family": "developer-account",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Closed-testing requirement for new personal accounts (not requested here).",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-SDK",
+   "platform": "google",
+   "publisher_section_id": "SDK Requirements",
+   "title": "Developer responsible for SDK behaviour and data practices",
+   "requirement": "You are responsible for SDK code and data practices complying with Play policies (no sale of personal and sensitive data).",
+   "official_quotes": [
+    "If you include an SDK in your app, you are responsible for ensuring that their third-party code and practices do not cause your app to violate Google Play Developer Program Policies."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "SDK Requirements",
+   "section_sha256_2026_10_10": "3133b3ff9afc6a4b2c1e22d4d95e98e94613c4b15cac047f7a369d00dc155be1",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "All apps with SDKs",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "privacy-manifest",
+   "evidence_category": "ARTIFACT",
+   "next_evidence_action": "Inventory SDK versions from lockfile; check Play SDK Index status.",
+   "static_checks": [
+    "sdk_inventory"
+   ],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-AUDIENCE",
+   "platform": "google",
+   "publisher_section_id": "Target Audience and Content",
+   "title": "Declare target audience",
+   "requirement": "Indicate the target audience age groups in Play Console before publishing.",
+   "official_quotes": [
+    "you must indicate the target audience for your app, prior to publishing"
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Play Console Requirements",
+   "section_sha256_2026_10_10": "01c238428e42ff0bb9dfd2ea89e34ac4fe9e2cc7fbcf6680695d21a2a1ab6437",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "store-declarations",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Target audience declaration in Play Console.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-CONTENT-RATING",
+   "platform": "google",
+   "publisher_section_id": "Content Ratings",
+   "title": "Content rating required",
+   "requirement": "Apps without a content rating are not allowed.",
+   "official_quotes": [
+    "We don’t allow apps without a content rating on Google Play."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Content Ratings",
+   "section_sha256_2026_10_10": "7bab41d277d9c344b28fdb3887be41de512fb013d970037292e03abaa8fdfc70",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "PROGRAM",
+   "scope": "All apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [],
+   "family": "store-declarations",
+   "evidence_category": "STORE",
+   "next_evidence_action": "IARC content rating questionnaire.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-1.2-UGC",
+   "platform": "apple",
+   "publisher_section_id": "1.2",
+   "title": "UGC: filtering, reporting, blocking, contact info",
+   "requirement": "Apps with user-generated content or social networking must filter objectionable material, offer reporting with timely responses, let users block abusive users, and publish contact information.",
+   "official_quotes": [
+    "apps with user-generated content or social networking services must include:",
+    "A mechanism to report offensive content and timely responses to concerns",
+    "The ability to block abusive users from the service"
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#1.2",
+   "anchor": "1.2",
+   "section_heading": "User-Generated Content",
+   "section_sha256_2026_10_10": "b6b7e30b51f77b06c6aaabcdb7c3889314598c91c86dea21fa24f9c96f1ca46e",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps with UGC / social features",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "ugc"
+   ],
+   "family": "ugc",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Locate report-content, block-user and filtering code paths and the published contact info; each must be reachable in-app.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-1.1.1-RELIGION",
+   "platform": "apple",
+   "publisher_section_id": "1.1.1",
+   "title": "No defamatory/mean-spirited content incl. about religion",
+   "requirement": "Content that is defamatory, discriminatory or mean-spirited, including about religion, is objectionable; political satire/humour generally exempt.",
+   "official_quotes": [
+    "Defamatory, discriminatory, or mean-spirited content, including references or commentary about religion"
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#1.1.1",
+   "anchor": "1.1.1",
+   "section_heading": "Defamatory, discriminatory, or mean-spirited content, including references or commentary about …",
+   "section_sha256_2026_10_10": "8cf0264a5c27c81a399209dcb54ff1bf35d0b1dba72522eeed90b77b0f0ede62",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST NOT",
+   "scope": "Apps with religious or targeted-group content",
+   "exceptions": "Professional political satirists and humorists are generally exempt.",
+   "enforcement_dates": [],
+   "applies_when": [
+    "religious_content"
+   ],
+   "family": "religious-content",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "Human review of religious/group-related copy and generated content for defamatory or mean-spirited material.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-1.3-KIDS",
+   "platform": "apple",
+   "publisher_section_id": "1.3",
+   "title": "Kids Category: parental gate, no PII/device info to third parties",
+   "requirement": "Kids Category apps must keep links out/purchases behind a parental gate and may not send PII or device information to third parties.",
+   "official_quotes": [
+    "These apps must not include links out of the app, purchasing opportunities, or other distractions to kids unless reserved for a designated area behind a parental gate.",
+    "apps may not send personally identifiable information or device information to third parties."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#1.3",
+   "anchor": "1.3",
+   "section_heading": "Kids Category",
+   "section_sha256_2026_10_10": "497f634f6abfc06c0873741dfd95e47ba7cecad6859f6fa71bebbb6316175100",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps in (or designed for) the Kids Category",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "kids_audience"
+   ],
+   "family": "children",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Owner confirms Kids Category intent; if yes, verify parental gate on links/purchases and no third-party PII/device-info transfer.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-5.1.4-KIDS",
+   "platform": "apple",
+   "publisher_section_id": "5.1.4",
+   "title": "Kids data: no third-party analytics/ads in apps primarily for kids",
+   "requirement": "Apps intended primarily for kids should not include third-party analytics or advertising; birthdate/parental contact only for statutory compliance.",
+   "official_quotes": [
+    "Apps intended primarily for kids should not include third-party analytics or third-party advertising.",
+    "Apps may ask for birthdate and parental contact information only for the purpose of complying with these statutes"
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#5.1.4",
+   "anchor": "5.1.4",
+   "section_heading": "Kids",
+   "section_sha256_2026_10_10": "b098a0595ec3d146720d0b082c3aee6dcb01239364100284a44e6817adb58c3e",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "SHOULD",
+   "scope": "Apps intended primarily for kids",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "kids_audience"
+   ],
+   "family": "children",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "If intended for kids, list third-party analytics/ad SDKs in the dependency tree; each must be removed or meet 1.3 terms.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-2.5.18-ADS",
+   "platform": "apple",
+   "publisher_section_id": "2.5.18",
+   "title": "Ads: no targeting on sensitive data; age-appropriate; visible close",
+   "requirement": "Ads must suit the age rating, must not be targeted on sensitive data (health/medical, kids), and interstitials need visible close/skip.",
+   "official_quotes": [
+    "may not engage in targeted or behavioral advertising based on sensitive user data such as health/medical data",
+    "Ads displayed in an app must be appropriate for the app's age rating"
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#2.5.18",
+   "anchor": "2.5.18",
+   "section_heading": "Display advertising should be limited to your main app binary, …",
+   "section_sha256_2026_10_10": "484e6ac85b6462d60613351a57a4b82f9f57fcf1e6dbbbcf2060aab0078c1cb0",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps displaying ads",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "ads"
+   ],
+   "family": "ads",
+   "evidence_category": "ARTIFACT",
+   "next_evidence_action": "Inspect ad SDK targeting config; confirm no targeting on health/kids data and visible close buttons in a release build.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-3.1.1-LOOTBOX",
+   "platform": "apple",
+   "publisher_section_id": "3.1.1",
+   "title": "Loot boxes: disclose odds before purchase",
+   "requirement": "Randomized purchasable virtual items must disclose the odds of each item type before purchase.",
+   "official_quotes": [
+    "must disclose the odds of receiving each type of item to customers prior to purchase."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#3.1.1",
+   "anchor": "3.1.1",
+   "section_heading": "In-App Purchase",
+   "section_sha256_2026_10_10": "55111ee24f4a8b286cecf92cb75279b953198239b0b4326c80cc8bb7ff6b79cd",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps/games selling randomized items",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "loot_boxes"
+   ],
+   "family": "games",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Find randomized-reward purchase flows; confirm odds disclosure before purchase.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-3.1.3e-GOODS",
+   "platform": "apple",
+   "publisher_section_id": "3.1.3(e)",
+   "title": "Physical goods/services: must NOT use IAP",
+   "requirement": "Physical goods or services consumed outside the app must be paid with non-IAP methods (Apple Pay, card entry). This is the exception that can make external checkout correct.",
+   "official_quotes": [
+    "If your app enables people to purchase physical goods or services that will be consumed outside of the app, you must use purchase methods other than in-app purchase to collect those payments"
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#3.1.3e",
+   "anchor": "3.1.3e",
+   "section_heading": "3.1.3(e) Goods and Services Outside of the App: If your …",
+   "section_sha256_2026_10_10": "5f9da8e67569f8750b402aa2b047e412f38d223029df1d766337599c20951f0b",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps selling physical goods/services",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "external_purchase",
+    "physical_goods"
+   ],
+   "family": "payments",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "Owner declares whether external checkout sells physical goods/services; only then does it fall under 3.1.3(e).",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-3.1.3a-READER",
+   "platform": "apple",
+   "publisher_section_id": "3.1.3(a)",
+   "title": "Reader apps: External Link Account Entitlement",
+   "requirement": "Reader apps (magazines, news, books, audio, music, video) may offer account creation/management and may apply for the External Link Account Entitlement; not required for US storefront calls to action.",
+   "official_quotes": [
+    "Reader app developers may apply for the External Link Account Entitlement",
+    "This entitlement is not required for developers to include buttons, external links, or other calls to action in their United States storefront apps."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#3.1.3a",
+   "anchor": "3.1.3a",
+   "section_heading": "3.1.3(a) “Reader” Apps: Apps may allow a user to access …",
+   "section_sha256_2026_10_10": "89248494ae0704f9083b70d4523d597254df15e2a8a649d8e21c15ee566d349b",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MAY",
+   "scope": "Reader apps only (content types enumerated)",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "external_purchase",
+    "reader_content"
+   ],
+   "family": "payments",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "Owner declares whether the app is a reader app (enumerated content types) before relying on the entitlement.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-5.3.3-RMG",
+   "platform": "apple",
+   "publisher_section_id": "5.3.3",
+   "title": "No IAP for real-money gaming credit",
+   "requirement": "In-app purchase may not be used to buy credit or currency for real-money gaming.",
+   "official_quotes": [
+    "Apps may not use in-app purchase to purchase credit or currency for use in conjunction with real money gaming of any kind."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#5.3.3",
+   "anchor": "5.3.3",
+   "section_heading": "Apps may not use in-app purchase to purchase credit or …",
+   "section_sha256_2026_10_10": "069c7308bfae7a442f47d368dc3d583a50f4f0c1b76db3dcce7c6c777050d3ca",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST NOT",
+   "scope": "Real-money gaming apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "real_money_gaming"
+   ],
+   "family": "games",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Confirm no IAP product grants currency usable for real-money gaming.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-APL-4.7-CHATBOT",
+   "platform": "apple",
+   "publisher_section_id": "4.7",
+   "title": "Chatbots/mini apps: developer responsible for all such software",
+   "requirement": "Apps offering chatbots, mini apps/games or plug-ins are responsible for that software complying with the Guidelines and law.",
+   "official_quotes": [
+    "You are responsible for all such software offered in your app, including ensuring that such software complies with these Guidelines and all applicable laws."
+   ],
+   "official_url": "https://developer.apple.com/app-store/review/guidelines/#4.7",
+   "anchor": "4.7",
+   "section_heading": "Mini apps, mini games, streaming games, chatbots, plug-ins, and game emulators",
+   "section_sha256_2026_10_10": "f3768b72332fdfb61365a1c13e96428fea5c97380e5a664ca177b2e9f3ed87d5",
+   "source_text_sha256_2026_10_10": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps offering chatbots, mini apps/games, streaming games, plug-ins",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "ai"
+   ],
+   "family": "ai",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "Reviewer decides whether the assistant is a 4.7 chatbot; if so, the app owns compliance of all generated output.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": "Whether a server-side LLM assistant is a 'chatbot' under 4.7 is not defined in the text; human judgment."
+  },
+  {
+   "rule_id": "CUR-GPL-UGC",
+   "platform": "google",
+   "publisher_section_id": "User Generated Content",
+   "title": "UGC: terms acceptance, in-app reporting and blocking",
+   "requirement": "UGC apps must require acceptance of terms before posting, define/prohibit objectionable content, and provide in-app reporting and blocking of UGC and users.",
+   "official_quotes": [
+    "Requires users accept the app's terms of use and/or user policy before users can create or upload UGC",
+    "providing an in-app system for reporting and blocking objectionable UGC and users"
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "User Generated Content",
+   "section_sha256_2026_10_10": "a93e3ec6a4c3eb2d1ace10cdb3e784aff528c88de5cb07132216fec247a980ac",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps with UGC visible to other users",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "ugc"
+   ],
+   "family": "ugc",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Confirm terms acceptance precedes first post, and in-app report + block controls exist for content and users.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-HATE-RELIGION",
+   "platform": "google",
+   "publisher_section_id": "Hate Speech",
+   "title": "No incitement of hatred incl. based on religion",
+   "requirement": "Apps must not promote violence or incite hatred against groups based on protected characteristics including religion.",
+   "official_quotes": [
+    "incite hatred against individuals or groups based on race or ethnic origin, religion"
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Hate Speech",
+   "section_sha256_2026_10_10": "523e53c7041f88bee2a670fe1977b0961b4af4412eb943d28fbd6d66749bf324",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST NOT",
+   "scope": "Apps with religious or group-related content",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "religious_content"
+   ],
+   "family": "religious-content",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "Human review of religious/group-related content (incl. AI output) for hate speech.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-ADS-RATING",
+   "platform": "google",
+   "publisher_section_id": "Ads",
+   "title": "Ads appropriate for content rating; ads follow all policies",
+   "requirement": "Ads and their offers are part of the app, must follow all Play policies and be appropriate for the app's content rating.",
+   "official_quotes": [
+    "must be appropriate for the content rating of your app"
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Ads",
+   "section_sha256_2026_10_10": "814c0afff59b7e8b6f5ed1dcfbb7b869548c1d3b988e66186cc650d920065ed0",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps displaying ads",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "ads"
+   ],
+   "family": "ads",
+   "evidence_category": "ARTIFACT",
+   "next_evidence_action": "Review ad network content-rating filters against the app's IARC rating.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-FAMILIES",
+   "platform": "google",
+   "publisher_section_id": "Families Policy Requirements",
+   "title": "Child audience: Families requirements and accurate console answers",
+   "requirement": "If any target audience is children the Families requirements apply, including appropriate content and accurate Target Audience, Data safety and IARC answers.",
+   "official_quotes": [
+    "If one of the target audiences for your app is children, you must comply with the following requirements.",
+    "You must accurately answer the questions in the Play Console regarding your app"
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Families Policy Requirements",
+   "section_sha256_2026_10_10": "03556fa9da36de08c5315cbdc5bffa34c4d3f0fe50f8ef38a12928e7013846fe",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps with children in the target audience",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "kids_audience"
+   ],
+   "family": "children",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Owner confirms Target Audience answers in Play Console; if children included, review Families requirements.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-LOOTBOX",
+   "platform": "google",
+   "publisher_section_id": "Payments",
+   "title": "Loot boxes: disclose odds before purchase",
+   "requirement": "Randomized virtual items from a purchase must clearly disclose odds in advance of and close to the purchase.",
+   "official_quotes": [
+    "must clearly disclose the odds of receiving those items in advance of, and in close and timely proximity to, that purchase."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Payments",
+   "section_sha256_2026_10_10": "05cf0aadb9555df850022f8f0f7ba341afb849a9a08e83ac619e5aac4faeef6b",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps/games selling randomized items",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "loot_boxes"
+   ],
+   "family": "games",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Find randomized-reward purchase flows; confirm odds shown in close proximity before purchase.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-PHYSICAL-GOODS",
+   "platform": "google",
+   "publisher_section_id": "Payments",
+   "title": "Physical goods/services: must NOT use Play Billing",
+   "requirement": "Play Billing must not be used where payment is primarily for physical goods or physical services; the exception that can make external checkout correct.",
+   "official_quotes": [
+    "Google Play's billing system must not be used in cases where:",
+    "for the purchase or rental of physical goods (such as groceries, clothing, housewares, electronics);"
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Payments",
+   "section_sha256_2026_10_10": "05cf0aadb9555df850022f8f0f7ba341afb849a9a08e83ac619e5aac4faeef6b",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST NOT",
+   "scope": "Apps selling physical goods/services",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "external_purchase",
+    "physical_goods"
+   ],
+   "family": "payments",
+   "evidence_category": "JUDGMENT",
+   "next_evidence_action": "Owner declares whether external checkout sells physical goods/services; only then is Play Billing excluded.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-RMG",
+   "platform": "google",
+   "publisher_section_id": "Real-Money Gambling, Games, and Contests",
+   "title": "Real-money gambling: licensed operator + application process",
+   "requirement": "Gambling apps need the gambling application, an approved/licensed operator status and a valid operating license per country.",
+   "official_quotes": [
+    "is an approved governmental operator and/or is registered as a licensed operator with the appropriate governmental gambling authority in the specified country"
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Real-Money Gambling, Games, and Contests",
+   "section_sha256_2026_10_10": "aad90249f6d7e6112bddecb0010da18b7e8d21ab66f9d5fac66865d175f2fb9c",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Real-money gambling/contest apps",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "real_money_gaming"
+   ],
+   "family": "games",
+   "evidence_category": "STORE",
+   "next_evidence_action": "Owner supplies gambling application approval and operating licence per country.",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  },
+  {
+   "rule_id": "CUR-GPL-SENSITIVE-SECURE",
+   "platform": "google",
+   "publisher_section_id": "Personal and Sensitive User Data",
+   "title": "Sensitive data: limit use, transmit securely",
+   "requirement": "Personal/sensitive data (incl. health, microphone, camera, auth info) must be limited to expected functionality and handled securely, e.g. HTTPS.",
+   "official_quotes": [
+    "Handle all personal and sensitive user data securely, including transmitting it using modern cryptography (for example, over HTTPS)."
+   ],
+   "official_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "anchor": null,
+   "section_heading": "Personal and Sensitive User Data",
+   "section_sha256_2026_10_10": "b4327a9a2e3257a38608a1fafce8b8eca9d7543575c2394b48dc9e66b07f1621",
+   "source_text_sha256_2026_10_10": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "verified_date": "2026-10-10",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "verification_method": "quote matched verbatim in page text fetched at last_confirmed_current",
+   "normative_strength": "MUST",
+   "scope": "Apps handling personal or sensitive data",
+   "exceptions": null,
+   "enforcement_dates": [],
+   "applies_when": [
+    "accounts"
+   ],
+   "family": "sensitive-data",
+   "evidence_category": "SOURCE",
+   "next_evidence_action": "Confirm every network endpoint for personal data is HTTPS (no http:// or cleartext exceptions in config).",
+   "static_checks": [],
+   "default_verdict_without_evidence": "NEEDS_REVIEW",
+   "community_notes": [],
+   "uncertainty": null
+  }
+ ]
+}

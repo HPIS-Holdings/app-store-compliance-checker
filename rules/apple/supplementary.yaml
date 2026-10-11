@@ -1,0 +1,128 @@
+# Rules sourced from official Apple pages other than the App Review Guidelines.
+- id: APL-SUPP-ACCOUNT-DELETION
+  title: "Offering account deletion in your app (App Review support page for 5.1.1(v))"
+  label: official_recommendation
+  obligation: conditional
+  topics: [account-deletion, sign-in-with-apple, subscriptions]
+  requires: "Apps supporting account creation must let people initiate deletion in the app (requirement restated from 5.1.1(v)). Guidance - easy to find (typically account settings); offer deletion of the entire account record and associated personal data (deactivation-only is insufficient); link directly to the web page if completion is on web (tvOS may show static URL/QR); inform users about timing, billing/cancellation handling, and retained data."
+  exceptions_regions: "Highly regulated industries (5.1.1(ix)) may use customer-service flows to confirm/facilitate deletion; others should not require phone, email, chat or other support flows. Reauthentication/confirmation steps allowed if not unnecessarily difficult. Deletion need not be immediate if users are told how long it takes. Developers based in the Republic of Korea must provide a Sign in with Apple server-to-server notification endpoint when registering a new Services ID."
+  implementation: "Sign in with Apple apps should revoke user tokens via the Sign in with Apple REST API and handle server-to-server notifications. Auto-created guest accounts also need a deletion option. Linking out to a browser for sign-up does not remove the in-app deletion requirement."
+  agent_verification:
+    - "Locate delete-account UI"
+    - "confirm it calls a backend endpoint that hard-deletes or anonymizes"
+    - "confirm SIWA token revocation"
+    - "confirm subscription-cancellation guidance text (deleting account does not cancel App Store subscription - Interpretation)."
+  sources:
+    - {url: "https://developer.apple.com/support/offering-account-deletion-in-your-app/", section: "Account deletion guidance; FAQs"}
+- id: APL-SUPP-SDK-MIN-XCODE26
+  title: "Build with Xcode 26 / OS 26 SDKs (since April 28, 2026)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [technical, build, sdk]
+  requires: "Apps uploaded to App Store Connect must be built with Xcode 26 or later using an SDK for iOS 26, iPadOS 26, tvOS 26, visionOS 26 or watchOS 26."
+  effective_date: "2026-04-28"
+  implementation: "Expo/EAS - use an EAS build image with Xcode 26 (check eas.json \"image\" / default image for your Expo SDK) (Interpretation)."
+  agent_verification:
+    - "Check eas.json build.ios.image or CI Xcode version >= 26."
+  sources:
+    - {url: "https://developer.apple.com/news/upcoming-requirements/", section: "SDK minimum requirements"}
+- id: APL-SUPP-MIN-DEPLOY-IOS13
+  title: "Minimum deployment target iOS 13 (since September 9, 2026)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [technical, build]
+  requires: "iOS and iPadOS apps uploaded to App Store Connect must target iOS 13 or later."
+  effective_date: "2026-09-09"
+  agent_verification:
+    - "Check IPHONEOS_DEPLOYMENT_TARGET / expo-build-properties ios.deploymentTarget >= 13.0."
+  sources:
+    - {url: "https://developer.apple.com/news/upcoming-requirements/", section: "iOS and iPadOS minimum system requirements"}
+- id: APL-SUPP-AGE-RATING-2026
+  title: "Updated age rating questions (by January 31, 2026)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [age-rating, metadata]
+  requires: "Respond to the updated age rating questions for each app in App Store Connect (App Information) to avoid interruption when submitting updates; ratings were automatically updated to the new system."
+  effective_date: "2026-01-31"
+  agent_verification:
+    - "Manual - confirm in App Store Connect that the updated questionnaire is complete (not inspectable from code)."
+  sources:
+    - {url: "https://developer.apple.com/news/upcoming-requirements/", section: "Age Rating Updates"}
+- id: APL-SUPP-EU-DSA-TRADER
+  title: "EU Digital Services Act trader status"
+  label: official_requirement
+  obligation: conditional
+  topics: [regions, eu, dsa, account]
+  requires: "Trader status required to submit updates for EU-distributed apps (since October 16, 2024); apps without trader status removed from the EU App Store until provided and verified (since February 17, 2025)."
+  effective_date: "2025-02-17"
+  exceptions_regions: "European Union storefronts."
+  sources:
+    - {url: "https://developer.apple.com/news/upcoming-requirements/", section: "DSA trader status required for apps in the EU"}
+- id: APL-SUPP-REQUIRED-REASON-API
+  title: "Privacy manifests and approved reasons for required-reason APIs"
+  label: official_requirement
+  obligation: mandatory
+  topics: [privacy, privacy-manifest, sdk, technical]
+  requires: "Since May 1, 2024, include approved reasons for listed APIs used by app code including third-party SDKs to upload new or updated apps. PrivacyInfo.xcprivacy records data types collected and required-reason APIs used; SDKs on Apple's list of \"SDKs that require a privacy manifest and signature\" must include a manifest (and signature)."
+  effective_date: "2024-05-01"
+  implementation: "Expo - configure ios.privacyManifests in app config (Expo guide \"Privacy manifests\"); check that native dependencies ship their own manifests (Interpretation; Expo doc recorded as source)."
+  agent_verification:
+    - "Check app.json/app.config ios.privacyManifests or ios/*/PrivacyInfo.xcprivacy"
+    - "list NSPrivacyAccessedAPITypes"
+    - "compare with usage of UserDefaults, file timestamp, system boot time, disk space APIs in native deps."
+  sources:
+    - {url: "https://developer.apple.com/news/upcoming-requirements/", section: "Approved reasons for APIs"}
+    - {url: "https://developer.apple.com/documentation/bundleresources/privacy-manifest-files", section: "Overview"}
+    - {url: "https://docs.expo.dev/guides/apple-privacy/", section: "Privacy manifests (Expo, third-party documentation)"}
+- id: APL-SUPP-PRIVACY-LABELS
+  title: "App privacy details (Privacy Nutrition Labels)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [privacy, privacy-labels, sdk]
+  requires: "Provide privacy practice information in App Store Connect to submit new apps and updates, including practices of third-party partners (analytics, ad networks, SDKs, vendors). Identify all data collected unless it meets all optional-disclosure criteria. Keep responses accurate and current (updates possible without an app update). \"Collect\" means transmitting off device in a way allowing access longer than needed to service the request in real time. Data collected solely for app functionality must still be declared."
+  agent_verification:
+    - "Generate a data inventory from code + SDK list and diff against the declared label (stored as a JSON in repo if the team maintains one)."
+  sources:
+    - {url: "https://developer.apple.com/app-store/app-privacy-details/", section: "Answering app privacy questions; Data collection; Optional disclosure"}
+- id: APL-SUPP-ATT
+  title: "App Tracking Transparency - definition of tracking"
+  label: official_requirement
+  obligation: conditional
+  topics: [privacy, tracking, att, ads]
+  requires: "Obtain permission through ATT (iOS/iPadOS/tvOS 14.5+) before tracking or accessing the advertising identifier. Tracking = linking user/device data from your app with other companies' data for targeted advertising or ad measurement, or sharing with data brokers. Including an SDK that combines your app's data with other developers' data for ad targeting/measurement counts even if you do not use it for that purpose."
+  exceptions_regions: "Not tracking - linking solely on-device without identifying data leaving the device; sharing with a data broker solely for fraud detection/prevention or security (list in source is longer)."
+  implementation: "Expo - expo-tracking-transparency; NSUserTrackingUsageDescription; delay ad SDK personalized initialization until status known (Interpretation)."
+  agent_verification:
+    - "If AdMob/Meta/AppLovin/other ad or attribution SDKs present - confirm NSUserTrackingUsageDescription and ATT request before IDFA access"
+    - "confirm non-personalized fallback when denied."
+  sources:
+    - {url: "https://developer.apple.com/app-store/user-privacy-and-data-use/", section: "Ask permission to track"}
+- id: APL-SUPP-DPLA-INTERPRETED-CODE
+  publisher_id: "DPLA 3.3.1"
+  title: "DPLA 3.3.1 - downloaded executable vs interpreted code"
+  label: official_requirement
+  obligation: mandatory
+  topics: [technical, ota-updates, expo, agreements]
+  requires: "No downloading/installing executable code. Interpreted code may be downloaded only if it does not change the primary purpose via features inconsistent with the intended and advertised purpose, does not bypass signing/sandbox/OS security, and (App Store) does not create a store for other apps. Learning-to-code environments have separate conditions."
+  sources:
+    - {url: "https://developer.apple.com/support/terms/apple-developer-program-license-agreement/", section: "3.3.1 APIs and Functionality (DPLA version LYL255, August 18, 2026 as shown on page)"}
+- id: APL-SUPP-DPLA-SCHED2-SUBS
+  publisher_id: "DPLA Schedule 2 §3.8(b)"
+  title: "Schedule 2 - auto-renewing subscription disclosures"
+  label: official_requirement
+  obligation: conditional
+  topics: [subscriptions, paywall, agreements]
+  requires: "Clearly and conspicuously disclose title of the auto-renewing subscription, length, and price (and price per unit if appropriate); links to Privacy Policy and Terms of Use accessible within the app."
+  sources:
+    - {url: "https://developer.apple.com/support/terms/apple-developer-program-license-agreement/", section: "Schedule 2, Section 3.8(b)"}
+- id: APL-SUPP-DPLA-EU-ATTACHMENT-2026
+  title: "DPLA - Additional Terms for Apps in the European Union (effective October 1, 2026)"
+  label: official_requirement
+  obligation: conditional
+  topics: [agreements, eu, regions]
+  requires: "The DPLA page states an EU attachment \"is effective as of October 1, 2026, or the date on which You sign this Agreement\". Content not analyzed in this pass."
+  effective_date: "2026-10-01"
+  uncertainty: "Not analyzed - see research-gaps RG-APL-DPLA-EU."
+  sources:
+    - {url: "https://developer.apple.com/support/terms/apple-developer-program-license-agreement/", section: "Attachment - Additional Terms for Apps in the European Union"}
+

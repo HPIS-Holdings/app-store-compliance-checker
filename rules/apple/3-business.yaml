@@ -1,0 +1,163 @@
+- id: APL-3
+  title: "Business (section preamble)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [business-model, pricing, reviews]
+  requires: "Explain non-obvious business models in metadata and Review Notes."
+  prohibited: "Clear rip-off pricing / irrationally high prices; manipulating reviews or chart rankings (paid, incentivized, filtered or fake feedback) including via third parties."
+  enforcement_risk: "Delayed review or rejection; expulsion from the Developer Program for review/ranking manipulation."
+- id: APL-3.1.1
+  title: "In-App Purchase required for digital unlocks"
+  label: official_requirement
+  obligation: mandatory
+  topics: [payments, iap, digital-goods, subscriptions, games, loot-boxes, nft]
+  requires: "Use in-app purchase to unlock features/functionality (subscriptions, in-game currencies, levels, premium content, full version). IAP credits/currencies may not expire. Provide a restore mechanism for restorable IAPs. Disclose loot-box odds per item type before purchase. Digital gift cards/vouchers redeemable for digital goods must be sold via IAP."
+  prohibited: "Own unlock mechanisms (license keys, AR markers, QR codes, crypto/crypto wallets). NFT ownership unlocking features."
+  exceptions_regions: "Tipping via IAP currencies allowed; IAP gifting allowed (refund only to purchaser); Mac App Store plug-ins may use other mechanisms; physical gift cards may use other payment; non-subscription apps may offer a free trial via a Price Tier 0 non-consumable named \"XX-day Trial\" with prior disclosure of duration, lost content and downstream charges. NFT browsing call-to-action restriction does not apply on the United States storefront. See 3.1.1(a) and 3.1.3 for link-outs and exceptions."
+  enforcement_risk: "Rejection under 3.1.1 is one of the most frequently reported rejection types (Community experience)."
+  implementation: "Use StoreKit 2 or RevenueCat (wraps StoreKit); implement \"Restore Purchases\" button; never gate digital features behind web-only payments outside permitted storefront rules (Interpretation)."
+  examples: "Rewarded-ad currency is not a purchase and is allowed; selling gem packs via Stripe inside the app is not (outside US storefront rules) (Interpretation)."
+  agent_verification:
+    - "Grep for Stripe/PayPal/Braintree SDKs and checkout URLs reachable from iOS UI"
+    - "confirm Restore Purchases control exists"
+    - "if randomized rewards are sold confirm odds disclosure UI before purchase"
+    - "confirm virtual currency has no expiry logic."
+  uncertainty: "The guideline text (June 8, 2026) exempts the United States storefront from the link/CTA prohibition. The legal background and any fee terms for US link-outs were not researched in this pass (see research-gaps RG-APL-US-LINKOUT). Re-check before relying on US-only behaviour."
+- id: APL-3.1.1a
+  title: "Link to Other Purchase Methods (entitlements; US storefront exemption)"
+  label: official_requirement
+  obligation: conditional
+  topics: [payments, external-links, regions, us, eu, korea, music]
+  requires: "Developers may apply for StoreKit External Purchase Link Entitlements (specific regions) or Music Streaming Services Entitlements to link to their own website for purchases, per entitlement agreements."
+  prohibited: "In all other storefronts (except United States), apps and metadata may not include buttons, external links or other calls to action directing to non-IAP purchasing. Misleading marketing, scams or fraud related to the entitlement leads to removal and possible Program removal."
+  exceptions_regions: "United States storefront - entitlements not required for buttons, external links or other CTAs (per guideline text as of June 8, 2026). Entitlements are limited to iOS/iPadOS App Store in specific storefronts (see Apple's entitlement pages for list)."
+  implementation: "Gate any external purchase link by storefront (StoreKit Storefront.current.countryCode) and remove it from non-eligible storefronts (Interpretation)."
+  agent_verification:
+    - "Find external purchase URLs/buttons"
+    - "confirm storefront gating logic"
+    - "confirm metadata (description/screenshots) do not mention web pricing for non-US storefronts."
+  uncertainty: "Commission/fee terms and storefront lists are in separate Apple support pages and agreements; this repository records them as separate sources where accessible."
+- id: APL-3.1.2
+  title: "Subscriptions allowed in any category"
+  label: official_requirement
+  obligation: conditional
+  topics: [subscriptions]
+  requires: "Auto-renewable subscriptions allowed regardless of category, subject to 3.1.2(a)-(c)."
+- id: APL-3.1.2a
+  title: "Subscriptions - permissible uses"
+  label: official_requirement
+  obligation: conditional
+  topics: [subscriptions, games, ai]
+  requires: "Provide ongoing value; minimum period 7 days; available across all the user's devices. Users get what they paid for without extra tasks (posting, uploading contacts, check-ins). When converting to subscriptions, do not remove primary functionality existing users paid for. Free trials configured in App Store Connect."
+  prohibited: "Tricking users into subscriptions, bait-and-switch, scams (removal, possible Program removal)."
+  exceptions_regions: "Subscriptions may include consumable credits/currencies or discounted consumables; streaming game service rules; cellular carrier bundles with prior approval."
+  examples: "An AI assistant subscription must deliver continuing value (e.g. ongoing AI queries), not a one-time report (Interpretation)."
+  agent_verification:
+    - "Confirm entitlement checks honour subscriptions on all platforms where app is available (shared user ID e.g. RevenueCat appUserID)"
+    - "check legacy one-time purchasers keep access after migration."
+- id: APL-3.1.2b
+  title: "Upgrades and downgrades"
+  label: official_requirement
+  obligation: conditional
+  topics: [subscriptions]
+  requires: "Seamless upgrade/downgrade; users must not inadvertently subscribe to multiple variations of the same thing."
+  implementation: "Put all tiers of one service in a single subscription group (Interpretation consistent with Apple subscription docs)."
+  agent_verification:
+    - "Check App Store Connect config/RevenueCat offerings - all tiers in one subscription group."
+- id: APL-3.1.2c
+  title: "Subscription information before purchase"
+  label: official_requirement
+  obligation: mandatory
+  topics: [subscriptions, paywall]
+  requires: "Before asking to subscribe, clearly describe what the user gets for the price, and communicate requirements in Schedule 2 of the Apple Developer Program License Agreement."
+  implementation: "Paywall shows title, length, price (and price per unit if shown, with full billed amount most prominent), what is included, auto-renew statement, links to Terms of Use (EULA) and Privacy Policy; metadata includes EULA link (Interpretation; widely reported 3.1.2 rejection cause - Community experience)."
+  agent_verification:
+    - "Render paywall"
+    - "assert presence of price string from StoreKit product, period, auto-renew text, Terms and Privacy links, Restore button."
+  dpla_reference: "DPLA Schedule 2, Section 3.8(b) (verified 2026-10-09 against public DPLA page) - clearly and conspicuously disclose title of the auto-renewing subscription, length, price (and price per unit if appropriate); links to Privacy Policy and Terms of Use must be accessible within the app."
+  uncertainty: "Placement/prominence expectations beyond the DPLA list (e.g. full billed amount more prominent than per-month price) come from community rejection reports, not Apple text."
+- id: APL-3.1.3
+  title: "Other Purchase Methods (exceptions framework)"
+  label: official_requirement
+  obligation: conditional
+  topics: [payments]
+  requires: "Apps in 3.1.3(a)-(g) may use non-IAP purchase methods but cannot within the app encourage non-IAP purchase, except US storefront apps and as set forth in 3.1.1(a) and 3.1.3(a). Out-of-app communications to users about other methods are allowed."
+- id: APL-3.1.3a
+  title: "Reader apps"
+  label: official_requirement
+  obligation: conditional
+  topics: [payments, reader-apps]
+  requires: "Reader apps (magazines, newspapers, books, audio, music, video) may give access to previously purchased content; free-tier account creation and account management allowed; may apply for External Link Account Entitlement (not needed for US storefront)."
+- id: APL-3.1.3b
+  title: "Multiplatform services"
+  label: official_requirement
+  obligation: conditional
+  topics: [payments, cross-platform]
+  requires: "Content/subscriptions/features acquired on other platforms or web may be accessed, including consumables in multiplatform games, provided those items are also available as IAP in the app."
+  agent_verification:
+    - "If web purchases unlock iOS features, confirm equivalent IAP products exist."
+- id: APL-3.1.3c
+  title: "Enterprise services"
+  label: official_requirement
+  obligation: conditional
+  topics: [payments, b2b]
+  requires: "Apps sold directly to organizations for employees/students may give access to previously purchased content; consumer, single-user or family sales must use IAP."
+- id: APL-3.1.3d
+  title: "Person-to-person services"
+  label: official_requirement
+  obligation: conditional
+  topics: [payments, telehealth, tutoring]
+  requires: "Real-time person-to-person services between two individuals (tutoring, medical consultations, tours, fitness training) may use non-IAP payment. One-to-few and one-to-many real-time services must use IAP."
+  examples: "A 1:1 live consultation with a dietitian can be paid by card; a group class or AI coaching cannot (Interpretation)."
+- id: APL-3.1.3e
+  title: "Goods and services outside the app"
+  label: official_requirement
+  obligation: conditional
+  topics: [payments, physical-goods]
+  requires: "Physical goods or services consumed outside the app must use non-IAP payment (Apple Pay, card entry)."
+- id: APL-3.1.3f
+  title: "Free stand-alone companion apps"
+  label: official_requirement
+  obligation: conditional
+  topics: [payments]
+  requires: "Free companion apps to paid web tools (VoIP, cloud storage, email, hosting) need not use IAP if there is no in-app purchasing or call to action for purchase outside the app."
+- id: APL-3.1.3g
+  title: "Advertising management apps"
+  label: official_requirement
+  obligation: conditional
+  topics: [payments, ads]
+  requires: "Apps solely for advertisers to buy/manage campaigns need not use IAP; buying boosts/ads displayed in the same app must use IAP."
+- id: APL-3.1.4
+  title: "Hardware-specific content"
+  label: official_requirement
+  obligation: conditional
+  topics: [payments, hardware]
+  requires: "Hardware-dependent features may unlock without IAP; optional features with approved physical products may unlock without IAP if an IAP option also exists."
+  prohibited: "Requiring purchase of unrelated products or advertising/marketing activities to unlock functionality."
+- id: APL-3.1.5
+  title: "Cryptocurrencies"
+  label: official_requirement
+  obligation: conditional
+  topics: [crypto]
+  requires: "Wallets only from organization-enrolled developers; exchanges only where licensed; ICO/futures/crypto-securities only from established financial institutions."
+  prohibited: "On-device mining; awarding crypto for tasks (downloading apps, posting)."
+- id: APL-3.2.1
+  title: "Acceptable business practices"
+  label: official_requirement
+  obligation: informational
+  topics: [business-model, donations, nonprofits, loans]
+  requires: "Lists acceptable practices - promoting own apps (not mere catalog); curated third-party app collections for approved needs (e.g. health management) with editorial content; rental expiry for approved rentals; Wallet passes for payments/offers/ID; insurance apps free and without IAP; approved nonprofits may fundraise with Apple Pay and disclosures; optional person-to-person monetary gifts with 100% to receiver (not tied to digital content); financial trading apps from licensed institutions."
+  examples: "Religious donation features - only approved nonprofits may collect in-app (with Apple Pay); otherwise see 3.2.2(iv) (Interpretation)."
+- id: APL-3.2.2
+  title: "Unacceptable business practices"
+  label: official_requirement
+  obligation: mandatory
+  topics: [business-model, ads, donations, ratings, loans, games]
+  prohibited: "App-Store-like interfaces for third-party apps; artificially inflating ad impressions/clicks or apps designed predominantly to display ads; collecting charity funds in-app unless approved nonprofit (others must be free and collect outside via Safari or SMS); arbitrary user restrictions by location/carrier; manipulating visibility on other services; binary options; unlicensed CFD/FOREX; personal loans without clear terms, APR above 36% or repayment in 60 days or less; forcing users to rate/review/download other apps to access functionality."
+  exceptions_regions: "Apps may incentivize in-app actions such as completing a level or watching an ad (3.2.2(x))."
+  examples: "A temple/mosque donation button using Stripe inside the app by a non-approved entity is likely rejected; link to a website donation page via Safari is the stated alternative for non-approved entities that are free on the store (Interpretation of 3.2.2(iv))."
+  agent_verification:
+    - "Search for donate/donation/sadaqah/zakat/dakshina flows"
+    - "confirm nonprofit approval or Safari hand-off"
+    - "search for rating prompts gating features."
+

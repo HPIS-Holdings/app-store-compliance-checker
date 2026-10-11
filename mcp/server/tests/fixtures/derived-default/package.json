@@ -1,0 +1,7 @@
+{
+ "name": "dd",
+ "dependencies": {
+  "expo": "~57.0.7",
+  "react-native": "0.86.0"
+ }
+}

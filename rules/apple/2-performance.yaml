@@ -1,0 +1,291 @@
+- id: APL-BEFORE-SUBMIT
+  title: "Before You Submit checklist (unnumbered)"
+  label: official_recommendation
+  obligation: recommended
+  topics: [submission, review]
+  requires: "Apple lists checks - test for crashes/bugs; complete accurate metadata; update contact info; give full access (demo account or fully featured demo mode plus hardware/resources such as sample QR codes); enable backend services during review; explain non-obvious features and IAPs in Review Notes."
+  enforcement_risk: "Apple states this list does not replace the guidelines nor guarantee approval; missing items commonly lead to 2.1 rejections (Interpretation)."
+- id: APL-2.1
+  title: "App Completeness"
+  label: official_requirement
+  obligation: mandatory
+  topics: [submission, review, iap, demo-account]
+  requires: "(a) Submit final versions with complete metadata and working URLs; no placeholder content; test on-device; provide demo account info and keep backend live. A built-in demo mode can replace a demo account only with prior Apple approval and must exhibit full features. (b) IAPs must be complete, visible to reviewer and functional; explain in Review Notes if an IAP cannot be found."
+  prohibited: "Crashing binaries, incomplete bundles, obvious technical problems."
+  enforcement_risk: "Rejection (2.1 is among the most commonly cited guidelines in developer reports - Community experience)."
+  implementation: "Provide reviewer credentials with pre-populated data; keep paywall products in \"Ready to Submit\" and attached to the version; test on physical devices with the release build (Interpretation)."
+  agent_verification:
+    - "Run release build smoke test"
+    - "grep for \"lorem ipsum\"/\"TODO\"/\"coming soon\""
+    - "check all URLs in metadata return 200"
+    - "confirm StoreKit product IDs in code match App Store Connect configuration file if present."
+- id: APL-2.2
+  title: "Beta Testing"
+  label: official_requirement
+  obligation: mandatory
+  topics: [testing, testflight]
+  requires: "Demos/betas/trials go to TestFlight, not the App Store. TestFlight builds must be intended for public distribution and comply with guidelines; significant beta updates go to TestFlight App Review."
+  prohibited: "Distributing TestFlight builds in exchange for compensation (including crowdfunding rewards)."
+- id: APL-2.3
+  title: "Accurate Metadata (umbrella)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [metadata, privacy-labels]
+  requires: "All metadata incl. privacy information, description, screenshots and previews must accurately reflect the core experience and be kept up to date."
+- id: APL-2.3.1
+  title: "Hidden features; misleading marketing"
+  label: official_requirement
+  obligation: mandatory
+  topics: [metadata, review-notes, deception]
+  requires: "(a) No hidden, dormant or undocumented features; describe new features with specificity in Notes for Review (generic descriptions are rejected)."
+  prohibited: "Misleading marketing (e.g. fake virus scanners) or false prices inside or outside the App Store."
+  enforcement_risk: "Removal from App Store / block from alternative distribution and developer account termination; (b) egregious or repeated behaviour - removal from the Developer Program."
+  agent_verification:
+    - "Search for remote feature flags that enable unreviewed functionality"
+    - "diff feature set vs Review Notes."
+  uncertainty: "Remote config that changes UI copy is common; Apple does not define where \"hidden feature\" begins. Treat any capability not visible to the reviewer as risky (Interpretation)."
+- id: APL-2.3.2
+  title: "Disclose in-app purchases in metadata"
+  label: official_requirement
+  obligation: conditional
+  topics: [metadata, iap]
+  requires: "Description/screenshots/previews must indicate whether featured items, levels, subscriptions require additional purchase. Promoted IAPs need public-appropriate display name/screenshot/description and the app must handle the SKPaymentTransactionObserver (promoted purchase) flow."
+  agent_verification:
+    - "If promoted IAPs are configured, check code handles promoted purchases (StoreKit 2 PurchaseIntent / SK1 shouldAddStorePayment or RevenueCat equivalent)."
+- id: APL-2.3.3
+  title: "Screenshots show the app in use"
+  label: official_requirement
+  obligation: mandatory
+  topics: [metadata, screenshots]
+  requires: "Screenshots should show the app in use, not merely title art, login page or splash screen; text/image overlays allowed."
+- id: APL-2.3.4
+  title: "App previews are screen captures"
+  label: official_requirement
+  obligation: conditional
+  topics: [metadata, previews]
+  requires: "Previews may only use video screen captures of the app itself (narration and overlays allowed)."
+- id: APL-2.3.5
+  title: "Category selection"
+  label: official_requirement
+  obligation: mandatory
+  topics: [metadata]
+  requires: "Choose the most appropriate category; Apple may change it."
+- id: APL-2.3.6
+  title: "Age rating questions answered honestly"
+  label: official_requirement
+  obligation: mandatory
+  topics: [metadata, age-rating]
+  requires: "Answer age-rating questions honestly; comply with local content rating/warning requirements for media in each territory."
+  exceptions_regions: "Upcoming Requirements asks developers to respond to the updated age rating questions for each app by January 31, 2026 to avoid interruption when submitting updates; see APL-SUPP-AGE-RATING-2026. (Specific new rating tiers are not stated on that page and are not asserted here.)"
+  sources:
+    - {url: "https://developer.apple.com/news/upcoming-requirements/", section: "Age Rating Updates"}
+- id: APL-2.3.7
+  title: "App name, keywords, subtitle rules"
+  label: official_requirement
+  obligation: mandatory
+  topics: [metadata, aso]
+  requires: "Unique app name limited to 30 characters; accurate keywords; subtitles follow metadata rules."
+  prohibited: "Stuffing metadata with trademarks, popular app names, pricing info or irrelevant phrases; prices/terms in name, subtitle, screenshots or previews where not specific to that metadata type; subtitles referencing other apps or unverifiable claims."
+  agent_verification:
+    - "Check name length <= 30"
+    - "scan keywords for competitor trademarks"
+    - "scan subtitle for \"free\", \"#1\", \"best\"."
+- id: APL-2.3.8
+  title: "Metadata appropriate for 4+; \"For Kids\" reserved"
+  label: official_requirement
+  obligation: mandatory
+  topics: [metadata, kids, icons]
+  requires: "Icons, screenshots, previews (incl. IAP icons) must adhere to a 4+ rating even if app is rated higher; app name and icons must be consistent across variants."
+  prohibited: "\"For Kids\"/\"For Children\" in metadata outside the Kids Category."
+- id: APL-2.3.9
+  title: "Rights to metadata assets; fictional account data"
+  label: official_requirement
+  obligation: mandatory
+  topics: [metadata, ip]
+  requires: "Secure rights for all materials in icons/screenshots/previews; show fictional account info, not real people's data."
+  examples: "Health-app screenshots must use synthetic lab values and names (Interpretation)."
+- id: APL-2.3.10
+  title: "No other platforms in metadata"
+  label: official_requirement
+  obligation: mandatory
+  topics: [metadata, cross-platform]
+  prohibited: "Names, icons or imagery of other mobile platforms or alternative marketplaces in app or metadata, unless approved interactive functionality."
+  examples: "React Native/Expo apps must not show Android navigation bars or \"Get it on Google Play\" badges in iOS screenshots or UI (Interpretation)."
+  agent_verification:
+    - "Grep iOS-reachable UI strings for \"Android\", \"Google Play\", \"Play Store\""
+    - "inspect screenshots."
+- id: APL-2.3.11
+  title: "Pre-orders must be complete"
+  label: official_requirement
+  obligation: conditional
+  topics: [metadata, pre-order]
+  requires: "Pre-order apps complete and deliverable; released app not materially different; restart pre-orders on material changes (e.g. business model)."
+- id: APL-2.3.12
+  title: "What's New text"
+  label: official_requirement
+  obligation: mandatory
+  topics: [metadata, updates]
+  requires: "Clearly describe new features/product changes in \"What's New\"; generic text acceptable only for simple bug fixes, security and performance updates."
+- id: APL-2.3.13
+  title: "In-app events"
+  label: official_requirement
+  obligation: conditional
+  topics: [metadata, events]
+  requires: "Events must fit an App Store Connect event type, accurate metadata, happen at stated times, follow Section 3 if monetized, deep link to the correct destination."
+- id: APL-2.4.1
+  title: "iPhone apps should run on iPad"
+  label: official_recommendation
+  obligation: recommended
+  topics: [hardware, ipad]
+  requires: "iPhone apps should run on iPad whenever possible."
+  uncertainty: "Phrased as \"should\"/\"encourage\"; however iPhone-only apps are still run on iPad in compatibility mode during review and layout bugs there are commonly cited under 2.1/4.0 (Community experience)."
+- id: APL-2.4.2
+  title: "Power efficiency; no device damage; no background mining"
+  label: official_requirement
+  obligation: mandatory
+  topics: [performance, battery]
+  prohibited: "Rapid battery drain, excessive heat, unnecessary resource strain, encouraging device under pillow while charging, excessive SSD writes, unrelated background processes (incl. by third-party ads) such as crypto mining."
+- id: APL-2.4.3
+  title: "Apple TV input requirements"
+  label: official_requirement
+  obligation: conditional
+  topics: [tvos]
+  requires: "tvOS apps usable with Siri remote or game controllers; disclose controller requirement in metadata."
+- id: APL-2.4.4
+  title: "No restart / unrelated settings changes"
+  label: official_requirement
+  obligation: mandatory
+  topics: [ux]
+  prohibited: "Suggesting/requiring device restart or unrelated system-settings changes (e.g. disabling Wi-Fi or security features)."
+- id: APL-2.4.5
+  title: "Mac App Store requirements"
+  label: official_requirement
+  obligation: conditional
+  topics: [macos]
+  requires: "Sandboxing; Xcode packaging (no third-party installers); no auto-launch without consent; no downloading code/standalone apps; no root escalation; no license screens/keys; updates via Mac App Store only; currently shipping OS; localization in single bundle."
+- id: APL-2.5.1
+  title: "Public APIs only; current OS; intended purpose"
+  label: official_requirement
+  obligation: mandatory
+  topics: [technical, healthkit, api]
+  requires: "Only public APIs; run on currently shipping OS; phase out deprecated tech; use frameworks for their intended purposes and indicate integration in the description (e.g. HealthKit for health/fitness and integrating with the Health app)."
+  agent_verification:
+    - "If HealthKit entitlement present, confirm the App Store description mentions Health app integration"
+    - "scan native modules for private selectors (nm/strings on binary)."
+- id: APL-2.5.2
+  title: "Self-contained bundles; no downloaded executable code"
+  label: official_requirement
+  obligation: mandatory
+  topics: [technical, ota-updates, expo]
+  requires: "Stay within container; do not download/install/execute code that introduces or changes features or functionality."
+  exceptions_regions: "Educational code apps may download viewable/editable code in limited circumstances. See also 4.7 for mini apps/games, chatbots, plug-ins, emulators."
+  implementation: "Expo/EAS Update (OTA JS bundles) is widely used; keep OTA updates to bug fixes/content that do not change the reviewed feature set, and ship new features through a reviewed binary (Interpretation; Apple has not published a statement specific to Expo)."
+  agent_verification:
+    - "Check expo-updates config"
+    - "review release notes of OTA updates since last binary for feature changes."
+  dpla_reference: "DPLA Section 3.3.1 (verified 2026-10-09) - apps may not download/install executable code; interpreted code may be downloaded only if it (a) does not change the primary purpose by providing features inconsistent with the intended and advertised purpose, (b) does not bypass signing, sandbox or other OS security features, (c) for App Store apps, does not create a store/storefront for other apps."
+  uncertainty: "Apple has not published Expo-specific guidance; how much functional change an OTA JS update may carry is judged against DPLA 3.3.1(a) and Guideline 2.5.2/2.3.1."
+- id: APL-2.5.3
+  title: "No harmful code"
+  label: official_requirement
+  obligation: mandatory
+  topics: [security]
+  prohibited: "Transmitting viruses or code that disrupts OS/hardware features incl. Push Notifications and Game Center. Egregious/repeat - Program removal."
+- id: APL-2.5.4
+  title: "Background modes for intended purposes"
+  label: official_requirement
+  obligation: mandatory
+  topics: [technical, background, audio, voice]
+  requires: "Background services only for their intended purposes (VoIP, audio playback, location, task completion, local notifications, etc.)."
+  examples: "Declaring UIBackgroundModes \"audio\" solely to keep a voice-logging app alive while silent is a likely rejection (Interpretation)."
+  agent_verification:
+    - "List UIBackgroundModes in Info.plist/app.json ios.infoPlist"
+    - "justify each against a user-visible feature."
+- id: APL-2.5.5
+  title: "IPv6-only networks"
+  label: official_requirement
+  obligation: mandatory
+  topics: [technical, networking]
+  requires: "Apps must be fully functional on IPv6-only networks."
+  agent_verification:
+    - "Grep for hard-coded IPv4 literals in API base URLs."
+- id: APL-2.5.6
+  title: "WebKit for web browsing"
+  label: official_requirement
+  obligation: conditional
+  topics: [technical, webview, eu, japan]
+  requires: "Web-browsing apps must use WebKit; alternative browser-engine entitlements exist for the EU and Japan."
+- id: APL-2.5.8
+  title: "No alternate home screens"
+  label: official_requirement
+  obligation: mandatory
+  topics: [technical]
+  prohibited: "Apps creating alternate desktop/home screen environments."
+- id: APL-2.5.9
+  title: "Don't alter standard switches/UI behaviours"
+  label: official_requirement
+  obligation: mandatory
+  topics: [technical, ux]
+  prohibited: "Altering/disabling volume or ring switches or native UI behaviours; blocking links out to other apps."
+- id: APL-2.5.11
+  title: "SiriKit and Shortcuts"
+  label: official_requirement
+  obligation: conditional
+  topics: [voice, siri]
+  requires: "Only register intents the app can handle and users expect; vocabulary/aliases relate to the app; resolve requests directly without ads/marketing; disambiguate only when needed."
+  examples: "A health app exposing an App Intent \"Log my blood pressure\" is appropriate; registering a generic \"start workout\" intent without workout functionality is not (Interpretation based on Apple's own meal-planning example)."
+- id: APL-2.5.12
+  title: "Call/SMS blocking"
+  label: official_requirement
+  obligation: conditional
+  topics: [callkit]
+  requires: "Block only confirmed spam; disclose blocking criteria; use data only for operating/improving the app/extension."
+- id: APL-2.5.13
+  title: "Facial recognition for authentication"
+  label: official_requirement
+  obligation: conditional
+  topics: [authentication, biometrics]
+  requires: "Use LocalAuthentication (not ARKit or other face tech) where possible; alternate auth for users under 13."
+- id: APL-2.5.14
+  title: "Consent and indicator when recording user activity"
+  label: official_requirement
+  obligation: mandatory
+  topics: [microphone, voice, camera, recording, privacy]
+  requires: "Explicit user consent plus a clear visual and/or audible indication when recording/logging user activity, including camera, microphone, screen recording or other inputs."
+  implementation: "Voice logging - explicit start (tap/hold), visible recording state (waveform, red indicator, timer), explicit stop; never start microphone capture silently on screen open (Interpretation)."
+  agent_verification:
+    - "Find all calls starting audio recording (expo-av Audio.Recording / expo-audio useAudioRecorder / AVAudioRecorder / SFSpeechRecognizer)"
+    - "verify each is triggered by a user gesture and that a recording indicator component is rendered while active."
+- id: APL-2.5.15
+  title: "File pickers include Files/iCloud"
+  label: official_recommendation
+  obligation: recommended
+  topics: [files]
+  requires: "Apps that let users view/select files should include items from the Files app and iCloud documents."
+- id: APL-2.5.16
+  title: "Widgets, extensions, notifications related to app; App Clips"
+  label: official_requirement
+  obligation: conditional
+  topics: [notifications, widgets, app-clips]
+  requires: "Widgets, extensions and notifications should relate to the app's content and functionality. (a) App Clip features must be in the main app binary; App Clips cannot contain advertising."
+- id: APL-2.5.17
+  title: "Matter"
+  label: official_requirement
+  obligation: conditional
+  topics: [iot]
+  requires: "Use Apple's Matter support framework to initiate pairing; non-Apple Matter components must be CSA-certified."
+- id: APL-2.5.18
+  title: "Advertising placement, targeting and controls"
+  label: official_requirement
+  obligation: conditional
+  topics: [ads, games, health, kids]
+  requires: "Display ads only in main app binary (not extensions, App Clips, widgets, notifications, keyboards, watchOS apps). Ads must fit the app's age rating, let users see all targeting info without leaving the app. Interstitials must be clearly labelled as ads, not trick users, and have easily accessible, visible, adequately sized close/skip buttons. Provide a way to report inappropriate ads."
+  prohibited: "Targeted/behavioural advertising based on sensitive data such as health/medical (e.g. HealthKit), ClassKit/school data, or data from kids."
+  implementation: "For games, use ad SDK \"report ad\"/AdChoices features and ensure mediation networks do not use health signals (Interpretation)."
+  agent_verification:
+    - "List ad SDKs"
+    - "confirm ads are not rendered in widgets/notifications"
+    - "confirm a \"report this ad\" path"
+    - "confirm health data is never passed as ad targeting keywords."
+  uncertainty: "Apple does not specify how the \"see all information used to target\" requirement is satisfied; SDK-provided ad info (AdChoices) is assumed adequate but not confirmed by Apple."
+

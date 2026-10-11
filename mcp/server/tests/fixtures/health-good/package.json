@@ -1,0 +1,10 @@
+{
+ "name": "wellness-journal",
+ "dependencies": {
+  "expo": "~54.0.0",
+  "react-native": "0.81.4",
+  "expo-build-properties": "~1.0.0",
+  "@kingstinct/react-native-healthkit": "^9.0.0",
+  "expo-audio": "~1.0.0"
+ }
+}

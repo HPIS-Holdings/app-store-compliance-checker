@@ -1,0 +1,8 @@
+{
+ "name": "dynlit",
+ "dependencies": {
+  "expo": "~57.0.0",
+  "react-native": "0.86.0",
+  "expo-audio": "~1.0.0"
+ }
+}

@@ -1,0 +1,30 @@
+# Copy this file into YOUR APP REPOSITORY at .github/workflows/store-compliance.yml.
+# It is an example, not an active workflow until copied there.
+# This runs on all branch pushes and pull-request code updates; no path filters.
+# GitHub may require approval for PRs from forks, or restrict their workflows.
+name: Store compliance
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    name: Check proven store problems
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out app code
+        uses: actions/checkout@v4
+      # Pin to a release tag (or a full commit SHA for maximum supply-chain safety).
+      - name: Check store compliance
+        uses: HPIS-Holdings/app-store-compliance-checker@v0.4.0
+        with:
+          path: .
+          # platform: apple   # omit to check both Apple and Google
+          report: mcc-report.md
+# The compliance gate makes a job red ONLY for evidenced policy problems.
+# Separate GitHub infrastructure/checkout failures can also make a job red;
+# those do NOT mean that the checker proved any violation.
+# Unknowns / missing evidence / checker failures produce warnings (not approval).
+# Review warnings and the Actions summary before submitting your app.

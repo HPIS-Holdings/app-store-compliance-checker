@@ -1,0 +1,29 @@
+{
+ "expo": {
+  "name": "Course Pass Web",
+  "slug": "course-pass-web",
+  "version": "1.0.0",
+  "ios": {
+   "bundleIdentifier": "com.example.coursepassweb",
+   "config": {
+    "usesNonExemptEncryption": false
+   }
+  },
+  "android": {
+   "package": "com.example.coursepassweb"
+  },
+  "plugins": [
+   [
+    "expo-build-properties",
+    {
+     "android": {
+      "targetSdkVersion": 36
+     },
+     "ios": {
+      "deploymentTarget": "15.1"
+     }
+    }
+   ]
+  ]
+ }
+}

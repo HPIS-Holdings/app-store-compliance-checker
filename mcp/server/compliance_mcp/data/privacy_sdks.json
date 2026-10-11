@@ -1,0 +1,483 @@
+{
+ "upstream": "https://github.com/asif786ka/store-preflight-mcp",
+ "upstream_commit": "bd53be8cc9ae7162149df60e5c532d98c99eb9ad",
+ "license": "MIT",
+ "validated_against": {
+  "ASDK": {
+   "url": "https://developer.apple.com/support/third-party-SDK-requirements/",
+   "fetched": "2026-10-10T14:35:51+00:00",
+   "text_sha256": "67a7fb9da286b5c657deda1424ac851a2b3a3aabd0def14ce47108dc4fdf3be6"
+  },
+  "ARRTYPE": {
+   "url": "https://developer.apple.com/documentation/bundleresources/app-privacy-configuration/nsprivacyaccessedapitypes/nsprivacyaccessedapitype",
+   "docc_json": "https://developer.apple.com/tutorials/data/documentation/bundleresources/app-privacy-configuration/nsprivacyaccessedapitypes/nsprivacyaccessedapitype.json",
+   "fetched": "2026-10-10T16:18:17+00:00",
+   "docc_json_sha256": "19546c6db12067a6e6441140399e8323fd73d5e79d1c682e1d0b826b16da6cf5"
+  }
+ },
+ "validation": "reason codes: exact match within the same category in Apple DocC possibleValues; SDK names: exact substring of the official third-party SDK requirements page text",
+ "sdks": [
+  {
+   "sdk": "Abseil",
+   "validated": true
+  },
+  {
+   "sdk": "AFNetworking",
+   "validated": true
+  },
+  {
+   "sdk": "Alamofire",
+   "validated": true
+  },
+  {
+   "sdk": "AppAuth",
+   "validated": true
+  },
+  {
+   "sdk": "BoringSSL",
+   "validated": true
+  },
+  {
+   "sdk": "Capacitor",
+   "validated": true
+  },
+  {
+   "sdk": "Charts",
+   "validated": true
+  },
+  {
+   "sdk": "connectivity_plus",
+   "validated": true
+  },
+  {
+   "sdk": "Cordova",
+   "validated": true
+  },
+  {
+   "sdk": "device_info_plus",
+   "validated": true
+  },
+  {
+   "sdk": "DKImagePickerController",
+   "validated": true
+  },
+  {
+   "sdk": "DKPhotoGallery",
+   "validated": true
+  },
+  {
+   "sdk": "FBAEMKit",
+   "validated": true
+  },
+  {
+   "sdk": "FBLPromises",
+   "validated": true
+  },
+  {
+   "sdk": "FBSDKCoreKit",
+   "validated": true
+  },
+  {
+   "sdk": "FBSDKCoreKit_Basics",
+   "validated": true
+  },
+  {
+   "sdk": "FBSDKLoginKit",
+   "validated": true
+  },
+  {
+   "sdk": "FBSDKShareKit",
+   "validated": true
+  },
+  {
+   "sdk": "file_picker",
+   "validated": true
+  },
+  {
+   "sdk": "FirebaseABTesting",
+   "validated": true
+  },
+  {
+   "sdk": "FirebaseAuth",
+   "validated": true
+  },
+  {
+   "sdk": "FirebaseCore",
+   "validated": true
+  },
+  {
+   "sdk": "FirebaseCoreDiagnostics",
+   "validated": true
+  },
+  {
+   "sdk": "FirebaseCoreExtension",
+   "validated": true
+  },
+  {
+   "sdk": "FirebaseCoreInternal",
+   "validated": true
+  },
+  {
+   "sdk": "FirebaseCrashlytics",
+   "validated": true
+  },
+  {
+   "sdk": "FirebaseDynamicLinks",
+   "validated": true
+  },
+  {
+   "sdk": "FirebaseFirestore",
+   "validated": true
+  },
+  {
+   "sdk": "FirebaseInstallations",
+   "validated": true
+  },
+  {
+   "sdk": "FirebaseMessaging",
+   "validated": true
+  },
+  {
+   "sdk": "FirebaseRemoteConfig",
+   "validated": true
+  },
+  {
+   "sdk": "Flutter",
+   "validated": true
+  },
+  {
+   "sdk": "flutter_inappwebview",
+   "validated": true
+  },
+  {
+   "sdk": "flutter_local_notifications",
+   "validated": true
+  },
+  {
+   "sdk": "fluttertoast",
+   "validated": true
+  },
+  {
+   "sdk": "FMDB",
+   "validated": true
+  },
+  {
+   "sdk": "geolocator_apple",
+   "validated": true
+  },
+  {
+   "sdk": "GoogleDataTransport",
+   "validated": true
+  },
+  {
+   "sdk": "GoogleSignIn",
+   "validated": true
+  },
+  {
+   "sdk": "GoogleToolboxForMac",
+   "validated": true
+  },
+  {
+   "sdk": "GoogleUtilities",
+   "validated": true
+  },
+  {
+   "sdk": "grpcpp",
+   "validated": true
+  },
+  {
+   "sdk": "GTMAppAuth",
+   "validated": true
+  },
+  {
+   "sdk": "GTMSessionFetcher",
+   "validated": true
+  },
+  {
+   "sdk": "hermes",
+   "validated": true
+  },
+  {
+   "sdk": "image_picker_ios",
+   "validated": true
+  },
+  {
+   "sdk": "IQKeyboardManager",
+   "validated": true
+  },
+  {
+   "sdk": "IQKeyboardManagerSwift",
+   "validated": true
+  },
+  {
+   "sdk": "Kingfisher",
+   "validated": true
+  },
+  {
+   "sdk": "leveldb",
+   "validated": true
+  },
+  {
+   "sdk": "Lottie",
+   "validated": true
+  },
+  {
+   "sdk": "MBProgressHUD",
+   "validated": true
+  },
+  {
+   "sdk": "nanopb",
+   "validated": true
+  },
+  {
+   "sdk": "OneSignal",
+   "validated": true
+  },
+  {
+   "sdk": "OneSignalCore",
+   "validated": true
+  },
+  {
+   "sdk": "OneSignalExtension",
+   "validated": true
+  },
+  {
+   "sdk": "OneSignalOutcomes",
+   "validated": true
+  },
+  {
+   "sdk": "OpenSSL",
+   "validated": true
+  },
+  {
+   "sdk": "OrderedSet",
+   "validated": true
+  },
+  {
+   "sdk": "package_info",
+   "validated": true
+  },
+  {
+   "sdk": "package_info_plus",
+   "validated": true
+  },
+  {
+   "sdk": "path_provider",
+   "validated": true
+  },
+  {
+   "sdk": "path_provider_ios",
+   "validated": true
+  },
+  {
+   "sdk": "Promises",
+   "validated": true
+  },
+  {
+   "sdk": "Protobuf",
+   "validated": true
+  },
+  {
+   "sdk": "Reachability",
+   "validated": true
+  },
+  {
+   "sdk": "RealmSwift",
+   "validated": true
+  },
+  {
+   "sdk": "RxCocoa",
+   "validated": true
+  },
+  {
+   "sdk": "RxRelay",
+   "validated": true
+  },
+  {
+   "sdk": "RxSwift",
+   "validated": true
+  },
+  {
+   "sdk": "SDWebImage",
+   "validated": true
+  },
+  {
+   "sdk": "share_plus",
+   "validated": true
+  },
+  {
+   "sdk": "shared_preferences_ios",
+   "validated": true
+  },
+  {
+   "sdk": "SnapKit",
+   "validated": true
+  },
+  {
+   "sdk": "sqflite",
+   "validated": true
+  },
+  {
+   "sdk": "Starscream",
+   "validated": true
+  },
+  {
+   "sdk": "SVProgressHUD",
+   "validated": true
+  },
+  {
+   "sdk": "SwiftyGif",
+   "validated": true
+  },
+  {
+   "sdk": "SwiftyJSON",
+   "validated": true
+  },
+  {
+   "sdk": "Toast",
+   "validated": true
+  },
+  {
+   "sdk": "UnityFramework",
+   "validated": true
+  },
+  {
+   "sdk": "url_launcher",
+   "validated": true
+  },
+  {
+   "sdk": "url_launcher_ios",
+   "validated": true
+  },
+  {
+   "sdk": "video_player_avfoundation",
+   "validated": true
+  },
+  {
+   "sdk": "wakelock",
+   "validated": true
+  },
+  {
+   "sdk": "webview_flutter_wkwebview",
+   "validated": true
+  }
+ ],
+ "npm_dependencies_bundling_listed_sdks_upstream_unvalidated": [
+  "@capacitor/core",
+  "@react-native-firebase/app",
+  "@react-native-firebase/auth",
+  "@react-native-firebase/crashlytics",
+  "@react-native-firebase/dynamic-links",
+  "@react-native-firebase/firestore",
+  "@react-native-firebase/messaging",
+  "@react-native-firebase/remote-config",
+  "@react-native-google-signin/google-signin",
+  "AFNetworking",
+  "Abseil",
+  "Alamofire",
+  "AppAuth",
+  "BoringSSL",
+  "Capacitor",
+  "Charts",
+  "Cordova",
+  "DKImagePickerController",
+  "DKPhotoGallery",
+  "FBAEMKit",
+  "FBLPromises",
+  "FBSDKCoreKit",
+  "FBSDKCoreKit_Basics",
+  "FBSDKLoginKit",
+  "FBSDKShareKit",
+  "FMDB",
+  "FirebaseABTesting",
+  "FirebaseAuth",
+  "FirebaseCore",
+  "FirebaseCoreDiagnostics",
+  "FirebaseCoreExtension",
+  "FirebaseCoreInternal",
+  "FirebaseCrashlytics",
+  "FirebaseDynamicLinks",
+  "FirebaseFirestore",
+  "FirebaseInstallations",
+  "FirebaseMessaging",
+  "FirebaseRemoteConfig",
+  "Flutter",
+  "GTMAppAuth",
+  "GTMSessionFetcher",
+  "GoogleDataTransport",
+  "GoogleSignIn",
+  "GoogleToolboxForMac",
+  "GoogleUtilities",
+  "IQKeyboardManager",
+  "IQKeyboardManagerSwift",
+  "Kingfisher",
+  "Lottie",
+  "MBProgressHUD",
+  "OneSignal",
+  "OneSignalCore",
+  "OneSignalExtension",
+  "OneSignalOutcomes",
+  "OpenSSL",
+  "OrderedSet",
+  "Promises",
+  "Protobuf",
+  "Reachability",
+  "RealmSwift",
+  "RxCocoa",
+  "RxRelay",
+  "RxSwift",
+  "SDWebImage",
+  "SVProgressHUD",
+  "SnapKit",
+  "Starscream",
+  "SwiftyGif",
+  "SwiftyJSON",
+  "Toast",
+  "UnityFramework",
+  "cloud_firestore",
+  "connectivity_plus",
+  "cordova-ios",
+  "device_info_plus",
+  "file_picker",
+  "firebase_auth",
+  "firebase_core",
+  "firebase_crashlytics",
+  "firebase_messaging",
+  "firebase_remote_config",
+  "flutter_inappwebview",
+  "flutter_local_notifications",
+  "fluttertoast",
+  "geolocator",
+  "geolocator_apple",
+  "google_sign_in_ios",
+  "grpcpp",
+  "hermes",
+  "image_picker",
+  "image_picker_ios",
+  "leveldb",
+  "lottie-react-native",
+  "nanopb",
+  "onesignal-flutter",
+  "openssl_grpc",
+  "package_info",
+  "package_info_plus",
+  "path_provider",
+  "path_provider_ios",
+  "react-native-fbsdk-next",
+  "react-native-google-signin",
+  "react-native-onesignal",
+  "react-native-svg",
+  "realm",
+  "share_plus",
+  "shared_preferences",
+  "shared_preferences_ios",
+  "sqflite",
+  "url_launcher",
+  "url_launcher_ios",
+  "video_player",
+  "video_player_avfoundation",
+  "wakelock",
+  "webview_flutter",
+  "webview_flutter_wkwebview"
+ ]
+}

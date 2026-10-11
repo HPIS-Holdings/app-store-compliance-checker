@@ -1,0 +1,183 @@
+# Apple App Store Review Guidelines - Section 1 (Safety). Source last updated on page: June 8, 2026.
+# Field semantics: see rules/SCHEMA.md. requires/prohibited/exceptions_regions = paraphrase of official text.
+# implementation/examples/agent_verification/enforcement_risk = Interpretation unless a source is cited.
+- id: APL-1.1
+  title: "Objectionable Content (umbrella)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [content, objectionable-content]
+  requires: "Apps should not include offensive, insensitive, upsetting, disgusting, exceptionally poor-taste or \"creepy\" content; 1.1.1-1.1.7 list examples."
+  prohibited: "See sub-guidelines 1.1.1-1.1.7."
+  enforcement_risk: "Rejection; Apple's intro states it will reject content it believes is \"over the line\" (subjective standard)."
+  agent_verification:
+    - "Grep bundled content, seed data, and AI prompt templates for slurs/violent/sexual content"
+    - "review store screenshots."
+  uncertainty: "Standard is explicitly subjective (\"I'll know it when I see it\" in the Introduction)."
+- id: APL-1.1.1
+  title: "Defamatory, discriminatory, or mean-spirited content"
+  label: official_requirement
+  obligation: mandatory
+  topics: [content, religion, hate]
+  requires: "No defamatory/discriminatory/mean-spirited content about religion, race, sexual orientation, gender, national/ethnic origin or other targeted groups."
+  exceptions_regions: "Professional political satirists and humorists are \"generally exempt\"."
+  examples: "Religious apps must not disparage other faiths; comparative-religion content should be respectful (Interpretation)."
+  agent_verification:
+    - "Review all static text/JSON content and LLM system prompts for content targeting groups."
+- id: APL-1.1.2
+  title: "Realistic violence"
+  label: official_requirement
+  obligation: mandatory
+  topics: [content, games, violence]
+  requires: "No realistic portrayals of people/animals killed, maimed, tortured or abused, or content encouraging violence. Game \"enemies\" cannot solely target a specific race, culture, real government, corporation or other real entity."
+  examples: "A shooter whose only enemies are a real nation's army is at risk."
+  agent_verification:
+    - "Inspect game enemy/faction definitions for real-world entities."
+- id: APL-1.1.3
+  title: "Weapons and dangerous objects"
+  label: official_requirement
+  obligation: mandatory
+  topics: [content, weapons]
+  prohibited: "Depictions encouraging illegal/reckless use of weapons and dangerous objects; facilitating purchase of firearms or ammunition."
+- id: APL-1.1.4
+  title: "Overtly sexual or pornographic material"
+  label: official_requirement
+  obligation: mandatory
+  topics: [content, sexual-content]
+  prohibited: "Overtly sexual/pornographic material (Apple quotes a definition); \"hookup\" apps and apps that may include pornography or facilitate prostitution, trafficking or exploitation."
+- id: APL-1.1.5
+  title: "Inflammatory religious commentary / misquoting religious texts"
+  label: official_requirement
+  obligation: mandatory
+  topics: [content, religion]
+  prohibited: "Inflammatory religious commentary; inaccurate or misleading quotations of religious texts."
+  implementation: "For scripture apps (Quran, Gita, Bible etc.) use an identified, attributable source text and translation; show translator/edition; do not let AI generate or paraphrase verses presented as scripture without clear labelling (Interpretation)."
+  enforcement_risk: "Rejection; also user reports after release. No public Apple statistics."
+  agent_verification:
+    - "Locate scripture datasets"
+    - "confirm a provenance/licence file exists"
+    - "confirm AI-generated text is never rendered in the same style as verbatim scripture without a label"
+    - "check verse references resolve to the dataset."
+  uncertainty: "Apple does not define \"inaccurate\" for translations or interpretive commentary."
+- id: APL-1.1.6
+  title: "False information and trick functionality"
+  label: official_requirement
+  obligation: mandatory
+  topics: [content, deception, health-claims]
+  prohibited: "False information/features incl. inaccurate device data or trick/joke functionality (e.g. fake location trackers). \"For entertainment purposes\" disclaimers do not cure this. Anonymous/prank calls or SMS/MMS apps are rejected."
+  examples: "Prank \"heart-rate via fingerprint\" apps; fake lie detectors."
+  agent_verification:
+    - "Check any feature that claims to measure something from device sensors has a real algorithm and documented accuracy."
+- id: APL-1.1.7
+  title: "Exploiting current events"
+  label: official_requirement
+  obligation: mandatory
+  topics: [content]
+  prohibited: "Concepts capitalizing/profiting on recent events such as violent conflicts, terrorist attacks, epidemics."
+- id: APL-1.2
+  title: "User-Generated Content"
+  label: official_requirement
+  obligation: conditional
+  topics: [ugc, moderation, social, ai]
+  requires: "Apps with UGC or social networking must include (1) filtering of objectionable material before posting, (2) a reporting mechanism with timely responses, (3) ability to block abusive users, (4) published contact information."
+  prohibited: "UGC apps used primarily for pornography, Chatroulette-style experiences, random/anonymous chat, \"hot-or-not\" objectification, threats or bullying."
+  exceptions_regions: "Web-sourced UGC may display incidental NSFW content only if hidden by default and enabled by the user via the developer's website."
+  enforcement_risk: "Apple may request removal plus a compliance plan; app may be removed; egregious/repeated behaviour can lead to removal from the Developer Program."
+  implementation: "Pre-post filter (keyword/ML), report button on every UGC item and profile, block user, support email/URL in app (Interpretation)."
+  agent_verification:
+    - "Search UI code for report/block actions on every UGC surface"
+    - "verify a content filter runs server-side before publish"
+    - "verify contact info screen."
+  uncertainty: "Whether AI chatbot output counts as UGC is not stated in 1.2; 4.7 (chatbots) and 4.7.1 impose the same filter/report/block requirements on software offered under 4.7."
+- id: APL-1.2.1
+  title: "Creator Content"
+  label: official_requirement
+  obligation: conditional
+  topics: [ugc, creators, age-rating]
+  requires: "Creator experiences are treated as UGC and must follow 1.2 and 3.1.1. Tell users which content requires extra purchase. (a) Provide a way to identify content exceeding the app's age rating and an age-restriction mechanism based on verified or declared age."
+- id: APL-1.3
+  title: "Kids Category"
+  label: official_requirement
+  obligation: conditional
+  topics: [kids, ads, analytics, privacy]
+  requires: "Kids Category apps must not include links out, purchasing opportunities or other distractions unless behind a parental gate; must comply with children's privacy laws; continued compliance even if category later deselected."
+  prohibited: "Sending PII or device information to third parties. Third-party analytics/advertising \"should not\" be included."
+  exceptions_regions: "Limited third-party analytics allowed if no IDFA/identifiable info about children; limited third-party contextual ads if provider has public Kids policies incl. human review of creatives."
+  agent_verification:
+    - "List SDKs (Podfile.lock / package.json)"
+    - "flag ad/analytics SDKs"
+    - "check external links and IAP entry points are gated."
+- id: APL-1.4
+  title: "Physical Harm (umbrella)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [health, safety]
+  requires: "Apps risking physical harm may be rejected; see 1.4.1-1.4.5."
+- id: APL-1.4.1
+  title: "Medical apps - accuracy, methodology, disclaimers"
+  label: official_requirement
+  obligation: conditional
+  topics: [health, medical, ai, claims]
+  requires: "Medical apps that could give inaccurate data or be used for diagnosis/treatment get greater scrutiny. Must clearly disclose data and methodology supporting accuracy claims for health measurements; if accuracy/methodology cannot be validated the app is rejected. Apps \"should\" remind users to check with a doctor before medical decisions. Submit link to regulatory clearance if obtained."
+  prohibited: "Claims to take x-rays or measure blood pressure, body temperature, blood glucose or blood oxygen using only device sensors."
+  enforcement_risk: "Rejection under 1.4.1 is frequently reported by developers for symptom checkers and AI health assistants (Community experience - see rejections-and-appeals/)."
+  implementation: "Methodology/sources screen; disclaimer + \"consult your clinician\" reminders near AI/medical outputs; avoid diagnostic language; keep regulatory docs ready for Review Notes (Interpretation)."
+  examples: "An AI that interprets lab values (e.g. eGFR) should show source guideline references, avoid treatment instructions, and remind users to consult their nephrologist (Interpretation)."
+  agent_verification:
+    - "Grep UI strings for diagnose/cure/treat/detect claims"
+    - "confirm a disclaimer component is rendered on every AI/medical answer screen"
+    - "confirm a methodology/citations screen exists"
+    - "confirm no sensor-only vital-sign measurement features."
+  uncertainty: "Apple does not define the validation standard; regulatory status (FDA SaMD, EU MDR) is jurisdictional and outside Apple's guideline text."
+- id: APL-1.4.2
+  title: "Drug dosage calculators"
+  label: official_requirement
+  obligation: conditional
+  topics: [health, medical]
+  requires: "Must come from a drug manufacturer, hospital, university, health insurer, pharmacy or other approved entity, or have FDA/international-counterpart approval."
+  examples: "A chronic-condition app computing medication dose adjustments by eGFR would fall under this; an individual developer is at high risk (Interpretation)."
+  agent_verification:
+    - "Search for dose/dosage calculation code paths."
+- id: APL-1.4.3
+  title: "Tobacco, vape, drugs, alcohol"
+  label: official_requirement
+  obligation: mandatory
+  topics: [content, substances]
+  prohibited: "Encouraging tobacco/vape, illegal drugs or excessive alcohol; encouraging minors to consume these; facilitating sale of controlled substances (except licensed pharmacies and licensed/legal cannabis dispensaries) or tobacco."
+- id: APL-1.4.4
+  title: "DUI checkpoints and reckless driving"
+  label: official_requirement
+  obligation: conditional
+  topics: [safety]
+  requires: "Only display DUI checkpoints published by law enforcement; never encourage drunk driving or excessive speed."
+- id: APL-1.4.5
+  title: "Risky challenges"
+  label: official_requirement
+  obligation: mandatory
+  topics: [safety, games]
+  prohibited: "Urging participation in activities (bets, challenges) or device use that risks physical harm."
+- id: APL-1.5
+  title: "Developer Information"
+  label: official_requirement
+  obligation: mandatory
+  topics: [metadata, support]
+  requires: "App and Support URL must include an easy way to contact the developer; accurate, up-to-date contact information. Wallet passes need valid issuer contact info and a dedicated brand certificate."
+  agent_verification:
+    - "Confirm support URL in metadata resolves (HTTP 200) and in-app contact/help screen exists."
+- id: APL-1.6
+  title: "Data Security"
+  label: official_requirement
+  obligation: mandatory
+  topics: [security, privacy]
+  requires: "Implement appropriate security measures to protect user information and prevent unauthorized use, disclosure or access."
+  implementation: "TLS everywhere (ATS on), Keychain for tokens, no secrets in bundle, encrypted health data at rest (Interpretation)."
+  agent_verification:
+    - "Check Info.plist NSAppTransportSecurity for NSAllowsArbitraryLoads"
+    - "grep for hard-coded API keys"
+    - "check token storage uses Keychain/SecureStore not AsyncStorage."
+- id: APL-1.7
+  title: "Reporting Criminal Activity"
+  label: official_requirement
+  obligation: conditional
+  topics: [legal]
+  requires: "Apps for reporting alleged crime must involve local law enforcement and only be offered where that involvement is active."
+

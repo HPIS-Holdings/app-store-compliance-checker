@@ -1,0 +1,88 @@
+# Google Play Developer Distribution Agreement (DDA), "Effective as of September 15, 2025" (page header at retrieval).
+# Contract terms: label official_requirement, but they are contractual obligations rather than review policies.
+- id: GPL-DDA-3.7
+  title: "DDA 3.7 - Free products stay free"
+  label: official_requirement
+  obligation: mandatory
+  topics: [pricing, agreements, business-model]
+  requires: "Products initially offered free of charge must remain free; additional charges must correlate with an alternative or supplemental version of the Product."
+  implementation: "Do not convert a free app to paid; monetize via IAP/subscriptions or a separate paid version (Interpretation)."
+  examples: "A free Quran reader cannot later become a paid download; premium features can be sold in-app (Interpretation)."
+  agent_verification:
+    - "Console check - compare historical price of the app listing (NEEDS CONSOLE CHECK)."
+  sources:
+    - {url: "https://play.google.com/intl/en-us/about/developer-distribution-agreement.html", section: "3. Commercial Relationship, Pricing, Payments, and Taxes - 3.7"}
+- id: GPL-DDA-4.1-4.2
+  title: "DDA 4.1-4.2 - Adhere to Developer Program Policies; accurate product information and permission disclosure"
+  label: official_requirement
+  obligation: mandatory
+  topics: [agreements, metadata, permissions]
+  requires: "You and your Products must adhere to the Developer Program Policies (4.1). You are responsible for uploading products, providing required product information and support, and accurately disclosing the permissions necessary for the product to function (4.2)."
+  agent_verification:
+    - "Compare merged AndroidManifest permissions with the Data safety form and listing claims."
+  sources:
+    - {url: "https://play.google.com/intl/en-us/about/developer-distribution-agreement.html", section: "4. Use of Google Play by You - 4.1, 4.2"}
+- id: GPL-DDA-4.3
+  title: "DDA 4.3 - Credential confidentiality; Google may limit developer accounts"
+  label: official_requirement
+  obligation: mandatory
+  topics: [account, security, agreements]
+  requires: "Keep developer credentials confidential; you are solely responsible for all Products developed under your credentials. Google may limit the number of Developer Accounts issued to you or your organization."
+  agent_verification:
+    - "Check the repository for committed keystores, service-account JSON or Play API keys (must not be committed)."
+  sources:
+    - {url: "https://play.google.com/intl/en-us/about/developer-distribution-agreement.html", section: "4. Use of Google Play by You - 4.3"}
+- id: GPL-DDA-4.7
+  title: "DDA 4.7 - Support contact and response times for paid products/IAP"
+  label: official_requirement
+  obligation: conditional
+  topics: [support, agreements, iap]
+  requires: "Supply and maintain valid, accurate contact information shown on each product's detail page. For paid products or in-app transactions, respond to customer support inquiries within 3 business days, and within 24 hours to support or product concerns stated to be urgent by Google."
+  implementation: "Monitor the listed support email with an SLA covering these times (Interpretation)."
+  agent_verification:
+    - "Not code-inspectable; verify listing contact details (NEEDS CONSOLE CHECK) and support process documentation."
+  sources:
+    - {url: "https://play.google.com/intl/en-us/about/developer-distribution-agreement.html", section: "4. Use of Google Play by You - 4.7"}
+- id: GPL-DDA-4.8
+  title: "DDA 4.8 - Protect user privacy; legally adequate privacy notice; secure storage"
+  label: official_requirement
+  obligation: mandatory
+  topics: [privacy, data-storage, agreements]
+  requires: "Protect the privacy and legal rights of users; make users aware that personal/login information will be available to the product and provide legally adequate privacy notice and protection; use the information only for the limited purposes the user permitted; store personal or sensitive information securely and only as long as needed."
+  agent_verification:
+    - "Check storage of personal data (encrypted storage for tokens/PHI, retention/deletion jobs) and that the privacy policy is linked in-app."
+  sources:
+    - {url: "https://play.google.com/intl/en-us/about/developer-distribution-agreement.html", section: "4. Use of Google Play by You - 4.8"}
+- id: GPL-DDA-4.5
+  title: "DDA 4.5 - No distribution of alternative app stores via Google Play"
+  label: official_requirement
+  obligation: mandatory
+  topics: [agreements, downloads]
+  prohibited: "Using Google Play to distribute a Product whose purpose facilitates distribution of Android apps and games outside Google Play."
+  sources:
+    - {url: "https://play.google.com/intl/en-us/about/developer-distribution-agreement.html", section: "4. Use of Google Play by You - 4.5"}
+- id: GPL-DDA-8.3
+  title: "DDA 8.3 - Google may reject, remove, suspend, limit visibility or reclassify products"
+  label: official_requirement
+  obligation: informational
+  topics: [enforcement, agreements]
+  requires: "Google may reject, remove, suspend, limit visibility of, or reclassify a Product that violates law, the Agreement or policies, distribution agreements, or creates potential liability/adverse impact; Google may suspend and/or bar any Product and/or Developer."
+  sources:
+    - {url: "https://play.google.com/intl/en-us/about/developer-distribution-agreement.html", section: "8. Product Takedowns - 8.3"}
+- id: GPL-DDA-10.3
+  title: "DDA 10.3 - Termination by Google"
+  label: official_requirement
+  obligation: informational
+  topics: [termination, enforcement, agreements]
+  requires: "Google may terminate immediately on written notice (or with 30 days' notice where law requires) for breach, legal requirement, loss of good standing, discontinuation of Google Play, or risk of economic/reputational/security harm; where allowed by law, also for any reason with 30 days' notice."
+  sources:
+    - {url: "https://play.google.com/intl/en-us/about/developer-distribution-agreement.html", section: "10. Terminating this Agreement - 10.3"}
+- id: GPL-DDA-15.2
+  title: "DDA 15.2 - Agreement changes take effect no sooner than 30 days after posting for existing developers"
+  label: official_requirement
+  obligation: informational
+  topics: [agreements, deadlines]
+  requires: "Changes are not retroactive; for pre-existing developers they take effect on the date in the notice, no sooner than 30 days after posting (changes required by law can be immediate)."
+  implementation: "The weekly policy watch tracks the DDA page hash and 'Effective as of' header (Interpretation)."
+  sources:
+    - {url: "https://play.google.com/intl/en-us/about/developer-distribution-agreement.html", section: "15. Changes to the Agreement - 15.2"}

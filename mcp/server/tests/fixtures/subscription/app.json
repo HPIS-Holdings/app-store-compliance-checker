@@ -1,0 +1,29 @@
+{
+ "expo": {
+  "name": "Focus Timer Pro",
+  "slug": "focus-timer-pro",
+  "version": "1.0.0",
+  "ios": {
+   "bundleIdentifier": "com.example.focustimerpro",
+   "config": {
+    "usesNonExemptEncryption": false
+   }
+  },
+  "android": {
+   "package": "com.example.focustimerpro"
+  },
+  "plugins": [
+   [
+    "expo-build-properties",
+    {
+     "android": {
+      "targetSdkVersion": 36
+     },
+     "ios": {
+      "deploymentTarget": "15.1"
+     }
+    }
+   ]
+  ]
+ }
+}

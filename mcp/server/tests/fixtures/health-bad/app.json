@@ -1,0 +1,29 @@
+{
+ "expo": {
+  "name": "Health Tracker",
+  "slug": "health-tracker",
+  "version": "1.0.0",
+  "ios": {
+   "bundleIdentifier": "com.example.healthtracker",
+   "config": {
+    "usesNonExemptEncryption": false
+   }
+  },
+  "android": {
+   "package": "com.example.healthtracker"
+  },
+  "plugins": [
+   [
+    "expo-build-properties",
+    {
+     "android": {
+      "targetSdkVersion": 34
+     },
+     "ios": {
+      "deploymentTarget": "12.0"
+     }
+    }
+   ]
+  ]
+ }
+}

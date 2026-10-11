@@ -1,0 +1,195 @@
+- id: APL-4
+  title: "Design (section preamble)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [design, maintenance]
+  requires: "Minimum design standards; keep apps functional and engaging after approval."
+  enforcement_risk: "Apps that stop working or offer a degraded experience may be removed at any time."
+- id: APL-4.1
+  title: "Copycats"
+  label: official_requirement
+  obligation: mandatory
+  topics: [ip, impersonation]
+  prohibited: "(a) Copying popular apps or minor variations of name/UI; (b) impersonating other apps/services (Code of Conduct violation, possible Program removal); (c) using another developer's icon, brand or product name in icon/name without approval."
+- id: APL-4.2
+  title: "Minimum Functionality"
+  label: official_requirement
+  obligation: mandatory
+  topics: [functionality, webview, wallpapers, religious]
+  requires: "Features, content and UI beyond a repackaged website; useful, unique, \"app-like\"; lasting entertainment value or adequate utility. Songs/movies to iTunes Store; books/game guides to Apple Books."
+  examples: "A static Quran text reader with no features beyond a PDF may be judged as a \"book\"; add search, audio recitation, bookmarks, translations, prayer tools to clear 4.2 (Interpretation)."
+  agent_verification:
+    - "Check app is not primarily a WebView wrapper (count of native screens vs WebView screens)."
+- id: APL-4.2.1
+  title: "ARKit richness"
+  label: official_requirement
+  obligation: conditional
+  topics: [ar]
+  requires: "Rich integrated AR; merely dropping a model or replaying animation is not enough."
+- id: APL-4.2.2
+  title: "Not primarily marketing/aggregators/link collections"
+  label: official_requirement
+  obligation: mandatory
+  topics: [functionality]
+  prohibited: "Apps primarily marketing materials, ads, web clippings, content aggregators or link collections (catalogs excepted)."
+- id: APL-4.2.3
+  title: "Standalone; disclose initial downloads"
+  label: official_requirement
+  obligation: mandatory
+  topics: [functionality, downloads]
+  requires: "(i) Work without installing another app; (ii) disclose size and prompt before downloading additional resources needed at first launch."
+  examples: "Downloading large recitation audio packs or AI models on first launch requires a size prompt (Interpretation)."
+  agent_verification:
+    - "Find first-launch asset downloads"
+    - "confirm a size disclosure + user confirmation."
+- id: APL-4.2.6
+  title: "Template / app-generation services"
+  label: official_requirement
+  obligation: mandatory
+  topics: [templates, spam]
+  prohibited: "Apps from commercialized templates/app-generation services unless submitted directly by the content provider; services should not submit on behalf of clients (single \"picker\" binary acceptable)."
+- id: APL-4.2.7
+  title: "Remote desktop clients"
+  label: official_requirement
+  obligation: conditional
+  topics: [streaming]
+  requires: "Conditions (a)-(e) for mirroring specific software; thin clients for cloud apps not appropriate."
+- id: APL-4.3
+  title: "Spam (duplicate bundle IDs; saturated categories)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [spam, wallpapers, religious, fortune-telling, astrology]
+  requires: "(a) Don't create multiple Bundle IDs of the same app; use one app with variations/IAP. (b) Don't submit apps indistinguishable from what is widely available."
+  prohibited: "New dating, flashlight, sound-effect, wallpaper, simple timer, fortune-telling apps without a meaningfully different/improved experience; drinking games, Kama Sutra, fart/burp apps. Repeated submissions may lead to Program removal."
+  enforcement_risk: "High for wallpaper apps and astrology/horoscope-like \"spiritual personalization\" apps (Interpretation; 4.3 rejections are widely reported - Community experience)."
+  examples: "Separate apps for Hanuman Chalisa, Gayatri Mantra, and Shiva wallpapers from one developer is the duplicate pattern 4.3(a) targets - consolidate into one app (Interpretation)."
+  agent_verification:
+    - "List the developer's other bundle IDs/apps"
+    - "compare feature overlap"
+    - "for wallpaper/astrology apps document the differentiating features in Review Notes."
+  uncertainty: "Whether personalized astrology/jyotish counts as \"fortune telling\" is not defined; assume yes for risk purposes (Interpretation)."
+- id: APL-4.4
+  title: "Extensions"
+  label: official_requirement
+  obligation: conditional
+  topics: [extensions]
+  requires: "Follow extension guides; include functionality such as help/settings; disclose extensions in marketing text."
+  prohibited: "Marketing, advertising or IAP inside extensions."
+- id: APL-4.4.1
+  title: "Keyboard extensions"
+  label: official_requirement
+  obligation: conditional
+  topics: [extensions, keyboards]
+  requires: "Typing input; sticker rules; next-keyboard method; work without full access/network; collect activity only to improve keyboard."
+  prohibited: "Launching other apps besides Settings; repurposing keys."
+- id: APL-4.4.2
+  title: "Safari extensions"
+  label: official_requirement
+  obligation: conditional
+  topics: [extensions]
+  requires: "Run on current Safari; no interference with system/Safari UI; no malicious/misleading code; minimal website access."
+- id: APL-4.5.1
+  title: "No scraping Apple sites"
+  label: official_requirement
+  obligation: mandatory
+  topics: [apple-services]
+  prohibited: "Scraping Apple sites (apple.com, App Store, App Store Connect, developer portal) or building rankings from them; approved RSS feeds allowed."
+- id: APL-4.5.2
+  title: "Apple Music / MusicKit"
+  label: official_requirement
+  obligation: conditional
+  topics: [music]
+  requires: "User-initiated playback with standard controls; no monetizing Apple Music access; licenses for deeper integrations; disclose Apple Music data access in purpose string; no third-party sharing/advertising use."
+- id: APL-4.5.3
+  title: "No spam via Apple services; Game Center data"
+  label: official_requirement
+  obligation: mandatory
+  topics: [notifications, games, game-center]
+  prohibited: "Spam/phishing/unsolicited messages via Game Center, Push Notifications, Live Activities; mining/reverse-lookup of Game Center Player IDs (Program removal)."
+- id: APL-4.5.4
+  title: "Push notifications"
+  label: official_requirement
+  obligation: mandatory
+  topics: [notifications, marketing, health]
+  requires: "Push must not be required for the app to function. Promotional/direct-marketing pushes only with explicit opt-in via consent language in app UI plus an in-app opt-out."
+  prohibited: "Sending sensitive personal or confidential information via push."
+  examples: "Medication/lab reminders should avoid including diagnosis or lab values in the notification body (e.g. \"Time for your evening reminder\" rather than the drug and condition) (Interpretation of \"sensitive personal information\")."
+  agent_verification:
+    - "Confirm app works when notification permission denied"
+    - "find marketing push categories and a separate opt-in toggle"
+    - "scan notification templates for health data."
+- id: APL-4.5.5
+  title: "Game Center Player IDs"
+  label: official_requirement
+  obligation: conditional
+  topics: [games, game-center]
+  requires: "Use Player IDs only as Game Center terms allow; never display them in-app or to third parties."
+- id: APL-4.5.6
+  title: "Apple emoji"
+  label: official_requirement
+  obligation: conditional
+  topics: [assets]
+  requires: "Unicode rendering as Apple emoji allowed; Apple emoji images may not be embedded in the binary or used on other platforms."
+- id: APL-4.7
+  title: "Mini apps, mini games, streaming games, chatbots, plug-ins, emulators"
+  label: official_requirement
+  obligation: conditional
+  topics: [ai, chatbots, mini-apps, games, emulators]
+  requires: "Apps may offer non-embedded HTML5/JS mini apps and games, streaming games, chatbots, plug-ins, and emulators that download games. Developer is responsible for all such software complying with guidelines and law, plus 4.7.1-4.7.5."
+  examples: "An AI chatbot feature is explicitly within 4.7 scope (\"chatbots\") (Official text); therefore 4.7.1 moderation (filter/report/block) and 4.7.5 age gating apply (Interpretation of how the sub-rules map to a single-user AI assistant)."
+  uncertainty: "Apple's text lists \"chatbots\" among software offered in apps; it is unclear whether a first-party LLM assistant embedded in the binary is treated as 4.7 \"software not embedded in the binary\". Conservative approach - implement 4.7.1 controls anyway."
+- id: APL-4.7.1
+  title: "Requirements for software offered under 4.7"
+  label: official_requirement
+  obligation: conditional
+  topics: [ai, chatbots, privacy, moderation]
+  requires: "Follow privacy guidelines (5.1 incl. sensitive health data); include filtering of objectionable material, a reporting mechanism with timely responses, and ability to block abusive users; follow 3.1 for digital goods."
+  agent_verification:
+    - "For AI chat - confirm output moderation filter, a \"report response\" control, and privacy disclosure of third-party AI processing."
+- id: APL-4.7.2
+  title: "No exposing native APIs to offered software without permission"
+  label: official_requirement
+  obligation: conditional
+  topics: [mini-apps, webview]
+  prohibited: "Extending/exposing native platform APIs to the software without Apple's prior permission."
+- id: APL-4.7.3
+  title: "No sharing data/permissions with offered software without per-instance consent"
+  label: official_requirement
+  obligation: conditional
+  topics: [mini-apps, privacy]
+  requires: "Explicit user consent in each instance before sharing data or privacy permissions with individual software."
+- id: APL-4.7.4
+  title: "Index of offered software"
+  label: official_requirement
+  obligation: conditional
+  topics: [mini-apps]
+  requires: "Provide an index of software and metadata with universal links to all software offered."
+- id: APL-4.7.5
+  title: "Age restriction for offered software"
+  label: official_requirement
+  obligation: conditional
+  topics: [mini-apps, age-rating]
+  requires: "Way to identify software exceeding the app's age rating and an age restriction based on verified or declared age."
+- id: APL-4.8
+  title: "Login Services (equivalent privacy-focused login option)"
+  label: official_requirement
+  obligation: conditional
+  topics: [authentication, sign-in-with-apple]
+  requires: "If a third-party/social login (Facebook, Google, X, LinkedIn, Amazon, WeChat, etc.) sets up or authenticates the primary account, also offer an equivalent login service that limits data to name and email, allows keeping email private, and does not collect interactions for advertising without consent. (Sign in with Apple satisfies these properties - Interpretation; the guideline does not name it.)"
+  exceptions_regions: "Not required if the app uses only its own account system; alternative marketplace login; education/enterprise accounts; government/industry citizen ID; client for a specific third-party service."
+  implementation: "Expo - expo-apple-authentication; place the option with equal prominence to Google sign-in; Apple HIG governs button style (Interpretation)."
+  agent_verification:
+    - "If Google/Facebook sign-in SDKs are present in the iOS build, assert an equivalent option (e.g. Sign in with Apple) is present on the same screen."
+- id: APL-4.9
+  title: "Apple Pay"
+  label: official_requirement
+  obligation: conditional
+  topics: [payments, apple-pay]
+  requires: "Provide material purchase info before sale; correct Apple Pay branding/UI; recurring payments must disclose renewal term and that it continues until cancelled, what's provided each period, actual charges, how to cancel."
+- id: APL-4.10
+  title: "Monetizing built-in capabilities"
+  label: official_requirement
+  obligation: mandatory
+  topics: [monetization]
+  prohibited: "Charging for built-in hardware/OS capabilities (push, camera, gyroscope) or Apple services (Apple Music access, iCloud storage, Screen Time APIs)."
+

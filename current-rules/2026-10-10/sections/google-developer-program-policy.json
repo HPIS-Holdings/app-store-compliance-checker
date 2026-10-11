@@ -1,0 +1,2092 @@
+{
+  "document": "Developer Program Policy (consolidated)",
+  "publisher": "Google LLC",
+  "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+  "effective_on_page": "September 30, 2026",
+  "parsed_at": "2026-10-10T14:37:41+00:00",
+  "section_count": 130,
+  "id_note": "Google does not number policies; IDs are slugs of the official heading text. A '-2' suffix marks a repeated heading (e.g. SDK-section restatements).",
+  "licence_note": "Copyright Google LLC. Excerpts are short quotations for reference; read the source for full text.",
+  "sections": [
+    {
+      "rule_id": "GPL-INTRODUCTION",
+      "publisher_id": "Introduction",
+      "title": "Introduction",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "72ad8577770e2099baf3cf6860db03b013b3df87331ce780d649197634a6dba5",
+      "chars": 55,
+      "excerpt": "(effective September 30, 2026, unless otherwise stated)",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-LET-S-BUILD-THE-WORLD-S-MOST-TRUSTED-SOURCE-FOR",
+      "publisher_id": "Let's build the world's most trusted source for apps and games",
+      "title": "Let's build the world's most trusted source for apps and games",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "43a0801db4b571b19a62cf3713ed03353a299e4b239cdcb716606920eb9a58d4",
+      "chars": 347,
+      "excerpt": "Your innovation is what drives our shared success, but with it comes responsibility. These Developer Program Policies, along with the Developer Distribution Agreement, ensure that together we continue to deliver the world's most innovative and …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-RESTRICTED-CONTENT",
+      "publisher_id": "Restricted Content",
+      "title": "Restricted Content",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "b6cfe2ea0c6ce64a91c62af09383bc0dbeb5ae53de10f69549ae73bea0128caa",
+      "chars": 195,
+      "excerpt": "People from all over the world use Google Play to access apps and games every day. Before submitting an app, ask yourself if your app is appropriate for Google Play and compliant with local laws.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-CHILD-ENDANGERMENT",
+      "publisher_id": "Child Endangerment",
+      "title": "Child Endangerment",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "a89806df05c20442dbe0d016128bdcb8b59b2cc54c7e6d6d6ff03a755a315d74",
+      "chars": 3674,
+      "excerpt": "Apps that do not prohibit users from creating, uploading, or distributing content that facilitates the exploitation or abuse of children will be subject to immediate removal from Google Play. This includes all child sexual abuse …",
+      "normative_language": {
+        "must": 7,
+        "must_not": 4,
+        "should": 0,
+        "required": 2
+      }
+    },
+    {
+      "rule_id": "GPL-INAPPROPRIATE-CONTENT",
+      "publisher_id": "Inappropriate Content",
+      "title": "Inappropriate Content",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "da03e308796de834acd0d19e551fb7a72563c61e3a720d4e8bcc030b88e514fb",
+      "chars": 171,
+      "excerpt": "To ensure that Google Play remains a safe and respectful platform, we've created standards defining and prohibiting content that is harmful or inappropriate for our users.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-SEXUAL-CONTENT-AND-PROFANITY",
+      "publisher_id": "Sexual Content and Profanity",
+      "title": "Sexual Content and Profanity",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "e874c13a28687592330995f5613775052d132675ea45151e6169a503eefde96a",
+      "chars": 3012,
+      "excerpt": "We don't allow apps that contain or promote sexual content or profanity, including pornography, or any content or services intended to be sexually gratifying. We don’t allow apps or app content that appear to promote …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-HATE-SPEECH",
+      "publisher_id": "Hate Speech",
+      "title": "Hate Speech",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "523e53c7041f88bee2a670fe1977b0961b4af4412eb943d28fbd6d66749bf324",
+      "chars": 1188,
+      "excerpt": "We don't allow apps that promote violence, or incite hatred against individuals or groups based on race or ethnic origin, religion, disability, age, nationality, veteran status, sexual orientation, gender, gender identity, caste, immigration status, or …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-VIOLENCE",
+      "publisher_id": "Violence",
+      "title": "Violence",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "fd44c870763ab8a9073bdfd49b4d6e9a50728e9326094dea436978ef3ad05f0f",
+      "chars": 495,
+      "excerpt": "We don't allow apps that depict or facilitate gratuitous violence or other dangerous activities. Apps that depict fictional violence in the context of a game, such as cartoons, hunting or fishing, are generally allowed. Here …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-VIOLENT-EXTREMISM",
+      "publisher_id": "Violent Extremism",
+      "title": "Violent Extremism",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "080ced6b7346472ebec6bfd5d0f7cbeadc5584af4b6cb5880723441c52426523",
+      "chars": 663,
+      "excerpt": "We do not permit terrorist organizations, or other dangerous organizations or movements that have engaged in, prepared for, or claimed responsibility for acts of violence against civilians to publish apps on Google Play for any …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-SENSITIVE-EVENTS",
+      "publisher_id": "Sensitive Events",
+      "title": "Sensitive Events",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "ebea87bf23e10f661d008f652016f8f5cc468deed3b5c525ed19597052c3be7e",
+      "chars": 806,
+      "excerpt": "We don't allow apps that capitalize on or are insensitive toward a sensitive event with significant social, cultural, or political impact, such as civil emergencies, natural disasters, public health emergencies, conflicts, deaths, or other tragic …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-BULLYING-AND-HARASSMENT",
+      "publisher_id": "Bullying and Harassment",
+      "title": "Bullying and Harassment",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "ddc4e593c44033d82da62da718cac094ee8f3ab5c9772f67922b01212f39ca3c",
+      "chars": 391,
+      "excerpt": "We don't allow apps that contain or facilitate threats, harassment, or bullying. Here are some examples of common violations: - Bullying victims of international or religious conflicts. - Content that seeks to exploit others, including …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-DANGEROUS-PRODUCTS",
+      "publisher_id": "Dangerous Products",
+      "title": "Dangerous Products",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "6056afd381fda564e8b4070e02b0f6ee90758c4ca83588a2bd2cb018df597a19",
+      "chars": 644,
+      "excerpt": "We don't allow apps that facilitate the sale of explosives, firearms, ammunition, or certain firearms accessories. - Restricted accessories include those that enable a firearm to simulate automatic fire or convert a firearm to automatic …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-MARIJUANA",
+      "publisher_id": "Marijuana",
+      "title": "Marijuana",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "f3c8f4ac3f1b0f7d417ae420b44440843cbf11610515a21e7b10d8d790c3a9c7",
+      "chars": 417,
+      "excerpt": "We don't allow apps that facilitate the sale of marijuana or marijuana products, regardless of legality. Here are some examples of common violations: - Allowing users to order marijuana through an in-app shopping cart feature. …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-TOBACCO-AND-ALCOHOL",
+      "publisher_id": "Tobacco and Alcohol",
+      "title": "Tobacco and Alcohol",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "e93e9be0fe54541e194bda828e2283e622e8db783b8dffdad0f83c49fe89bec5",
+      "chars": 1064,
+      "excerpt": "We don't allow apps that facilitate the sale of tobacco or products containing nicotine (such as e-cigarettes, vape pens and nicotine pouches) or encourage the illegal or inappropriate use of alcohol, tobacco, or nicotine. Here …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 4,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-AGE-RESTRICTED-CONTENT-AND-FUNCTIONALITY",
+      "publisher_id": "Age-Restricted Content and Functionality",
+      "title": "Age-Restricted Content and Functionality",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "429eaa4a99acb265bf7c6132dfe50ec1d0260d4f22cb6294cbdbbb04a8a29dd4",
+      "chars": 817,
+      "excerpt": "To help ensure the safety of children and prevent access to potentially harmful content, apps meeting the descriptions below are required to use the Play Console functionality and tools to block minors: - Apps that …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 2
+      }
+    },
+    {
+      "rule_id": "GPL-FINANCIAL-SERVICES",
+      "publisher_id": "Financial Services",
+      "title": "Financial Services",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "13ce7f28589d4d8ea667c306672a7b17b4afcab437687a31e1d9899d488eac5a",
+      "chars": 633,
+      "excerpt": "We don't allow apps that expose users to deceptive or harmful financial products and services. For the purposes of this policy, we consider financial products and services to be those related to the management or …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 0,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-BINARY-OPTIONS",
+      "publisher_id": "Binary Options",
+      "title": "Binary Options",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "d13d5e8aa704125ea688ae15645aff043fb197428361113509c6ec2114456738",
+      "chars": 81,
+      "excerpt": "We do not allow apps that provide users with the ability to trade binary options.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-LOANS",
+      "publisher_id": "Loans",
+      "title": "Loans",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "61a657242d363d54b2da0b591c0f96e220c6b82c3593bd482a7297d0a0210d5c",
+      "chars": 1618,
+      "excerpt": "Personal Loans: We define personal loans as lending money from one individual, organization, or entity to an individual consumer on a nonrecurring basis, not for the purpose of financing purchase of a fixed asset or …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 2
+      }
+    },
+    {
+      "rule_id": "GPL-EARNED-WAGE-ACCESS",
+      "publisher_id": "Earned Wage Access",
+      "title": "Earned Wage Access",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "c2e633216c8d6f1371a17d22ffc216d11f764265670af874b782b4663bae4794",
+      "chars": 1941,
+      "excerpt": "Earned Wage Access: We define earned wage access loans (EWA) as a financial service that allows individuals to access a portion of their wages that have already been earned but not yet paid by their …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-GENERAL-REQUIREMENTS",
+      "publisher_id": "General Requirements",
+      "title": "General Requirements",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "22e4061157419c7a8bc5e43aa1e228641a53cfdb51455f3ef79b330ddb3bd6cd",
+      "chars": 1012,
+      "excerpt": "Personal loan apps, apps with the primary purpose of facilitating access to personal loans (for example, lead generators or facilitators) or lines of credit, accessory loan or credit apps (loan calculators, loan guides, etc.), and …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 2,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-COUNTRY-SPECIFIC-REQUIREMENTS",
+      "publisher_id": "Country specific requirements",
+      "title": "Country specific requirements",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "5ffd843889630a5553bde81d8096abc7d1876b623c62e1c74fbc6497081ebe0b",
+      "chars": 5301,
+      "excerpt": "Personal loan apps targeting the listed countries must comply with additional requirements and provide supplementary documentation as part of the Financial features declaration within Play Console. Apps that provide EWA loans are subject to these …",
+      "normative_language": {
+        "must": 16,
+        "must_not": 1,
+        "should": 2,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-REAL-MONEY-GAMBLING-GAMES-AND-CONTESTS",
+      "publisher_id": "Real-Money Gambling, Games, and Contests",
+      "title": "Real-Money Gambling, Games, and Contests",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "aad90249f6d7e6112bddecb0010da18b7e8d21ab66f9d5fac66865d175f2fb9c",
+      "chars": 10279,
+      "excerpt": "We allow real-money gambling apps, ads related to real-money gambling, loyalty programs with gamified outcomes, and daily fantasy sports apps that meet certain requirements. Gambling Apps Subject to restrictions and compliance with all Google Play …",
+      "normative_language": {
+        "must": 36,
+        "must_not": 14,
+        "should": 0,
+        "required": 6
+      }
+    },
+    {
+      "rule_id": "GPL-ILLEGAL-ACTIVITIES",
+      "publisher_id": "Illegal Activities",
+      "title": "Illegal Activities",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "5a61d060399220c8598fd8da27e3455d8c5af4dea327af60b9f30575b91d6cd5",
+      "chars": 308,
+      "excerpt": "We don’t allow apps that facilitate or promote illegal activities. Here are some examples of common violations: - Facilitating the sale or purchase of illegal drugs. - Depicting or encouraging the use or sale of …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-USER-GENERATED-CONTENT",
+      "publisher_id": "User Generated Content",
+      "title": "User Generated Content",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "a93e3ec6a4c3eb2d1ace10cdb3e784aff528c88de5cb07132216fec247a980ac",
+      "chars": 4014,
+      "excerpt": "User-generated content (UGC) is content that users contribute to an app, and which is visible to or accessible by at least a subset of the app's users. Apps that contain or feature UGC, including apps …",
+      "normative_language": {
+        "must": 5,
+        "must_not": 3,
+        "should": 0,
+        "required": 4
+      }
+    },
+    {
+      "rule_id": "GPL-HEALTH-CONTENT-AND-SERVICES",
+      "publisher_id": "Health Content and Services",
+      "title": "Health Content and Services",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "868c2b2fd9c2c65cb435c5f31990577af18c44d5143191b9a1832f44a6f0963a",
+      "chars": 220,
+      "excerpt": "We don't allow apps that expose users to harmful health content and services. If your app contains or promotes health content and services, you must ensure your app is compliant with any applicable laws and …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-HEALTH-AND-MEDICAL-APPS",
+      "publisher_id": "Health and Medical Apps",
+      "title": "Health and Medical Apps",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "2f1a4c9bf33a9391baccfb7764cfd516f8dbbf5bfa793261cdb3c0914d167c19",
+      "chars": 4678,
+      "excerpt": "If your app offers health-related features or information as part of its functionality, or accesses health data to support non-health features, it must comply with the existing Google Play Developer Policies, including Privacy, Deception and …",
+      "normative_language": {
+        "must": 20,
+        "must_not": 1,
+        "should": 3,
+        "required": 4
+      }
+    },
+    {
+      "rule_id": "GPL-HEALTH-CONNECT-DATA",
+      "publisher_id": "Health Connect Data",
+      "title": "Health Connect Data",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "d85b908d8df0bce17a5a30d2973618507718d5020775ebb43db0bfe880969f99",
+      "chars": 174,
+      "excerpt": "Data accessed through Health Connect Permissions is regarded as personal and sensitive user data subject to the User Data policy, and is subjected to additional requirements.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-PRESCRIPTION-DRUGS",
+      "publisher_id": "Prescription Drugs",
+      "title": "Prescription Drugs",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "49a0506671d3466521fa9486006b2dba59d1bd8d161b0612f95ab2f2a95c492a",
+      "chars": 103,
+      "excerpt": "We do not allow apps that facilitate the sale or purchase of prescription drugs without a prescription.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-UNAPPROVED-SUBSTANCES",
+      "publisher_id": "Unapproved Substances",
+      "title": "Unapproved Substances",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "90a70dd0027c2bdd2c50c50c1a5bd3e8dcb8ef401f7ab59e3a379e746754fe0a",
+      "chars": 1185,
+      "excerpt": "Google Play doesn't allow apps that promote or sell unapproved substances, irrespective of any claims of legality. Here are some examples of common violations: - All items on this non-exhaustive list of prohibited pharmaceuticals and …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-HEALTH-MISINFORMATION",
+      "publisher_id": "Health Misinformation",
+      "title": "Health Misinformation",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "8d7823721bf67e18d9d3cd9f73dd24a3b8affadab17368911ead0c23fa7bbcaf",
+      "chars": 462,
+      "excerpt": "We don’t allow apps containing misleading health claims that contradict existing medical consensus, or can cause harm to users. Here are some examples of common violations: - Misleading claims about vaccines, such as that vaccines …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-PAYMENTS-CLINICAL-SERVICES",
+      "publisher_id": "Payments - Clinical Services",
+      "title": "Payments - Clinical Services",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "2ef1ee34941334e74d02670e0cf2ffad1e6b396906e67497396e0208cb7c1766",
+      "chars": 166,
+      "excerpt": "Transactions involving regulated clinical services should not use Google Play’s billing system. For more information, see Understanding Google Play’s Payments policy.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-BLOCKCHAIN-BASED-CONTENT",
+      "publisher_id": "Blockchain-based Content",
+      "title": "Blockchain-based Content",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "87436685af51581aef28d7363c4e7d7f116ecec35b46895eb690f049f37ab839",
+      "chars": 2629,
+      "excerpt": "As blockchain technology continues to rapidly evolve, we aim to provide a platform for developers to thrive with innovation and build more enriched, immersive experiences for users. For the purposes of this policy, we consider …",
+      "normative_language": {
+        "must": 5,
+        "must_not": 3,
+        "should": 4,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-AI-GENERATED-CONTENT",
+      "publisher_id": "AI-Generated Content",
+      "title": "AI-Generated Content",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "e60e6a064b3c7a415ad705315d6648db0ea8429997842dc67e6353a4e0672e9c",
+      "chars": 1452,
+      "excerpt": "As generative AI models become more widely available to developers, you may be incorporating these models into your apps to increase engagement and improve user experience. Google Play wants to help ensure that AI-generated content …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 1,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-INTELLECTUAL-PROPERTY",
+      "publisher_id": "Intellectual Property",
+      "title": "Intellectual Property",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "6a05f543f7ce997441f207020f75ce8641b9a8408ea6c385e26138698cd0988c",
+      "chars": 3940,
+      "excerpt": "We don’t allow apps or developer accounts that infringe on the intellectual property rights of others (including trademark, copyright, patent, trade secret, and other proprietary rights). We also don’t allow apps that encourage or induce …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-PRIVACY-DECEPTION-AND-DEVICE-ABUSE",
+      "publisher_id": "Privacy, Deception and Device Abuse",
+      "title": "Privacy, Deception and Device Abuse",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "2fa44236cc506a99fca0ff179de1f583c509b277685ae107344808a3634889cc",
+      "chars": 231,
+      "excerpt": "We’re committed to protecting user privacy and providing a safe and secure environment for our users. Apps that are deceptive, malicious, or intended to abuse or misuse any network, device, or personal data are strictly …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-USER-DATA",
+      "publisher_id": "User Data",
+      "title": "User Data",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "29f19f88077253096e01c9216ad1ddb270ec17160c7efeda7092b70bb0b08a2d",
+      "chars": 1744,
+      "excerpt": "You must be transparent in how you handle user data (for example, information collected from or about a user, including device information). That means disclosing the access, collection, use, handling, and sharing of user data …",
+      "normative_language": {
+        "must": 4,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-PERSONAL-AND-SENSITIVE-USER-DATA",
+      "publisher_id": "Personal and Sensitive User Data",
+      "title": "Personal and Sensitive User Data",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "b4327a9a2e3257a38608a1fafce8b8eca9d7543575c2394b48dc9e66b07f1621",
+      "chars": 2846,
+      "excerpt": "Full Policy Personal and sensitive user data includes, but isn't limited to, personally identifiable information, financial and payment information, authentication information, phonebook, contacts, device location, SMS and call-related data, health data, Health Connect data, inventory …",
+      "normative_language": {
+        "must": 4,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-PROMINENT-DISCLOSURE-CONSENT-REQUIREMENT",
+      "publisher_id": "Prominent Disclosure & Consent Requirement",
+      "title": "Prominent Disclosure & Consent Requirement",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "24cf50da518396cabe7cf74ceeff0837bb8075758d904669be258b7a1e962403",
+      "chars": 5198,
+      "excerpt": "Policy Summary Google Play policy mandates stringent requirements for handling sensitive personal or device data, particularly when its collection or use might not be expected by the user (e.g., background data collection). You must provide …",
+      "normative_language": {
+        "must": 15,
+        "must_not": 5,
+        "should": 0,
+        "required": 5
+      }
+    },
+    {
+      "rule_id": "GPL-RESTRICTIONS-FOR-PERSONAL-AND-SENSITIVE-DATA-ACC",
+      "publisher_id": "Restrictions for Personal and Sensitive Data Access",
+      "title": "Restrictions for Personal and Sensitive Data Access",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "1a2b2665c48e2b499a8bc481819e9afeac9e5cd47193268e37dfa46961f7452d",
+      "chars": 3202,
+      "excerpt": "Policy Summary Google Play enforces specific restrictions on apps that handle financial, contact, or persistent identifier data. You must never publicly expose financial or government ID numbers. Unauthorized publishing of private contacts is forbidden. Apps …",
+      "normative_language": {
+        "must": 9,
+        "must_not": 2,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-DATA-SAFETY-SECTION",
+      "publisher_id": "Data safety section",
+      "title": "Data safety section",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "c8259982606bbb3fefe784a36f1330a471d5d0add1f231ede277cea5a9b9314f",
+      "chars": 1957,
+      "excerpt": "Policy Summary Google Play requires full transparency about the user data your app collects and how it's used. You must complete and maintain an accurate Data safety section for each of your apps in the …",
+      "normative_language": {
+        "must": 5,
+        "must_not": 0,
+        "should": 0,
+        "required": 3
+      }
+    },
+    {
+      "rule_id": "GPL-PRIVACY-POLICY",
+      "publisher_id": "Privacy Policy",
+      "title": "Privacy Policy",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "dd070c179b96730843c72b74604d6cd8763092598c0951e833904f198704b728",
+      "chars": 2765,
+      "excerpt": "Policy Summary To promote user trust and privacy, Google Play requires every app to have a comprehensive privacy policy accessible within the app and linked in the Play Console. This policy must accurately disclose how …",
+      "normative_language": {
+        "must": 8,
+        "must_not": 0,
+        "should": 0,
+        "required": 3
+      }
+    },
+    {
+      "rule_id": "GPL-ACCOUNT-DELETION-REQUIREMENT",
+      "publisher_id": "Account Deletion Requirement",
+      "title": "Account Deletion Requirement",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "9cf0c141f909353aa833fcbef73c460b45d7aba6979813c13fe753c3abe5c689",
+      "chars": 2507,
+      "excerpt": "Policy Summary To comply with Google Play policy and respect user data control, apps that allow account creation must provide a clear option for account deletion. This option must be available both from within your …",
+      "normative_language": {
+        "must": 7,
+        "must_not": 0,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-USAGE-OF-APP-SET-ID",
+      "publisher_id": "Usage of App Set ID",
+      "title": "Usage of App Set ID",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "2d12b0d0159972291a090f0d3ffe86f304f9462c56cc6351eb98e6d2f7bfbadd",
+      "chars": 1884,
+      "excerpt": "Policy Summary The App Set ID is intended to support essential non-ads use cases such as analytics and fraud prevention. It must not be used for ads personalization and ads measurement or associated with personally-identifiable …",
+      "normative_language": {
+        "must": 6,
+        "must_not": 3,
+        "should": 0,
+        "required": 2
+      }
+    },
+    {
+      "rule_id": "GPL-EU-U-S-UK-AND-SWISS-DATA-PRIVACY-FRAMEWORKS",
+      "publisher_id": "EU-U.S., UK, and Swiss Data Privacy Frameworks",
+      "title": "EU-U.S., UK, and Swiss Data Privacy Frameworks",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "325a73293770136a7594b5b299c4b86bcd157a03add71aa4740f7903a222e6b1",
+      "chars": 2823,
+      "excerpt": "Policy Summary If your app handles personal data from users in the European Economic Area, UK, or Switzerland, you must comply with their privacy and data protection laws. You must obtain user consent and protect …",
+      "normative_language": {
+        "must": 7,
+        "must_not": 2,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-PERMISSIONS-AND-APIS-THAT-ACCESS-SENSITIVE-INFOR",
+      "publisher_id": "Permissions and APIs that Access Sensitive Information",
+      "title": "Permissions and APIs that Access Sensitive Information",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "b5a9eeb57a0c71fa54362aaa6d0f7cc0a7c23fef4ba645195c38a9444c455e15",
+      "chars": 1012,
+      "excerpt": "Requests for permission and APIs that access sensitive information should make sense to users. You may only request permissions and APIs that access sensitive information that are necessary to implement current features or services in …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 1,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-RESTRICTED-PERMISSIONS",
+      "publisher_id": "Restricted Permissions",
+      "title": "Restricted Permissions",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "447601e7e1816df0f8e31fbb1a5455776fabbd6629ef0792037870d14e95d78b",
+      "chars": 1364,
+      "excerpt": "In addition to the above, restricted permissions are permissions that are designated as Dangerous, Special, Signature, or as documented below. These permissions are subject to the following additional requirements and restrictions: - User or device …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 2,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-RESTRICTED-PERMISSIONS-WITH-MINIMUM-SCOPE-ALTERN",
+      "publisher_id": "Restricted Permissions with minimum scope alternatives",
+      "title": "Restricted Permissions with minimum scope alternatives",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "d7469a3be49a8dde29cf4f9f9521924e170dc7dd239460a8c502830052cecc2c",
+      "chars": 455,
+      "excerpt": "System pickers and alternatives like Sharesheet are designed to support a privacy-oriented path for developers. Photos, Videos, Contacts, and other personal and sensitive data gated by restricted permissions should be treated with privacy best practices. …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 2,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-PHOTO-AND-VIDEO-PERMISSIONS",
+      "publisher_id": "Photo and Video Permissions",
+      "title": "Photo and Video Permissions",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "aa08543b047f04010737a5f91d94e577f17a7aa3c63bb5cc43f467dbdb22a9c8",
+      "chars": 548,
+      "excerpt": "- All user Photos are personal and sensitive data subject to the User Data policy. - Apps that target Android 13 or higher (API level 33+) may only request the READ_MEDIA_IMAGES and READ_MEDIA_VIDEO permissions if …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-SMS-AND-CALL-LOG-PERMISSIONS",
+      "publisher_id": "SMS and Call Log Permissions",
+      "title": "SMS and Call Log Permissions",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "0bd6855b93e1b1b29a1ee9dd9478716d803bb745485471719558de2d2a6e3b5d",
+      "chars": 1872,
+      "excerpt": "SMS and Call Log Permissions are regarded as personal and sensitive user data subject to the Personal and Sensitive Information policy, and the following restrictions: Restricted Permission Requirement Call Log permission group (for example, READ_CALL_LOG, …",
+      "normative_language": {
+        "must": 6,
+        "must_not": 3,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-LOCATION-PERMISSIONS",
+      "publisher_id": "Location Permissions",
+      "title": "Location Permissions",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "1dac602dc59f4e0dcade71682f95de07c3781b669286411642b9cde3669a13fc",
+      "chars": 1695,
+      "excerpt": "Device location is regarded as personal and sensitive user data subject to the Personal and Sensitive Information policy and the Background Location policy, and the following requirements: - Apps may not access data protected by …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 1,
+        "should": 3,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-ALL-FILES-ACCESS-PERMISSION",
+      "publisher_id": "All Files Access Permission",
+      "title": "All Files Access Permission",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "028e59feea545a236afa9adbc49ca99b8538f57d0bc43425940c7e35c00ed159",
+      "chars": 944,
+      "excerpt": "Files and directory attributes on a user’s device are regarded as personal and sensitive user data subject to the Personal and Sensitive Information policy and the following requirements: - Apps should only request access to …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 1,
+        "should": 1,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-PACKAGE-APP-VISIBILITY-PERMISSION",
+      "publisher_id": "Package (App) Visibility Permission",
+      "title": "Package (App) Visibility Permission",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "7d4ce7aa6c3316c8e246fa65ebafc308eab92df6f2ca86560f8541ddcd61ecf2",
+      "chars": 2050,
+      "excerpt": "The inventory of installed apps queried from a device are regarded as personal and sensitive user data subject to the Personal and Sensitive Information policy, and the following requirements: Apps that have a core purpose …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 1,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-ACCESSIBILITY-API",
+      "publisher_id": "Accessibility API",
+      "title": "Accessibility API",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "34208c8adb3f237d76b5a58b6b06bfdd9820e00ad9d46ea2002f7401144072d3",
+      "chars": 1562,
+      "excerpt": "The Accessibility API cannot be used to: - Change user settings without their permission or prevent the ability for users to disable or uninstall any app or service unless authorized by a parent or guardian …",
+      "normative_language": {
+        "must": 3,
+        "must_not": 4,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-REQUEST-INSTALL-PACKAGES-PERMISSION",
+      "publisher_id": "Request Install Packages Permission",
+      "title": "Request Install Packages Permission",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "e60f140e60c05b9caced0632d6647f2af42193853f81efc81f7d67722a8d8ce3",
+      "chars": 1159,
+      "excerpt": "The REQUEST_INSTALL_PACKAGES permission allows an application to request the installation of app packages.​​ To use this permission, your app’s core functionality must include: - Sending or receiving app packages; and - Enabling user-initiated installation of …",
+      "normative_language": {
+        "must": 4,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-BODY-SENSOR-PERMISSIONS",
+      "publisher_id": "Body Sensor Permissions",
+      "title": "Body Sensor Permissions",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "e8007054cfff0f3883175a433190213c7d0767a16ea1e001d114ae99ed9ad838",
+      "chars": 1665,
+      "excerpt": "Access to data from sensors that measure physical parameters of the body (such as heart rate, SpO₂, and skin temperature) is considered personal and sensitive user data. Apps requesting access are subject to the requirements …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-HEALTH-CONNECT-BY-ANDROID-PERMISSIONS",
+      "publisher_id": "Health Connect by Android Permissions",
+      "title": "Health Connect by Android Permissions",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "61c0b57e22aeb8beed2fafde9d4cbdc3c0676a2d3537212d2b2520cdcba5f0c5",
+      "chars": 8470,
+      "excerpt": "Health Connect is an Android platform that allows health and fitness apps to store and share the same on-device data, within a unified ecosystem. It also offers a single place for users to control which …",
+      "normative_language": {
+        "must": 12,
+        "must_not": 3,
+        "should": 2,
+        "required": 2
+      }
+    },
+    {
+      "rule_id": "GPL-VPN-SERVICE",
+      "publisher_id": "VPN Service",
+      "title": "VPN Service",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "8f629b0455dc5d1a821687c3229ff499b1ea6ba56dbd8aaf19b133ee20f5757b",
+      "chars": 1215,
+      "excerpt": "The VpnService is a base class for applications to extend and build their own VPN solutions. Only apps that use the VpnService and have VPN as their core functionality can create a secure device-level tunnel …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 1,
+        "should": 0,
+        "required": 2
+      }
+    },
+    {
+      "rule_id": "GPL-EXACT-ALARM-PERMISSION",
+      "publisher_id": "Exact Alarm Permission",
+      "title": "Exact Alarm Permission",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "6535a829f68e7152b8d35fbb9ffa96e754e4a681cd0034bed2fe6ed3ecc91e6a",
+      "chars": 1043,
+      "excerpt": "A new permission, USE_EXACT_ALARM, will be introduced that will grant access to exact alarm functionality in apps starting with Android 13 (API target level 33). USE_EXACT_ALARM is a restricted permission and apps must only declare …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 0,
+        "should": 1,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-FULL-SCREEN-INTENT-PERMISSION",
+      "publisher_id": "Full-Screen Intent Permission",
+      "title": "Full-Screen Intent Permission",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "d205cae243030b6450a4afb58ace093952052226a32487d9abac1d2789c0d5c8",
+      "chars": 1116,
+      "excerpt": "For apps targeting Android 14 (API target level 34) and above, USE_FULL_SCREEN_INTENT is a special apps access permission. Apps will only be automatically granted to use the USE_FULL_SCREEN_INTENT permission if the core functionality of their …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 1,
+        "should": 1,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-AGE-SIGNALS-API-AND-USER-DATA",
+      "publisher_id": "Age Signals API and User Data",
+      "title": "Age Signals API and User Data",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "4ae3818942cf2f60a20593d0014514f5d156c68e3261acb7a30d36ba119d14c6",
+      "chars": 734,
+      "excerpt": "This policy defines the conditions for your use of the Age Signals API, which provides access to personal and sensitive user age and parental consent data. You may only use the data accessed via the …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-DEVICE-AND-NETWORK-ABUSE",
+      "publisher_id": "Device and Network Abuse",
+      "title": "Device and Network Abuse",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "2f034791da68718e1cc89b82c3915fa3c47e4351c129e54127473fafd49abfcc",
+      "chars": 2789,
+      "excerpt": "We don’t allow apps that interfere with, disrupt, damage, or access in an unauthorized manner the user’s device, other devices or computers, servers, networks, application programming interfaces (APIs), or services, including but not limited to …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 3,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-PERMISSIONS-FOR-FOREGROUND-SERVICES-FGS",
+      "publisher_id": "Permissions for Foreground Services (FGS)",
+      "title": "Permissions for Foreground Services (FGS)",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "bbfacabf00cb2b47a3592c7b2c73ebafa2e45d9141119e8a6b8d8956aec9ba40",
+      "chars": 1466,
+      "excerpt": "The Foreground Service permission ensures the appropriate use of user-facing foreground services. For apps targeting Android 14 and above, you must specify a valid foreground service type for each foreground service used in your app, …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 0,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-USER-INITIATED-DATA-TRANSFER-JOBS",
+      "publisher_id": "User-Initiated Data Transfer Jobs",
+      "title": "User-Initiated Data Transfer Jobs",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "55add124a7ecf06959d35655192b9d54da496bdd9a5e2ed3797a5acd072d3eea",
+      "chars": 292,
+      "excerpt": "Apps are only allowed to use the user-initiated data transfer jobs API if the use is: - initiated by the user - for network data transfer tasks - runs only for as long as necessary …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-FLAG-SECURE-REQUIREMENTS",
+      "publisher_id": "Flag Secure Requirements",
+      "title": "Flag Secure Requirements",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "2d1b8b88957c090681f6c8712367d2b885e7d41060800a0577dd0cec593f0939",
+      "chars": 871,
+      "excerpt": "FLAG_SECURE is a display flag declared in an app’s code to indicate that its UI contains sensitive data intended to be limited to a secure surface while using the app. This flag is designed to …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 1,
+        "should": 1,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-APPS-THAT-RUN-ON-DEVICE-ANDROID-CONTAINERS",
+      "publisher_id": "Apps that Run On-device Android Containers",
+      "title": "Apps that Run On-device Android Containers",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "8473c4dd19cdd30cb0a3b81d562ba3c1ce93e9e5939085446cb8d2c9ebdee14a",
+      "chars": 1239,
+      "excerpt": "On-device Android container apps provide environments that simulate whole or portions of an underlying Android OS. The experience within these environments may not reflect the full suite of Android security features, which is why developers …",
+      "normative_language": {
+        "must": 3,
+        "must_not": 3,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-DECEPTIVE-BEHAVIOR",
+      "publisher_id": "Deceptive Behavior",
+      "title": "Deceptive Behavior",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "7707d5fa0ddbc9460e5d0e04a3a083539b6b7b5345e4833c79db7af208d82fd9",
+      "chars": 499,
+      "excerpt": "We don't allow apps that attempt to deceive users or enable dishonest behavior including but not limited to apps which are determined to be functionally impossible. Apps must provide an accurate disclosure, description and images/video …",
+      "normative_language": {
+        "must": 3,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-1-MISLEADING-CLAIMS",
+      "publisher_id": "1. Misleading Claims",
+      "title": "1. Misleading Claims",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "edaa27aaf50e5364165b13e717a652afbc973fb1a4ce11da3541e2276e70dcc1",
+      "chars": 1330,
+      "excerpt": "We don't allow apps that contain false or misleading information or claims, including in the description, title, icon, and screenshots. Here are some examples of common violations: - Apps that misrepresent or do not accurately …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-2-DECEPTIVE-DEVICE-SETTINGS-CHANGES",
+      "publisher_id": "2. Deceptive Device Settings Changes",
+      "title": "2. Deceptive Device Settings Changes",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "e491dbb12e8f17dabcba9f49b1db16ade45007f778c269eeb6e89b68a6c930ae",
+      "chars": 881,
+      "excerpt": "2.1 We don't allow apps that make changes to the user's device settings or features outside of the app without the user's knowledge and consent. Device settings and features include system and browser settings, bookmarks, …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-3-ENABLING-DISHONEST-BEHAVIOR",
+      "publisher_id": "3. Enabling Dishonest Behavior",
+      "title": "3. Enabling Dishonest Behavior",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "194db36d90d788a22824813999a22d1226d89a4042ad78606380a816c5220b9d",
+      "chars": 1832,
+      "excerpt": "3.1 We don't allow apps that help users to mislead others or are functionally deceptive in any way, including, but not limited to: apps that generate or facilitate the generation of ID cards, social security …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 0,
+        "should": 2,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-4-MANIPULATED-MEDIA",
+      "publisher_id": "4. Manipulated Media",
+      "title": "4. Manipulated Media",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "11c0aa963f0bec1fae1c89829026028fa178847968629ad7914f992556a14a40",
+      "chars": 1240,
+      "excerpt": "4.1 We don't allow apps that promote or help create false or misleading information or claims conveyed through imagery, audio, videos and/or text. We disallow apps determined to promote or perpetuate demonstrably misleading or deceptive …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-5-BEHAVIOR-TRANSPARENCY",
+      "publisher_id": "5. Behavior Transparency",
+      "title": "5. Behavior Transparency",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "0ecb62bd3d131cac34ff7fa8bcb329fd6b2a1272b00b9542856df349075ea86b",
+      "chars": 302,
+      "excerpt": "Your app's functionality should be reasonably clear to users; don't include any hidden, dormant, or undocumented features within your app. Techniques to evade app reviews are not allowed. Apps may be required to provide additional …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 1,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-MISREPRESENTATION",
+      "publisher_id": "Misrepresentation",
+      "title": "Misrepresentation",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "46a7799ad9275cfce797db404540e674832f0a88722f8b6c1ce7c16af40df2ba",
+      "chars": 615,
+      "excerpt": "We do not allow apps or developer accounts that: - impersonate any person or organization, or that misrepresent or conceal their ownership or primary purpose. - that engage in coordinated activity to mislead users. This …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-GOOGLE-PLAY-S-TARGET-API-LEVEL-POLICY",
+      "publisher_id": "Google Play's Target API Level Policy",
+      "title": "Google Play's Target API Level Policy",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "5c988f65b3d9ebfa313db63fb0f20820383911ae05f36e19d13e6d5be2d86b44",
+      "chars": 944,
+      "excerpt": "To provide users with a safe and secure experience, Google Play requires the following target API levels for all apps: New apps and app updates MUST target an Android API level within one year of …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-USE-OF-SDKS-IN-APPS",
+      "publisher_id": "Use of SDKs In Apps",
+      "title": "Use of SDKs In Apps",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "d4274f8e62853599737e3dd2ba96de770fa1e1bf88041a09b975080d773cea43",
+      "chars": 338,
+      "excerpt": "If you include an SDK in your app, you are responsible for ensuring that their third-party code and practices do not cause your app to violate Google Play Developer Program Policies. It is important to …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-SDK-REQUIREMENTS",
+      "publisher_id": "SDK Requirements",
+      "title": "SDK Requirements",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "3133b3ff9afc6a4b2c1e22d4d95e98e94613c4b15cac047f7a369d00dc155be1",
+      "chars": 14956,
+      "excerpt": "App developers often rely on third-party code (for example, an SDK) to integrate key functionality and services for their apps. When including an SDK in your app, you want to make sure that you can …",
+      "normative_language": {
+        "must": 15,
+        "must_not": 6,
+        "should": 6,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-MALWARE",
+      "publisher_id": "Malware",
+      "title": "Malware",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "8acb0ee02ab13d42942c789a575cc74213237432ae5290a5a0b5bdd5c2dd3a6d",
+      "chars": 2262,
+      "excerpt": "Our Malware policy is simple, the Android ecosystem including the Google Play store, and user devices should be free from malicious behaviors (for example, malware). Through this fundamental principle we strive to provide a safe …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 2,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-BACKDOORS",
+      "publisher_id": "Backdoors",
+      "title": "Backdoors",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "0a9f5038cbe02eccb2dfbcd3caacf655a94c2086b5c4cba2d7013203f0e8747c",
+      "chars": 586,
+      "excerpt": "Code that allows the execution of unwanted, potentially harmful, remote-controlled operations on a device. These operations may include behavior that would place the app, binary, or framework modification into one of the other malware categories …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-BILLING-FRAUD",
+      "publisher_id": "Billing Fraud",
+      "title": "Billing Fraud",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "d4c91e7034c273ead30aa2a35146eb57c9cb87401ecc88d3081f867454c5e61f",
+      "chars": 1475,
+      "excerpt": "Code that automatically charges the user in an intentionally deceptive way. Mobile billing fraud is divided into SMS fraud, Call fraud, and Toll fraud. SMS Fraud Code that charges users to send premium SMS without …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-STALKERWARE",
+      "publisher_id": "Stalkerware",
+      "title": "Stalkerware",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "698356dea1bc767c0bd3cfc7cc4b7cc1810570794ce182b2b81b1226970724a1",
+      "chars": 1807,
+      "excerpt": "Code that collects personal or sensitive user data from a device and transmits the data to a third party (enterprise or another individual) for monitoring purposes. Apps must provide adequate prominent disclosure and obtain consent …",
+      "normative_language": {
+        "must": 9,
+        "must_not": 4,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-DENIAL-OF-SERVICE-DOS",
+      "publisher_id": "Denial of Service (DoS)",
+      "title": "Denial of Service (DoS)",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "f42418ce7be00a5a4caffa13119d7e24134aa6f0eff3d7adb6690f08d7d83e9a",
+      "chars": 281,
+      "excerpt": "Code that, without the knowledge of the user, executes a denial-of-service (DoS) attack or is a part of a distributed DoS attack against other systems and resources. For example, this can happen by sending a …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-HOSTILE-DOWNLOADERS",
+      "publisher_id": "Hostile Downloaders",
+      "title": "Hostile Downloaders",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "b715e897d5d9ee24bc1c549c285a4edb05ce4d317a358b96a44ea027e63a6a70",
+      "chars": 586,
+      "excerpt": "Code that isn't in itself potentially harmful, but downloads other PHAs. Code may be a hostile downloader if: - There is reason to believe it was created to spread PHAs and it has downloaded PHAs …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-NON-ANDROID-THREAT",
+      "publisher_id": "Non-Android Threat",
+      "title": "Non-Android Threat",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "8dde9ea7bf81400baea71f4646f7fbf0339cb354bdbbe8c9e49b0ba27c4fed12",
+      "chars": 170,
+      "excerpt": "Code that contains non-Android threats. These apps can't cause harm to the Android user or device, but contain components that are potentially harmful to other platforms.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-PHISHING",
+      "publisher_id": "Phishing",
+      "title": "Phishing",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "46bc4b86e9f224bc18ba60b5a24a8d84507792e43cf9ef2f518814da4d9918aa",
+      "chars": 397,
+      "excerpt": "Code that pretends to come from a trustworthy source, requests a user's authentication credentials or billing information, and sends the data to a third-party. This category also applies to code that intercept the transmission of …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-ELEVATED-PRIVILEGE-ABUSE",
+      "publisher_id": "Elevated Privilege Abuse",
+      "title": "Elevated Privilege Abuse",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "110fcb307766c2b59c469d551ffe1765ceb54ea331f06a45fa29569b4773bdb0",
+      "chars": 519,
+      "excerpt": "Code that compromises the integrity of the system by breaking the app sandbox, gaining elevated privileges, or changing or disabling access to core security-related functions. Examples include: - An app that violates the Android permissions …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-RANSOMWARE",
+      "publisher_id": "Ransomware",
+      "title": "Ransomware",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "b87747e0751d47cc5d1f9988af215a83b52bef304039c0c4a685a5d658578745",
+      "chars": 864,
+      "excerpt": "Code that takes partial or extensive control of a device or data on a device and demands that the user make a payment or perform an action to release control. Some ransomware encrypts data on …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-ROOTING",
+      "publisher_id": "Rooting",
+      "title": "Rooting",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "5f620f49a910d4e3da58c42b2ac422c39cb4cba512c5c3c95355abf0a478aa58",
+      "chars": 502,
+      "excerpt": "Code that roots the device. There's a difference between non-malicious and malicious rooting code. For example, non-malicious rooting apps let the user know in advance that they're going to root the device and they don't …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-SPAM",
+      "publisher_id": "Spam",
+      "title": "Spam",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "ad56f31e188a6c243ce94a8e052108467034743eaf0a7adee03f52a8489f8210",
+      "chars": 102,
+      "excerpt": "Code that sends unsolicited messages to the user's contacts or uses the device as an email spam relay.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-SPYWARE",
+      "publisher_id": "Spyware",
+      "title": "Spyware",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "62fe99d9e8cf557fe8cd6a4bda6c0b66bf1696e1a093b6aa01e3fee9be54d60f",
+      "chars": 885,
+      "excerpt": "Spyware is a malicious application, code, or behavior that collects, exfiltrates, or shares user or device data that is not related to policy compliant functionality. Malicious code or behavior that can be considered as spying …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-TROJAN",
+      "publisher_id": "Trojan",
+      "title": "Trojan",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "627bb51694c5181d6a5be77d3b5fdad1da00dfc708d2ffb383ab99f3120e7a22",
+      "chars": 406,
+      "excerpt": "Code that appears to be benign, such as a game that claims only to be a game, but that performs undesirable actions against the user. This classification is usually used in combination with other PHA …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-A-NOTE-ON-UNCOMMON-APPS",
+      "publisher_id": "A Note on Uncommon Apps",
+      "title": "A Note on Uncommon Apps",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "9e662a2dd96f757aa5da6ddd0574dce6e9657c3160e0cccff15bca537c175ac8",
+      "chars": 238,
+      "excerpt": "New and rare apps can be classified as uncommon if Google Play Protect doesn't have enough information to clear them as safe. This doesn't mean the app is necessarily harmful, but without further review it …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-A-NOTE-ON-THE-BACKDOOR-CATEGORY",
+      "publisher_id": "A Note on the Backdoor Category",
+      "title": "A Note on the Backdoor Category",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "981777f1a0370c0703f1797a0c15cffd1f046c4692fcada60ff27cace20dc3c1",
+      "chars": 714,
+      "excerpt": "The backdoor malware category classification relies on how the code acts. A necessary condition for any code to be classified as a backdoor is that it enables behavior that would place the code into one …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-RISKWARE",
+      "publisher_id": "Riskware",
+      "title": "Riskware",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "a5b51523081e4e8c06f3245050aaf5bea4790486965491b298e1b8969167740f",
+      "chars": 508,
+      "excerpt": "An application that utilizes a variety of evasion techniques in order to serve the user different, or fake, application functionality. These apps mask themselves as legitimate applications or games to appear innocuous to app stores …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-IMPERSONATION",
+      "publisher_id": "Impersonation",
+      "title": "Impersonation",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "131b7f64d883fc5eb94bde7dacffa123bade75ce4293aa6b9c2da70c2db8dc37",
+      "chars": 1689,
+      "excerpt": "We don’t allow apps that mislead users by impersonating someone else (for example, another developer, company, entity) or another app. Don’t imply that your app is related to or authorized by someone that it isn’t. …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-MOBILE-UNWANTED-SOFTWARE",
+      "publisher_id": "Mobile Unwanted Software",
+      "title": "Mobile Unwanted Software",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "2a51362260168566d0f7cba46a0223597c9fc807481c0681645a9c6f549734cd",
+      "chars": 4293,
+      "excerpt": "At Google, we believe that if we focus on the user, all else will follow. In our Software Principles and the Unwanted Software policy, we provide general recommendations for software that delivers a great user …",
+      "normative_language": {
+        "must": 3,
+        "must_not": 1,
+        "should": 10,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-HOSTILE-DOWNLOADERS-2",
+      "publisher_id": "Hostile Downloaders",
+      "title": "Hostile Downloaders",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "c1b93c87b1b889f24d26d5f9fb8f704ee424862ed62560861485bd6a03fa53a7",
+      "chars": 617,
+      "excerpt": "Code that isn't in itself unwanted software, but downloads other mobile unwanted software (MUwS). Code may be a hostile downloader if: - There is reason to believe it was created to spread MUwS and it …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-AD-FRAUD",
+      "publisher_id": "Ad Fraud",
+      "title": "Ad Fraud",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "0d5feca2c2e686db192b1f60d61d41236c404558b81ae03d9297e87107eed7f2",
+      "chars": 1377,
+      "excerpt": "Ad fraud is strictly prohibited. Ad interactions generated for the purpose of tricking an ad network into believing traffic is from authentic user interest is ad fraud, which is a form of invalid traffic. Ad …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-UNAUTHORIZED-USE-OR-IMITATION-OF-SYSTEM-FUNCTION",
+      "publisher_id": "Unauthorized Use or Imitation of System Functionality",
+      "title": "Unauthorized Use or Imitation of System Functionality",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "b24f27e7747cad6a6bf77adcf915d140e1851bd372e2c005460b3d7b7f25e023",
+      "chars": 566,
+      "excerpt": "We don’t allow apps or ads that mimic or interfere with system functionality, such as notifications or warnings. System level notifications may only be used for an app’s integral features, such as an airline app …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-SOCIAL-ENGINEERING",
+      "publisher_id": "Social Engineering",
+      "title": "Social Engineering",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "289511db4193be2acd4d2eb891a866a364304d8d42438ee9a9b0f9356ef7ded4",
+      "chars": 166,
+      "excerpt": "We do not allow apps that pretend to be another app with the intention of deceiving users into performing actions that the user intended for the original trusted app.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-MONETIZATION-AND-ADS",
+      "publisher_id": "Monetization and Ads",
+      "title": "Monetization and Ads",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "b6fec436f96f069446227afb5fc2b15274b78f2679e1cf395fa0e1c07e1211df",
+      "chars": 254,
+      "excerpt": "Google Play supports a variety of monetization strategies to benefit developers and users, including paid distribution, in-app products, subscriptions, and ad-based models. To ensure the best user experience, we require you to comply with these …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-PAYMENTS",
+      "publisher_id": "Payments",
+      "title": "Payments",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "05cf0aadb9555df850022f8f0f7ba341afb849a9a08e83ac619e5aac4faeef6b",
+      "chars": 4058,
+      "excerpt": "- Developers charging for app downloads from Google Play must use Google Play's billing system as the method of payment for those transactions. Play-distributed apps requiring or accepting payment for access to in-app features or …",
+      "normative_language": {
+        "must": 8,
+        "must_not": 3,
+        "should": 0,
+        "required": 2
+      }
+    },
+    {
+      "rule_id": "GPL-ADS",
+      "publisher_id": "Ads",
+      "title": "Ads",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "814c0afff59b7e8b6f5ed1dcfbb7b869548c1d3b988e66186cc650d920065ed0",
+      "chars": 10772,
+      "excerpt": "To maintain a quality experience, we take into account your ad’s content, audience, user experience, behavior, as well as security and privacy. We consider ads and associated offers as part of your app, they must …",
+      "normative_language": {
+        "must": 16,
+        "must_not": 17,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-SUBSCRIPTIONS",
+      "publisher_id": "Subscriptions",
+      "title": "Subscriptions",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "ff1ce43c9618695ad4d2f847d55a63f0f403c44edee86aee386a6305d62509f5",
+      "chars": 7121,
+      "excerpt": "You, as a developer, must not mislead users about any subscription services or content you offer within your app. It is critical to communicate clearly in any in-app promotions, splash screens, and subscription plan selection …",
+      "normative_language": {
+        "must": 10,
+        "must_not": 10,
+        "should": 1,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-FAMILIES-SELF-CERTIFIED-ADS-SDK-PROGRAM",
+      "publisher_id": "Families Self-Certified Ads SDK Program",
+      "title": "Families Self-Certified Ads SDK Program",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "91966ca70db6bbbed8c0f4cd1fd22904cab0e32818f91de0993fea4357266b25",
+      "chars": 4262,
+      "excerpt": "If you serve ads in your app, and the target audience for your app only includes children as described in the Families Policy, then you must only use ads SDK versions that have self-certified compliance …",
+      "normative_language": {
+        "must": 6,
+        "must_not": 1,
+        "should": 1,
+        "required": 2
+      }
+    },
+    {
+      "rule_id": "GPL-STORE-LISTING-AND-PROMOTION",
+      "publisher_id": "Store Listing and Promotion",
+      "title": "Store Listing and Promotion",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "e528b0cfe08c293ad22a0d15f45e6d7bb0f970c1e7435fe05c8ed233ba6b861a",
+      "chars": 193,
+      "excerpt": "The promotion and visibility of your app dramatically affects store quality. Avoid spammy store listings, low quality promotion, and efforts to artificially boost app visibility on Google Play.",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-APP-PROMOTION",
+      "publisher_id": "App Promotion",
+      "title": "App Promotion",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "2565bd7a621bcd43ca470475abea2580d6102e91ae2a7e9b67f1e3eee19d7bfc",
+      "chars": 1054,
+      "excerpt": "We don’t allow apps that directly or indirectly engage in, or benefit from promotion practices (such as ads) that are deceptive or harmful to users or the developer ecosystem. Promotion practices are deceptive or harmful …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-METADATA",
+      "publisher_id": "Metadata",
+      "title": "Metadata",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "317d801f3bf3817688a3f9d7be1fc4b87d14f3a973973f230afbc5aa8dcd908d",
+      "chars": 3562,
+      "excerpt": "Users depend on descriptions of your app to help them understand its functionality and purpose. We don't allow apps with misleading, improperly formatted, non-descriptive, irrelevant, excessive, or inappropriate metadata, including but not limited to the …",
+      "normative_language": {
+        "must": 3,
+        "must_not": 1,
+        "should": 1,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-USER-RATINGS-REVIEWS-AND-INSTALLS",
+      "publisher_id": "User Ratings, Reviews, and Installs",
+      "title": "User Ratings, Reviews, and Installs",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "6e8d5e18bbe8d2f4a708b50d7737730083532450a1649912609df1730cc65500",
+      "chars": 1233,
+      "excerpt": "Developers must not attempt to manipulate the placement of any apps on Google Play. This includes, but is not limited to, inflating product ratings, reviews, or install counts by illegitimate means, such as fraudulent or …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-CONTENT-RATINGS",
+      "publisher_id": "Content Ratings",
+      "title": "Content Ratings",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "7bab41d277d9c344b28fdb3887be41de512fb013d970037292e03abaa8fdfc70",
+      "chars": 2430,
+      "excerpt": "Content ratings on Google Play are provided by the International Age Rating Coalition (IARC) and are designed to help developers communicate locally relevant content ratings to users. Regional IARC authorities maintain guidelines which are used …",
+      "normative_language": {
+        "must": 4,
+        "must_not": 1,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-NEWS-MAGAZINES",
+      "publisher_id": "News & Magazines",
+      "title": "News & Magazines",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "c89a09240e45bd68feb4b10aace7db56fb416390d2635959ed709b1f67b4a4e2",
+      "chars": 1189,
+      "excerpt": "All News & Magazine apps must declare themselves in the Google Play Console and complete a self-declaration. A news & magazine app is an app that: - Declares itself as a \"News\" or “Magazine” app …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 0,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-SPAM-FUNCTIONALITY-AND-USER-EXPERIENCE",
+      "publisher_id": "Spam, Functionality, and User Experience",
+      "title": "Spam, Functionality, and User Experience",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "8ac27b4df2a78a3c4cc0e513348537bee5d69c083fa290fa91c53db3498b0655",
+      "chars": 320,
+      "excerpt": "Apps should provide users with a basic degree of adequate functionality and content for an engaging user experience. Apps that crash, exhibit other behavior that is not consistent with a functional user experience, or that …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-SPAM-2",
+      "publisher_id": "Spam",
+      "title": "Spam",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "dfd09666610ae5f0318c136852bf5ef648e1bbbf6c8064e7296d9680a5c3397b",
+      "chars": 1673,
+      "excerpt": "We don't allow apps that spam users or Google Play, such as apps that send users unsolicited messages or apps that are repetitive or low-quality. Message Spam We don’t allow apps that send SMS, email, …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 2,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-FUNCTIONALITY-CONTENT-AND-USER-EXPERIENCE",
+      "publisher_id": "Functionality, Content, and User Experience",
+      "title": "Functionality, Content, and User Experience",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "6872596a7a0714047704a839e1c0fd5c091211706840f1ca7a1e959d68e9bb7b",
+      "chars": 304,
+      "excerpt": "Apps should provide a stable, responsive, and engaging user experience. Apps that crash, do not have the basic degree of adequate utility as mobile apps, lack engaging content, or exhibit other behavior that is not …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-1-LIMITED-FUNCTIONALITY-AND-CONTENT",
+      "publisher_id": "1. Limited Functionality and Content",
+      "title": "1. Limited Functionality and Content",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "2c72dbdc4a4d18ad58e978d5c6de37eb4400313d003e91c35e4335e9e33f17ee",
+      "chars": 392,
+      "excerpt": "We do not allow apps that only have limited functionality and content. Here is an example of a common violation: - Apps that are static without app-specific functionalities, for example, text only or PDF file …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-2-BROKEN-FUNCTIONALITY",
+      "publisher_id": "2. Broken Functionality",
+      "title": "2. Broken Functionality",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "411d2495f1c87517833233698fe9959815ff6c2e7d677680cc39ba69a817350b",
+      "chars": 235,
+      "excerpt": "We don’t allow apps that crash, force close, freeze, or otherwise function abnormally. Here are some examples of common violations: - Apps that don’t install - Apps that install, but don’t load - Apps that …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-OTHER-PROGRAMS",
+      "publisher_id": "Other Programs",
+      "title": "Other Programs",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "ca3e107c37ef1f501681871356c8f47270f9dfba1920fcc50ed69daaeac0abb6",
+      "chars": 328,
+      "excerpt": "In addition to compliance with the content policies set out elsewhere in this Policy Center, apps that are designed for other Android experiences and distributed via Google Play may also be subject to program-specific policy …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-ANDROID-INSTANT-APPS",
+      "publisher_id": "Android Instant Apps",
+      "title": "Android Instant Apps",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "deef282e719b7176df69a00a409fd1c603e5b7f8d5d733cc7f4ddb781b4bfc45",
+      "chars": 2624,
+      "excerpt": "Our goal with Android Instant Apps is to create delightful, frictionless user experiences while also adhering to the highest standards of privacy and security. Our policies are designed to support that goal. Developers choosing to …",
+      "normative_language": {
+        "must": 10,
+        "must_not": 5,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-ANDROID-EMOJI-POLICY",
+      "publisher_id": "Android Emoji Policy",
+      "title": "Android Emoji Policy",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "f2fc367f6315d88e3c9e6fc99053503fb1737a8c1470f2d72f477ce27aabc194",
+      "chars": 615,
+      "excerpt": "Our emoji policy is designed to promote an inclusive and consistent user experience. To accomplish that, all apps must support the latest version of Unicode Emoji when running on Android 12+. Apps that use default …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-FAMILIES",
+      "publisher_id": "Families",
+      "title": "Families",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "b7fd1ea78cad8bf699db75771c9e04a207feddd6f92bfe75e3a65a7d847c42f7",
+      "chars": 464,
+      "excerpt": "Google Play offers a rich platform for developers to showcase their high-quality, age appropriate content for the whole family. Before submitting an app to the Designed for Families program or submitting an app that targets …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-GOOGLE-PLAY-FAMILIES-POLICIES",
+      "publisher_id": "Google Play Families Policies",
+      "title": "Google Play Families Policies",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "62a9eab6f5c01300a2c025a4a08227c45d99ea860decc31c0a72b2fdae008b23",
+      "chars": 922,
+      "excerpt": "The use of technology as a tool for enriching families' lives continues to grow, and parents are looking for safe, high-quality content to share with their children. You may be designing your apps specifically for …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-PLAY-CONSOLE-REQUIREMENTS",
+      "publisher_id": "Play Console Requirements",
+      "title": "Play Console Requirements",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "01c238428e42ff0bb9dfd2ea89e34ac4fe9e2cc7fbcf6680695d21a2a1ab6437",
+      "chars": 2161,
+      "excerpt": "Target Audience and Content In the Target Audience and Content section of the Google Play Console you must indicate the target audience for your app, prior to publishing, by selecting from the list of age …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 0,
+        "should": 3,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-FAMILIES-POLICY-REQUIREMENTS",
+      "publisher_id": "Families Policy Requirements",
+      "title": "Families Policy Requirements",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "03556fa9da36de08c5315cbdc5bffa34c4d3f0fe50f8ef38a12928e7013846fe",
+      "chars": 6728,
+      "excerpt": "If one of the target audiences for your app is children, you must comply with the following requirements. Failure to satisfy these requirements may result in app removal or suspension. - App content: Your app's …",
+      "normative_language": {
+        "must": 24,
+        "must_not": 11,
+        "should": 2,
+        "required": 4
+      }
+    },
+    {
+      "rule_id": "GPL-ADS-AND-MONETIZATION",
+      "publisher_id": "Ads and Monetization",
+      "title": "Ads and Monetization",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "bfb736463f1e66859959b888cbdd775b737a80aaf80cd95b2668638fc4689a4c",
+      "chars": 5843,
+      "excerpt": "If you’re monetizing an app that targets children on Google Play, it’s important that your app follows the following Families Ads and Monetization Policy Requirements. The policies below apply to all monetization and advertising in …",
+      "normative_language": {
+        "must": 5,
+        "must_not": 4,
+        "should": 1,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-FAMILIES-SELF-CERTIFIED-ADS-SDK-POLICY",
+      "publisher_id": "Families Self-Certified Ads SDK Policy",
+      "title": "Families Self-Certified Ads SDK Policy",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "d642c7b1bc22db05da73fea006eb573d54969008922d4d8427fa2ddcddc41288",
+      "chars": 987,
+      "excerpt": "Google Play is committed to building a safe experience for children and families. A key part of this is to help ensure children only see ads that are appropriate for their age and that their …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-POLICY-REQUIREMENTS",
+      "publisher_id": "Policy requirements",
+      "title": "Policy requirements",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "8b31bd6c21020d6fee100c6357e7d5080d3e5efcb9843fa178dfbb215a500a83",
+      "chars": 7511,
+      "excerpt": "If your SDK or mediation platform serves apps that are part of the Google Play Families Program, you must comply with all Google Play Developer Policies, including the following requirements. Failure to satisfy any policy …",
+      "normative_language": {
+        "must": 33,
+        "must_not": 11,
+        "should": 2,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-ENFORCEMENT",
+      "publisher_id": "Enforcement",
+      "title": "Enforcement",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "866007c50633449d289ab60821b302392104b763894bd58e90bc96c7e969b635",
+      "chars": 284,
+      "excerpt": "Avoiding a policy violation is always better than managing one, but when violations do occur, we’re committed to ensuring developers understand how they can bring their app into compliance. Please let us know if you …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-POLICY-COVERAGE",
+      "publisher_id": "Policy Coverage",
+      "title": "Policy Coverage",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "a99f0e3c5c0904d85a4d8cc940746c7fe0cec9e7514866201ad745381780b904",
+      "chars": 2946,
+      "excerpt": "Our policies apply to any content your app displays or links to, including any ads it shows to users and any user-generated content it hosts or links to. Further, they apply to any content from …",
+      "normative_language": {
+        "must": 2,
+        "must_not": 0,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-ENFORCEMENT-PROCESS",
+      "publisher_id": "Enforcement Process",
+      "title": "Enforcement Process",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "1f13bda33809c70fa9fac50ad18306ad14eaaf754b8623a34ce3ebffbd897e7f",
+      "chars": 8518,
+      "excerpt": "When reviewing content or accounts to determine whether they are illegal or violate our policies, we take various information into consideration when making a decision, including app metadata (for example, app title, description), in-app experience, …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 2,
+        "should": 0,
+        "required": 3
+      }
+    },
+    {
+      "rule_id": "GPL-MANAGING-AND-REPORTING-POLICY-VIOLATIONS",
+      "publisher_id": "Managing and Reporting Policy Violations",
+      "title": "Managing and Reporting Policy Violations",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "9315990e337eaf3c876a6e560ca3e4701836641468f395a51a141d913ebb7847",
+      "chars": 1019,
+      "excerpt": "Appealing an Enforcement Action We will reinstate applications if an error was made, and we find that your application does not violate the Google Play Program Policies and Developer Distribution Agreement. If you’ve reviewed the …",
+      "normative_language": {
+        "must": 0,
+        "must_not": 1,
+        "should": 0,
+        "required": 0
+      }
+    },
+    {
+      "rule_id": "GPL-PLAY-CONSOLE-REQUIREMENTS-2",
+      "publisher_id": "Play Console Requirements",
+      "title": "Play Console Requirements",
+      "heading_tag": "h3",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "ef665b0f3ed1825300a90930473878f485be082ce223abc53fefc612a6b02379",
+      "chars": 2992,
+      "excerpt": "To ensure the safety and security of our vibrant app ecosystem, Google Play requires all developers to complete Play Console requirements, including any profiles that are linked to your Play Console developer account. Verified information …",
+      "normative_language": {
+        "must": 3,
+        "must_not": 0,
+        "should": 1,
+        "required": 1
+      }
+    },
+    {
+      "rule_id": "GPL-ACCOUNT-TRANSFERS",
+      "publisher_id": "Account Transfers",
+      "title": "Account Transfers",
+      "heading_tag": "h2",
+      "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+      "sha256": "507ecda1198f44b6ba6b37536f0e7b78a847162637f9872655ca5bbb8b0e3156",
+      "chars": 1215,
+      "excerpt": "To maintain a safe and trusted ecosystem for users and developers, Google Play requires transparency and accountability regarding the ownership of developer accounts. We recognize that permitted business reasons, such as acquisitions, organizational restructuring, personnel …",
+      "normative_language": {
+        "must": 1,
+        "must_not": 1,
+        "should": 0,
+        "required": 1
+      }
+    }
+  ]
+}

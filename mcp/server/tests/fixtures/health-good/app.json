@@ -1,0 +1,42 @@
+{
+ "expo": {
+  "name": "Wellness Journal",
+  "slug": "wellness-journal",
+  "version": "1.0.0",
+  "ios": {
+   "bundleIdentifier": "com.example.wellnessjournal",
+   "config": {
+    "usesNonExemptEncryption": false
+   }
+  },
+  "android": {
+   "package": "com.example.wellnessjournal"
+  },
+  "plugins": [
+   [
+    "expo-build-properties",
+    {
+     "android": {
+      "targetSdkVersion": 36
+     },
+     "ios": {
+      "deploymentTarget": "15.1"
+     }
+    }
+   ],
+   [
+    "@kingstinct/react-native-healthkit",
+    {
+     "NSHealthShareUsageDescription": "Reads blood pressure to complete your wellness journal.",
+     "NSHealthUpdateUsageDescription": "Saves logged water intake to Apple Health."
+    }
+   ],
+   [
+    "expo-audio",
+    {
+     "microphonePermission": "Wellness Journal records your voice when you dictate a meal log."
+    }
+   ]
+  ]
+ }
+}

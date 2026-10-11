@@ -1,0 +1,82 @@
+# Cross-platform implementation rules (Expo / React Native / RevenueCat).
+# label vendor_documentation = statement from a framework/SDK vendor's docs (NOT store policy).
+# label interpretation = our synthesis mapping store rules to implementation; never a policy statement.
+- id: XPL-MIC-001
+  title: "Microphone permission configuration in Expo (expo-audio)"
+  label: vendor_documentation
+  obligation: conditional
+  topics: [microphone, voice, expo, permissions]
+  requires: "expo-audio config plugin option microphonePermission sets NSMicrophoneUsageDescription; setting it to false disables the permission; a boolean option controls adding RECORD_AUDIO on Android; enableBackgroundRecording option exists."
+  implementation: "Provide a specific purpose string (APL-5.1.1 (ii)); keep enableBackgroundRecording false unless a user-visible background recording feature exists (APL-2.5.4, GPL-PERMISSIONS-FOR-FOREGROUND-SERVICES-FGS) (Interpretation)."
+  related_rules: [APL-5.1.1, APL-2.5.14, GPL-PROMINENT-DISCLOSURE-CONSENT-REQUIREMENT, GPL-SUPP-HEALTH-APP-CATEGORIES]
+  agent_verification:
+    - "Inspect app.json/app.config plugins for expo-audio options"
+    - "inspect generated Info.plist and merged AndroidManifest."
+  sources:
+    - {url: "https://docs.expo.dev/versions/latest/sdk/audio/", section: "Configuration in app config"}
+- id: XPL-PERM-001
+  title: "Removing library-added Android permissions in Expo (android.blockedPermissions)"
+  label: vendor_documentation
+  obligation: recommended
+  topics: [permissions, expo, android]
+  requires: "Expo docs state the only way to remove permissions added by package-level manifests is android.blockedPermissions (or tools:node=\"remove\" in bare projects)."
+  implementation: "Block unused RECORD_AUDIO, READ_MEDIA_*, ACCESS_FINE_LOCATION, SYSTEM_ALERT_WINDOW etc. to satisfy GPL-PERMISSIONS-AND-APIS-THAT-ACCESS-SENSITIVE-INFOR and GPL-PHOTO-AND-VIDEO-PERMISSIONS (Interpretation)."
+  agent_verification:
+    - "Run `npx expo prebuild --no-install` in a scratch copy and parse android/app/src/main/AndroidManifest.xml plus merged manifest from a release build."
+  sources:
+    - {url: "https://docs.expo.dev/guides/permissions/", section: "Android"}
+- id: XPL-PRIVACY-MANIFEST-001
+  title: "Expo privacy manifests"
+  label: vendor_documentation
+  obligation: mandatory
+  topics: [privacy-manifest, expo, ios]
+  requires: "Expo documents configuring Apple privacy manifests via app config (ios.privacyManifests) for required-reason APIs."
+  related_rules: [APL-SUPP-REQUIRED-REASON-API]
+  sources:
+    - {url: "https://docs.expo.dev/guides/apple-privacy/", section: "Privacy manifests"}
+- id: XPL-IAP-REVIEW-001
+  title: "IAP products must be submitted/approved with the binary (App Store)"
+  label: vendor_documentation
+  obligation: mandatory
+  topics: [iap, subscriptions, revenuecat, review]
+  requires: "RevenueCat docs - submit IAPs with the app version (status Ready to Submit) when the app has not had IAPs approved before; the first consumable, non-consumable, auto-renewable and non-renewing subscription must each be submitted with an app version; later products of an approved type can be submitted independently and must be Approved before available. RevenueCat states Apple App Review Center reports over 40% of rejections are for Guideline 2.1 (secondary source; Apple's figure not independently verified here)."
+  related_rules: [APL-2.1]
+  agent_verification:
+    - "Check paywall handles empty offerings gracefully (shows error/retry rather than blank/crash) because reviewer environment may fail to fetch products."
+  sources:
+    - {url: "https://www.revenuecat.com/docs/test-and-launch/app-store-rejections", section: "Issues fetching products"}
+- id: XPL-AUTH-001
+  title: "Social login parity and account deletion across platforms"
+  label: interpretation
+  obligation: conditional
+  topics: [authentication, account-deletion]
+  requires: "If Google/Facebook sign-in is offered on iOS, add an equivalent privacy-focused option (APL-4.8). Account deletion in-app on both platforms (APL-5.1.1v) plus a web deletion URL for Google Play (GPL-ACCOUNT-DELETION-REQUIREMENT). One backend deletion endpoint can serve all three entry points."
+  related_rules: [APL-4.8, APL-5.1.1v, APL-SUPP-ACCOUNT-DELETION, GPL-ACCOUNT-DELETION-REQUIREMENT, GPL-SUPP-ACCOUNT-DELETION-HELP]
+- id: XPL-NOTIF-001
+  title: "Notification permission and content"
+  label: interpretation
+  obligation: conditional
+  topics: [notifications, expo, android, health]
+  requires: "App must work if notifications are denied (APL-4.5.4); marketing pushes need explicit opt-in and in-app opt-out (APL-4.5.4); avoid sensitive personal data in push bodies (APL-4.5.4). Android 13+ requires the POST_NOTIFICATIONS runtime permission (Android platform behaviour, see Android docs source). Exact alarms - see GPL-EXACT-ALARM-PERMISSION."
+  related_rules: [APL-4.5.4, APL-5.1.2, GPL-EXACT-ALARM-PERMISSION, GPL-FULL-SCREEN-INTENT-PERMISSION]
+  sources:
+    - {url: "https://docs.expo.dev/versions/latest/sdk/notifications/", section: "expo-notifications"}
+    - {url: "https://developer.android.com/develop/ui/views/notifications/notification-permission", section: "Notification runtime permission"}
+- id: XPL-AI-001
+  title: "Third-party AI processing of user data (both stores)"
+  label: interpretation
+  obligation: conditional
+  topics: [ai, privacy, health, consent]
+  requires: "Apple 5.1.2(i) requires disclosure and explicit permission before sharing personal data with third-party AI. Google User Data policy makes developer responsible for third-party AI integrations (limited use, disclosure, consent), AI-Generated Content policy requires in-app reporting of offensive AI output. Combined implementation - consent screen before first AI call naming data categories and provider type; report button on outputs; Data safety + App Privacy labels list the data; privacy policy names AI processing."
+  related_rules: [APL-5.1.2, APL-4.7, APL-4.7.1, GPL-USER-DATA, GPL-AI-GENERATED-CONTENT, GPL-PROMINENT-DISCLOSURE-CONSENT-REQUIREMENT]
+- id: XPL-STORAGE-001
+  title: "Secure storage of tokens and health data"
+  label: interpretation
+  obligation: recommended
+  topics: [security, data-storage, expo]
+  requires: "APL-1.6 and GPL-PERSONAL-AND-SENSITIVE-USER-DATA require appropriate security / modern cryptography in transit. Store auth tokens in expo-secure-store (Keychain/Keystore) rather than AsyncStorage; avoid iCloud storage for personal health information (APL-5.1.3(ii))."
+  related_rules: [APL-1.6, APL-5.1.3, GPL-PERSONAL-AND-SENSITIVE-USER-DATA]
+  agent_verification:
+    - "grep AsyncStorage.setItem with token/password/health keys"
+    - "check usesCleartextTraffic and NSAllowsArbitraryLoads."
+

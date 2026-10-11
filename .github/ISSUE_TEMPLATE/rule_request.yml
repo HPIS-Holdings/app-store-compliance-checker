@@ -1,0 +1,19 @@
+name: Rule request / policy change
+description: Suggest a new Apple or Google rule, or report a policy that changed
+labels: [rules]
+body:
+  - type: dropdown
+    id: platform
+    attributes: {label: Platform, options: [Apple App Store, Google Play]}
+    validations: {required: true}
+  - type: input
+    id: url
+    attributes: {label: Official source URL, description: "developer.apple.com / support.google.com / developer.android.com"}
+    validations: {required: true}
+  - type: textarea
+    id: quote
+    attributes: {label: Exact requirement text (quote)}
+    validations: {required: true}
+  - type: textarea
+    id: evidence
+    attributes: {label: How could it be proven from code, config, build or store data?}

@@ -1,0 +1,2 @@
+# Bundle the rule snapshot and lookup tables in source builds as well as wheels.
+recursive-include compliance_mcp/data *.json *.jsonl *.md

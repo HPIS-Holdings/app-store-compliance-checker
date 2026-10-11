@@ -1,0 +1,191 @@
+- id: GPL-HATE-SPEECH
+  title: "Hate Speech"
+  label: official_requirement
+  obligation: mandatory
+  topics: [content, hate, religion]
+  prohibited: "Apps promoting violence or inciting hatred against groups based on race, ethnicity, religion, disability, age, nationality, veteran status, sexual orientation, gender, gender identity, caste, immigration status or other characteristics associated with systemic discrimination; hate slurs/stereotypes; hate symbols."
+  exceptions_regions: "EDSA content related to Nazis may be blocked in certain countries per local law."
+  examples: "Religious content disparaging another faith or caste group is within scope (Interpretation; caste and religion are explicitly listed)."
+- id: GPL-APP-PROMOTION
+  title: "App Promotion"
+  label: official_requirement
+  obligation: mandatory
+  topics: [marketing, ads, metadata]
+  prohibited: "Benefiting from deceptive/harmful promotion - deceptive ads resembling system notifications; sexually explicit ads driving installs; redirect/install without informed action; unsolicited SMS promotion; ranking/price/program claims in title, icon or developer name."
+  requires: "Developer is responsible for ad networks and affiliates promoting the app."
+- id: GPL-DECEPTIVE-BEHAVIOR
+  title: "Deceptive Behavior (umbrella)"
+  label: official_requirement
+  obligation: mandatory
+  topics: [deception]
+  requires: "Accurate disclosure, description and images/video of functionality in all metadata; device-settings changes only with knowledge, consent and reversibility."
+  prohibited: "Deceiving users, functionally impossible apps, mimicking OS/other-app functionality or warnings."
+- id: GPL-2-DECEPTIVE-DEVICE-SETTINGS-CHANGES
+  title: "Deceptive Device Settings Changes"
+  label: official_requirement
+  obligation: mandatory
+  topics: [deception, wallpapers]
+  prohibited: "Changing device settings/features (system/browser settings, bookmarks, shortcuts, icons, widgets, homescreen presentation) without knowledge and consent; changes not easily reversible; changes for third parties or ads; misleading or incentivizing users to remove/disable other apps or change settings (unless verifiable security service)."
+  examples: "A wallpaper app may set the wallpaper only after explicit user action; auto-changing wallpaper requires clear opt-in and an off switch (Interpretation)."
+- id: GPL-3-ENABLING-DISHONEST-BEHAVIOR
+  title: "Enabling Dishonest Behavior; download disclosures"
+  label: official_requirement
+  obligation: mandatory
+  topics: [deception, downloads, review]
+  prohibited: "Generating fake IDs/documents; prank/entertainment labels do not exempt; mimicking apps to phish; geography/device-dependent core functionality not advertised; significant changes between versions without notice and listing update; modifying/obfuscating behaviour during review."
+  requires: "Additional resources downloaded only when necessary and policy-compliant; prompt and disclose download size before CDN downloads."
+  agent_verification:
+    - "Find first-run/background downloads of large assets (audio packs, ML models); confirm size prompt."
+- id: GPL-4-MANIPULATED-MEDIA
+  title: "Manipulated Media"
+  label: official_requirement
+  obligation: conditional
+  topics: [ai, media, deepfakes]
+  prohibited: "Apps promoting or helping create demonstrably misleading imagery/audio/video/text that may cause harm on sensitive events, politics, social issues; mimicking news broadcasts with real outlet logos without disclaimers/watermarks; apps solely for misleading media."
+  exceptions_regions: "Public interest, clearly artificial images, manipulated media with user-facing disclaimers/watermarks, satire/parody."
+  examples: "AI image generators creating deity/religious-figure images should watermark/label outputs as AI-generated (Interpretation)."
+- id: GPL-5-BEHAVIOR-TRANSPARENCY
+  title: "Behavior Transparency"
+  label: official_requirement
+  obligation: mandatory
+  topics: [review, deception, feature-flags]
+  prohibited: "Hidden, dormant or undocumented features; techniques to evade app review."
+  requires: "Functionality reasonably clear; may be required to provide additional details."
+- id: GPL-LOCATION-PERMISSIONS
+  title: "Location Permissions"
+  label: official_requirement
+  obligation: conditional
+  topics: [location, permissions, religious]
+  requires: "Location is personal and sensitive data (plus Background Location policy). Stop accessing when no longer necessary; request minimum scope (coarse over fine, foreground over background); background only for core user-beneficial features. Foreground-service location under while-in-use only as continuation of a user-initiated action and stopped when done."
+  prohibited: "Requesting location solely for advertising or analytics."
+  examples: "Prayer-time/Qibla features - ACCESS_COARSE_LOCATION while in use is generally sufficient (Interpretation)."
+  agent_verification:
+    - "Flag ACCESS_FINE_LOCATION / ACCESS_BACKGROUND_LOCATION in merged manifest and require a documented feature justification."
+- id: GPL-BODY-SENSOR-PERMISSIONS
+  title: "Body Sensor Permissions"
+  label: official_requirement
+  obligation: conditional
+  topics: [health, permissions, wearables]
+  requires: "BODY_SENSORS/BODY_SENSORS_BACKGROUND data is personal and sensitive; User Data and Health apps policies apply. Apps targeting Android 16+ must use granular android.permission.health.* permissions for APIs previously requiring BODY_SENSORS. All requests reviewed against approved use cases (fitness/wellness tracking, medical/condition monitoring, approved research, wearable companion features)."
+- id: GPL-RESTRICTED-PERMISSIONS
+  title: "Restricted Permissions (general)"
+  label: official_requirement
+  obligation: conditional
+  topics: [permissions]
+  requires: "Data via Dangerous, Special, Signature or listed permissions is personal and sensitive. Respect declines; make reasonable effort to accommodate users who decline (e.g. manual entry). Rare exceptions only for highly compelling features with no alternative."
+  prohibited: "Manipulating/forcing consent for non-critical permissions; use violating Malware policies."
+- id: GPL-RESTRICTED-PERMISSIONS-WITH-MINIMUM-SCOPE-ALTERN
+  title: "Restricted Permissions with minimum scope alternatives"
+  label: official_requirement
+  obligation: conditional
+  topics: [permissions, media, contacts]
+  requires: "Use system pickers/Sharesheet; request sensitive permissions (Photos, Videos, Contacts, etc.) only if minimum-scope alternatives cannot provide core functionality (details in Help Center)."
+  uncertainty: "The consolidated page's list for this section did not extract as text (list content appears to be in a non-text element); see Help Center answer 16935362 recorded in sources."
+- id: GPL-RESTRICTIONS-FOR-PERSONAL-AND-SENSITIVE-DATA-ACC
+  title: "Restrictions for Personal and Sensitive Data Access"
+  label: official_requirement
+  obligation: conditional
+  topics: [privacy, identifiers, kids]
+  prohibited: "Publicly disclosing financial/payment data or government ID numbers; unauthorized publishing of non-public contacts; unapproved SDKs in child-targeted apps; linking persistent device identifiers (IMEI, IMSI, SIM serial) to other personal data or resettable IDs except telephony-SIM identity or enterprise device-owner management (with prominent disclosure)."
+  requires: "Security/anti-virus apps must post a privacy policy with in-app disclosures explaining collection, use and sharing."
+- id: GPL-AD-FRAUD
+  title: "Ad Fraud"
+  label: official_requirement
+  obligation: mandatory
+  topics: [ads, games, fraud]
+  prohibited: "Invalid traffic - hidden ads, auto-clicks, fake install attribution, ads outside the app interface, misrepresenting inventory (platform, package name)."
+  agent_verification:
+    - "Ensure ad views are only rendered when visible; no programmatic click calls; ads never shown when app is backgrounded."
+- id: GPL-SEXUAL-CONTENT-AND-PROFANITY
+  title: "Sexual Content and Profanity"
+  label: official_requirement
+  obligation: mandatory
+  topics: [content, sexual-content, ai]
+  prohibited: "Sexual content/pornography; sexually gratifying services; compensated sexual acts incl. sugar dating; predatory or non-consensual sexual content incl. deepfakes; undress/see-through apps even as prank; profanity/slurs/explicit text in listing or app."
+  exceptions_regions: "Non-gratuitous nudity with EDSA primary purpose; catalog apps meeting minority-fraction, non-promotion, minor-protection conditions; region-limited availability where content is locally appropriate."
+  examples: "AI image generation must block sexualized output of real people and nudity prompts (Interpretation of AI-Generated Content + this policy)."
+- id: GPL-VIOLENCE
+  title: "Violence"
+  label: official_requirement
+  obligation: mandatory
+  topics: [content, violence, games]
+  prohibited: "Gratuitous violence; graphic realistic violence or threats; promoting self harm, suicide, eating disorders, choking games."
+  exceptions_regions: "Fictional violence in games (cartoons, hunting, fishing) generally allowed."
+- id: GPL-SENSITIVE-EVENTS
+  title: "Sensitive Events"
+  label: official_requirement
+  obligation: mandatory
+  topics: [content]
+  prohibited: "Capitalizing on or insensitivity toward sensitive events (emergencies, disasters, health emergencies, conflicts, deaths); denying major tragic events; profiting without benefit to victims."
+  exceptions_regions: "EDSA value or awareness-raising content generally allowed."
+- id: GPL-BULLYING-AND-HARASSMENT
+  title: "Bullying and Harassment"
+  label: official_requirement
+  obligation: mandatory
+  topics: [content, ugc, religion]
+  prohibited: "Threats, harassment, bullying - including bullying victims of international or religious conflicts, extortion, public humiliation, harassing victims of tragedies."
+- id: GPL-TOBACCO-AND-ALCOHOL
+  title: "Tobacco and Alcohol"
+  label: official_requirement
+  obligation: mandatory
+  topics: [content, substances]
+  prohibited: "Facilitating sale of tobacco/nicotine products; encouraging illegal or inappropriate use; depicting use/sale to minors; implying tobacco improves standing; portraying excessive drinking favourably; tobacco ads/promotions."
+  exceptions_regions: "Limited tobacco sale in food/grocery delivery apps in certain regions with age-gating; nicotine-cessation aids with age-gating."
+- id: GPL-UNAPPROVED-SUBSTANCES
+  title: "Unapproved Substances"
+  label: official_requirement
+  obligation: mandatory
+  topics: [health, substances, supplements]
+  prohibited: "Promoting or selling unapproved substances regardless of legality claims - listed pharmaceuticals/supplements, ephedra, hCG for weight loss, supplements with active pharmaceutical ingredients, false health claims, non-approved products implied to treat disease, products under regulatory action, confusingly similar names."
+  examples: "A chronic-condition app recommending herbal 'kidney cleanse' supplements with cure claims risks this policy and Health Misinformation (Interpretation)."
+- id: GPL-PRESCRIPTION-DRUGS
+  title: "Prescription Drugs"
+  label: official_requirement
+  obligation: conditional
+  topics: [health, pharmacy]
+  prohibited: "Facilitating sale or purchase of prescription drugs without a prescription."
+- id: GPL-AGE-RESTRICTED-CONTENT-AND-FUNCTIONALITY
+  title: "Age-Restricted Content and Functionality"
+  label: official_requirement
+  obligation: conditional
+  topics: [age-verification, gambling, dating, chat]
+  requires: "Use Play Console tools to block minors for real-money gambling/games/contests; core dating/matchmaking; random stranger chat; anonymous communication apps. Incidental dating features need age-gating of those features."
+- id: GPL-USAGE-OF-APP-SET-ID
+  title: "Usage of App Set ID"
+  label: official_requirement
+  obligation: conditional
+  topics: [identifiers, analytics, privacy]
+  requires: "Use only for essential non-ads use cases (analytics, fraud prevention); disclose in privacy notice/policy; obtain legally valid consent where required."
+  prohibited: "Ads personalization/measurement; linking to AAID or personal data for advertising."
+- id: GPL-FAMILIES-SELF-CERTIFIED-ADS-SDK-POLICY
+  title: "Families Self-Certified Ads SDK Policy"
+  label: official_requirement
+  obligation: conditional
+  topics: [kids, ads, sdk]
+  requires: "Ads SDKs and mediation platforms self-certify child-appropriateness and compliance; developers serving ads to children must use listed self-certified SDK versions (see GPL-ADS-AND-MONETIZATION)."
+- id: GPL-NEWS-MAGAZINES
+  title: "News & Magazines"
+  label: official_requirement
+  obligation: conditional
+  topics: [news, declarations]
+  requires: "Declare in Play Console and self-declare; provide article sources/authors; update regularly; up-to-date contact info; disclose third-party publishing sources; content preview before purchase."
+  prohibited: "Affiliate marketing or ad revenue as primary purpose."
+- id: GPL-FLAG-SECURE-REQUIREMENTS
+  title: "FLAG_SECURE Requirements"
+  label: official_requirement
+  obligation: mandatory
+  topics: [security, screenshots]
+  prohibited: "Facilitating workarounds to bypass other apps' FLAG_SECURE."
+  exceptions_regions: "Accessibility tools exempt if they do not transmit/save/cache protected content off device."
+- id: GPL-USER-INITIATED-DATA-TRANSFER-JOBS
+  title: "User-Initiated Data Transfer Jobs"
+  label: official_requirement
+  obligation: conditional
+  topics: [background, technical]
+  requires: "Use the API only when user-initiated, for network transfers, and only as long as necessary."
+- id: GPL-COUNTRY-SPECIFIC-REQUIREMENTS
+  title: "Personal loans - country-specific requirements"
+  label: official_requirement
+  obligation: conditional
+  topics: [finance, loans, regions]
+  requires: "Personal loan apps in listed countries comply with extra requirements and documentation via Financial features declaration - United States (no APR of 36% or higher; display max APR per TILA), India (RBI DLA list), Indonesia (OJK licence), Philippines (SEC registration/CA, disclosures), Nigeria (FCCPC approval), Kenya (CBK licence), Pakistan (one DLA per NBFC; SECP approval; short-term loans not permitted), Thailand (BoT/MoF licences and listing disclosures)."

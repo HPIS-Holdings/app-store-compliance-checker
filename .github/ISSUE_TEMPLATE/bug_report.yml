@@ -1,0 +1,19 @@
+name: Bug report
+description: The checker crashed, reported something wrong, or missed a proven problem
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes: {label: "mcc version / snapshot", description: "Output of `mcc snapshot` (checker_version, snapshot)"}
+    validations: {required: true}
+  - type: dropdown
+    id: kind
+    attributes: {label: Type, options: ["False positive (reported but not a real problem)", "False negative (missed a proven problem)", "Crash / error", "Install / MCP / Action problem"]}
+    validations: {required: true}
+  - type: textarea
+    id: repro
+    attributes: {label: Minimal reproduction, description: "Smallest app.json / package.json / file snippet and the command you ran. Please remove secrets and private data."}
+    validations: {required: true}
+  - type: textarea
+    id: output
+    attributes: {label: Actual vs expected output, render: text}

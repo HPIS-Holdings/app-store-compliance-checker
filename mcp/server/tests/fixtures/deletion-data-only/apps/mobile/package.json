@@ -1,0 +1,10 @@
+{
+ "name": "shelf-notes",
+ "dependencies": {
+  "expo": "~54.0.0",
+  "react-native": "0.81.4",
+  "expo-build-properties": "~1.0.0",
+  "@convex-dev/auth": "^0.0.94",
+  "convex": "^1.20.0"
+ }
+}

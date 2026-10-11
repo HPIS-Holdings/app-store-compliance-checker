@@ -1,0 +1,361 @@
+{
+ "upstream": "https://github.com/asif786ka/store-preflight-mcp",
+ "upstream_commit": "bd53be8cc9ae7162149df60e5c532d98c99eb9ad",
+ "license": "MIT",
+ "validated_against": {
+  "ASDK": {
+   "url": "https://developer.apple.com/support/third-party-SDK-requirements/",
+   "fetched": "2026-10-10T14:35:51+00:00",
+   "text_sha256": "67a7fb9da286b5c657deda1424ac851a2b3a3aabd0def14ce47108dc4fdf3be6"
+  },
+  "ARRTYPE": {
+   "url": "https://developer.apple.com/documentation/bundleresources/app-privacy-configuration/nsprivacyaccessedapitypes/nsprivacyaccessedapitype",
+   "docc_json": "https://developer.apple.com/tutorials/data/documentation/bundleresources/app-privacy-configuration/nsprivacyaccessedapitypes/nsprivacyaccessedapitype.json",
+   "fetched": "2026-10-10T16:18:17+00:00",
+   "docc_json_sha256": "19546c6db12067a6e6441140399e8323fd73d5e79d1c682e1d0b826b16da6cf5"
+  }
+ },
+ "validation": "reason codes: exact match within the same category in Apple DocC possibleValues; SDK names: exact substring of the official third-party SDK requirements page text",
+ "categories": [
+  {
+   "category": "NSPrivacyAccessedAPICategoryUserDefaults",
+   "category_validated": true,
+   "codes": [
+    {
+     "code": "CA92.1",
+     "meaning_upstream": "Read/write info accessible only to the app itself. Does not permit reading info written by other apps or the system, or writing info other apps can access.",
+     "validated": true
+    },
+    {
+     "code": "1C8F.1",
+     "meaning_upstream": "Read/write info accessible only to apps, extensions and App Clips in the same App Group. You are not responsible if the system serves global-domain values when a key is absent from your requested domain.",
+     "validated": true
+    },
+    {
+     "code": "C56D.1",
+     "meaning_upstream": "Third-party SDK only: SDK provides a wrapper function around UserDefaults, accessed only when the app calls the wrapper. NOT permitted if the SDK exists primarily to wrap required-reason APIs. Data may not be used for the SDK's own purposes or sent off-device.",
+     "validated": true
+    },
+    {
+     "code": "AC6B.1",
+     "meaning_upstream": "Read com.apple.configuration.managed (MDM managed app config) or set com.apple.feedback.managed (MDM feedback).",
+     "validated": true
+    }
+   ],
+   "official_codes_missing_upstream": [],
+   "triggers": [
+    {
+     "kind": "symbol",
+     "value": "UserDefaults",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "NSUserDefaults",
+     "note": ""
+    },
+    {
+     "kind": "dependency",
+     "value": "shared_preferences",
+     "note": "Flutter shared_preferences writes through NSUserDefaults on iOS"
+    },
+    {
+     "kind": "dependency",
+     "value": "react-native-default-preference",
+     "note": "wraps NSUserDefaults"
+    },
+    {
+     "kind": "dependency",
+     "value": "@react-native-community/async-storage",
+     "note": "legacy RN AsyncStorage used NSUserDefaults for small values"
+    }
+   ],
+   "upstream_rule_id": "apple.rr.user_defaults"
+  },
+  {
+   "category": "NSPrivacyAccessedAPICategoryFileTimestamp",
+   "category_validated": true,
+   "codes": [
+    {
+     "code": "DDA9.1",
+     "meaning_upstream": "Display file timestamps to the user. May NOT be sent off-device.",
+     "validated": true
+    },
+    {
+     "code": "C617.1",
+     "meaning_upstream": "Access timestamps/size/metadata of files inside the app container, app group container, or the app's CloudKit container.",
+     "validated": true
+    },
+    {
+     "code": "3B52.1",
+     "meaning_upstream": "Access timestamps/size/metadata of files or directories the user specifically granted access to (e.g. via the document picker).",
+     "validated": true
+    },
+    {
+     "code": "0A2A.1",
+     "meaning_upstream": "Third-party SDK only: wrapper function around file-timestamp APIs, accessed only when the app calls the wrapper.",
+     "validated": true
+    }
+   ],
+   "official_codes_missing_upstream": [],
+   "triggers": [
+    {
+     "kind": "symbol",
+     "value": "creationDate",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "NSFileCreationDate",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "modificationDate",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "NSFileModificationDate",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "fileModificationDate",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "contentModificationDateKey",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "NSURLContentModificationDateKey",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "creationDateKey",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "NSURLCreationDateKey",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "getattrlist",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "getattrlistbulk",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "fgetattrlist",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "getattrlistat",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "stat",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "fstat",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "fstatat",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "lstat",
+     "note": ""
+    },
+    {
+     "kind": "dependency",
+     "value": "path_provider",
+     "note": "Flutter path_provider touches file metadata"
+    }
+   ],
+   "upstream_rule_id": "apple.rr.file_timestamp"
+  },
+  {
+   "category": "NSPrivacyAccessedAPICategorySystemBootTime",
+   "category_validated": true,
+   "codes": [
+    {
+     "code": "35F9.1",
+     "meaning_upstream": "Measure elapsed time between in-app events, or enable timers. Not sent off-device \u2014 except the elapsed time itself, which may be.",
+     "validated": true
+    },
+    {
+     "code": "8FFB.1",
+     "meaning_upstream": "Calculate absolute timestamps for in-app events (e.g. UIKit or AVFAudio events). Absolute timestamps may be sent off-device; boot time itself may NOT.",
+     "validated": true
+    },
+    {
+     "code": "3D61.1",
+     "meaning_upstream": "Include boot time in an optional user-submitted bug report. Must be prominently displayed; off-device only after the user affirmatively submits, and only to investigate that report.",
+     "validated": true
+    }
+   ],
+   "official_codes_missing_upstream": [],
+   "triggers": [
+    {
+     "kind": "symbol",
+     "value": "systemUptime",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "mach_absolute_time",
+     "note": ""
+    }
+   ],
+   "upstream_rule_id": "apple.rr.system_boot_time"
+  },
+  {
+   "category": "NSPrivacyAccessedAPICategoryDiskSpace",
+   "category_validated": true,
+   "codes": [
+    {
+     "code": "85F4.1",
+     "meaning_upstream": "Display disk space to the user. Not off-device \u2014 except to another device owned by the same person over the local network, for display only, with explicit permission, never over the Internet.",
+     "validated": true
+    },
+    {
+     "code": "E174.1",
+     "meaning_upstream": "Check for sufficient space to write files, or delete files when low. The app MUST behave differently in a user-observable way. Exception: may avoid downloading from a server when space is insufficient.",
+     "validated": true
+    },
+    {
+     "code": "7D9E.1",
+     "meaning_upstream": "Include disk space in an optional user-submitted bug report, prominently displayed.",
+     "validated": true
+    },
+    {
+     "code": "B728.1",
+     "meaning_upstream": "Health research apps only. Detect/inform participants of low disk space impacting research data collection. Must comply with Review Guideline 5.1.3 and offer no functionality other than health research.",
+     "validated": true
+    }
+   ],
+   "official_codes_missing_upstream": [],
+   "triggers": [
+    {
+     "kind": "symbol",
+     "value": "volumeAvailableCapacityKey",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "volumeAvailableCapacityForImportantUsageKey",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "volumeAvailableCapacityForOpportunisticUsageKey",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "volumeTotalCapacityKey",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "systemFreeSize",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "NSFileSystemFreeSize",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "systemSize",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "NSFileSystemSize",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "statfs",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "statvfs",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "fstatfs",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "fstatvfs",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "getattrlist",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "fgetattrlist",
+     "note": ""
+    },
+    {
+     "kind": "symbol",
+     "value": "getattrlistat",
+     "note": ""
+    }
+   ],
+   "upstream_rule_id": "apple.rr.disk_space"
+  },
+  {
+   "category": "NSPrivacyAccessedAPICategoryActiveKeyboards",
+   "category_validated": true,
+   "codes": [
+    {
+     "code": "3EC4.1",
+     "meaning_upstream": "Custom keyboard apps only. Providing a systemwide custom keyboard must be the PRIMARY functionality of the app. Not sent off-device.",
+     "validated": true
+    },
+    {
+     "code": "54BD.1",
+     "meaning_upstream": "Present correct customized UI. The app must have text fields and must behave differently in a user-observable way. Not off-device.",
+     "validated": true
+    }
+   ],
+   "official_codes_missing_upstream": [],
+   "triggers": [
+    {
+     "kind": "symbol",
+     "value": "activeInputModes",
+     "note": ""
+    }
+   ],
+   "upstream_rule_id": "apple.rr.active_keyboards"
+  }
+ ]
+}

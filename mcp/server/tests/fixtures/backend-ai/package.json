@@ -1,0 +1,7 @@
+{
+ "name": "study-buddy",
+ "private": true,
+ "workspaces": [
+  "apps/*"
+ ]
+}

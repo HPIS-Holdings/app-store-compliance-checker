@@ -1,0 +1,203 @@
+name: Mobile store compliance check
+description: Scan an app with mcc and fail only for evidence-backed Apple or Google policy problems.
+branding:
+  icon: check-circle
+  color: green
+inputs:
+  path:
+    description: App or repository folder to check.
+    default: "."
+  platform:
+    description: Optional apple or google filter; blank checks both.
+    default: ""
+  report:
+    description: Path to the Markdown findings report.
+    default: mcc-report.md
+outputs:
+  report:
+    description: Path to the Markdown findings report.
+    value: ${{ inputs.report }}
+runs:
+  using: composite
+  steps:
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+    - name: Install the bundled checker
+      shell: bash
+      run: |
+        if ! python -m pip install --quiet "${GITHUB_ACTION_PATH}/mcp/server"; then
+          echo "::warning::Checker installation failed; scan will be reported as incomplete"
+          echo "MCC_INSTALL_FAILED=true" >> "$GITHUB_ENV"
+        fi
+    - name: Run checker; gate only on proven issues
+      shell: bash
+      env:
+        MCC_PATH: ${{ inputs.path }}
+        MCC_PLATFORM: ${{ inputs.platform }}
+        MCC_REPORT: ${{ inputs.report }}
+      run: |
+        args=(check "$MCC_PATH" --format json --greenlight off)
+        raw="$RUNNER_TEMP/mcc-result-$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT.json"
+        checker_status=3
+        if [[ "${MCC_INSTALL_FAILED:-}" == "true" ]]; then
+          : > "$raw"
+        elif [[ -n "$MCC_PLATFORM" && "$MCC_PLATFORM" != "apple" && "$MCC_PLATFORM" != "google" ]]; then
+          echo "::warning::Invalid platform filter; scan not completed"
+          : > "$raw"
+        else
+          if [[ -n "$MCC_PLATFORM" ]]; then args+=(--platform "$MCC_PLATFORM"); fi
+          set +e
+          mcc "${args[@]}" > "$raw"
+          checker_status=$?
+          set -e
+        fi
+        MCC_RAW="$raw" MCC_EXIT="$checker_status" python - <<'PY'
+        import html
+        import json
+        import os
+        import re
+        import sys
+        from pathlib import Path
+        from urllib.parse import urlsplit
+
+        raw = Path(os.environ["MCC_RAW"])
+        report = Path(os.environ.get("MCC_REPORT") or "mcc-report.md")
+        status = int(os.environ["MCC_EXIT"])
+        official_hosts = (
+            "developer.apple.com", "developer.android.com",
+            "support.google.com", "play.google.com",
+        )
+        location_pattern = re.compile(
+            r"(?:[\w./-]+\.(?:json|jsonc|plist|tsx?|jsx?|swift|kt|java|xml|gradle|kts|ipa|aab|apk|pbxproj|xcprivacy)\b|"
+            r"\b(?:app\.config|Podfile|Info\.plist|store\.json|App\sStore\sConnect|store[_ -]data)\b)",
+            re.I,
+        )
+
+        def inline(value):
+            # Evidence is untrusted. Prevent Markdown headings, links, mentions
+            # and formatting from being injected into the job summary.
+            value = html.escape(" ".join(str(value).split()))[:700]
+            return re.sub(r"([\\`*_{}\[\]()#+.!|>])", r"\\\1", value)
+
+        def policy_url(value):
+            if not isinstance(value, str):
+                return None
+            try:
+                parsed = urlsplit(value)
+                if parsed.scheme != "https" or parsed.username or parsed.password:
+                    return None
+                if parsed.hostname not in official_hosts:
+                    return None
+                return value if "\n" not in value and "\r" not in value else None
+            except ValueError:
+                return None
+
+        def evidence_items(items):
+            if not isinstance(items, list) or not items:
+                return []
+            checked = []
+            for item in items:
+                if isinstance(item, dict):
+                    where = str(item.get("where") or "").strip()
+                    detail = str(item.get("detail") or "").strip()
+                    if where and detail and location_pattern.search(where) and where.lower() not in ("app config", "code", "config"):
+                        checked.append((where, detail))
+                elif isinstance(item, str) and location_pattern.search(item):
+                    # Legacy evidence strings must include the observed setting
+                    # or value, not just an unqualified filename.
+                    observed = item.strip()
+                    if (":" in observed or "=" in observed) and len(observed) > 12:
+                        checked.append((observed, observed))
+            return checked
+
+        def as_proven(item, *, verdict=False):
+            if not isinstance(item, dict):
+                return None
+            if item.get("status") in ("NEEDS_REVIEW", "NOT_CHECKED", "NOT_APPLICABLE", "PASS"):
+                return None
+            if item.get("verdict") in ("NEEDS_REVIEW", "NOT_CHECKED", "NOT_APPLICABLE", "PASS"):
+                return None
+            if verdict and item.get("verdict") != "FAIL":
+                return None
+            failed_checks = [c for c in (item.get("checks") or [])
+                             if isinstance(c, dict) and c.get("status") == "FAIL"]
+            if verdict and not failed_checks:
+                return None
+            source = policy_url(item.get("official_url") or item.get("source"))
+            proof = evidence_items(item.get("evidence"))
+            fixes = item.get("fix")
+            fix = fixes[0] if isinstance(fixes, list) and fixes else fixes
+            title = item.get("title") or item.get("issue")
+            if not source or not proof or not isinstance(title, str) or not title.strip() or not isinstance(fix, str) or not fix.strip():
+                return None
+            return {
+                "title": title, "rule": item.get("rule") or item.get("rule_id") or item.get("check") or "Policy",
+                "proof": proof[0], "source": source, "fix": fix,
+            }
+
+        lines = ["# Mobile app store compliance", ""]
+        issues = []
+        incomplete = False
+        if status not in (0, 1):
+            incomplete = True
+            lines += ["The checker could not complete the scan. No compliance conclusion was reached.", ""]
+        else:
+            try:
+                data = json.loads(raw.read_text(encoding="utf-8"))
+                apps = data.get("apps") if isinstance(data, dict) else None
+                if not isinstance(apps, list) or not apps:
+                    incomplete = True
+                else:
+                    for app in apps:
+                        if not isinstance(app, dict) or not (app.get("app_path") or app.get("app_root")):
+                            incomplete = True
+                            continue
+                        if isinstance(app.get("findings"), list):
+                            candidates = (as_proven(f) for f in app["findings"])
+                        elif isinstance(app.get("verdicts"), list):
+                            candidates = (as_proven(v, verdict=True) for v in app["verdicts"])
+                        else:
+                            incomplete = True
+                            continue
+                        issues.extend(x for x in candidates if x)
+            except (OSError, ValueError, TypeError, UnicodeError, RecursionError):
+                incomplete = True
+            if issues:
+                lines += [f"**Proven problems: {len(issues)}**", ""]
+                for issue in issues:
+                    where, detail = issue["proof"]
+                    lines += [
+                        f"### {inline(issue['title'])} — {inline(issue['rule'])}",
+                        f"- Proof: {inline(where)} — {inline(detail)}",
+                        f"- Official policy: {issue['source']}",
+                        f"- Fix: {inline(issue['fix'])}", "",
+                    ]
+            elif not incomplete:
+                lines += ["No proven issues were found in the inputs inspected.", ""]
+            if incomplete:
+                lines += ["Some or all app results could not be validated; coverage is incomplete.", ""]
+            if status == 1 and not issues:
+                lines += ["The checker also returned results that lacked enough proof for this Action to fail the job.", ""]
+        lines += ["This result is not a guarantee of App Store or Google Play approval.", ""]
+        body = "\n".join(lines)
+        try:
+            report.parent.mkdir(parents=True, exist_ok=True)
+            report.write_text(body, encoding="utf-8")
+        except OSError as exc:
+            print(f"::warning::Could not write compliance report: {exc}")
+        summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+        if summary_path:
+            try:
+                with open(summary_path, "a", encoding="utf-8") as summary:
+                    summary.write(body)
+            except OSError as exc:
+                print(f"::warning::Could not write job summary: {exc}")
+        if incomplete:
+            print("::warning::Mobile compliance scan incomplete; not treated as a proven violation")
+        elif status == 1 and not issues:
+            print("::warning::Checker reported issues without evidence sufficient to fail the action")
+        # ONLY validated proof can fail this job. Checker/tool/input errors warn but do not fail.
+        sys.exit(1 if issues and status in (0, 1) else 0)
+        PY

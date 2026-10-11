@@ -1,0 +1,4096 @@
+{
+ "snapshot": "2026-10-10",
+ "fetched_started": "2026-10-10T14:35:46+00:00",
+ "sources": {
+  "AG": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/app-store/review/guidelines/",
+   "final_url": "https://developer.apple.com/app-store/review/guidelines/",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "App Review Guidelines",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T14:35:47+00:00",
+   "page_last_updated": "June 8, 2026",
+   "page_effective_dates": [],
+   "raw_sha256": "31f44243d875f763dcc3820d9bbf4bd3d9aa68cece7cf7ca3dd1eae74fb1c8bd",
+   "text_sha256": "fc2c25ae09c22a8af8d061cdae05d1b2eedb2fbb13ebc3885e71cd09c8213f2a",
+   "text_chars": 91935,
+   "headings": [
+    {
+     "level": 1,
+     "text": "App Review Guidelines",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Introduction",
+     "anchor": "introduction"
+    },
+    {
+     "level": 3,
+     "text": "Before You Submit",
+     "anchor": "before-you-submit"
+    },
+    {
+     "level": 3,
+     "text": "1. Safety",
+     "anchor": "safety"
+    },
+    {
+     "level": 3,
+     "text": "2. Performance",
+     "anchor": "performance"
+    },
+    {
+     "level": 3,
+     "text": "3. Business",
+     "anchor": "business"
+    },
+    {
+     "level": 3,
+     "text": "4. Design",
+     "anchor": "design"
+    },
+    {
+     "level": 3,
+     "text": "5. Legal",
+     "anchor": "legal"
+    },
+    {
+     "level": 3,
+     "text": "After You Submit",
+     "anchor": "after-you-submit"
+    }
+   ]
+  },
+  "AUR": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/news/upcoming-requirements/",
+   "final_url": "https://developer.apple.com/news/upcoming-requirements/",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Upcoming Requirements - Apple Developer",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T14:35:48+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "c6573a3ffd46ec831118af6c2b271fb9a03508d1bf87a70b155ae7e7ae6a9348",
+   "text_sha256": "4a13b877cd1b0547489ca590ba8950022fea7ec87decd87a9b63559329810189",
+   "text_chars": 7090,
+   "headings": [
+    {
+     "level": 2,
+     "text": "iOS and iPadOS minimum system requirements",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "SDK minimum requirements",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Age Rating Updates",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "APNs Certificate Update",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Quarantine attribute in macOS apps uploaded to App Store Connect",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "DSA trader status required for apps in the EU",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "App Store Receipt Signing Intermediate Certificate",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "APNs Certificate Update",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "DSA trader status required for app updates in the EU",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Transition from XML to the App Store Connect API",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Approved reasons for APIs",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Xcode 15",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Apple notary service update",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Game Center entitlement and configuration requirement",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Intermediate certificate update",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "tvOS 16.1 SDK",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "App Store global pricing update in May",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Xcode 14.1",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Transition from subscription reports version 1.2 to 1.3",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Transition from XML to App Store Connect API",
+     "anchor": null
+    }
+   ]
+  },
+  "AACCDEL": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/support/offering-account-deletion-in-your-app/",
+   "final_url": "https://developer.apple.com/help/app-review/guideline-reference/5-1-1-account-deletion",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "5.1.1(v) - Offering account deletion in your app",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T14:35:48+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "d7641951102f5f2b3d246a7f67b415dc17dc2f9dc5cec52620366899836cc542",
+   "text_sha256": "83ffa4c889822908841e38290a15404cf8df6dd3fd446865aab8dc14dc6cf7d6",
+   "text_chars": 6805,
+   "headings": [
+    {
+     "level": 3,
+     "text": "App Review Help",
+     "anchor": null
+    },
+    {
+     "level": 1,
+     "text": "5.1.1(v) - Offering account deletion in your app",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Account deletion guidance",
+     "anchor": "account-deletion-guidance"
+    },
+    {
+     "level": 2,
+     "text": "FAQs",
+     "anchor": "faqs"
+    },
+    {
+     "level": 3,
+     "text": "Can I direct people to a customer service flow to complete account deletion?",
+     "anchor": "can-i-direct-people-to-a-customer-service-flow-to-complete-account-deletion"
+    },
+    {
+     "level": 3,
+     "text": "Can I require reauthentication or add confirmation steps to ensure the account isn't deleted by accident or by someone other than the account holder?",
+     "anchor": "can-i-require-reauthentication-or-add-confirmation-steps-to-ensure-the-account-isn-t-deleted-by-accident-or-by-someone-other-than-the-account-holder"
+    },
+    {
+     "level": 3,
+     "text": "My app uses Sign in with Apple to provide account creation and authentication. What changes are necessary to support people who delete their accounts?",
+     "anchor": "my-app-uses-sign-in-with-apple-to-provide-account-creation-and-authentication-what-changes-are-necessary-to-support-people-who-delete-their-accounts"
+    },
+    {
+     "level": 3,
+     "text": "If my app links out to the default web browser for account creation, does it still need to offer account deletion within the app?",
+     "anchor": "if-my-app-links-out-to-the-default-web-browser-for-account-creation-does-it-still-need-to-offer-account-deletion-within-the-app"
+    },
+    {
+     "level": 3,
+     "text": "My app automatically creates an account for the user. Do I need to include an option to initiate account deletion?",
+     "anchor": "my-app-automatically-creates-an-account-for-the-user-do-i-need-to-include-an-option-to-initiate-account-deletion"
+    },
+    {
+     "level": 3,
+     "text": "I manually delete accounts and this takes time. Does account deletion need to be immediate and automatic?",
+     "anchor": "i-manually-delete-accounts-and-this-takes-time-does-account-deletion-need-to-be-immediate-and-automatic"
+    },
+    {
+     "level": 3,
+     "text": "Does the content provided by a person need to be deleted in apps that display and share user-generated content?",
+     "anchor": "does-the-content-provided-by-a-person-need-to-be-deleted-in-apps-that-display-and-share-user-generated-content"
+    },
+    {
+     "level": 3,
+     "text": "I allow account deletion in compliance with CCPA, GDPR, or other local laws in some of the locations where my app is available. Is this sufficient?",
+     "anchor": "i-allow-account-deletion-in-compliance-with-ccpa-gdpr-or-other-local-laws-in-some-of-the-locations-where-my-app-is-available-is-this-sufficient"
+    },
+    {
+     "level": 3,
+     "text": "How do I handle people with auto-renewable subscriptions? I don't want to accidentally charge someone after they've deleted their account.",
+     "anchor": "how-do-i-handle-people-with-auto-renewable-subscriptions-i-don-t-want-to-accidentally-charge-someone-after-they-ve-deleted-their-account"
+    }
+   ]
+  },
+  "APMF": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/documentation/bundleresources/privacy-manifest-files",
+   "final_url": "https://developer.apple.com/documentation/bundleresources/privacy-manifest-files/",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Privacy manifest files",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T14:35:49+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "ac4729cabb8088dae110896ee0be586fbf8dc9c42bf21408a908bb26e8823444",
+   "text_sha256": "7bacc858aaf2c3b6bf22419161c07f532665564bb7062fa2da18e08574aca456",
+   "text_chars": 4115,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Overview",
+     "anchor": "overview"
+    },
+    {
+     "level": 3,
+     "text": "Create a privacy manifest",
+     "anchor": "Create-a-privacy-manifest"
+    }
+   ]
+  },
+  "ARRA": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/documentation/bundleresources/describing-use-of-required-reason-api",
+   "final_url": "https://developer.apple.com/documentation/bundleresources/describing-use-of-required-reason-api/",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Describing use of required reason API",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T14:35:50+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "d49be095f6898f0b441e395c2b4ff9f8b4227afdfbe77046208868ae7108a1cd",
+   "text_sha256": "e678258789d9d28ea7c3fcc3c0959964a953bc578f37ab97883edce62ae6f5a0",
+   "text_chars": 3520,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Overview",
+     "anchor": "overview"
+    }
+   ]
+  },
+  "ASDK": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/support/third-party-SDK-requirements/",
+   "final_url": "https://developer.apple.com/support/third-party-SDK-requirements/",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Third-party SDK requirements",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T14:35:51+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "353ad77348e7947c5e1dba3e026143f8d06a851b5ed35a26da0bd3cac057ed23",
+   "text_sha256": "67a7fb9da286b5c657deda1424ac851a2b3a3aabd0def14ce47108dc4fdf3be6",
+   "text_chars": 3323,
+   "headings": [
+    {
+     "level": 1,
+     "text": "Third-party SDK requirements",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Privacy Manifests",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Signatures for SDKs",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "SDKs that require a privacy manifest and signature",
+     "anchor": null
+    }
+   ]
+  },
+  "ADSA": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/help/app-store-connect/manage-compliance-information/manage-european-union-digital-services-act-trader-requirements/",
+   "final_url": "https://developer.apple.com/help/app-store-connect/manage-compliance-information/manage-european-union-digital-services-act-trader-requirements/",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Manage European Union Digital Services Act trader requirements",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T14:35:52+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "0efef2adb1756af8c25885793c1623915c56b6917499650114665c6770793511",
+   "text_sha256": "86e130dabf49f1494937462f8d5160b118323dd58245071b442f73e1710e4fdd",
+   "text_chars": 7833,
+   "headings": [
+    {
+     "level": 3,
+     "text": "App Store Connect Help",
+     "anchor": null
+    },
+    {
+     "level": 1,
+     "text": "Manage European Union Digital Services Act trader requirements",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Trader self-assessment",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "How to know if you’re a trader",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Information you need to provide if you're a trader",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Enter EU Digital Services Act compliance information",
+     "anchor": "enter-eu-digital-services-act-compliance-information"
+    },
+    {
+     "level": 3,
+     "text": "Enter app-specific EU Digital Services Act compliance information",
+     "anchor": "enter-app-specific-eu-digital-services-act compliance information"
+    },
+    {
+     "level": 3,
+     "text": "Enter labels and markings URLs",
+     "anchor": "enter-labels-and-markings-urls"
+    }
+   ]
+  },
+  "AAGE": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/set-an-app-age-rating/",
+   "final_url": "https://developer.apple.com/help/app-store-connect/manage-app-information/set-an-app-age-rating/",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Set an app age rating",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T14:35:52+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "3d1fbe74b46ea5f818b9688771f4e2e661b1af9cef10c869ac58ac871772c037",
+   "text_sha256": "a07a53a25a9b82e8dc1ba4850e5e056263ccfda41b9cc9c61d732c63962fba48",
+   "text_chars": 6939,
+   "headings": [
+    {
+     "level": 3,
+     "text": "App Store Connect Help",
+     "anchor": null
+    },
+    {
+     "level": 1,
+     "text": "Set an app age rating",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Set an app age rating",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Age categories and override",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Made for Kids category on the App Store",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Override to higher age rating",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Override region-specific ratings",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Override age rating for the Republic of Korea",
+     "anchor": null
+    }
+   ]
+  },
+  "AEXTUS": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/support/storekit-external-entitlement-us/",
+   "final_url": "https://developer.apple.com/support/",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Get help with tools and technologies, connect with Apple experts, and more.",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T14:35:53+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "74d82007158ce7f7855549f86cd6aa0ffa2feb2dcbf3bf9d22e5580a925d9bb4",
+   "text_sha256": "053e095e4e5737cb2061e1ee122582c354419f6e844090e4605fdda6707043af",
+   "text_chars": 1141,
+   "headings": [
+    {
+     "level": 1,
+     "text": "Get help with tools and technologies, connect with Apple experts, and more.",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Find guides & documentation",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Xcode",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "App Store Connect",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Developer Account",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Apple Developer Documentation",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Tell us how we can help",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Contact us by phone or email",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Developer forums",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Code-level support",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Feedback Assistant",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "System status",
+     "anchor": null
+    }
+   ]
+  },
+  "APRIVDATA": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/app-store/user-privacy-and-data-use/",
+   "final_url": "https://developer.apple.com/app-store/user-privacy-and-data-use/",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "User privacy and data use",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T14:35:54+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "40a215533d727c44b1c65805a60f555cd2f0b471c735415d0c233dd2fbdedc42",
+   "text_sha256": "85061de738a0aa06f896ad029076368553cf00f4e7a568e35b7d4cd12fe4f1f1",
+   "text_chars": 19308,
+   "headings": [
+    {
+     "level": 1,
+     "text": "User privacy and data use",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Describe how your app uses data",
+     "anchor": "describing-how-your-app-uses-data"
+    },
+    {
+     "level": 5,
+     "text": "Privacy Nutrition Labels",
+     "anchor": null
+    },
+    {
+     "level": 5,
+     "text": "Privacy manifests",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Ask permission to track",
+     "anchor": "asking-permission-to-track"
+    },
+    {
+     "level": 3,
+     "text": "Using the App Tracking Transparency framework",
+     "anchor": "using-att-framework"
+    },
+    {
+     "level": 2,
+     "text": "ATT in the European Union",
+     "anchor": "app-tracking-transparency-in-the-european-union"
+    },
+    {
+     "level": 2,
+     "text": "Frequently asked questions",
+     "anchor": "faq"
+    },
+    {
+     "level": 3,
+     "text": "Can I gate functionality on agreeing to allow tracking, or incentivize users to agree to allow tracking in the App Tracking Transparency prompt?",
+     "anchor": "gate-functionality"
+    },
+    {
+     "level": 3,
+     "text": "Can I explain to users why I would like permission to track them before I show the tracking permission prompt?",
+     "anchor": "explain-tracking"
+    },
+    {
+     "level": 3,
+     "text": "If I have not received permission from a user via the tracking permission prompt, can I use an identifier other than the IDFA (for example, a hashed email address or hashed phone number) to track that user?",
+     "anchor": "other-identifiers"
+    },
+    {
+     "level": 3,
+     "text": "If a user provides permission for tracking via a separate process on our website, but declines permission in the App Tracking Transparency prompt, can I track that user across apps and websites owned by other companies?",
+     "anchor": "website-vs-app-permission"
+    },
+    {
+     "level": 3,
+     "text": "Can I fingerprint or use signals from the device to try to identify the device or a user?",
+     "anchor": "fingerprinting"
+    },
+    {
+     "level": 3,
+     "text": "If I share data with a consumer reporting agency to conduct fraud checks, and separately share data with them as part of a credit check or for credit reporting purposes, do I need permission to track?",
+     "anchor": "consumer-reporting-agency"
+    },
+    {
+     "level": 3,
+     "text": "Do I need to use the App Tracking Transparency framework to get user permission to use third-party deep-linking or deferred deep-linking tools?",
+     "anchor": "deep-linking"
+    },
+    {
+     "level": 3,
+     "text": "I have integrated an SDK from another company. Am I responsible for the data collection and tracking of users of my app by that company?",
+     "anchor": "sdk-responsibility"
+    },
+    {
+     "level": 3,
+     "text": "I have integrated single sign-on functionality provided by another company. Am I responsible for the data collection and tracking practices of that company?",
+     "anchor": "single-sign-on"
+    },
+    {
+     "level": 3,
+     "text": "What kind of company constitutes a data broker?",
+     "anchor": "data-broker"
+    },
+    {
+     "level": 3,
+     "text": "What identifiers or data are governed by the \"tracking\" policy?",
+     "anchor": "tracking-identifiers"
+    },
+    {
+     "level": 3,
+     "text": "If tracking occurs within a webview inside an app, do I need to use the App Tracking Transparency prompt?",
+     "anchor": "webview-tracking"
+    },
+    {
+     "level": 3,
+     "text": "What OS versions require App Tracking Transparency permission to access the value of the IDFA?",
+     "anchor": "os-versions"
+    },
+    {
+     "level": 3,
+     "text": "Can I offer a control in my app, separate from ATT, to comply with local privacy laws?",
+     "anchor": "separate-control"
+    },
+    {
+     "level": 3,
+     "text": "Can I add other permission requests in order to comply with legal obligations or regulations?",
+     "anchor": "other-regulations"
+    },
+    {
+     "level": 3,
+     "text": "Can I reference consent requests to comply with local privacy laws in my app’s App Tracking Transparency system prompt?",
+     "anchor": "referencing-consent-requests"
+    },
+    {
+     "level": 3,
+     "text": "Can I provide additional information and consent controls with my app’s ATT prompt implementation, to comply with local privacy laws in the European Union, such as ePrivacy or GDPR?",
+     "anchor": "providing-additional-information-consent-controls"
+    },
+    {
+     "level": 2,
+     "text": "App Privacy Report",
+     "anchor": "app-privacy-report"
+    },
+    {
+     "level": 2,
+     "text": "Attributing app installations",
+     "anchor": "attributing-app-installations"
+    }
+   ]
+  },
+  "APRIVDETAILS": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/app-store/app-privacy-details/",
+   "final_url": "https://developer.apple.com/app-store/app-privacy-details/",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "App privacy details on the App Store",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T14:35:55+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "6ac192663d0a9b582c660cbda2ad7dd751996a948d6868e76a293f15cee923cb",
+   "text_sha256": "0657a42cdd8e77051c844cb04f77f4a6953ebe7cbd7e57dd3979f3c6c4e75f13",
+   "text_chars": 20000,
+   "headings": [
+    {
+     "level": 1,
+     "text": "App privacy details on the App Store",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "What’s new",
+     "anchor": "whats-new"
+    },
+    {
+     "level": 2,
+     "text": "Answering app privacy questions",
+     "anchor": "answering-questions"
+    },
+    {
+     "level": 2,
+     "text": "Data collection",
+     "anchor": "data-collection"
+    },
+    {
+     "level": 2,
+     "text": "Optional disclosure",
+     "anchor": "optional-disclosure"
+    },
+    {
+     "level": 4,
+     "text": "Product Improvement Programs",
+     "anchor": "product-improvement"
+    },
+    {
+     "level": 4,
+     "text": "Regulated Financial Services Disclosure",
+     "anchor": "regulated-disclosure"
+    },
+    {
+     "level": 4,
+     "text": "Health Research Disclosure",
+     "anchor": "health-research-disclosure"
+    },
+    {
+     "level": 2,
+     "text": "Types of data",
+     "anchor": "data-type"
+    },
+    {
+     "level": 2,
+     "text": "Data use",
+     "anchor": "data-type-usage"
+    },
+    {
+     "level": 2,
+     "text": "Data linked to the user",
+     "anchor": "linked-data"
+    },
+    {
+     "level": 2,
+     "text": "Tracking",
+     "anchor": "user-tracking"
+    },
+    {
+     "level": 2,
+     "text": "Privacy links",
+     "anchor": "privacy-links"
+    },
+    {
+     "level": 2,
+     "text": "Additional guidance",
+     "anchor": "additional-guidance"
+    },
+    {
+     "level": 4,
+     "text": "Your app has web views.",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "You collect and store IP address from your users.",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "You offer in-app private messaging between users that are not SMS text messages.",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Your app includes game saves, multiplayer matching, or gameplay logic.",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "You collect different types of data from users depending on whether the user is a child, whether they are a free or paid user, whether they opt in, where they live, or for some other reason.",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "You use Apple frameworks or services, such as MapKit, CloudKit, or App Analytics.",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "You use location, device identifiers, and other sensitive data, but only on device, and the data is never sent to a server.",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "You collect precise location, but immediately de-identify and coarsen it before storing.",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Your app includes free-form text fields or voice recordings, and users can save any type of information they want through those mediums, including names and health data.",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "You collect data to service a request but do not retain it after servicing the request.",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "You’d like your app to reference consent requests so you can comply with local privacy laws in its App Tracking Transparency prompt.",
+     "anchor": null
+    }
+   ]
+  },
+  "AHKPRIV": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/documentation/healthkit/protecting-user-privacy",
+   "final_url": "https://developer.apple.com/documentation/healthkit/protecting-user-privacy/",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Protecting user privacy",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T14:35:55+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "624eccf3e2f239118ce4ab2ffce6f7fb835d2ed56f437d1361a28dfc62370b52",
+   "text_sha256": "107dcc1e47065c98681008a30a1d0b09ff0fe3ebb4d669fcd2df970c5ed9f5d0",
+   "text_chars": 4294,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Overview",
+     "anchor": "overview"
+    },
+    {
+     "level": 3,
+     "text": "Access encrypted data",
+     "anchor": "Access-encrypted-data"
+    },
+    {
+     "level": 3,
+     "text": "Specify how your app uses the health data",
+     "anchor": "Specify-how-your-app-uses-the-health-data"
+    },
+    {
+     "level": 3,
+     "text": "Provide a privacy policy",
+     "anchor": "Provide-a-privacy-policy"
+    }
+   ]
+  },
+  "AMIC": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription",
+   "final_url": "https://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription/",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "NSMicrophoneUsageDescription",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T14:35:56+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "05e437a43a45ac152813e57edd6046f22591714bf44a310af8981e6906f75338",
+   "text_sha256": "5c994d22106eb1785dd76db30f950c12e7095f3d8a966fd91efe3d6f10381bea",
+   "text_chars": 226,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Discussion",
+     "anchor": "Discussion"
+    }
+   ]
+  },
+  "ASPEECH": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/documentation/bundleresources/information-property-list/nsspeechrecognitionusagedescription",
+   "final_url": "https://developer.apple.com/documentation/bundleresources/information-property-list/nsspeechrecognitionusagedescription/",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "NSSpeechRecognitionUsageDescription",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T14:35:57+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "816ffcbaa1fe060c36c9fa54271b45d8d1d9a325c960ff9af87aa91dffe49c48",
+   "text_sha256": "133f7297a3bbcccceda35bd1023f0ae96e3f92dbd1cd3d2853659163f0a1e8f4",
+   "text_chars": 277,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Discussion",
+     "anchor": "Discussion"
+    }
+   ]
+  },
+  "ADMA": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/support/dma-and-apps-in-the-eu/",
+   "final_url": "https://developer.apple.com/support/apps-in-the-eu",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Changes for apps in the European Union",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T14:35:58+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "October 1, 2026"
+   ],
+   "raw_sha256": "db3e9a8de9df179df1d628261b63998229e88fdef6f099621d12ea829f3824df",
+   "text_sha256": "55af8c3de144177ad9e7639c8eda3d81c3440352ce3ac6a758ca3a57d20823ae",
+   "text_chars": 25984,
+   "headings": [
+    {
+     "level": 1,
+     "text": "Changes for apps in the European Union",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "What’s new",
+     "anchor": "whats-new"
+    },
+    {
+     "level": 2,
+     "text": "Payment options on the App Store",
+     "anchor": "payment-options"
+    },
+    {
+     "level": 2,
+     "text": "Child safety protections for alternative payments on the App Store",
+     "anchor": "child-safety"
+    },
+    {
+     "level": 2,
+     "text": "Alternative distribution on iOS and iPadOS",
+     "anchor": "ios-app-eu"
+    },
+    {
+     "level": 3,
+     "text": "Notarizing apps",
+     "anchor": "notarization"
+    },
+    {
+     "level": 3,
+     "text": "Distributing on an alternative app marketplace",
+     "anchor": "distribute-alt"
+    },
+    {
+     "level": 3,
+     "text": "Operating an alternative app marketplace",
+     "anchor": "operating-alt-marketplace"
+    },
+    {
+     "level": 3,
+     "text": "Distributing directly from your website",
+     "anchor": "distribute-web"
+    },
+    {
+     "level": 3,
+     "text": "App installation experience updates",
+     "anchor": "alt-distribution-ux"
+    },
+    {
+     "level": 2,
+     "text": "Business terms for apps in the EU",
+     "anchor": "business-terms"
+    },
+    {
+     "level": 3,
+     "text": "Business terms for the App Store in the EU",
+     "anchor": "business-terms-appstore"
+    },
+    {
+     "level": 4,
+     "text": "App Store commission",
+     "anchor": null
+    },
+    {
+     "level": 5,
+     "text": "(Apple In-App Purchase)",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "App Store commission",
+     "anchor": null
+    },
+    {
+     "level": 5,
+     "text": "(alternative payment processing within the app)",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Store services commission",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Core Technology Commission for iOS and iPadOS apps distributed outside of the App Store",
+     "anchor": "ctc"
+    },
+    {
+     "level": 2,
+     "text": "Get started with the Apple Developer Program License Agreement",
+     "anchor": "get-started"
+    },
+    {
+     "level": 3,
+     "text": "Transition to the unified EU terms",
+     "anchor": "transition-terms"
+    },
+    {
+     "level": 2,
+     "text": "iOS and iPadOS capabilities",
+     "anchor": "ios-capabilities"
+    },
+    {
+     "level": 3,
+     "text": "Developer app analytics and user data portability",
+     "anchor": "app-analytics"
+    },
+    {
+     "level": 4,
+     "text": "App analytics reports for the App Store, iOS, and iPadOS",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "User and app data portability tools for App Store account data",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Default app controls and app deletion for users in the EU",
+     "anchor": "app-controls"
+    },
+    {
+     "level": 3,
+     "text": "Browser apps and alternative web browser engines in the EU",
+     "anchor": "browser-alt-eu"
+    },
+    {
+     "level": 4,
+     "text": "Default web browser choice",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Use of alternative browser engines",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Contactless transactions for iOS apps in the EEA",
+     "anchor": "contactless"
+    },
+    {
+     "level": 3,
+     "text": "Interoperability requests in the EU",
+     "anchor": "interoperability"
+    },
+    {
+     "level": 2,
+     "text": "Contact us",
+     "anchor": "contact-us"
+    }
+   ]
+  },
+  "ASUBS": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/app-store/subscriptions/",
+   "final_url": "https://developer.apple.com/app-store/subscriptions/",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Auto-renewable subscriptions",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T14:35:59+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "25e4cb8fc8ad73da234635849795c66ad0bb35ffe582b57fc343864853cee8b9",
+   "text_sha256": "9aa55a5f53a85943bee101000f2d4db9d7e5e816c7446df0bff5dfbfbabbe9e1",
+   "text_chars": 40299,
+   "headings": [
+    {
+     "level": 1,
+     "text": "Auto-renewable subscriptions",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "What’s New",
+     "anchor": "whats-new"
+    },
+    {
+     "level": 2,
+     "text": "Overview",
+     "anchor": "offering-subscriptions"
+    },
+    {
+     "level": 3,
+     "text": "Getting ready",
+     "anchor": "get-ready"
+    },
+    {
+     "level": 3,
+     "text": "Understanding subscription guidelines",
+     "anchor": "understanding-guidelines"
+    },
+    {
+     "level": 3,
+     "text": "85% net revenue after one year",
+     "anchor": "revenue-after-one-year"
+    },
+    {
+     "level": 2,
+     "text": "Creating subscriptions",
+     "anchor": "creating-subscriptions"
+    },
+    {
+     "level": 3,
+     "text": "Creating a subscription group",
+     "anchor": "groups"
+    },
+    {
+     "level": 3,
+     "text": "Ranking subscriptions within the group",
+     "anchor": "ranking"
+    },
+    {
+     "level": 3,
+     "text": "Pricing subscriptions for each territory",
+     "anchor": "territory"
+    },
+    {
+     "level": 3,
+     "text": "Family Sharing",
+     "anchor": "family-sharing"
+    },
+    {
+     "level": 3,
+     "text": "Offering subscriptions to multiple apps",
+     "anchor": "offering-subscriptions-to-multiple-apps"
+    },
+    {
+     "level": 2,
+     "text": "Attracting subscribers",
+     "anchor": "attracting-subscribers"
+    },
+    {
+     "level": 3,
+     "text": "Clearly describing subscriptions",
+     "anchor": "clear-description"
+    },
+    {
+     "level": 3,
+     "text": "Promoting subscriptions on the App Store",
+     "anchor": "promoting-in-app-purchases-on-the-app-store"
+    },
+    {
+     "level": 2,
+     "text": "Providing subscription offers",
+     "anchor": "providing-subscription-offers"
+    },
+    {
+     "level": 4,
+     "text": "Optimize subscriptions for success: acquisition",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Improve your subscriber retention with App Store features",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Configuring subscription offers",
+     "anchor": "configuring-offers"
+    },
+    {
+     "level": 3,
+     "text": "Introductory offers",
+     "anchor": "offering-introductory-prices"
+    },
+    {
+     "level": 3,
+     "text": "Offer codes Now available on macOS",
+     "anchor": "offer-codes"
+    },
+    {
+     "level": 4,
+     "text": "Distribution",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Redemption",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Subscription offer codes essentials",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Get started with custom offer codes",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Promotional offers",
+     "anchor": "promotional-offers"
+    },
+    {
+     "level": 3,
+     "text": "Win-back offers",
+     "anchor": "win-back-offers"
+    },
+    {
+     "level": 4,
+     "text": "Discovery and redemption",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Configuration and merchandising",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Implement App Store Offers",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Keeping subscribers",
+     "anchor": "keeping-subscribers"
+    },
+    {
+     "level": 3,
+     "text": "Sending notifications",
+     "anchor": "sending-notifications-to-aid-retention"
+    },
+    {
+     "level": 3,
+     "text": "Providing support",
+     "anchor": "subscription-support"
+    },
+    {
+     "level": 4,
+     "text": "Letting people manage their subscriptions",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Extending a subscription’s renewal date",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Determining subscriber status",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Retaining subscribers",
+     "anchor": "retaining-subscribers"
+    },
+    {
+     "level": 3,
+     "text": "Managing prices",
+     "anchor": "managing-prices-for-existing-subscribers"
+    },
+    {
+     "level": 3,
+     "text": "Measuring performance",
+     "anchor": "measuring-performance"
+    }
+   ]
+  },
+  "AMEDDEV": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/help/app-store-connect/manage-compliance-information/declare-regulated-medical-device-status/",
+   "final_url": "https://developer.apple.com/help/app-store-connect/manage-compliance-information/declare-regulated-medical-device-status/",
+   "http_status": 200,
+   "error": null,
+   "warning": "very little text extracted (possible JS-rendered or login page)",
+   "title": "The page you’re looking for can’t be found.",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T14:35:59+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "5ca481274cf7def702d2804caecd73c641697a6f50ad9eb273ecba211d460865",
+   "text_sha256": "1194c4205d4a79740870a9212ed3ac27a7e4010ae7c3f247a80a57ec39b4ac41",
+   "text_chars": 61,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Explore Get Started",
+     "anchor": "apple-getting-started-heading"
+    },
+    {
+     "level": 2,
+     "text": "Stay Updated",
+     "anchor": "apple-learn-heading"
+    },
+    {
+     "level": 2,
+     "text": "Explore Platforms",
+     "anchor": "platforms-apple-heading"
+    },
+    {
+     "level": 2,
+     "text": "Featured",
+     "anchor": "platforms-learn-heading"
+    },
+    {
+     "level": 2,
+     "text": "Explore Technologies",
+     "anchor": "technologies-learn-heading"
+    },
+    {
+     "level": 2,
+     "text": "Featured",
+     "anchor": "technologies-featured-heading"
+    },
+    {
+     "level": 2,
+     "text": "Explore Community",
+     "anchor": "community-engage-heading"
+    },
+    {
+     "level": 2,
+     "text": "Featured",
+     "anchor": "community-contribute-heading"
+    },
+    {
+     "level": 2,
+     "text": "Explore Documentation",
+     "anchor": "docs-explore"
+    },
+    {
+     "level": 2,
+     "text": "Release Notes",
+     "anchor": "docs-release-notes"
+    },
+    {
+     "level": 2,
+     "text": "Explore Downloads",
+     "anchor": "downloads-explore-heading"
+    },
+    {
+     "level": 2,
+     "text": "Featured",
+     "anchor": "downloads-featured-heading"
+    },
+    {
+     "level": 2,
+     "text": "Explore Support",
+     "anchor": "explore-support"
+    },
+    {
+     "level": 2,
+     "text": "Featured",
+     "anchor": "support-help"
+    },
+    {
+     "level": 2,
+     "text": "Quick Links",
+     "anchor": null
+    },
+    {
+     "level": 1,
+     "text": "The page you’re looking for can’t be found.",
+     "anchor": "main"
+    },
+    {
+     "level": 2,
+     "text": "Developer Footer",
+     "anchor": "footer-label"
+    },
+    {
+     "level": 3,
+     "text": "Platforms",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Tools",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Technologies",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Resources",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Support",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Account",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Programs",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Events",
+     "anchor": null
+    }
+   ]
+  },
+  "GP": {
+   "platform": "google",
+   "url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "final_url": "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Developer Program Policy",
+   "publisher": "Google LLC (Play Console Help / Policy Center)",
+   "last_confirmed_current": "2026-10-10T14:36:00+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [
+    "July 12, 2023"
+   ],
+   "raw_sha256": "2aac755c6f7eeab0c49cc54e5fcb4fe8113f26f1f7049f355b258439fc1308af",
+   "text_sha256": "8cdc7a108d3d34982fd2badfd3054f13e0d013a3b0eac040c0c199bf7b814acc",
+   "text_chars": 225548,
+   "headings": [
+    {
+     "level": 3,
+     "text": "Let's build the world's most trusted source for apps and games",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Restricted Content",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Child Endangerment",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Child Safety Standards Policy",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Inappropriate Content",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Sexual Content and Profanity",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Hate Speech",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Violence",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Violent Extremism",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Sensitive Events",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Bullying and Harassment",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Dangerous Products",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Marijuana",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Tobacco and Alcohol",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Age-Restricted Content and Functionality",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Financial Services",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Binary Options",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Loans",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Earned Wage Access",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "General Requirements",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Country specific requirements",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Real-Money Gambling, Games, and Contests",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Gambling Apps",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Other Real-Money Games, Contests, and Tournament Apps",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Examples of violations",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Other Real-Money Game Pilots",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Gamified Loyalty Programs",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "For all apps ( games and non-games):",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "For Game apps:",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "For non-Game apps:",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Ads for Gambling or Real-Money Games, Contests, and Tournaments within Play-distributed Apps",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Examples of violations",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Daily Fantasy Sports (DFS) Apps",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Illegal Activities",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "User Generated Content",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Incidental Sexual Content",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Health Content and Services",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Health and Medical Apps",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Health Connect Data",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Prescription Drugs",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Unapproved Substances",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Health Misinformation",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Payments - Clinical Services",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Blockchain-based Content",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Cryptocurrency Exchanges and Software Wallets",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Cryptomining",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Transparency Requirements for Distributing Tokenized Digital Assets",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Additional Requirements for NFT Gamification",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "AI-Generated Content",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "AI-Generated Content",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Intellectual Property",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Unauthorized Use of Copyrighted Content",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Encouraging Infringement of Copyright",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Trademark Infringement",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Counterfeit",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Privacy, Deception and Device Abuse",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "User Data",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Personal and Sensitive User Data",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Prominent Disclosure & Consent Requirement",
+     "anchor": "prominent-disclosure"
+    },
+    {
+     "level": 2,
+     "text": "Restrictions for Personal and Sensitive Data Access",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Data safety section",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Privacy Policy",
+     "anchor": "privacypolicy"
+    },
+    {
+     "level": 2,
+     "text": "Account Deletion Requirement",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Usage of App Set ID",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "EU-U.S., UK, and Swiss Data Privacy Frameworks",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Permissions and APIs that Access Sensitive Information",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Restricted Permissions",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Restricted Permissions with minimum scope alternatives",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Photo and Video Permissions",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "SMS and Call Log Permissions",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Location Permissions",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "All Files Access Permission",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Package (App) Visibility Permission",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Accessibility API",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Guidelines for IsAccessibilityTool",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Request Install Packages Permission",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Body Sensor Permissions",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Health Connect by Android Permissions",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Appropriate Access to and Use of Health Connect",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Limited Use",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Minimum Scope",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Transparent and Accurate Notice and Control",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "VPN Service",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Exact Alarm Permission",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Full-Screen Intent Permission",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Age Signals API and User Data",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Device and Network Abuse",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Examples of common Device and Network Abuse violations:",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Permissions for Foreground Services (FGS)",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "User-Initiated Data Transfer Jobs",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Flag Secure Requirements",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Apps that Run On-device Android Containers",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Deceptive Behavior",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "1. Misleading Claims",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "2. Deceptive Device Settings Changes",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "3. Enabling Dishonest Behavior",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "4. Manipulated Media",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "5. Behavior Transparency",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Misrepresentation",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Google Play's Target API Level Policy",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Use of SDKs In Apps",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "SDK Requirements",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "User Data Policy",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Personal and Sensitive User Data",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Sale of Personal and Sensitive User Data",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Prominent Disclosure & Consent Requirements",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Examples of SDK-caused violations",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Additional Requirements for Personal and Sensitive Data Access",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Examples of SDK-caused violations",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Data safety section",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Permissions and APIs that Access Sensitive Information Policy",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Examples of SDK-caused violations",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Malware Policy",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Examples of SDK-caused violations",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Spyware",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Mobile Unwanted Software Policy",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Transparent behavior and clear disclosures",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Example violations:",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Protect user data",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Example violations:",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Device and Network Abuse Policy",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Examples of SDK-caused violations",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Deceptive Behavior Policy",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Behavior Transparency",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Example of an SDK-caused violation",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "What Google Play Developer Policies are commonly associated with SDK-caused violations?",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Malware",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Backdoors",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Billing Fraud",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Stalkerware",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Denial of Service (DoS)",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Hostile Downloaders",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Non-Android Threat",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Phishing",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Elevated Privilege Abuse",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Ransomware",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Rooting",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Spam",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Spyware",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Trojan",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "A Note on Uncommon Apps",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "A Note on the Backdoor Category",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Riskware",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Impersonation",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Mobile Unwanted Software",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Hostile Downloaders",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Ad Fraud",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Unauthorized Use or Imitation of System Functionality",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Social Engineering",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Monetization and Ads",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Payments",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Ads",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Ad Content",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Inappropriate Ads",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Families Ads Requirements",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Deceptive Ads",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Disruptive Ads",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Better Ads Experiences",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Made for Ads",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Lockscreen Monetization",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Ad Fraud",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Use of Location Data for Ads",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Usage of Android Advertising ID",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Subscriptions",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Free Trials & Introductory Offers",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Subscription Management, Cancellation & Refunds",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Families Self-Certified Ads SDK Program",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Store Listing and Promotion",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "App Promotion",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Metadata",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Here are some examples of inappropriate text, images, or videos within your listing:",
+     "anchor": "listingmaturity"
+    },
+    {
+     "level": 4,
+     "text": "Here are a few best practices:",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "User Ratings, Reviews, and Installs",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Content Ratings",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "How content ratings are used",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "How content ratings are assigned",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Rating appeals",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "News & Magazines",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Spam, Functionality, and User Experience",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Spam",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Message Spam",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Webviews and Affiliate Spam",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Repetitive Content",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Functionality, Content, and User Experience",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "1. Limited Functionality and Content",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "2. Broken Functionality",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Other Programs",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Android Instant Apps",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Identity",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Link Support",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Technical Specifications",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Offering App Installation",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Changing Device State",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "App Visibility",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Device Identifiers",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Network traffic",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Android Emoji Policy",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Families",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Google Play Families Policies",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Play Console Requirements",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Families Policy Requirements",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Ads and Monetization",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Families Self-Certified Ads SDK Policy",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Policy requirements",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Enforcement",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Policy Coverage",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "How Google Play Protect works",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "How malware protection works",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "How Privacy alerts work",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Enforcement Process",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Enforcement Actions",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Rejection",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Removal",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Suspension",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Limited Visibility",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Limited Regions",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Restricted Developer Account",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Account Termination",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Dormant Accounts",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Managing and Reporting Policy Violations",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Appealing an Enforcement Action",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Additional Resources",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Play Console Requirements",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Account Transfers",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Account Ownership Transfer Requirements",
+     "anchor": null
+    }
+   ]
+  },
+  "GACCDEL": {
+   "platform": "google",
+   "url": "https://support.google.com/googleplay/android-developer/answer/13327111?hl=en",
+   "final_url": "https://support.google.com/googleplay/android-developer/answer/13327111?hl=en",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Understanding Google Play’s app account deletion requirements",
+   "publisher": "Google LLC (Play Console Help / Policy Center)",
+   "last_confirmed_current": "2026-10-10T14:36:02+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "f36ad1c8b991264b639185c7106faf26c26f32ff43d13d98c293d18266dd9867",
+   "text_sha256": "9296c0cfb1f4a09118e90f2fcf1c3acdc41d8dda74be730e594e82019ccc6c59",
+   "text_chars": 9779,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Overview",
+     "anchor": "overview"
+    },
+    {
+     "level": 2,
+     "text": "Timeline information",
+     "anchor": "timeline"
+    },
+    {
+     "level": 2,
+     "text": "Frequently asked questions",
+     "anchor": "faq"
+    }
+   ]
+  },
+  "GDS": {
+   "platform": "google",
+   "url": "https://support.google.com/googleplay/android-developer/answer/10787469?hl=en",
+   "final_url": "https://support.google.com/googleplay/android-developer/answer/10787469?hl=en",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Provide information for Google Play's Data safety section",
+   "publisher": "Google LLC (Play Console Help / Policy Center)",
+   "last_confirmed_current": "2026-10-10T14:36:04+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "ff5ef7885d71ead1cb7110439d1a89e33cd8f021abbbfa448c2d35747be05731",
+   "text_sha256": "f58c66f94b1e76d26a35e76c37af9e0889d734f3afdb459e97cedaa89953b1cb",
+   "text_chars": 58353,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Overview",
+     "anchor": "overview"
+    },
+    {
+     "level": 3,
+     "text": "Which developers need to complete the Data safety form in Play Console?",
+     "anchor": "what_devs_need_to_do"
+    },
+    {
+     "level": 2,
+     "text": "Getting your information ready",
+     "anchor": "getting_ready"
+    },
+    {
+     "level": 2,
+     "text": "What developers need to disclose in the Data safety form",
+     "anchor": "in_play_console"
+    },
+    {
+     "level": 3,
+     "text": "What developers need to declare across data types",
+     "anchor": "need_to_declare_data_types"
+    },
+    {
+     "level": 4,
+     "text": "Not in scope for data collection",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Data types and purposes",
+     "anchor": "data_types"
+    },
+    {
+     "level": 2,
+     "text": "Completing the Data safety form in Play Console",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Overview",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Complete and submit your form",
+     "anchor": "complete_form_steps"
+    },
+    {
+     "level": 3,
+     "text": "Import or export your form responses",
+     "anchor": "import_export_form"
+    },
+    {
+     "level": 3,
+     "text": "After you submit your Data safety form",
+     "anchor": "after_submission"
+    },
+    {
+     "level": 3,
+     "text": "Optional format for SDKs",
+     "anchor": "optional_format_for_SDKs"
+    },
+    {
+     "level": 2,
+     "text": "Frequently asked questions",
+     "anchor": "faqs"
+    },
+    {
+     "level": 3,
+     "text": "App submission and review",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Completing the Data safety form",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Change log",
+     "anchor": "change_log"
+    },
+    {
+     "level": 3,
+     "text": "Timeline information changes",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Clarifications regarding what developers need to disclose across data types",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Data types and purposes updates",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Other changes",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Other resources",
+     "anchor": null
+    }
+   ]
+  },
+  "GHEALTHDECL": {
+   "platform": "google",
+   "url": "https://support.google.com/googleplay/android-developer/answer/14738291?hl=en",
+   "final_url": "https://support.google.com/googleplay/android-developer/answer/14738291?hl=en",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Provide information for the Health apps declaration form",
+   "publisher": "Google LLC (Play Console Help / Policy Center)",
+   "last_confirmed_current": "2026-10-10T14:36:09+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "63a65f06c55bcf5306aae03b3035057de6399c19774effe8ea1ab6c13a5a4498",
+   "text_sha256": "7fbb60e2f75b256c5f04dfe526a323a955ef9d2c86eda72ce766ee16feed9df9",
+   "text_chars": 7859,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Background",
+     "anchor": "background"
+    },
+    {
+     "level": 3,
+     "text": "Which developers need to complete the Health apps declaration in Play Console?",
+     "anchor": "which_devs"
+    },
+    {
+     "level": 3,
+     "text": "What Health features developers need to declare",
+     "anchor": "health_features"
+    },
+    {
+     "level": 2,
+     "text": "Medical Device Apps",
+     "anchor": "medical_device_apps"
+    },
+    {
+     "level": 3,
+     "text": "Legal Compliance Information",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Operating Requirements",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Complete and submit the declaration",
+     "anchor": "complete_submit"
+    },
+    {
+     "level": 2,
+     "text": "After you complete the declaration",
+     "anchor": "after"
+    },
+    {
+     "level": 2,
+     "text": "Health app categories and additional information",
+     "anchor": null
+    }
+   ]
+  },
+  "GTAPI": {
+   "platform": "google",
+   "url": "https://support.google.com/googleplay/android-developer/answer/11926878?hl=en",
+   "final_url": "https://support.google.com/googleplay/android-developer/answer/11926878?hl=en",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Target API level requirements for Google Play apps",
+   "publisher": "Google LLC (Play Console Help / Policy Center)",
+   "last_confirmed_current": "2026-10-10T14:36:11+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "57306be71031aa9ed2dd784ddf1f2f0ce7f62842f6f1b32147df51441863f28f",
+   "text_sha256": "a86c2a9a45618347593da190c1511027ee1128654a5dbeb489599ee66d3a5e19",
+   "text_chars": 10663,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Definitions",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "App update requirements",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Wear OS app requirements",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Android TV app requirements",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Android Automotive OS app requirements",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Android XR app requirements",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "App availability requirements",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "What to do to comply",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Wear OS app requirements",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Android TV requirements",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Android Automotive OS requirements",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Android XR requirements",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Frequently asked questions",
+     "anchor": "faqs"
+    },
+    {
+     "level": 3,
+     "text": "For apps targeting API 34 or below",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "I have a live app on Google Play that targets API 34 or lower (for Wear OS, app targeting API 33 or lower), that I do not plan to update. What are my options?",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Where can I find the extension form to continue distributing to all Google Play users until November 1, 2026?",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "I have apps that I no longer want published on Google Play. What can I do?",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "How will my users who already downloaded my app previously be impacted?",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Will this update impact app downloads?",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "What will the user experience be if a user on a newer device visits a deep link to the app store page, but the app is targeting API 34 or lower?",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Are there any exceptions for existing apps targeting API 34 or below?",
+     "anchor": null
+    }
+   ]
+  },
+  "GTECHQ": {
+   "platform": "google",
+   "url": "https://support.google.com/googleplay/android-developer/answer/17492799?hl=en",
+   "final_url": "https://support.google.com/googleplay/android-developer/answer/17492799?hl=en",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Play Console technical quality requirements",
+   "publisher": "Google LLC (Play Console Help / Policy Center)",
+   "last_confirmed_current": "2026-10-10T14:36:20+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "e0aa9d82fb638330e0365a15116281457c40bd67c4b34a3bd81b6a3cb026d4e0",
+   "text_sha256": "8a4c7ef6c51813f8feb8fd75864a50e5819e0b3123e2f10f5e08423dd5c2df3f",
+   "text_chars": 21914,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Upcoming requirements",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Reduced memory usage",
+     "anchor": "reduced_memory_usage"
+    },
+    {
+     "level": 3,
+     "text": "Memory Usage",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Apps",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Games",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Bitmap memory usage",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "DEX Code optimization",
+     "anchor": "dex_code_optimization"
+    },
+    {
+     "level": 2,
+     "text": "Zero-tap sign-in restoration",
+     "anchor": "zero-tap_sign-in_restoration"
+    },
+    {
+     "level": 3,
+     "text": "Exceptions and scope",
+     "anchor": "exceptions_and_scope"
+    },
+    {
+     "level": 3,
+     "text": "Integrating and testing",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Form factors and Android versions in scope",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Upcoming Requirement FAQs",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Useful resources",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Code optimization",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Memory usage (Anonymous RSS + Swap)",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Bitmap memory usage",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Restore Credentials",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Skills",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Current Requirements",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Core Vitals and Stability",
+     "anchor": null
+    }
+   ]
+  },
+  "G16KB": {
+   "platform": "google",
+   "url": "https://developer.android.com/guide/practices/page-sizes",
+   "final_url": "https://developer.android.com/guide/practices/page-sizes",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Support 16 KB page sizes Stay organized with collections Save and categorize content based on your preferences.",
+   "publisher": "Google LLC (Android Developers)",
+   "last_confirmed_current": "2026-10-10T14:36:22+00:00",
+   "page_last_updated": "2026-09-16 UTC",
+   "page_effective_dates": [],
+   "raw_sha256": "c816134b2e0e647017dd47733dbeabe88ab7b0a942581abc533d09b775452355",
+   "text_sha256": "7c880c43a1989a587d6dc80a596d422836245892059a1ee5b502970a7a2648ca",
+   "text_chars": 24473,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Google Play compatibility requirement",
+     "anchor": "google-play-compatibility-requirement"
+    },
+    {
+     "level": 2,
+     "text": "Benefits and performance gains",
+     "anchor": "benefits"
+    },
+    {
+     "level": 2,
+     "text": "Check if your app is impacted",
+     "anchor": "16-kb-impact"
+    },
+    {
+     "level": 3,
+     "text": "Does your app use native code?",
+     "anchor": "native-code"
+    },
+    {
+     "level": 3,
+     "text": "Identify native libraries using APK Analyzer",
+     "anchor": "identify-native-code"
+    },
+    {
+     "level": 3,
+     "text": "Detect alignment issues with automated checks",
+     "anchor": "auto-checks"
+    },
+    {
+     "level": 3,
+     "text": "Check the alignment of ELF segments for shared libraries",
+     "anchor": "elf-alignment"
+    },
+    {
+     "level": 4,
+     "text": "Use the check_elf_alignment.sh script (Linux or macOS)",
+     "anchor": "alignment-use-script"
+    },
+    {
+     "level": 4,
+     "text": "Use command-line tools directly",
+     "anchor": "alignment-use-tools"
+    },
+    {
+     "level": 3,
+     "text": "Linux or macOS",
+     "anchor": "linux-or-macos"
+    },
+    {
+     "level": 3,
+     "text": "Windows (PowerShell)",
+     "anchor": "windows-powershell"
+    },
+    {
+     "level": 3,
+     "text": "Linux or macOS",
+     "anchor": "linux-or-macos_1"
+    },
+    {
+     "level": 3,
+     "text": "Windows (PowerShell)",
+     "anchor": "windows-powershell_1"
+    },
+    {
+     "level": 3,
+     "text": "Linux or macOS",
+     "anchor": "linux-or-macos_2"
+    },
+    {
+     "level": 3,
+     "text": "Windows (PowerShell)",
+     "anchor": "windows-powershell_2"
+    },
+    {
+     "level": 3,
+     "text": "Check the RELRO security flag",
+     "anchor": "relro-flag"
+    },
+    {
+     "level": 2,
+     "text": "Build your app with support for 16 KB devices",
+     "anchor": "build"
+    },
+    {
+     "level": 3,
+     "text": "Update the packaging of your shared libraries",
+     "anchor": "update-packaging"
+    },
+    {
+     "level": 4,
+     "text": "Use bundletool to verify zip alignment",
+     "anchor": "use_bundletool_to_verify_zip_alignment"
+    },
+    {
+     "level": 4,
+     "text": "AGP version 8.5.1 or higher",
+     "anchor": "agp_version_851_or_higher"
+    },
+    {
+     "level": 4,
+     "text": "AGP version 8.5 or lower",
+     "anchor": "agp_version_85_or_lower"
+    },
+    {
+     "level": 3,
+     "text": "Groovy",
+     "anchor": "groovy"
+    },
+    {
+     "level": 3,
+     "text": "Kotlin",
+     "anchor": "kotlin"
+    },
+    {
+     "level": 5,
+     "text": "AGP version 8.0 or lower",
+     "anchor": "agp_version_80_or_lower"
+    },
+    {
+     "level": 3,
+     "text": "Compile your app using 16 KB ELF alignment",
+     "anchor": "compile-16-kb-alignment"
+    },
+    {
+     "level": 4,
+     "text": "Android NDK r28 and higher",
+     "anchor": "compile-r28"
+    },
+    {
+     "level": 4,
+     "text": "Android NDK r27 and lower",
+     "anchor": "compile-r27-lower"
+    },
+    {
+     "level": 3,
+     "text": "ndk-build",
+     "anchor": "ndk-build"
+    },
+    {
+     "level": 3,
+     "text": "CMake",
+     "anchor": "cmake"
+    },
+    {
+     "level": 3,
+     "text": "Fix code and resolve runtime issues",
+     "anchor": "check-code"
+    },
+    {
+     "level": 3,
+     "text": "Optimize custom memory allocators",
+     "anchor": "custom-allocators"
+    },
+    {
+     "level": 4,
+     "text": "1. Avoid hard-coded byte thresholds for freeing memory",
+     "anchor": "1_avoid_hard-coded_byte_thresholds_for_freeing_memory"
+    },
+    {
+     "level": 4,
+     "text": "2. Fill up already-used pages first (dense-first allocation)",
+     "anchor": "2_fill_up_already-used_pages_first_dense-first_allocation"
+    },
+    {
+     "level": 4,
+     "text": "3. Align memory pools to 16 KB and keep pool sizes moderate",
+     "anchor": "3_align_memory_pools_to_16kb_and_keep_pool_sizes_moderate"
+    },
+    {
+     "level": 4,
+     "text": "4. Release physical memory for cached large buffers immediately",
+     "anchor": "4_release_physical_memory_for_cached_large_buffers_immediately"
+    },
+    {
+     "level": 4,
+     "text": "5. Zero out memory on free instead of on allocation for ZRAM compression",
+     "anchor": "5_zero_out_memory_on_free_instead_of_on_allocation_for_zram_compression"
+    },
+    {
+     "level": 4,
+     "text": "Summary of recommendations",
+     "anchor": "summary_of_recommendations"
+    },
+    {
+     "level": 3,
+     "text": "Check SDKs for 16 KB support",
+     "anchor": "check-sdks"
+    },
+    {
+     "level": 2,
+     "text": "Test your app in a 16 KB environment",
+     "anchor": "test"
+    },
+    {
+     "level": 3,
+     "text": "Set up the Android Emulator with a 16-KB-based system image",
+     "anchor": "16kb-emulator"
+    },
+    {
+     "level": 4,
+     "text": "Launch the emulator",
+     "anchor": "launch-emulator"
+    },
+    {
+     "level": 3,
+     "text": "Enable 16 KB mode on a device using developer options",
+     "anchor": "developer-option"
+    },
+    {
+     "level": 2,
+     "text": "16 KB backcompat mode",
+     "anchor": "16kb-backcompat"
+    }
+   ]
+  },
+  "GDEVVER": {
+   "platform": "google",
+   "url": "https://developer.android.com/developer-verification",
+   "final_url": "https://developer.android.com/developer-verification",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Android developer verification  |  Android Developers",
+   "publisher": "Google LLC (Android Developers)",
+   "last_confirmed_current": "2026-10-10T14:36:23+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "33df5a862451dc65e3f53e68ec57caeedfd117453d223d6fefd4db45666ef243",
+   "text_sha256": "879109570102aa62d5813b837cb4da38de35e1521471028424467a7b67148daf",
+   "text_chars": 1303,
+   "headings": [
+    {
+     "level": 3,
+     "text": "Android developer verification",
+     "anchor": "android-developer-verification"
+    },
+    {
+     "level": 2,
+     "text": "Choose your verification path",
+     "anchor": "choose-your-verification-path"
+    },
+    {
+     "level": 3,
+     "text": "Distribute exclusively outside Google Play",
+     "anchor": "distribute-exclusively-outside-google-play"
+    },
+    {
+     "level": 3,
+     "text": "Distribute on and outside Google Play",
+     "anchor": "distribute-on-and-outside-google-play"
+    },
+    {
+     "level": 2,
+     "text": "Timeline",
+     "anchor": "timeline"
+    },
+    {
+     "level": 2,
+     "text": "Get support",
+     "anchor": "get-support"
+    },
+    {
+     "level": 3,
+     "text": "Guides",
+     "anchor": "guides"
+    },
+    {
+     "level": 3,
+     "text": "FAQ",
+     "anchor": "faq"
+    },
+    {
+     "level": 3,
+     "text": "Help Center",
+     "anchor": "help-center"
+    },
+    {
+     "level": 2,
+     "text": "Latest News",
+     "anchor": "span-idlatest-newslatest-newsspan"
+    },
+    {
+     "level": 3,
+     "text": "Register an open source app",
+     "anchor": "register-an-open-source-app"
+    },
+    {
+     "level": 3,
+     "text": "Limited distribution accounts are now available",
+     "anchor": "limited-distribution-accounts-are-now-available"
+    },
+    {
+     "level": 3,
+     "text": "Android developer verification: Building a safer ecosystem together",
+     "anchor": "android-developer-verification-building-a-safer-ecosystem-together"
+    },
+    {
+     "level": 3,
+     "text": "Rolling out to all developers on Play and Android consoles",
+     "anchor": "rolling-out-to-all-developers-on-play-and-android-consoles"
+    },
+    {
+     "level": 3,
+     "text": "Balancing openness and choice with safety",
+     "anchor": "balancing-openness-and-choice-with-safety"
+    },
+    {
+     "level": 3,
+     "text": "Preview how users can sideload your apps",
+     "anchor": "preview-how-users-can-sideload-your-apps"
+    },
+    {
+     "level": 3,
+     "text": "Android developer verification",
+     "anchor": "android-developer-verification"
+    }
+   ]
+  },
+  "GTEST": {
+   "platform": "google",
+   "url": "https://support.google.com/googleplay/android-developer/answer/14151465?hl=en",
+   "final_url": "https://support.google.com/googleplay/android-developer/answer/14151465?hl=en",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "App testing requirements for new personal developer accounts",
+   "publisher": "Google LLC (Play Console Help / Policy Center)",
+   "last_confirmed_current": "2026-10-10T14:36:23+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "f2fff47b1cd5da80337e6b3d1049f36e8ddd49ec1dc2b97f5b86d0dc39f9fcbd",
+   "text_sha256": "86d6793524858669444c416b49b7a93e15fe3f1d7a2b5e81d06b41790313372f",
+   "text_chars": 12931,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Testing requirements for personal accounts",
+     "anchor": "testing_requirements"
+    },
+    {
+     "level": 3,
+     "text": "Overview of testing requirements",
+     "anchor": "overview"
+    },
+    {
+     "level": 2,
+     "text": "Testing tracks and requirements",
+     "anchor": "testing_tracks"
+    },
+    {
+     "level": 2,
+     "text": "Best practices for closed testing",
+     "anchor": "best_practices"
+    },
+    {
+     "level": 3,
+     "text": "Tester recruitment",
+     "anchor": "use"
+    },
+    {
+     "level": 3,
+     "text": "Tester engagement",
+     "anchor": "engaging"
+    },
+    {
+     "level": 3,
+     "text": "User feedback collection and review",
+     "anchor": "gathering_feedback"
+    },
+    {
+     "level": 3,
+     "text": "Act on user feedback",
+     "anchor": "acting_on_feedback"
+    },
+    {
+     "level": 3,
+     "text": "Advanced testing resources",
+     "anchor": "advanced"
+    },
+    {
+     "level": 2,
+     "text": "Run closed tests",
+     "anchor": "running_tests"
+    },
+    {
+     "level": 2,
+     "text": "Apply for production access",
+     "anchor": "production"
+    },
+    {
+     "level": 2,
+     "text": "Next steps after applying for production access",
+     "anchor": "after_applying"
+    },
+    {
+     "level": 3,
+     "text": "Ensure policy compliance",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Application review outcomes",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Frequently asked questions",
+     "anchor": "FAQs"
+    }
+   ]
+  },
+  "GECL": {
+   "platform": "google",
+   "url": "https://support.google.com/googleplay/android-developer/answer/16470497?hl=en",
+   "final_url": "https://support.google.com/googleplay/android-developer/answer/16470497?hl=en",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Enrolling in the external content links program for users in the US",
+   "publisher": "Google LLC (Play Console Help / Policy Center)",
+   "last_confirmed_current": "2026-10-10T14:36:25+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "11b1ccf3b2e426f6582ad8092871b3c84b0691ef6424f3b4aea774d56746cf2b",
+   "text_sha256": "04c9ccc3d5bb652eb9b51b4fad19c388d0b41c49266ea1f511f5c0e717533559",
+   "text_chars": 9294,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Availability",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Requirements",
+     "anchor": "ecl_requirements"
+    },
+    {
+     "level": 2,
+     "text": "Destination requirements",
+     "anchor": "destination_requirements"
+    },
+    {
+     "level": 2,
+     "text": "Play Ser vice Fees",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Eligibility",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Enroll your app in the external content links program",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "a. Register and submit all versions of the linked external app(s)",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "c. When your external app(s) are updated, submit all updated versions and APKs of the linked external app(s)",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Frequently asked questions",
+     "anchor": "ecl_program_faq"
+    },
+    {
+     "level": 2,
+     "text": "What are the steps to integrate with the external links APIs?",
+     "anchor": null
+    }
+   ]
+  },
+  "GUS": {
+   "platform": "google",
+   "url": "https://support.google.com/googleplay/android-developer/answer/15582165?hl=en",
+   "final_url": "https://support.google.com/googleplay/android-developer/answer/15582165?hl=en",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "An update regarding Google Play's policies for developers serving users in the US",
+   "publisher": "Google LLC (Play Console Help / Policy Center)",
+   "last_confirmed_current": "2026-10-10T14:36:27+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "d90731ac82b7ab12da2cdd9c629e5f43892423c59b3e0472d7d5673e3b1af01c",
+   "text_sha256": "b618608ff61c5c9a47925045c04a6160e0e8b20506e5d7c92c57598a4330fa24",
+   "text_chars": 2987,
+   "headings": []
+  },
+  "GAI": {
+   "platform": "google",
+   "url": "https://support.google.com/googleplay/android-developer/answer/13985936?hl=en",
+   "final_url": "https://support.google.com/googleplay/android-developer/answer/13985936?hl=en",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "AI-Generated Content",
+   "publisher": "Google LLC (Play Console Help / Policy Center)",
+   "last_confirmed_current": "2026-10-10T14:36:29+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "a0a43684388b334270353a1864cd98b5a15337194c22d01ad189fe1ccf683d02",
+   "text_sha256": "eae3ae7c44a07a1abd52a51132070f9a5829e8fe4e10869adb9745b3e777ae49",
+   "text_chars": 1129,
+   "headings": [
+    {
+     "level": 4,
+     "text": "AI-Generated Content",
+     "anchor": null
+    }
+   ]
+  },
+  "GIMP": {
+   "platform": "google",
+   "url": "https://support.google.com/googleplay/android-developer/answer/9888374?hl=en",
+   "final_url": "https://support.google.com/googleplay/android-developer/answer/9888374?hl=en",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Impersonation",
+   "publisher": "Google LLC (Play Console Help / Policy Center)",
+   "last_confirmed_current": "2026-10-10T14:36:51+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "e693f292d9edf6baf26161934b568ddf9e6732a49d65b355863e4cbd082bcd3e",
+   "text_sha256": "2c129204ccfcb698de5f31964eb0b7c0506e03e63720169735397535807281db",
+   "text_chars": 1961,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Examples of common violations",
+     "anchor": null
+    }
+   ]
+  },
+  "GSPAM": {
+   "platform": "google",
+   "url": "https://support.google.com/googleplay/android-developer/answer/9899034?hl=en",
+   "final_url": "https://support.google.com/googleplay/android-developer/answer/9899034?hl=en",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Spam",
+   "publisher": "Google LLC (Play Console Help / Policy Center)",
+   "last_confirmed_current": "2026-10-10T14:36:53+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "2477977dae821ba503d1fe3212f4cc09b670bb2e1a97c76a4526460c6a462d3c",
+   "text_sha256": "ab46d7f72d4cd7874b911ef66cb3c75b20606bee8ab512495c636f3526294674",
+   "text_chars": 890,
+   "headings": [
+    {
+     "level": 4,
+     "text": "COLLAPSE ALL EXPAND ALL",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Message Spam",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Webviews and Affiliate Spam",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Repetitive Content",
+     "anchor": null
+    }
+   ]
+  },
+  "GADS": {
+   "platform": "google",
+   "url": "https://support.google.com/googleplay/android-developer/answer/9857753?hl=en",
+   "final_url": "https://support.google.com/googleplay/android-developer/answer/9857753?hl=en",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Ads",
+   "publisher": "Google LLC (Play Console Help / Policy Center)",
+   "last_confirmed_current": "2026-10-10T14:36:54+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "304f69c3f3e1037e1e319f92e841c76aa508a805d0bd8e8619a644d4bb753250",
+   "text_sha256": "a299b19e5cf53e268f69edfbf6dfac7e37c3b7b612b3783347d309edc7c5c539",
+   "text_chars": 10028,
+   "headings": [
+    {
+     "level": 4,
+     "text": "COLLAPSE ALL EXPAND ALL",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Ad Content",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Inappropriate Ads",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Families Ads Requirements",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Deceptive Ads",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Disruptive Ads",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Better Ads Experiences",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Made for Ads",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Lockscreen Monetization",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Ad Fraud",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Use of Location Data for Ads",
+     "anchor": null
+    },
+    {
+     "level": 4,
+     "text": "Usage of Android Advertising ID",
+     "anchor": null
+    }
+   ]
+  },
+  "GPERMS": {
+   "platform": "google",
+   "url": "https://support.google.com/googleplay/android-developer/answer/9214102?hl=en",
+   "final_url": "https://support.google.com/googleplay/android-developer/answer/9214102?hl=en",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Declare permissions for your app",
+   "publisher": "Google LLC (Play Console Help / Policy Center)",
+   "last_confirmed_current": "2026-10-10T14:36:56+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "b7283194205ed1c43d4a67bf553922a08c550e00b099dfa28b7af6d4f79c1f0a",
+   "text_sha256": "9de614bd564bbdf43c436943fdec9fed2baf38226a76002ce9d37e286cd7e400",
+   "text_chars": 6081,
+   "headings": [
+    {
+     "level": 3,
+     "text": "About the process",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Complete the Permissions Declaration Form",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Step 1: Evaluate requested permissions",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Step 2: Specify your app's core functionality",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Step 3: Provide instructions for app review",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Step 4: Provide a video demonstration of your app",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Step 5: Provide instructions for accessing restricted app content",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Step 6: (Multi-APK only) Request an exception for old APKs",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Step 7: Confirm your declaration",
+     "anchor": null
+    },
+    {
+     "level": 2,
+     "text": "Prepare and roll out your release",
+     "anchor": null
+    },
+    {
+     "level": 3,
+     "text": "Permissions review process",
+     "anchor": "review"
+    },
+    {
+     "level": 2,
+     "text": "Special instructions for Google Play Developer Publishing API users",
+     "anchor": "api"
+    },
+    {
+     "level": 2,
+     "text": "Related content",
+     "anchor": null
+    }
+   ]
+  },
+  "GPBL": {
+   "platform": "google",
+   "url": "https://developer.android.com/google/play/billing/deprecation-faq",
+   "final_url": "https://developer.android.com/google/play/billing/deprecation-faq",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Google Play Billing Library version deprecation Stay organized with collections Save and categorize content based on your preferences.",
+   "publisher": "Google LLC (Android Developers)",
+   "last_confirmed_current": "2026-10-10T14:36:58+00:00",
+   "page_last_updated": "2026-09-09 UTC",
+   "page_effective_dates": [],
+   "raw_sha256": "2132fbc5c7f9a058a3045af561190ac68e7ba9378f80d70086323ea3f4901a2d",
+   "text_sha256": "38d110de985ce2e33cb53baa9f1c4e21359142c320dc20cb111e53df90f83b01",
+   "text_chars": 2544,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Android skills",
+     "anchor": "android-skills-card__upgrade-play-billing-library"
+    },
+    {
+     "level": 3,
+     "text": "Upgrade Play Billing Library",
+     "anchor": "skill-title_upgrade-play-billing-library"
+    },
+    {
+     "level": 2,
+     "text": "Support timeline for different versions",
+     "anchor": "support-timeline"
+    }
+   ]
+  },
+  "GHC": {
+   "platform": "google",
+   "url": "https://developer.android.com/health-and-fitness/guides/health-connect",
+   "final_url": "https://developer.android.com/health-and-fitness/health-connect",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Health Connect  |  Android health & fitness  |  Android Developers",
+   "publisher": "Google LLC (Android Developers)",
+   "last_confirmed_current": "2026-10-10T14:37:00+00:00",
+   "page_last_updated": "2026-02-03 UTC",
+   "page_effective_dates": [],
+   "raw_sha256": "9cfb38334b262a33703cdd73e647a6b2240363f6ae5b3b4229d08f1a77ee2492",
+   "text_sha256": "8057ddc51ba25920acb3eeccc2c225c6ae40506059c90ffc386b824961913715",
+   "text_chars": 807,
+   "headings": [
+    {
+     "level": 3,
+     "text": "Health Connect: simplify connectivity between apps",
+     "anchor": "health-connect-simplify-connectivity-between-apps"
+    },
+    {
+     "level": 2,
+     "text": "Health & Fitness data types",
+     "anchor": "health-fitness-data-types"
+    },
+    {
+     "level": 3,
+     "text": "Measure skin temperature",
+     "anchor": "measure-skin-temperature"
+    },
+    {
+     "level": 3,
+     "text": "Add exercise routes",
+     "anchor": "add-exercise-routes"
+    },
+    {
+     "level": 3,
+     "text": "Track mindfulness",
+     "anchor": "track-mindfulness"
+    },
+    {
+     "level": 3,
+     "text": "Medical records",
+     "anchor": "medical-records"
+    },
+    {
+     "level": 2,
+     "text": "Functionalities",
+     "anchor": "functionalities"
+    },
+    {
+     "level": 3,
+     "text": "CRUD operations on record and data synchronization",
+     "anchor": "crud-operations-on-record-and-data-synchronization"
+    },
+    {
+     "level": 3,
+     "text": "Android compatibility",
+     "anchor": "android-compatibility"
+    },
+    {
+     "level": 3,
+     "text": "Reading with Health Connect",
+     "anchor": "reading-with-health-connect"
+    },
+    {
+     "level": 2,
+     "text": "Videos",
+     "anchor": "videos"
+    },
+    {
+     "level": 3,
+     "text": "Mo's Story: Starting Families",
+     "anchor": "mos-story-starting-families"
+    },
+    {
+     "level": 3,
+     "text": "Introducing new APIs for health and fitness in Health Connect by Android",
+     "anchor": "introducing-new-apis-for-health-and-fitness-in-health-connect-by-android"
+    },
+    {
+     "level": 3,
+     "text": "Managing permissions in Health Connect",
+     "anchor": "managing-permissions-in-health-connect"
+    },
+    {
+     "level": 3,
+     "text": "Reading and writing in Health Connect",
+     "anchor": "reading-and-writing-in-health-connect"
+    },
+    {
+     "level": 3,
+     "text": "Tips for a great Health Connect integration",
+     "anchor": "tips-for-a-great-health-connect-integration"
+    },
+    {
+     "level": 2,
+     "text": "News",
+     "anchor": "news"
+    },
+    {
+     "level": 3,
+     "text": "Health & Fitness Google Developer Newsletter May 2025",
+     "anchor": "health-fitness-google-developer-newsletter-may-2025"
+    },
+    {
+     "level": 3,
+     "text": "Unlock deeper health insights: Health Connect Jetpack SDK is now in beta and new feature updates",
+     "anchor": "unlock-deeper-health-insights-health-connect-jetpack-sdk-is-now-in-beta-and-new-feature-updates"
+    },
+    {
+     "level": 2,
+     "text": "Health Connect Jetpack Library 1.1.0 is now stable",
+     "anchor": "health-connect-jetpack-library-110-is-now-stable"
+    },
+    {
+     "level": 3,
+     "text": "Connect with us",
+     "anchor": "connect-with-us"
+    }
+   ]
+  },
+  "GEXACT": {
+   "platform": "google",
+   "url": "https://developer.android.com/about/versions/14/changes/schedule-exact-alarms",
+   "final_url": "https://developer.android.com/about/versions/14/changes/schedule-exact-alarms",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "Schedule exact alarms are denied by default Stay organized with collections Save and categorize content based on your preferences.",
+   "publisher": "Google LLC (Android Developers)",
+   "last_confirmed_current": "2026-10-10T14:37:01+00:00",
+   "page_last_updated": "2026-03-03 UTC",
+   "page_effective_dates": [],
+   "raw_sha256": "24791b5c58985297750c3185309ec9075014258dead6d88cf28442ec2e76f07e",
+   "text_sha256": "737ae07969c25557242cb290f3c4b711905cfb0b9482b3d7403929e6ee47e61b",
+   "text_chars": 6183,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Affected apps",
+     "anchor": "affected-apps"
+    },
+    {
+     "level": 2,
+     "text": "Calendar and alarm clock apps should declare USE_EXACT_ALARM",
+     "anchor": "calendar-alarm-clock"
+    },
+    {
+     "level": 2,
+     "text": "Use cases that might not require exact alarms",
+     "anchor": "use-cases"
+    },
+    {
+     "level": 2,
+     "text": "Migration steps to continue using exact alarms",
+     "anchor": "migration"
+    },
+    {
+     "level": 3,
+     "text": "Gracefully degrade on permission denial",
+     "anchor": "gracefully-degrade"
+    },
+    {
+     "level": 2,
+     "text": "Exemptions",
+     "anchor": "exemptions"
+    },
+    {
+     "level": 2,
+     "text": "Pre-grants",
+     "anchor": "pre-grant"
+    },
+    {
+     "level": 2,
+     "text": "Testing guidelines",
+     "anchor": "testing-guidelines"
+    }
+   ]
+  },
+  "ARRTYPE": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/documentation/bundleresources/app-privacy-configuration/nsprivacyaccessedapitypes/nsprivacyaccessedapitype",
+   "final_url": "https://developer.apple.com/documentation/bundleresources/app-privacy-configuration/nsprivacyaccessedapitypes/nsprivacyaccessedapitype/",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "NSPrivacyAccessedAPIType",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T16:18:17+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "19546c6db12067a6e6441140399e8323fd73d5e79d1c682e1d0b826b16da6cf5",
+   "text_sha256": "6c64d7900e67852a58e6e2d1bc97873755dfd4b3e4c763e2278ac21319d9a09f",
+   "text_chars": 215,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Discussion",
+     "anchor": "Discussion"
+    }
+   ],
+   "added_note": "added 2026-10-10 for required-reason table validation (CHECKER-HARDENING-001)"
+  },
+  "ARRREASONS": {
+   "platform": "apple",
+   "url": "https://developer.apple.com/documentation/bundleresources/app-privacy-configuration/nsprivacyaccessedapitypes/nsprivacyaccessedapitypereasons",
+   "final_url": "https://developer.apple.com/documentation/bundleresources/app-privacy-configuration/nsprivacyaccessedapitypes/nsprivacyaccessedapitypereasons/",
+   "http_status": 200,
+   "error": null,
+   "warning": null,
+   "title": "NSPrivacyAccessedAPITypeReasons",
+   "publisher": "Apple Inc. (Apple Developer)",
+   "last_confirmed_current": "2026-10-10T16:18:18+00:00",
+   "page_last_updated": null,
+   "page_effective_dates": [],
+   "raw_sha256": "611ccf023848aadc2265056b04e4fe9b001218bfb1b8f5a64c475a97a3dad0c2",
+   "text_sha256": "d0ef640956920429f0d7142a66b9e13c70389ab2f8b6a69fdbb23723bbb7e32f",
+   "text_chars": 383,
+   "headings": [
+    {
+     "level": 2,
+     "text": "Discussion",
+     "anchor": "Discussion"
+    }
+   ],
+   "added_note": "added 2026-10-10 for required-reason table validation (CHECKER-HARDENING-001)"
+  }
+ },
+ "fetched_finished": "2026-10-10T14:37:01+00:00"
+}

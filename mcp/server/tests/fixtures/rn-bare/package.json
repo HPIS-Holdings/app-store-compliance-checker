@@ -1,0 +1,6 @@
+{
+ "name": "rnbare",
+ "dependencies": {
+  "react-native": "0.81.4"
+ }
+}

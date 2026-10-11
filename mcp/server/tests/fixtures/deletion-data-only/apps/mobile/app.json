@@ -1,0 +1,29 @@
+{
+ "expo": {
+  "name": "Shelf Notes",
+  "slug": "shelf-notes",
+  "version": "1.0.0",
+  "ios": {
+   "bundleIdentifier": "com.example.shelfnotes",
+   "config": {
+    "usesNonExemptEncryption": false
+   }
+  },
+  "android": {
+   "package": "com.example.shelfnotes"
+  },
+  "plugins": [
+   [
+    "expo-build-properties",
+    {
+     "android": {
+      "targetSdkVersion": 36
+     },
+     "ios": {
+      "deploymentTarget": "15.1"
+     }
+    }
+   ]
+  ]
+ }
+}

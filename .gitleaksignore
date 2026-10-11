@@ -1,0 +1,3 @@
+# Intentional fake keys used to test redaction
+mcp/server/tests/fixtures/ai-client/src/ai.ts:generic-api-key:2
+mcp/server/tests/test_checker.py:generic-api-key:87
