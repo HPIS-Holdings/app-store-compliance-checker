@@ -120,6 +120,23 @@ class Greenlight(unittest.TestCase):
 class CLI(unittest.TestCase):
     def cli(self, *args):
         return subprocess.run([sys.executable, "-m", "compliance_mcp.cli", *args], capture_output=True, text=True, cwd="/", env={**os.environ, "PYTHONPATH": str(SRV)})
+    def test_rule_catalog_json(self):
+        catalog = engine.load_rules()
+        result = self.cli("rules", "--platform", "google", "--format", "json")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(json.loads(result.stdout), [r for r in catalog if r["platform"] == "google"])
+
+        rule = catalog[0]
+        detail = self.cli("rules", "--rule", rule["rule_id"], "--format", "json")
+        self.assertEqual(json.loads(detail.stdout), [rule])
+        summary = self.cli("rules", "--rule", rule["rule_id"])
+        self.assertEqual(len(summary.stdout.splitlines()), 1)
+        self.assertIn(rule["title"], summary.stdout)
+        for args in [("--rule", "UNKNOWN"), ("--platform", "google", "--rule", rule["rule_id"])]:
+            result = self.cli("rules", *args, "--format", "json")
+            self.assertEqual(result.returncode, 2)
+            self.assertEqual(result.stdout, "")
+
     def test_exit_codes(self):
         self.assertEqual(self.cli("check", str(FX / "health-bad"), "--greenlight", "off").returncode, 1)
         self.assertEqual(self.cli("check", str(FX / "simple-clean"), "--greenlight", "off").returncode, 0)

@@ -2,7 +2,8 @@
   mcc check <path> [--format md|json] [--out FILE] [--platform apple|google] [--rule ID] [--declare k=true|false]
                    [--greenlight auto|off] [--aab F] [--apk F] [--ipa F] [--fail-on-review]
   mcc discover <path>      app roots / frameworks / config state (JSON)
-  mcc rules [--platform]   list rules      mcc snapshot   policy snapshot info
+  mcc rules [--platform apple|google] [--rule ID] [--format text|json]
+  mcc snapshot             policy snapshot info
 Exit codes: 0 no verified issue | 1 at least one verified issue (FAIL or store finding) | 2 bad input | 3 internal error | 4 NEEDS_REVIEW present with --fail-on-review"""
 import argparse, json, sys
 from . import engine, report
@@ -26,14 +27,25 @@ def main(argv=None):
     c.add_argument("--fail-on-review", action="store_true")
     d = sp.add_parser("discover"); d.add_argument("path")
     r = sp.add_parser("rules"); r.add_argument("--platform", choices=["apple", "google"])
+    r.add_argument("--rule", metavar="ID", help="Select an exact rule ID")
+    r.add_argument("--format", choices=["text", "json"], default="text",
+                   help="Use JSON for complete records, including quotes, source URLs and dates")
     sp.add_parser("snapshot")
     try: a = ap.parse_args(argv)
     except SystemExit as e: return 2 if e.code else 0
     try:
         if a.cmd == "snapshot": print(json.dumps(engine.snapshot_info(), indent=1)); return 0
         if a.cmd == "rules":
-            for x in engine.load_rules():
-                if not a.platform or x["platform"] == a.platform: print(f"{x['rule_id']:30} {x['platform']:6} {x['normative_strength']:8} {x['title']}")
+            rules = [x for x in engine.load_rules()
+                     if (not a.platform or x["platform"] == a.platform)
+                     and (not a.rule or x["rule_id"] == a.rule)]
+            if a.rule and not rules:
+                raise engine.RuleError(f"No matching rule: {a.rule}")
+            if a.format == "json":
+                print(json.dumps(rules, indent=2))
+            else:
+                for x in rules:
+                    print(f"{x['rule_id']:30} {x['platform']:6} {x['normative_strength']:8} {x['title']}")
             return 0
         if a.cmd == "discover":
             res = discover(resolve_project(a.path)); res["apps"] = [{**x, "path": str(x["path"])} for x in res["apps"]]
