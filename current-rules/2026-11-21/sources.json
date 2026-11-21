@@ -1,0 +1,292 @@
+{
+ "snapshot": "2026-11-21",
+ "sources": [
+  {
+   "url": "https://developer.apple.com/app-store/review/guidelines/",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-APL-1.4.1-ACCURACY",
+    "CUR-APL-1.4.1-DOCTOR",
+    "CUR-APL-1.4.1-CLEARANCE",
+    "CUR-APL-2.1-DEMO",
+    "CUR-APL-2.1-IAP",
+    "CUR-APL-2.3.6-AGE",
+    "CUR-APL-3.1.1-IAP",
+    "CUR-APL-3.1.1a-LINKS",
+    "CUR-APL-3.1.2a-SUBS",
+    "CUR-APL-3.1.2a-SCAM",
+    "CUR-APL-3.1.2c-INFO",
+    "CUR-APL-3.1.3-OTHER",
+    "CUR-APL-4.2-MINFUNC",
+    "CUR-APL-4.3a-SPAM",
+    "CUR-APL-4.3b-SPAM",
+    "CUR-APL-4.8-LOGIN",
+    "CUR-APL-5.1.1i-PRIVACY",
+    "CUR-APL-5.1.1ii-CONSENT",
+    "CUR-APL-5.1.1iii-MIN",
+    "CUR-APL-5.1.1v-ACCDEL",
+    "CUR-APL-5.1.1ix-ENTITY",
+    "CUR-APL-5.1.2i-AI",
+    "CUR-APL-5.1.2i-ATT",
+    "CUR-APL-5.1.2vi-HEALTHKIT",
+    "CUR-APL-5.1.3i-HEALTH",
+    "CUR-APL-5.1.3ii-ICLOUD",
+    "CUR-APL-5.1.3iii-RESEARCH",
+    "CUR-APL-1.2-UGC",
+    "CUR-APL-1.1.1-RELIGION",
+    "CUR-APL-1.3-KIDS",
+    "CUR-APL-5.1.4-KIDS",
+    "CUR-APL-2.5.18-ADS",
+    "CUR-APL-3.1.1-LOOTBOX",
+    "CUR-APL-3.1.3e-GOODS",
+    "CUR-APL-3.1.3a-READER",
+    "CUR-APL-5.3.3-RMG",
+    "CUR-APL-4.7-CHATBOT",
+    "CUR-APL-2.3.14-ASSETS",
+    "CUR-APL-2.5.19-FEATURES",
+    "CUR-APL-5-EXPLOITATION"
+   ]
+  },
+  {
+   "url": "https://developer.apple.com/news/upcoming-requirements/",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-APL-UR-XCODE26",
+    "CUR-APL-UR-IOS13",
+    "CUR-APL-UR-AGE",
+    "CUR-APL-DSA-TRADER"
+   ]
+  },
+  {
+   "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/set-an-app-age-rating/",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-APL-ASC-AGE"
+   ]
+  },
+  {
+   "url": "https://developer.apple.com/help/app-store-connect/manage-compliance-information/manage-european-union-digital-services-act-trader-requirements/",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-APL-DSA-SELF"
+   ]
+  },
+  {
+   "url": "https://developer.apple.com/documentation/bundleresources/describing-use-of-required-reason-api",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-APL-RRA"
+   ],
+   "text_url": "https://developer.apple.com/tutorials/data/documentation/bundleresources/describing-use-of-required-reason-api.md"
+  },
+  {
+   "url": "https://developer.apple.com/support/third-party-SDK-requirements/",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-APL-SDK-PM"
+   ]
+  },
+  {
+   "url": "https://developer.apple.com/documentation/bundleresources/privacy-manifest-files",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-APL-PMF"
+   ],
+   "text_url": "https://developer.apple.com/tutorials/data/documentation/bundleresources/privacy-manifest-files.md"
+  },
+  {
+   "url": "https://developer.apple.com/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-APL-MIC"
+   ],
+   "text_url": "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/nsmicrophoneusagedescription.md"
+  },
+  {
+   "url": "https://developer.apple.com/documentation/bundleresources/information-property-list/nsspeechrecognitionusagedescription",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-APL-SPEECH"
+   ],
+   "text_url": "https://developer.apple.com/tutorials/data/documentation/bundleresources/information-property-list/nsspeechrecognitionusagedescription.md"
+  },
+  {
+   "url": "https://developer.apple.com/documentation/healthkit/protecting-user-privacy",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-APL-HK-USAGE",
+    "CUR-APL-HK-3P"
+   ],
+   "text_url": "https://developer.apple.com/tutorials/data/documentation/healthkit/protecting-user-privacy.md"
+  },
+  {
+   "url": "https://developer.apple.com/support/offering-account-deletion-in-your-app/",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-APL-ACCDEL-SUPPORT"
+   ]
+  },
+  {
+   "url": "https://developer.apple.com/app-store/app-privacy-details/",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-APL-PRIVLABEL"
+   ]
+  },
+  {
+   "url": "https://developer.apple.com/support/dma-and-apps-in-the-eu/",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-APL-EU-DPLA"
+   ]
+  },
+  {
+   "url": "https://support.google.com/googleplay/android-developer/answer/18265346?hl=en",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-GPL-HEALTH-DECL",
+    "CUR-GPL-HEALTH-PRIVACY",
+    "CUR-GPL-HEALTH-PERMS",
+    "CUR-GPL-HEALTH-DISCLAIMER",
+    "CUR-GPL-HEALTH-CONSULT",
+    "CUR-GPL-HEALTH-MEDDEV",
+    "CUR-GPL-HEALTH-HW",
+    "CUR-GPL-HEALTH-MISINFO",
+    "CUR-GPL-ORG-ACCOUNT",
+    "CUR-GPL-PKG-REGISTER",
+    "CUR-GPL-HC-USECASE",
+    "CUR-GPL-HC-LIMITED",
+    "CUR-GPL-AI-REPORT",
+    "CUR-GPL-DATASAFETY",
+    "CUR-GPL-PRIVACYPOLICY",
+    "CUR-GPL-PROMINENT",
+    "CUR-GPL-PERMS",
+    "CUR-GPL-EXACT-ALARM",
+    "CUR-GPL-FGS",
+    "CUR-GPL-PAYMENTS",
+    "CUR-GPL-SUBS",
+    "CUR-GPL-IMPERSONATION",
+    "CUR-GPL-SPAM",
+    "CUR-GPL-LIMITED",
+    "CUR-GPL-ACCDEL",
+    "CUR-GPL-TAPI-POLICY",
+    "CUR-GPL-SDK",
+    "CUR-GPL-AUDIENCE",
+    "CUR-GPL-CONTENT-RATING",
+    "CUR-GPL-UGC",
+    "CUR-GPL-HATE-RELIGION",
+    "CUR-GPL-ADS-RATING",
+    "CUR-GPL-FAMILIES",
+    "CUR-GPL-LOOTBOX",
+    "CUR-GPL-PHYSICAL-GOODS",
+    "CUR-GPL-RMG",
+    "CUR-GPL-SENSITIVE-SECURE"
+   ]
+  },
+  {
+   "url": "https://support.google.com/googleplay/android-developer/answer/14738291?hl=en",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-GPL-HEALTH-DECL-ALL",
+    "CUR-GPL-HEALTH-EU-MDR"
+   ]
+  },
+  {
+   "url": "https://support.google.com/googleplay/android-developer/answer/15582165?hl=en",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-GPL-US-PROGRAMS"
+   ]
+  },
+  {
+   "url": "https://support.google.com/googleplay/android-developer/answer/16470497?hl=en",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-GPL-ECL"
+   ]
+  },
+  {
+   "url": "https://developer.android.com/google/play/billing/deprecation-faq",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-GPL-PBL"
+   ]
+  },
+  {
+   "url": "https://support.google.com/googleplay/android-developer/answer/13327111?hl=en",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-GPL-ACCDEL-FORM"
+   ]
+  },
+  {
+   "url": "https://support.google.com/googleplay/android-developer/answer/11926878?hl=en",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-GPL-TAPI-NEW",
+    "CUR-GPL-TAPI-EXISTING"
+   ]
+  },
+  {
+   "url": "https://support.google.com/googleplay/android-developer/answer/17492799?hl=en",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-GPL-16KB"
+   ]
+  },
+  {
+   "url": "https://developer.android.com/guide/practices/page-sizes",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-GPL-16KB-DEV"
+   ]
+  },
+  {
+   "url": "https://developer.android.com/developer-verification",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-GPL-DEVVER"
+   ]
+  },
+  {
+   "url": "https://support.google.com/googleplay/android-developer/answer/14151465?hl=en",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-GPL-TEST-NEWACCT"
+   ]
+  },
+  {
+   "url": "https://developer.apple.com/news/?id=yxkh08us",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-APL-AGE-DESCRIPTORS"
+   ]
+  },
+  {
+   "url": "https://support.google.com/googleplay/android-developer/answer/17594752?hl=en",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-GPL-TRADER-STATUS"
+   ]
+  },
+  {
+   "url": "https://support.google.com/googleplay/android-developer/answer/18204939?hl=en",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-GPL-SUBS-ELIGIBILITY"
+   ]
+  },
+  {
+   "url": "https://support.google.com/googleplay/android-developer/answer/16909972?hl=en",
+   "verified_date": "2026-11-21",
+   "rule_ids": [
+    "CUR-GPL-LOCAL-NETWORK",
+    "CUR-GPL-MANAGE-CONTACTS",
+    "CUR-GPL-APPFUNCTIONS",
+    "CUR-GPL-CONTACT-PICKER",
+    "CUR-GPL-LOCATION-BUTTON"
+   ]
+  }
+ ],
+ "deadline_calendar": "https://support.google.com/googleplay/android-developer/table/12921780?hl=en"
+}

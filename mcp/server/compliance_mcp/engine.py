@@ -55,7 +55,7 @@ def rules_path(): return Path(os.environ.get("COMPLIANCE_RULES_FILE") or DATA / 
 def load_rules(path=None):
     p = Path(path) if path else rules_path()
     if not p.exists(): raise RuleError(f"rules file not found: {p}")
-    rules = [json.loads(l) for l in p.read_text().splitlines() if l.strip()]
+    rules = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
     for r in rules:
         if "applies_when" not in r: raise RuleError(f"rule {r.get('rule_id')} lacks applies_when (old rules file?)")
     return rules
@@ -119,7 +119,7 @@ def _evaluate_rule(r, ctx, feats, gl_by_check, artifact):
     if unres: v, why = "NEEDS_REVIEW", "applicability unresolved: " + ", ".join(unres)
     elif not results: v, why = "NEEDS_REVIEW", "no automated check for this rule; manual evidence required (store listing, console forms, runtime behaviour)"
     elif "NOT_CHECKED" in st: v, why = "NOT_CHECKED", "a check could not run"
-    elif "FAIL" in st: v, why = "FAIL", "demonstrated violation in static config"
+    elif "FAIL" in st: v, why = "FAIL", "demonstrated violation in supplied evidence"
     elif all(s == "PASS" for s in st) and r["rule_id"] in FULLY_STATIC: v, why = "PASS", "all checks passed with positive evidence"
     else: v, why = "NEEDS_REVIEW", "evidence incomplete; human confirmation required"
     gl = [f for x in results for f in gl_by_check.get(x["check"], [])]
@@ -130,6 +130,8 @@ def _evaluate_rule(r, ctx, feats, gl_by_check, artifact):
             v, why = "NEEDS_REVIEW", "scanner disagreement: Greenlight (which covers this check) reports nothing"
     level = "release-artifact" if artifact and v == "PASS" else ("source-config" if v in ("PASS", "FAIL") else ("derived-vendor-default" if any(x.get("level") == "derived-vendor-default" for x in results) else "static"))
     ev_all = [e for x in results for e in x["evidence"]]
+    if v == "FAIL" and any(x["status"] == "FAIL" and x["level"] == "store-data" for x in results):
+        level = "store-data"
     return {**base, "verdict": v, "reason": why, "applicability": {"basis": "gate met" if not unres else "unresolved", "features": gate_ev},
             "verification_level": level, "evidence": ev_all or [why], "checks": results, "greenlight": gl,
             "fix": [x["fix"] for x in results if x.get("fix") and x["status"] in ("FAIL", "NEEDS_REVIEW")]}
@@ -137,7 +139,7 @@ def _evaluate_rule(r, ctx, feats, gl_by_check, artifact):
 def check_app(app_root, repo_root=None, framework="expo-managed", platforms=None, rules=None, platforms_filter=None, rule_ids=None,
               declared=None, greenlight="auto", aab=None, apk=None, ipa=None, store_data=None):
     rules = rules or load_rules()
-    ctx = AppContext(app_root, repo_root, framework, platforms, declared)
+    ctx = AppContext(app_root, repo_root, framework, platforms, declared, store_data=store_data)
     feats = detect(ctx)
     glr = {"status": "disabled", "findings": []}
     if greenlight != "off": glr = GL.run(app_root, aab, apk, ipa)
@@ -156,7 +158,9 @@ def check_app(app_root, repo_root=None, framework="expo-managed", platforms=None
     counts = {s: sum(1 for x in out if x["verdict"] == s) for s in STATUSES}
     counts["NOT_APPLICABLE_definite"] = sum(1 for x in out if x["verdict"] == "NOT_APPLICABLE" and x["applicability"].get("definite"))
     counts["by_evidence_category"] = {c: sum(1 for x in out if x["verdict"] == "NEEDS_REVIEW" and x["evidence_category"] == c) for c in ("SOURCE", "UNRESOLVED_CONFIG", "ARTIFACT", "STORE", "JUDGMENT")}
-    sf = store_checks.run_all(ctx, store_data, ipa)
+    sf = []
+    if not rule_ids and (not platforms_filter or "apple" in platforms_filter):
+        sf = store_checks.run_all(ctx, ctx.store_data, ipa)
     res = {"app_root": str(app_root), "framework": framework, "platforms": ctx.platforms, "trace": trace, "derived_config": ctx.derived, "dynamic_config_literals": ctx.dynamic_literals, "features": {k: {"state": v["state"], "evidence": v["evidence"][:3]} for k, v in feats.items()},
             "coverage": {**ctx.coverage, "greenlight": {k: v for k, v in glr.items() if k != "findings"}, "greenlight_findings": len(glr["findings"]),
                          "greenlight_unmapped": [f for f in glr["findings"] if not f["maps_to"]]},
@@ -167,6 +171,8 @@ def check_project(project_path, platforms=None, rule_ids=None, declared=None, gr
     root = resolve_project(project_path)
     rules = rules or load_rules()
     disc = discover(root)
+    if store_data and sum(app["supported"] for app in disc["apps"]) > 1:
+        raise RuleError("Select one app for supplied store_data, or use a .compliance/store.json in each app.")
     apps = []
     if not disc["apps"]:
         # a directory that is itself an Expo/RN app without a recognized marker is still checked conservatively

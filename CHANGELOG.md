@@ -2,6 +2,11 @@
 
 All notable changes to this project are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/) and the project uses [Semantic Versioning](https://semver.org/).
 
+## Unreleased
+
+- Refreshed the November 21, 2026 policy snapshot to 113 rules (57 Apple, 56 Google). It covers the October App Review and Google Play updates, new age rating descriptors and upcoming Play declarations. See the [policy diff](current-rules/2026-11-21/policy-diff.md) for effective dates.
+- Check explicitly unanswered age rating descriptors and overdue Play trader declarations from dated console data. Apply form-factor-specific Play target API thresholds to submissions and existing listings.
+
 ## [0.4.0] - 2026-10-11
 First public open-source release.
 

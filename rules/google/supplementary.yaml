@@ -79,11 +79,11 @@
   label: official_requirement
   obligation: mandatory
   topics: [account, verification, sideloading, regions]
-  requires: "Play Console Requirements 3.4 - register app package names via Play Console to comply with Android developer verification. Android Developers site timeline - August 2026 developer APIs, limited distribution accounts and power-user advanced flow launch; from September 30, 2026 protections begin for users installing from participating stores in Brazil, Indonesia, Singapore and Thailand on certified devices running Android 7+; global expansion in 2027."
+  requires: "Play Console Requirements 3.4 - register app package names via Play Console to comply with Android developer verification. Android Developers site timeline - August 2026 developer APIs, limited distribution accounts and power-user advanced flow launch; from September 30, 2026 protections begin for users installing from participating stores in Brazil, Indonesia, Singapore and Thailand on certified devices running Android 8 (API level 26) or higher; global expansion in 2027."
   effective_date: "2026-09-30"
   sources:
     - {url: "https://developer.android.com/developer-verification", section: "Timeline"}
-    - {url: "https://support.google.com/googleplay/android-developer/answer/18258653?hl=en", section: "Play Console Requirements (3.4)"}
+    - {url: "https://support.google.com/googleplay/android-developer/answer/18265346?hl=en", section: "Play Console Requirements (3.4)"}
 
 - id: GPL-SUPP-CORE-APP-QUALITY
   title: "Core app quality guidelines (minimum quality all apps should meet)"

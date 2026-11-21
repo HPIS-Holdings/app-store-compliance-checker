@@ -33,11 +33,11 @@
   topics: [metadata, privacy-labels]
   requires: "All metadata incl. privacy information, description, screenshots and previews must accurately reflect the core experience and be kept up to date."
 - id: APL-2.3.1
-  title: "Hidden features; misleading marketing"
+  title: "Review notes and misleading marketing"
   label: official_requirement
   obligation: mandatory
   topics: [metadata, review-notes, deception]
-  requires: "(a) No hidden, dormant or undocumented features; describe new features with specificity in Notes for Review (generic descriptions are rejected)."
+  requires: "(a) Describe new features with specificity in Notes for Review (generic descriptions are rejected)."
   prohibited: "Misleading marketing (e.g. fake virus scanners) or false prices inside or outside the App Store."
   enforcement_risk: "Removal from App Store / block from alternative distribution and developer account termination; (b) egregious or repeated behaviour - removal from the Developer Program."
   agent_verification:
@@ -132,6 +132,12 @@
   obligation: conditional
   topics: [metadata, events]
   requires: "Events must fit an App Store Connect event type, accurate metadata, happen at stated times, follow Section 3 if monetized, deep link to the correct destination."
+- id: APL-2.3.14
+  title: "Creative assets"
+  label: official_requirement
+  obligation: conditional
+  topics: [metadata]
+  requires: "Use relevant, all-ages creative assets. Avoid misleading comparisons, unverified claims and specific or discounted prices."
 - id: APL-2.4.1
   title: "iPhone apps should run on iPad"
   label: official_recommendation
@@ -184,7 +190,7 @@
     - "Check expo-updates config"
     - "review release notes of OTA updates since last binary for feature changes."
   dpla_reference: "DPLA Section 3.3.1 (verified 2026-10-09) - apps may not download/install executable code; interpreted code may be downloaded only if it (a) does not change the primary purpose by providing features inconsistent with the intended and advertised purpose, (b) does not bypass signing, sandbox or other OS security features, (c) for App Store apps, does not create a store/storefront for other apps."
-  uncertainty: "Apple has not published Expo-specific guidance; how much functional change an OTA JS update may carry is judged against DPLA 3.3.1(a) and Guideline 2.5.2/2.3.1."
+  uncertainty: "Apple has not published Expo-specific guidance; how much functional change an OTA JS update may carry is judged against DPLA 3.3.1(a) and Guideline 2.5.2/2.5.19."
 - id: APL-2.5.3
   title: "No harmful code"
   label: official_requirement
@@ -288,4 +294,9 @@
     - "confirm a \"report this ad\" path"
     - "confirm health data is never passed as ad targeting keywords."
   uncertainty: "Apple does not specify how the \"see all information used to target\" requirement is satisfied; SDK-provided ad info (AdChoices) is assumed adequate but not confirmed by Apple."
-
+- id: APL-2.5.19
+  title: "Hidden features"
+  label: official_requirement
+  obligation: mandatory
+  topics: [review-notes, deception]
+  requires: "Disclose app functionality to both users and App Review, including features controlled remotely."

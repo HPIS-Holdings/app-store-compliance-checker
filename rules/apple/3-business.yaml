@@ -28,7 +28,7 @@
   label: official_requirement
   obligation: conditional
   topics: [payments, external-links, regions, us, eu, korea, music]
-  requires: "Developers may apply for StoreKit External Purchase Link Entitlements (specific regions) or Music Streaming Services Entitlements to link to their own website for purchases, per entitlement agreements."
+  requires: "Developers may apply for StoreKit External Purchase Link Entitlements (specific regions) or Music Streaming Services Entitlements to link to permitted destinations for purchases, per entitlement agreements."
   prohibited: "In all other storefronts (except United States), apps and metadata may not include buttons, external links or other calls to action directing to non-IAP purchasing. Misleading marketing, scams or fraud related to the entitlement leads to removal and possible Program removal."
   exceptions_regions: "United States storefront - entitlements not required for buttons, external links or other CTAs (per guideline text as of June 8, 2026). Entitlements are limited to iOS/iPadOS App Store in specific storefronts (see Apple's entitlement pages for list)."
   implementation: "Gate any external purchase link by storefront (StoreKit Storefront.current.countryCode) and remove it from non-eligible storefronts (Interpretation)."

@@ -4,7 +4,7 @@ NOT_DETECTED means 'not found by a static scan' (NOT proof of absence). Declared
 unless the owner declares them (in .compliance/features.json or the declared_features argument)."""
 import json, re
 
-DECLARED_ONLY = {"physical_goods", "reader_content", "human_health", "eu_distribution", "regulatory_clearance", "regulated_medical_device", "health_research", "external_health_hardware", "personal_account"}
+DECLARED_ONLY = {"physical_goods", "reader_content", "human_health", "eu_distribution", "regulatory_clearance", "regulated_medical_device", "health_research", "external_health_hardware", "personal_account", "appfunctions", "creative_assets"}
 AI_IMPORT = r"""(from\s+['"]|require\(\s*['"]|import\s+['"])(openai|@anthropic-ai/sdk|@google/generative-ai|@google/genai|groq-sdk|@mistralai/mistralai|@ai-sdk/[\w-]+|ai/rsc|replicate|cohere-ai|together-ai)['"/]|^\s*(import|from)\s+(openai|anthropic|google\.generativeai|google\.genai)\b"""
 AI_URL = r"api\.openai\.com|api\.anthropic\.com|generativelanguage\.googleapis\.com|api\.groq\.com|api\.x\.ai|api\.mistral\.ai|openrouter\.ai/api|api\.together\.xyz|api\.deepseek\.com|aiplatform\.googleapis\.com"
 HEALTH_META = r"\b(health|medical|patient|symptoms?|kidney|ckd\w*|egfr|dialysis|renal|medications?|meds|blood pressure|glucose|diabet\w*|clinical|caregiver|therapy|fertility|pregnan\w*)\b"
@@ -22,6 +22,14 @@ def _found_or_not(ctx, hits, basis, config_dep=True):
 
 def detect(ctx):
     f = {}; perms = ctx.android_permissions(); meta = " ".join(str(ctx.expo.get(k, "")) for k in ("name", "slug", "description"))
+    for feature, permissions in {
+        "local_network_permission": ("ACCESS_LOCAL_NETWORK",),
+        "manage_contacts_permission": ("MANAGE_CONTACTS",),
+        "read_contacts_permission": ("READ_CONTACTS",),
+        "location_permission": ("ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION", "ACCESS_BACKGROUND_LOCATION"),
+    }.items():
+        hits = [f"{permission} in {perms[permission]}" for permission in permissions if permission in perms]
+        f[feature] = _found_or_not(ctx, hits, feature)
     hk = ctx.has_dep("react-native-health", "@kingstinct/react-native-healthkit", "react-native-healthkit", "expo-health-kit")
     ent = (ctx.expo.get("ios") or {}).get("entitlements") or {}
     if ent.get("com.apple.developer.healthkit"): hk.append("ios.entitlements com.apple.developer.healthkit")
