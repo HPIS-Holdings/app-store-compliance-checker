@@ -36,7 +36,9 @@ Optional: `./mcp/tools/install_greenlight.sh` installs pinned Greenlight v0.2.0.
     mcc check <repo-or-app> [--format md|json] [--out FILE] [--platform apple|google] [--rule ID]
               [--declare eu_distribution=true] [--greenlight auto|off] [--aab F|--apk F|--ipa F] [--fail-on-review]
     mcc discover <repo>    # app roots, framework, config state, platforms
-    mcc rules [--platform apple|google]
+    mcc rules [--platform apple|google] [--rule ID] [--format text|json]
+
+The default text index has one line per rule. JSON returns an array of full records, including official URLs, quotes, applicability and verification dates. For example, `mcc rules --rule CUR-APL-MIC --format json` returns one record. An unknown ID or one outside the requested platform exits with code 2.
 Exit codes: 0 no verified issue | 1 >=1 verified issue (rule FAIL or store finding) | 2 bad input (path missing/not a dir/'/'/outside COMPLIANCE_ALLOWED_ROOTS, bad flag) | 3 internal error | 4 NEEDS_REVIEW present with --fail-on-review.
 
 ## MCP

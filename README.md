@@ -97,7 +97,7 @@ Everything runs locally and offline. `app.config.js/ts` is never executed. No co
 | Platform requirements | Xcode 26 / iOS 26 SDK, iOS 13 minimum, age-rating questions | Target API 35/36, 16 KB page size, developer verification |
 | Content & kids | UGC moderation (1.2), Kids Category (1.3), ads (2.5.18) | UGC, Families, ads, content rating |
 
-Run `mcc rules` to list every rule, its official source URL and the exact quoted text.
+Run `mcc rules` for the rule index. To see the official source, quoted text and verification date for one rule, run `mcc rules --rule CUR-APL-MIC --format json`. Omit `--rule` to export the full catalog.
 
 ## The proof-only promise
 

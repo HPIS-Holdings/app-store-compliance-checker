@@ -55,7 +55,7 @@ def rules_path(): return Path(os.environ.get("COMPLIANCE_RULES_FILE") or DATA / 
 def load_rules(path=None):
     p = Path(path) if path else rules_path()
     if not p.exists(): raise RuleError(f"rules file not found: {p}")
-    rules = [json.loads(l) for l in p.read_text().splitlines() if l.strip()]
+    rules = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
     for r in rules:
         if "applies_when" not in r: raise RuleError(f"rule {r.get('rule_id')} lacks applies_when (old rules file?)")
     return rules
