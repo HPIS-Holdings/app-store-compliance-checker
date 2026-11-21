@@ -78,10 +78,10 @@
   label: official_requirement
   obligation: conditional
   topics: [ugc, moderation, social, ai]
-  requires: "Apps with UGC or social networking must include (1) filtering of objectionable material before posting, (2) a reporting mechanism with timely responses, (3) ability to block abusive users, (4) published contact information."
+  requires: "Apps enabling users to contribute content, including social media and AI content creation apps, must include (1) filtering of objectionable material before posting, (2) a reporting mechanism with timely responses, (3) ability to block abusive users, (4) published contact information."
   prohibited: "UGC apps used primarily for pornography, Chatroulette-style experiences, random/anonymous chat, \"hot-or-not\" objectification, threats or bullying."
   exceptions_regions: "Web-sourced UGC may display incidental NSFW content only if hidden by default and enabled by the user via the developer's website."
-  enforcement_risk: "Apple may request removal plus a compliance plan; app may be removed; egregious/repeated behaviour can lead to removal from the Developer Program."
+  enforcement_risk: "Failing to implement safeguards or remediate violations after notice may breach the Developer Code of Conduct. Apple may request removal plus a compliance plan; app may be removed; egregious/repeated behaviour can lead to removal from the Developer Program."
   implementation: "Pre-post filter (keyword/ML), report button on every UGC item and profile, block user, support email/URL in app (Interpretation)."
   agent_verification:
     - "Search UI code for report/block actions on every UGC surface"

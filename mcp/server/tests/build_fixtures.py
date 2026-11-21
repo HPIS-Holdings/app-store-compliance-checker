@@ -45,6 +45,7 @@ w("health-good/app/about.tsx", "export const Disclaimer = 'Wellness Journal is n
 # health app, bad (negative): HealthKit without keys, recording without mic key, speech lib without key, targetSdk 34, iOS 12
 expo("health-bad", "Health Tracker", "health-tracker", tsdk=34, ios_t="12.0",
      deps={"react-native-health": "^1.19.0", "expo-audio": "~1.0.0", "expo-speech-recognition": "^2.1.0"})
+w("health-bad/.compliance/store.json", {"play_console": {"form_factor": "mobile"}})
 w("health-bad/app/voice.tsx", "import { useAudioRecorder, RecordingPresets } from 'expo-audio';\nimport { ExpoSpeechRecognitionModule } from 'expo-speech-recognition';\nexport function useVoice() { ExpoSpeechRecognitionModule.start({ lang: 'en-US' }); return useAudioRecorder(RecordingPresets.HIGH_QUALITY); }\n")
 
 # AI in app code + a hardcoded secret (redaction test)

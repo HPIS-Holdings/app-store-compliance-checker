@@ -5,6 +5,7 @@
   topics: [legal, regions]
   requires: "Comply with all legal requirements in every location where the app is available; developer is responsible for understanding local laws."
   prohibited: "Soliciting/promoting criminal or clearly reckless behaviour."
+  enforcement_risk: "Apple notifies authorities, removes apps that facilitate human trafficking or exploitation of children, and blocks alternative distribution."
 - id: APL-5.1.1
   title: "Data Collection and Storage (i)-(iv) privacy policy, consent, minimization, access"
   label: official_requirement

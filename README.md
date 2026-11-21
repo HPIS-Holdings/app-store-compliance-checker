@@ -8,7 +8,7 @@
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)
 ![Zero dependencies](https://img.shields.io/badge/runtime%20deps-0-brightgreen)
 ![MCP server](https://img.shields.io/badge/MCP-server-purple)
-![Rules: 102](https://img.shields.io/badge/rules-102%20(53%20Apple%20%2F%2049%20Google)-orange)
+![Rules: 113](https://img.shields.io/badge/rules-113%20(57%20Apple%20%2F%2056%20Google)-orange)
 
 It catches the things that get apps bounced in review: missing **privacy manifest** (`PrivacyInfo.xcprivacy`) and required-reason API declarations, missing permission purpose strings (Guideline 5.1.1), no in-app **account deletion** (5.1.1(v)), wrong in-app purchase routes (3.1.1), outdated **Google Play target API level**, **Data Safety** and health-app declaration gaps, Health Connect / HealthKit misuse, AI data-sharing consent (5.1.2(i)), exact-alarm and foreground-service permissions, and more — each tied to a quoted, dated rule with an official Apple or Google URL.
 
@@ -72,7 +72,7 @@ Real output from `mcc check` on the bundled `health-bad` test fixture (an Expo a
 flowchart LR
     A[Your app folder<br/>app.json, package.json,<br/>Info.plist, AndroidManifest,<br/>source code] --> B[discover<br/>find Expo / React Native app roots]
     B --> C[features<br/>detect HealthKit, IAP, AI calls,<br/>accounts, ads, alarms...]
-    C --> D[checks<br/>102 dated rules with<br/>quoted official text]
+    C --> D[checks<br/>113 dated rules with<br/>quoted official text]
     G[(Optional build artifact<br/>.ipa / .apk / .aab<br/>via Greenlight)] -.-> D
     H[(Optional .compliance/store.json<br/>store-listing data)] -.-> D
     D --> E{Proven by<br/>evidence?}
@@ -84,7 +84,7 @@ Everything runs locally and offline. `app.config.js/ts` is never executed. No co
 
 ## What it checks
 
-102 rules (53 Apple, 49 Google) from the quote-verified snapshot [`current-rules/2026-10-10`](current-rules/2026-10-10/RULES.md). Highlights:
+The development snapshot contains 113 rules (57 Apple, 56 Google). It covers the November age-rating questions, the October Play policy changes and their enforcement dates. See the [rule catalog](current-rules/2026-11-21/RULES.md) and [policy diff](current-rules/2026-11-21/policy-diff.md). Run `mcc snapshot` to check which snapshot your installed release carries.
 
 | Area | Apple App Store | Google Play |
 |---|---|---|
@@ -154,7 +154,7 @@ If users can create an account, Apple (5.1.1(v)) and Google Play both require de
 Declare everything your code and SDKs collect or share. `mcc` detects privacy-impacting SDKs and data flows that should appear in the form.
 
 **What target API level does Google Play require in 2026?**
-New apps and updates must target API 36 from Aug 31, 2026; existing apps need API 35 to stay available to new users. `mcc` reads your build config and flags it.
+For mobile apps, new submissions and updates require API 36 and existing listings need API 35 to remain available to new users on newer devices. Wear OS, Android Automotive OS, TV and XR have different thresholds. Supply the release form factor in [store data](mcp/server/README.md) when it affects the result. [Google Play target API requirements](https://support.google.com/googleplay/android-developer/answer/11926878?hl=en)
 
 **Is this an MCP server I can use in Claude or Cursor?**
 Yes — `mcc-mcp` is a local stdio MCP server. See [Integrations](#integrations).
@@ -188,7 +188,7 @@ Where this checker differs: every rule is a dated, verbatim-quoted official requ
 | `mcp/skill/store-compliance/` | Portable Agent Skill |
 | `mcp/integrations/` | Claude / Cursor / VS Code setup and example workflow |
 | `mcp/tools/` | Optional Greenlight installer, snapshot sync |
-| `current-rules/2026-10-10/` | Rules snapshot: quoted official text, sources, deprecations, policy diff |
+| `current-rules/2026-11-21/` | Current catalog, official sources, dated exclusions and policy changes |
 | `rules/` | Official-source rule catalogs (Apple, Google, shared) |
 | `action.yml` | Composite GitHub Action |
 

@@ -3,15 +3,18 @@ import json, re
 from pathlib import Path
 from .safety import Tree
 from .discovery import app_config
+from .store_checks import load_store_data
 
 BACKEND_DIRS = ("infra", "convex", "server", "backend", "api", "functions", "supabase", "worker", "workers", "services", "lambda", "cloud-functions",
                 "packages", "libs", "shared", "modules")  # backend + monorepo shared code the app may import
 
 class AppContext:
-    def __init__(self, app_root, repo_root=None, framework="expo-managed", platforms=None, declared=None, other_app_roots=()):
+    def __init__(self, app_root, repo_root=None, framework="expo-managed", platforms=None, declared=None, other_app_roots=(), store_data=None):
         self.root = Path(app_root); self.repo = Path(repo_root or app_root); self.framework = framework
         self.platforms = platforms or {"ios": "assumed", "android": "assumed"}
         self.declared = declared or {}
+        store = load_store_data(self.root, store_data)
+        self.store_data = store if isinstance(store, dict) else {}
         self.tree = Tree(self.root)
         # backend code anywhere in the repo (monorepo servers, convex/, supabase functions), excluding other apps
         cand = [self.repo / d for d in BACKEND_DIRS]

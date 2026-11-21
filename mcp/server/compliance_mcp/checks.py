@@ -4,6 +4,7 @@ FAIL only for a demonstrated violation in resolved static config (e.g. a used ca
 Info.plist key is absent from a fully static config, or an explicit targetSdk below the requirement).
 Missing keywords never FAIL (-> NEEDS_REVIEW). PASS carries level='source-config' (no release artifact checked)."""
 import re
+from datetime import date
 from .safety import redact
 
 def R(check, status, evidence, fix=None, level="source-config"):
@@ -42,7 +43,15 @@ def healthkit_usage(ctx, f):
 
 def _ver(v):
     m = re.match(r"\s*(\d+)(?:\.(\d+))?", str(v)); return (int(m.group(1)), int(m.group(2) or 0)) if m else None
-def android_target_sdk(ctx, f, need=36, check="android_target_sdk"):
+# Play's target-API FAQ has separate tables for submissions and existing listings.
+PLAY_SUBMISSION_API = {"mobile": 36, "wear_os": 35, "automotive_os": 35, "tv": 34, "xr": 34}
+PLAY_AVAILABILITY_API = {"mobile": 35, "wear_os": 34, "automotive_os": 32, "tv": 33, "xr": 34}
+
+def android_target_sdk(ctx, f, thresholds=PLAY_SUBMISSION_API, check="android_target_sdk"):
+    console = ctx.store_data.get("play_console")
+    form = console.get("form_factor") if isinstance(console, dict) else None
+    known_form = isinstance(form, str) and form in thresholds
+    need = thresholds[form] if known_form else max(thresholds.values())
     bp = ctx.plugin("expo-build-properties") or {}; v, src = (bp.get("android") or {}).get("targetSdkVersion"), "expo-build-properties"
     if v is None:
         for fl in ctx.tree.files:
@@ -53,12 +62,21 @@ def android_target_sdk(ctx, f, need=36, check="android_target_sdk"):
         d = ctx.derived; ok = d["targetSdkVersion"] >= need
         return [R(check, "NEEDS_REVIEW", [f"no explicit targetSdkVersion; derived default {d['targetSdkVersion']} for Expo SDK {d['expo_sdk']} ({d['source']}, fetched {d['fetched']}) - {'meets' if ok else 'BELOW'} {need}", "vendor default, not a release-artifact fact"],
                   "Confirm targetSdkVersion in the built AAB." if ok else f"Upgrade Expo SDK or set targetSdkVersion >= {need}.", level="derived-vendor-default")]
-    if v is None:
+    if v is None or not str(v).isdecimal():
         return [R(check, "NEEDS_REVIEW", [f"no explicit targetSdkVersion in static config (expo={ctx.deps.get('expo')}, react-native={ctx.deps.get('react-native')})"],
-                  "Check the built AAB (bundletool dump manifest / greenlight --aab): new apps and updates need targetSdk >= 36 since 2026-08-31 (extension to 2026-11-01).")]
-    if int(v) >= need: return [R(check, "PASS", [f"targetSdkVersion={v} ({src}) >= {need}"])]
-    return [R(check, "FAIL", [f"targetSdkVersion={v} ({src}) < {need}"], f"Set targetSdkVersion to {need} or higher.")]
-def android_target_sdk_existing(ctx, f): return android_target_sdk(ctx, f, 35, "android_target_sdk_existing")
+                  "Check the target SDK in the release AAB and the form factor in Play Console.")]
+    evidence = [f"targetSdkVersion={v} ({src})"]
+    if known_form:
+        evidence.append(f"play_console.form_factor={form}, minimum API {need}")
+    elif min(thresholds.values()) <= int(v) < need:
+        return [R(check, "NEEDS_REVIEW", evidence, "Supply play_console.form_factor for this release to determine its target API minimum.")]
+    if int(v) >= need:
+        return [R(check, "PASS", evidence)]
+    if not known_form:
+        evidence.append(f"below the minimum for every supported form factor ({min(thresholds.values())} or higher)")
+    return [R(check, "FAIL", evidence, f"Set targetSdkVersion to {need} or higher." if known_form else
+              "Raise targetSdkVersion to the published minimum for the release form factor.")]
+def android_target_sdk_existing(ctx, f): return android_target_sdk(ctx, f, PLAY_AVAILABILITY_API, "android_target_sdk_existing")
 def ios_deployment_target(ctx, f):
     bp = ctx.plugin("expo-build-properties") or {}; v = (bp.get("ios") or {}).get("deploymentTarget"); src = "expo-build-properties"
     if v is None:
@@ -152,6 +170,49 @@ def sdk_inventory(ctx, f): return [R("sdk_inventory", "NEEDS_REVIEW", [f"{len(ct
 def foreground_service(ctx, f): return [R("foreground_service", "NEEDS_REVIEW", f["foreground_service"]["evidence"], "Declare foreground service types + permissions and complete the Play FGS declaration.")]
 def page_size_16kb(ctx, f): return [R("page_size_16kb", "NEEDS_REVIEW", [f"react-native={ctx.deps.get('react-native')}", f"expo={ctx.deps.get('expo')}"], "Verify .so alignment in the built AAB (Play Console App bundle explorer / greenlight --aab).")]
 def play_billing_version(ctx, f): return [R("play_billing_version", "NEEDS_REVIEW", [f"react-native-purchases={ctx.deps.get('react-native-purchases')}", f"react-native-iap={ctx.deps.get('react-native-iap')}"], "Confirm the bundled Play Billing Library is >= 8 (PBL 7 extension ended 2026-11-01).")]
+def _store_observation_date(store):
+    """Assess the dated console evidence under the policy in force when it was captured."""
+    try:
+        observed = date.fromisoformat(store["as_of"])
+    except (KeyError, ValueError, TypeError):
+        return None
+    return observed if observed <= date.today() else None
+
+
+def age_rating_descriptors(ctx, f):
+    store = ctx.store_data
+    observed = _store_observation_date(store)
+    rating = store.get("age_rating")
+    if not observed or observed < date(2026, 11, 16) or not isinstance(rating, dict):
+        return []
+    action = rating.get("action")
+    if observed <= date(2027, 1, 12) and action not in ("app_update", "questionnaire_edit"):
+        return []
+    # null means the console shows an unanswered question. Omitted keys are unknown.
+    missing = [key for key in ("shared_location", "dating_and_relationships")
+               if key in rating and rating[key] is None]
+    if not missing:
+        return []
+    evidence = [f"App Store Connect as of {observed}: age_rating.{key}=null" for key in missing]
+    if observed <= date(2027, 1, 12):
+        evidence.append(f"age_rating.action={action}")
+    return [R("age_rating_descriptors", "FAIL", evidence,
+              "Answer the missing Shared Location or Dating and Relationships question in App Store Connect.", level="store-data")]
+
+
+def play_trader_status(ctx, f):
+    store = ctx.store_data
+    observed = _store_observation_date(store)
+    console = store.get("play_console")
+    if not observed or observed <= date(2027, 2, 1) or not isinstance(console, dict):
+        return []
+    if console.get("active_account") is not True or console.get("trader_status_declared") is not False:
+        return []
+    return [R("play_trader_status", "FAIL",
+              [f"Play Console as of {observed}: active_account=true, trader_status_declared=false"],
+              "Complete the trader or non-trader declaration for the active account in Play Console.", level="store-data")]
+
+
 def eas_xcode_image(ctx, f):
     import json
     try: e = json.loads((ctx.root / "eas.json").read_text())
@@ -161,6 +222,7 @@ def eas_xcode_image(ctx, f):
 
 # rule static_checks names (from rules jsonl) -> implementation
 CHECKS = {
+ "age_rating_descriptors": age_rating_descriptors, "play_trader_status": play_trader_status,
  "ios_mic_usage": ios_mic_usage, "ios_speech_usage": ios_speech_usage, "healthkit_usage": healthkit_usage,
  "android_target_sdk": android_target_sdk, "android_target_sdk_existing": android_target_sdk_existing, "ios_deployment_target": ios_deployment_target, "exact_alarm": exact_alarm,
  "revenuecat_or_storekit": iap_library, "restore_purchases": restore_purchases, "paywall_legal_links": paywall_disclosures,

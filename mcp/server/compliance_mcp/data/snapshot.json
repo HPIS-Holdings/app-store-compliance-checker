@@ -1,14 +1,14 @@
 {
- "snapshot": "2026-10-10",
- "source_dir": "current-rules/2026-10-10",
+ "snapshot": "2026-11-21",
+ "source_dir": "current-rules/2026-11-21",
  "rules_by_platform": {
-  "apple": 53,
-  "google": 49
+  "apple": 57,
+  "google": 56
  },
  "exclusions_by_status": {
   "CONFIRMED": 10,
   "UNKNOWN": 3,
   "TEXT_CHANGED_SINCE_BASELINE": 1
  },
- "rules_sha256": "3b87f46ffe1e78fc97ace6bb49c90569fbd91ac6ef843a893bb83d357dc1e38a"
+ "rules_sha256": "14f695736b73673969ca62d743fff32c9226bf6785734b4b5b219e0ad15013dc"
 }

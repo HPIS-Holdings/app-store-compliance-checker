@@ -1,7 +1,7 @@
 # mobile-compliance-checker v0.4.0 (CLI `mcc` + MCP server `mcc-mcp`)
 
 Static App Store / Google Play compliance checker for Expo (managed/bare) and React Native apps, packaged with the
-quote-verified rules snapshot `current-rules/2026-10-10`. Use `mcc snapshot` for its current
+quote-verified rules snapshot `current-rules/2026-11-21`. Use `mcc snapshot` for its current
 rule count and fingerprint; do not rely on a hard-coded number. Stdlib-only Python >= 3.10.
 
 ## Output rule (hard)
@@ -47,15 +47,20 @@ Tools: `snapshot_info`, `list_rules`, `get_rule`, `list_deprecated`, `discover_a
 ## Store data (optional) - `.compliance/store.json` or MCP `store_data`
     {"in_app_purchases": [{"product_id": "pro.monthly", "type": "auto_renewable"}],
      "listing": {"description": "...", "terms_of_use_url": "https://..."}, "paywall": {"terms_of_use_url": "https://..."},
-     "age_rating": {"questionnaire_completed": true},
+     "as_of": "2026-11-21",
+     "age_rating": {"action": "app_update", "shared_location": false, "dating_and_relationships": null},
+     "play_console": {"active_account": true, "trader_status_declared": false, "form_factor": "mobile"},
      "screenshots": [{"slot": "ipad_13", "path": "store/ipad1.png"}, {"slot": "ipad_13", "width": 2064, "height": 2752}]}
-Store checks and sources: ../mcp-skill-draft.md. A check whose data is missing emits nothing.
+Use current store data for the selected app. For a workspace with several apps, put a separate `.compliance/store.json` in each app or pass the path of a single app with MCP `store_data`. `as_of` is the date you observed the console answers (YYYY-MM-DD). Age descriptor values are `true` for Yes, `false` for No and `null` when the console explicitly shows an unanswered question. Omit fields you did not inspect. The existing `questionnaire_completed` field remains supported.
+
+From November 16, 2026, set `age_rating.action` to `app_update` or `questionnaire_edit` when preparing that operation. After January 12, 2027, both descriptors are due for all apps. The Google trader check requires an active account with an explicitly incomplete declaration observed after February 1, 2027. Missing, invalid or future observation dates produce no deadline finding.
+
+For Play target API checks, set `play_console.form_factor` to `mobile` (phones/tablets, including Android Auto), `wear_os`, `automotive_os`, `tv` or `xr`. An unknown form factor produces no finding when the target SDK would be acceptable for any supported form factor.
 
 ## Verdict semantics (internal; summary)
 - Gates first: platform absent -> NOT_APPLICABLE (definite). Feature (rule `applies_when`) declared false -> NOT_APPLICABLE (definite);
   not detected -> NOT_APPLICABLE with `definite: false` (no signal, not proof); unresolved (dynamic app.config, declaration-only feature) -> NEEDS_REVIEW.
-- FAIL only for a demonstrated violation in fully static config: used capability without its Info.plist purpose string
-  (microphone, speech, HealthKit), explicit targetSdk < 36 (new/updates) or < 35 (existing), iOS deployment target < 13.
+- FAIL requires evidence such as a missing purpose string for a used capability, an explicit target SDK below the applicable form-factor threshold, an iOS deployment target below 13, or a dated console declaration that is explicitly incomplete.
 - Missing keywords (delete account, AI consent, report button, restore purchases, disclaimers) -> NEEDS_REVIEW, never FAIL.
   USE_EXACT_ALARM / SCHEDULE_EXACT_ALARM -> always NEEDS_REVIEW (alarm/calendar apps may qualify).
 - PASS only for 5 fully static rules with positive evidence; `verification_level` = `source-config` (no artifact) or `release-artifact`.
@@ -69,4 +74,4 @@ Store checks and sources: ../mcp-skill-draft.md. A check whose data is missing e
 ## Third-party
 `compliance_mcp/data/required_reason_apis.json` and `privacy_sdks.json` derive from store-preflight-mcp (MIT, pinned bd53be8) and were validated
 against Apple's official pages fetched 2026-10-10 (`mcp/tools/import_store_preflight_tables.py`); see data/THIRD_PARTY_NOTICES.md.
-Refresh the bundled rules after rebuilding a snapshot: `python mcp/tools/sync_snapshot.py 2026-10-10`.
+Refresh the bundled rules after rebuilding a snapshot with `python mcp/tools/sync_snapshot.py`.

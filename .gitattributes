@@ -1,0 +1,3 @@
+# The packaged snapshot records the SHA-256 of these exact UTF-8 bytes.
+current-rules/2026-11-21/*.jsonl text eol=lf
+mcp/server/compliance_mcp/data/current-rules.jsonl text eol=lf

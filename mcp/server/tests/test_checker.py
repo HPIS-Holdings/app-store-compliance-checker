@@ -46,6 +46,16 @@ class Clean(unittest.TestCase):
         v, _ = V("simple-clean"); self.assertEqual(v["CUR-GPL-TAPI-NEW"]["verdict"], "PASS"); self.assertEqual(v["CUR-GPL-TAPI-NEW"]["verification_level"], "source-config")
 
 class Negative(unittest.TestCase):
+    def test_play_target_depends_on_release_form_factor(self):
+        for form, new, existing in [("mobile", "FAIL", "FAIL"), ("wear_os", "FAIL", "NEEDS_REVIEW"),
+                                    ("automotive_os", "FAIL", "NEEDS_REVIEW"), ("tv", "PASS", "NEEDS_REVIEW"),
+                                    ("xr", "PASS", "NEEDS_REVIEW"), ("unknown", "NEEDS_REVIEW", "NEEDS_REVIEW")]:
+            with self.subTest(form=form):
+                rules, _ = V("health-bad", store_data={"play_console": {"form_factor": form}})
+                self.assertEqual(rules["CUR-GPL-TAPI-NEW"]["verdict"], new)
+                self.assertEqual(rules["CUR-GPL-TAPI-POLICY"]["verdict"], new)
+                self.assertEqual(rules["CUR-GPL-TAPI-EXISTING"]["verdict"], existing)
+
     def test_health_bad_expected_fails(self):
         v, a = V("health-bad")
         for rid in ("CUR-APL-MIC", "CUR-APL-SPEECH", "CUR-APL-HK-USAGE", "CUR-APL-UR-IOS13", "CUR-GPL-TAPI-NEW", "CUR-GPL-TAPI-EXISTING", "CUR-GPL-TAPI-POLICY", "CUR-APL-5.1.1ii-CONSENT"):
@@ -129,7 +139,7 @@ class CLI(unittest.TestCase):
         self.assertEqual(self.cli("bogus").returncode, 2)
     def test_report_has_snapshot_and_limits(self):
         out = self.cli("check", str(FX / "health-bad"), "--greenlight", "off").stdout
-        self.assertIn("rules snapshot 2026-10-10", out); self.assertIn("## Limits", out); self.assertIn("https://developer.apple.com", out)
+        self.assertIn("rules snapshot 2026-11-21", out); self.assertIn("## Limits", out); self.assertIn("https://developer.apple.com", out)
 
 def _server_cmd():
     b = shutil.which("mcc-mcp")
@@ -213,7 +223,7 @@ class CoverageGates004(unittest.TestCase):
         rules = {r["rule_id"]: r for r in engine.load_rules()}
         for r in self.NEW:
             self.assertTrue(rules[r]["official_quotes"] and rules[r]["official_url"].startswith("https://"), r)
-            self.assertEqual(rules[r]["verified_date"], "2026-10-10")
+            self.assertEqual(rules[r]["verified_date"], "2026-11-21")
 
 if __name__ == "__main__": unittest.main()
 
@@ -286,6 +296,63 @@ class VerifiedOnly(unittest.TestCase):
     """Rule 1: only verified issues are user-facing; missing data -> nothing emitted."""
     def test_no_data_emits_nothing(self):
         self.assertEqual(_findings(_store_app()), {})
+
+    def test_console_data_belongs_to_one_app(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp) / "repo"
+            shutil.copytree(FX / "monorepo", root)
+            shutil.copytree(root / "apps/mobile", root / "apps/second")
+            data = {"age_rating": {"questionnaire_completed": False}}
+            with self.assertRaisesRegex(engine.RuleError, "Select one app"):
+                engine.check_project(str(root), store_data=data, greenlight="off")
+            evidence = root / "apps/second/.compliance/store.json"
+            evidence.parent.mkdir(exist_ok=True)
+            evidence.write_text(json.dumps(data))
+            res = engine.check_project(str(root), greenlight="off")
+            self.assertEqual([Path(f["app_path"]).as_posix() for f in res["findings"]
+                              if f["check"] == "age_rating_unanswered"], ["apps/second"])
+
+    def test_november_apple_age_descriptors(self):
+        from datetime import date
+        from unittest.mock import patch
+
+        rule = "CUR-APL-AGE-DESCRIPTORS"
+        def findings(day, rating, **kwargs):
+            data = {"as_of": day, "age_rating": rating}
+            return _findings(_store_app(store=data), rule_ids=[rule], **kwargs)
+
+        unanswered = {"shared_location": None, "dating_and_relationships": False}
+        with patch("compliance_mcp.checks.date", wraps=date) as clock:
+            clock.today.return_value = date(2027, 2, 3)
+            self.assertNotIn(rule, findings("2026-11-15", dict(unanswered, action="app_update")))
+            self.assertNotIn(rule, findings("2026-11-16", unanswered))
+            for action in ("app_update", "questionnaire_edit"):
+                hit = findings("2026-11-16", dict(unanswered, action=action))[rule]
+                self.assertIn("shared_location", " ".join(hit["evidence"]))
+                self.assertEqual(hit["source"], "store-data")
+            self.assertIn(rule, findings("2027-01-13", unanswered))
+            self.assertNotIn(rule, findings("2027-01-13", {"questionnaire_completed": True}))
+            self.assertNotIn(rule, findings("2027-01-13", {"shared_location": False, "dating_and_relationships": True}))
+            self.assertNotIn(rule, findings("invalid", unanswered))
+            self.assertNotIn(rule, findings("2030-01-01", unanswered))
+            self.assertNotIn(rule, findings("2027-01-13", unanswered, platforms=["google"]))
+
+    def test_play_trader_declaration_deadline(self):
+        from datetime import date
+        from unittest.mock import patch
+
+        rule = "CUR-GPL-TRADER-STATUS"
+        with patch("compliance_mcp.checks.date", wraps=date) as clock:
+            clock.today.return_value = date(2027, 2, 3)
+            for day, active, declared, expect in [
+                ("2026-11-21", True, False, False), ("2027-02-01", True, False, False),
+                ("2027-02-02", True, False, True), ("2027-02-02", True, True, False),
+                ("2027-02-02", False, False, False), ("2027-02-02", True, None, False)
+            ]:
+                with self.subTest(day=day, active=active, declared=declared):
+                    data = {"as_of": day, "play_console": {"active_account": active, "trader_status_declared": declared}}
+                    hits = _findings(_store_app(), store_data=data, rule_ids=[rule])
+                    self.assertEqual(rule in hits, expect)
     def test_findings_have_evidence_and_apple_url(self):
         d = _store_app(store={"age_rating": {"questionnaire_completed": False}}, ios={})
         for f in _findings(d).values():
